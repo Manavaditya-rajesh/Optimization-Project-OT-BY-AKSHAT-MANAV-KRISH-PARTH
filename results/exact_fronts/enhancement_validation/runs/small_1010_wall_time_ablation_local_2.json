@@ -1,0 +1,89 @@
+{
+  "run": "results/enhancement_validation/runs/small_1010_wall_time_ablation_local_2.json",
+  "run_sha256": "422218fe306110629ccff95257afbe88f4de3973ad39a9ae2be96ffceb7ce9ad",
+  "instance_id": "small_1010",
+  "size": "small",
+  "method": "ablation_local",
+  "protocol": "wall_time",
+  "solver_seed": 2,
+  "raw_archive_count": 5,
+  "exact_front_count": 5,
+  "exact_dominated_indices": [],
+  "exact_duplicate_indices": [],
+  "survivor_indices": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "canonical_survivor_objectives": [
+    [
+      0.0,
+      0.2636363636363636,
+      0.09860132971832694
+    ],
+    [
+      0.0,
+      0.2681818181818182,
+      0.04714045207910317
+    ],
+    [
+      1.5,
+      0.2636363636363636,
+      0.06871842709362767
+    ],
+    [
+      2.5,
+      0.26515151515151514,
+      0.04714045207910317
+    ],
+    [
+      3.0,
+      0.2636363636363636,
+      0.04714045207910317
+    ]
+  ],
+  "exact_survivor_f1_f2_variance": [
+    [
+      "0",
+      "29/110",
+      "7/720"
+    ],
+    [
+      "0",
+      "59/220",
+      "1/450"
+    ],
+    [
+      "3/2",
+      "29/110",
+      "17/3600"
+    ],
+    [
+      "5/2",
+      "35/132",
+      "1/450"
+    ],
+    [
+      "3",
+      "29/110",
+      "1/450"
+    ]
+  ],
+  "normalization": [
+    175.0,
+    1.0,
+    0.5
+  ],
+  "reference": [
+    1.1,
+    1.1,
+    1.1
+  ],
+  "raw_hypervolume_saved": 0.9252562504798714,
+  "corrected_hypervolume": 0.9252562504798714,
+  "hypervolume_delta": 0.0,
+  "corrected_spacing": 0.02895818785380367,
+  "scope": "Exact non-dominance among supplied saved schedule alternatives; no global optimality claim."
+}

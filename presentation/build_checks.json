@@ -2,6 +2,7 @@
   "pptx_slides": 21,
   "speaker_notes_slides": 21,
   "solver_runs_during_build": 0,
+  "exact_front_postprocessing_disclosed": true,
   "versions": {
     "python-pptx": "1.0.2",
     "matplotlib": "3.10.8",

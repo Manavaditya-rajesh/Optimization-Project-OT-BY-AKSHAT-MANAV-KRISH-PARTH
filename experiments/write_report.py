@@ -24,6 +24,11 @@ This report covers the original bounded benchmark only. The final method and
 completed follow-up are discussed in `report/report.md` and
 `report/enhancement_report.md`; this historical generator does not overwrite them.
 
+**Numerical precision:** original floating-point archives and timings are retained.
+Use `python experiments/exact_fronts.py --study benchmark` from the project root
+for exact-arithmetic non-dominance among saved alternatives. See
+[the precision finding and correction](../docs/numerical_precision.md).
+
 This report is generated from saved synthetic experiment records. It distinguishes
 measured evidence, mathematical guarantees, and work still required for academic
 submission. The project does not claim real institutional data or eight weeks of

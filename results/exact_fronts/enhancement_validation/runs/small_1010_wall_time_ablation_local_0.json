@@ -1,0 +1,56 @@
+{
+  "run": "results/enhancement_validation/runs/small_1010_wall_time_ablation_local_0.json",
+  "run_sha256": "654feea62d9d57b0dd37fedcb9b2190a83319cf8bc79509df196cf75e30ec5c2",
+  "instance_id": "small_1010",
+  "size": "small",
+  "method": "ablation_local",
+  "protocol": "wall_time",
+  "solver_seed": 0,
+  "raw_archive_count": 2,
+  "exact_front_count": 2,
+  "exact_dominated_indices": [],
+  "exact_duplicate_indices": [],
+  "survivor_indices": [
+    0,
+    1
+  ],
+  "canonical_survivor_objectives": [
+    [
+      0.0,
+      0.2590909090909091,
+      0.04714045207910317
+    ],
+    [
+      3.0,
+      0.2545454545454545,
+      0.055277079839256664
+    ]
+  ],
+  "exact_survivor_f1_f2_variance": [
+    [
+      "0",
+      "57/220",
+      "1/450"
+    ],
+    [
+      "3",
+      "14/55",
+      "11/3600"
+    ]
+  ],
+  "normalization": [
+    175.0,
+    1.0,
+    0.5
+  ],
+  "reference": [
+    1.1,
+    1.1,
+    1.1
+  ],
+  "raw_hypervolume_saved": 0.9351602931793974,
+  "corrected_hypervolume": 0.9351602931793975,
+  "hypervolume_delta": 1.1102230246251565e-16,
+  "corrected_spacing": 0.0,
+  "scope": "Exact non-dominance among supplied saved schedule alternatives; no global optimality claim."
+}

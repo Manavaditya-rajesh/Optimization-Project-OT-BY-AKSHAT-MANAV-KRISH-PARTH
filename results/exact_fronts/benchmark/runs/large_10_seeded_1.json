@@ -1,0 +1,122 @@
+{
+  "run": "results/benchmark/runs/large_10_seeded_1.json",
+  "run_sha256": "a71bbdf8cc5bf6b0cbeaf74ec988513f8f3cad8417a1b90087ed07075e8ca57e",
+  "instance_id": "large_10",
+  "size": "large",
+  "method": "seeded",
+  "protocol": "evaluations",
+  "solver_seed": 1,
+  "raw_archive_count": 8,
+  "exact_front_count": 8,
+  "exact_dominated_indices": [],
+  "exact_duplicate_indices": [],
+  "survivor_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "canonical_survivor_objectives": [
+    [
+      4.0,
+      0.21242424242424243,
+      0.11789826122551596
+    ],
+    [
+      4.0,
+      0.21833333333333332,
+      0.09797958971132711
+    ],
+    [
+      5.0,
+      0.21143939393939393,
+      0.10148891565092219
+    ],
+    [
+      5.0,
+      0.21916666666666668,
+      0.09643650760992954
+    ],
+    [
+      6.0,
+      0.20984848484848484,
+      0.09110433579144299
+    ],
+    [
+      7.0,
+      0.20946969696969697,
+      0.09797958971132711
+    ],
+    [
+      8.0,
+      0.2081060606060606,
+      0.10535653752852739
+    ],
+    [
+      8.5,
+      0.21378787878787878,
+      0.08602325267042626
+    ]
+  ],
+  "exact_survivor_f1_f2_variance": [
+    [
+      "4",
+      "701/3300",
+      "139/10000"
+    ],
+    [
+      "4",
+      "131/600",
+      "6/625"
+    ],
+    [
+      "5",
+      "2791/13200",
+      "103/10000"
+    ],
+    [
+      "5",
+      "263/1200",
+      "93/10000"
+    ],
+    [
+      "6",
+      "277/1320",
+      "83/10000"
+    ],
+    [
+      "7",
+      "553/2640",
+      "6/625"
+    ],
+    [
+      "8",
+      "2747/13200",
+      "111/10000"
+    ],
+    [
+      "17/2",
+      "1411/6600",
+      "37/5000"
+    ]
+  ],
+  "normalization": [
+    1575.0,
+    1.0,
+    0.5
+  ],
+  "reference": [
+    1.1,
+    1.1,
+    1.1
+  ],
+  "raw_hypervolume_saved": 0.9081401820673195,
+  "corrected_hypervolume": 0.9081401820673196,
+  "hypervolume_delta": 1.1102230246251565e-16,
+  "corrected_spacing": 0.008674131852562331,
+  "scope": "Exact non-dominance among supplied saved schedule alternatives; no global optimality claim."
+}

@@ -1,0 +1,78 @@
+{
+  "run": "results/enhancement_validation/runs/small_1010_wall_time_greedy_0.json",
+  "run_sha256": "0a7ea8038c49ea3ae0e73ac138b763c6bed2602cf0d656c9b66e5c12cbab6e0f",
+  "instance_id": "small_1010",
+  "size": "small",
+  "method": "greedy",
+  "protocol": "wall_time",
+  "solver_seed": 0,
+  "raw_archive_count": 4,
+  "exact_front_count": 4,
+  "exact_dominated_indices": [],
+  "exact_duplicate_indices": [],
+  "survivor_indices": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "canonical_survivor_objectives": [
+    [
+      0.0,
+      0.2545454545454545,
+      0.12133516482134196
+    ],
+    [
+      0.0,
+      0.2606060606060606,
+      0.08498365855987974
+    ],
+    [
+      0.0,
+      0.26515151515151514,
+      0.04714045207910317
+    ],
+    [
+      1.0,
+      0.2545454545454545,
+      0.06871842709362767
+    ]
+  ],
+  "exact_survivor_f1_f2_variance": [
+    [
+      "0",
+      "14/55",
+      "53/3600"
+    ],
+    [
+      "0",
+      "43/165",
+      "13/1800"
+    ],
+    [
+      "0",
+      "35/132",
+      "1/450"
+    ],
+    [
+      "1",
+      "14/55",
+      "17/3600"
+    ]
+  ],
+  "normalization": [
+    175.0,
+    1.0,
+    0.5
+  ],
+  "reference": [
+    1.1,
+    1.1,
+    1.1
+  ],
+  "raw_hypervolume_saved": 0.9348107836527404,
+  "corrected_hypervolume": 0.9348107836527405,
+  "hypervolume_delta": 1.1102230246251565e-16,
+  "corrected_spacing": 0.01634793472758336,
+  "scope": "Exact non-dominance among supplied saved schedule alternatives; no global optimality claim."
+}

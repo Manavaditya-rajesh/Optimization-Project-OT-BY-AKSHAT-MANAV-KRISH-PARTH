@@ -1,0 +1,111 @@
+{
+  "run": "results/enhancement_validation/runs/large_1020_wall_time_original_enhanced_0.json",
+  "run_sha256": "a94df4ce0134e50ae82fe249408a4053fa7da732d1736e7bc23f8b9dd7b9ae27",
+  "instance_id": "large_1020",
+  "size": "large",
+  "method": "original_enhanced",
+  "protocol": "wall_time",
+  "solver_seed": 0,
+  "raw_archive_count": 7,
+  "exact_front_count": 7,
+  "exact_dominated_indices": [],
+  "exact_duplicate_indices": [],
+  "survivor_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "canonical_survivor_objectives": [
+    [
+      3.0,
+      0.20909090909090908,
+      0.11445523142259598
+    ],
+    [
+      3.5,
+      0.21166666666666667,
+      0.1131370849898476
+    ],
+    [
+      4.0,
+      0.20681818181818182,
+      0.10488088481701516
+    ],
+    [
+      5.0,
+      0.21227272727272728,
+      0.09055385138137417
+    ],
+    [
+      7.0,
+      0.20303030303030303,
+      0.09797958971132711
+    ],
+    [
+      8.0,
+      0.20893939393939395,
+      0.08717797887081347
+    ],
+    [
+      9.0,
+      0.20795454545454545,
+      0.0818535277187245
+    ]
+  ],
+  "exact_survivor_f1_f2_variance": [
+    [
+      "3",
+      "23/110",
+      "131/10000"
+    ],
+    [
+      "7/2",
+      "127/600",
+      "8/625"
+    ],
+    [
+      "4",
+      "91/440",
+      "11/1000"
+    ],
+    [
+      "5",
+      "467/2200",
+      "41/5000"
+    ],
+    [
+      "7",
+      "67/330",
+      "6/625"
+    ],
+    [
+      "8",
+      "1379/6600",
+      "19/2500"
+    ],
+    [
+      "9",
+      "183/880",
+      "67/10000"
+    ]
+  ],
+  "normalization": [
+    1575.0,
+    1.0,
+    0.5
+  ],
+  "reference": [
+    1.1,
+    1.1,
+    1.1
+  ],
+  "raw_hypervolume_saved": 0.9219268859076379,
+  "corrected_hypervolume": 0.921926885907638,
+  "hypervolume_delta": 1.1102230246251565e-16,
+  "corrected_spacing": 0.005706860389187572,
+  "scope": "Exact non-dominance among supplied saved schedule alternatives; no global optimality claim."
+}

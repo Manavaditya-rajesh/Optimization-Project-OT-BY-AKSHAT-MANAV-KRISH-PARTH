@@ -1,0 +1,111 @@
+{
+  "run": "results/enhancement_validation/runs/medium_1010_wall_time_original_enhanced_0.json",
+  "run_sha256": "aed6e9ad9a598c85c60a35c53ec0d8a1e64274c763ef43bef3fca30a4e305fca",
+  "instance_id": "medium_1010",
+  "size": "medium",
+  "method": "original_enhanced",
+  "protocol": "wall_time",
+  "solver_seed": 0,
+  "raw_archive_count": 7,
+  "exact_front_count": 7,
+  "exact_dominated_indices": [],
+  "exact_duplicate_indices": [],
+  "survivor_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "canonical_survivor_objectives": [
+    [
+      0.0,
+      0.19176706827309237,
+      0.10965856099730655
+    ],
+    [
+      0.5,
+      0.1931726907630522,
+      0.07762087348130012
+    ],
+    [
+      1.0,
+      0.1895582329317269,
+      0.1205197079319395
+    ],
+    [
+      1.5,
+      0.19397590361445782,
+      0.06726812023536856
+    ],
+    [
+      2.0,
+      0.18755020080321286,
+      0.09886859966642594
+    ],
+    [
+      3.0,
+      0.18755020080321286,
+      0.09367496997597598
+    ],
+    [
+      32.5,
+      0.1893574297188755,
+      0.09096702699330125
+    ]
+  ],
+  "exact_survivor_f1_f2_variance": [
+    [
+      "0",
+      "191/996",
+      "481/40000"
+    ],
+    [
+      "1/2",
+      "481/2490",
+      "241/40000"
+    ],
+    [
+      "1",
+      "236/1245",
+      "581/40000"
+    ],
+    [
+      "3/2",
+      "161/830",
+      "181/40000"
+    ],
+    [
+      "2",
+      "467/2490",
+      "391/40000"
+    ],
+    [
+      "3",
+      "467/2490",
+      "351/40000"
+    ],
+    [
+      "65/2",
+      "943/4980",
+      "331/40000"
+    ]
+  ],
+  "normalization": [
+    630.0,
+    1.0,
+    0.5
+  ],
+  "reference": [
+    1.1,
+    1.1,
+    1.1
+  ],
+  "raw_hypervolume_saved": 0.9686074427344614,
+  "corrected_hypervolume": 0.9686074427344615,
+  "hypervolume_delta": 1.1102230246251565e-16,
+  "corrected_spacing": 0.014088533390573203,
+  "scope": "Exact non-dominance among supplied saved schedule alternatives; no global optimality claim."
+}

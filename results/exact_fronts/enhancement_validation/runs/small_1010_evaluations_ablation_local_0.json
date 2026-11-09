@@ -1,0 +1,67 @@
+{
+  "run": "results/enhancement_validation/runs/small_1010_evaluations_ablation_local_0.json",
+  "run_sha256": "365ac229c0bcd88f815902721a948999cc774a26e1191255d2549cbdaba9e4a9",
+  "instance_id": "small_1010",
+  "size": "small",
+  "method": "ablation_local",
+  "protocol": "evaluations",
+  "solver_seed": 0,
+  "raw_archive_count": 3,
+  "exact_front_count": 3,
+  "exact_dominated_indices": [],
+  "exact_duplicate_indices": [],
+  "survivor_indices": [
+    0,
+    1,
+    2
+  ],
+  "canonical_survivor_objectives": [
+    [
+      0.0,
+      0.2636363636363636,
+      0.04714045207910317
+    ],
+    [
+      0.5,
+      0.2590909090909091,
+      0.04714045207910317
+    ],
+    [
+      3.0,
+      0.2545454545454545,
+      0.055277079839256664
+    ]
+  ],
+  "exact_survivor_f1_f2_variance": [
+    [
+      "0",
+      "29/110",
+      "1/450"
+    ],
+    [
+      "1/2",
+      "57/220",
+      "1/450"
+    ],
+    [
+      "3",
+      "14/55",
+      "11/3600"
+    ]
+  ],
+  "normalization": [
+    175.0,
+    1.0,
+    0.5
+  ],
+  "reference": [
+    1.1,
+    1.1,
+    1.1
+  ],
+  "raw_hypervolume_saved": 0.9351472318924384,
+  "corrected_hypervolume": 0.9351472318924385,
+  "hypervolume_delta": 1.1102230246251565e-16,
+  "corrected_spacing": 0.015993657245979422,
+  "scope": "Exact non-dominance among supplied saved schedule alternatives; no global optimality claim."
+}

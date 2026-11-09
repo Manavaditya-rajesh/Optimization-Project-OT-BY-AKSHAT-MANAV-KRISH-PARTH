@@ -1,0 +1,56 @@
+{
+  "run": "results/enhancement_validation/runs/medium_1030_wall_time_original_enhanced_0.json",
+  "run_sha256": "cd2164d43753a2675e6428ce6513befd671489169ef070500e6fe1ffee9d830d",
+  "instance_id": "medium_1030",
+  "size": "medium",
+  "method": "original_enhanced",
+  "protocol": "wall_time",
+  "solver_seed": 0,
+  "raw_archive_count": 2,
+  "exact_front_count": 2,
+  "exact_dominated_indices": [],
+  "exact_duplicate_indices": [],
+  "survivor_indices": [
+    0,
+    1
+  ],
+  "canonical_survivor_objectives": [
+    [
+      0.0,
+      0.19036144578313252,
+      0.09367496997597598
+    ],
+    [
+      0.5,
+      0.19678714859437751,
+      0.0634428877022476
+    ]
+  ],
+  "exact_survivor_f1_f2_variance": [
+    [
+      "0",
+      "79/415",
+      "351/40000"
+    ],
+    [
+      "1/2",
+      "49/249",
+      "161/40000"
+    ]
+  ],
+  "normalization": [
+    630.0,
+    1.0,
+    0.5
+  ],
+  "reference": [
+    1.1,
+    1.1,
+    1.1
+  ],
+  "raw_hypervolume_saved": 0.9732297178910408,
+  "corrected_hypervolume": 0.9732297178910408,
+  "hypervolume_delta": 0.0,
+  "corrected_spacing": 0.0,
+  "scope": "Exact non-dominance among supplied saved schedule alternatives; no global optimality claim."
+}

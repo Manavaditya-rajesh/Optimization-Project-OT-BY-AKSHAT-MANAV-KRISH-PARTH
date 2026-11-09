@@ -1,0 +1,56 @@
+{
+  "run": "results/benchmark/runs/small_10_seeded_3.json",
+  "run_sha256": "acc1d035092c9c62223112f8341ea404ced4c6323de43ab79e56ef18bf3b966b",
+  "instance_id": "small_10",
+  "size": "small",
+  "method": "seeded",
+  "protocol": "evaluations",
+  "solver_seed": 3,
+  "raw_archive_count": 2,
+  "exact_front_count": 2,
+  "exact_dominated_indices": [],
+  "exact_duplicate_indices": [],
+  "survivor_indices": [
+    0,
+    1
+  ],
+  "canonical_survivor_objectives": [
+    [
+      0.0,
+      0.2545454545454545,
+      0.06871842709362767
+    ],
+    [
+      5.5,
+      0.2681818181818182,
+      0.04714045207910317
+    ]
+  ],
+  "exact_survivor_f1_f2_variance": [
+    [
+      "0",
+      "14/55",
+      "17/3600"
+    ],
+    [
+      "11/2",
+      "59/220",
+      "1/450"
+    ]
+  ],
+  "normalization": [
+    175.0,
+    1.0,
+    0.5
+  ],
+  "reference": [
+    1.1,
+    1.1,
+    1.1
+  ],
+  "raw_hypervolume_saved": 0.9335432000459589,
+  "corrected_hypervolume": 0.933543200045959,
+  "hypervolume_delta": 1.1102230246251565e-16,
+  "corrected_spacing": 0.0,
+  "scope": "Exact non-dominance among supplied saved schedule alternatives; no global optimality claim."
+}

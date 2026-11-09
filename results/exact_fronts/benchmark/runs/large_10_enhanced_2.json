@@ -1,0 +1,111 @@
+{
+  "run": "results/benchmark/runs/large_10_enhanced_2.json",
+  "run_sha256": "ba874fb286ce90be220e2eff0f54c2386d39dc7eb383fd3e504a8b0a6029398f",
+  "instance_id": "large_10",
+  "size": "large",
+  "method": "enhanced",
+  "protocol": "evaluations",
+  "solver_seed": 2,
+  "raw_archive_count": 7,
+  "exact_front_count": 7,
+  "exact_dominated_indices": [],
+  "exact_duplicate_indices": [],
+  "survivor_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "canonical_survivor_objectives": [
+    [
+      3.0,
+      0.21454545454545454,
+      0.10148891565092219
+    ],
+    [
+      4.5,
+      0.21053030303030304,
+      0.09643650760992954
+    ],
+    [
+      6.5,
+      0.20901515151515151,
+      0.0916515138991168
+    ],
+    [
+      12.5,
+      0.21053030303030304,
+      0.08602325267042626
+    ],
+    [
+      70.0,
+      0.2081060606060606,
+      0.16431676725154984
+    ],
+    [
+      80.5,
+      0.20863636363636365,
+      0.14212670403551894
+    ],
+    [
+      81.0,
+      0.2078030303030303,
+      0.1673320053068151
+    ]
+  ],
+  "exact_survivor_f1_f2_variance": [
+    [
+      "3",
+      "59/275",
+      "103/10000"
+    ],
+    [
+      "9/2",
+      "2779/13200",
+      "93/10000"
+    ],
+    [
+      "13/2",
+      "2759/13200",
+      "21/2500"
+    ],
+    [
+      "25/2",
+      "2779/13200",
+      "37/5000"
+    ],
+    [
+      "70",
+      "2747/13200",
+      "27/1000"
+    ],
+    [
+      "161/2",
+      "459/2200",
+      "101/5000"
+    ],
+    [
+      "81",
+      "2743/13200",
+      "7/250"
+    ]
+  ],
+  "normalization": [
+    1575.0,
+    1.0,
+    0.5
+  ],
+  "reference": [
+    1.1,
+    1.1,
+    1.1
+  ],
+  "raw_hypervolume_saved": 0.9087848157885177,
+  "corrected_hypervolume": 0.9087848157885177,
+  "hypervolume_delta": 0.0,
+  "corrected_spacing": 0.014341460849950752,
+  "scope": "Exact non-dominance among supplied saved schedule alternatives; no global optimality claim."
+}

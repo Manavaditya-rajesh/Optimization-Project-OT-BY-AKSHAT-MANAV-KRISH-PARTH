@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "counts": {
+    "files": 2953,
+    "json_files": 835,
+    "png_images": 106,
+    "markdown_files": 73
+  },
+  "pdfs": {
+    "report/final_report.pdf": {
+      "pages": 21,
+      "words_outside_margin": []
+    },
+    "presentation/college_timetable_optimization.pdf": {
+      "pages": 21,
+      "words_outside_margin": []
+    }
+  },
+  "presentation_slides": 21,
+  "notes_slides": 21,
+  "report_numbered_sections": 19,
+  "broken_links": [],
+  "presentation_evidence_hashes": "PASS",
+  "frozen_source_files_unchanged": 19,
+  "original_measured_artifacts_unchanged": true
+}

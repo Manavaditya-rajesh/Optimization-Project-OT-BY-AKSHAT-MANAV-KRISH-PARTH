@@ -1,0 +1,133 @@
+{
+  "run": "results/enhancement_validation/runs/medium_1010_evaluations_original_enhanced_2.json",
+  "run_sha256": "1f2cbc03faf044cd364d5b3641a509cfbc52210519de39c9669ead4941337c4f",
+  "instance_id": "medium_1010",
+  "size": "medium",
+  "method": "original_enhanced",
+  "protocol": "evaluations",
+  "solver_seed": 2,
+  "raw_archive_count": 9,
+  "exact_front_count": 9,
+  "exact_dominated_indices": [],
+  "exact_duplicate_indices": [],
+  "survivor_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "canonical_survivor_objectives": [
+    [
+      0.0,
+      0.1893574297188755,
+      0.10965856099730655
+    ],
+    [
+      0.5,
+      0.1789156626506024,
+      0.12359207094308275
+    ],
+    [
+      0.5,
+      0.19497991967871486,
+      0.10136567466356645
+    ],
+    [
+      0.5,
+      0.20040160642570282,
+      0.08674675786448736
+    ],
+    [
+      0.5,
+      0.20140562248995983,
+      0.07433034373659253
+    ],
+    [
+      1.0,
+      0.20763052208835342,
+      0.06726812023536856
+    ],
+    [
+      2.0,
+      0.1893574297188755,
+      0.088175960442742
+    ],
+    [
+      5.5,
+      0.1821285140562249,
+      0.11412712210513327
+    ],
+    [
+      39.5,
+      0.19598393574297188,
+      0.08381527307120105
+    ]
+  ],
+  "exact_survivor_f1_f2_variance": [
+    [
+      "0",
+      "943/4980",
+      "481/40000"
+    ],
+    [
+      "1/2",
+      "297/1660",
+      "611/40000"
+    ],
+    [
+      "1/2",
+      "971/4980",
+      "411/40000"
+    ],
+    [
+      "1/2",
+      "499/2490",
+      "301/40000"
+    ],
+    [
+      "1/2",
+      "1003/4980",
+      "221/40000"
+    ],
+    [
+      "1",
+      "517/2490",
+      "181/40000"
+    ],
+    [
+      "2",
+      "943/4980",
+      "311/40000"
+    ],
+    [
+      "11/2",
+      "907/4980",
+      "521/40000"
+    ],
+    [
+      "79/2",
+      "244/1245",
+      "281/40000"
+    ]
+  ],
+  "normalization": [
+    630.0,
+    1.0,
+    0.5
+  ],
+  "reference": [
+    1.1,
+    1.1,
+    1.1
+  ],
+  "raw_hypervolume_saved": 0.9763759026966774,
+  "corrected_hypervolume": 0.9763759026966774,
+  "hypervolume_delta": 0.0,
+  "corrected_spacing": 0.017259397729509265,
+  "scope": "Exact non-dominance among supplied saved schedule alternatives; no global optimality claim."
+}

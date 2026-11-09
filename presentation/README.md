@@ -25,6 +25,7 @@ the repository root, use an environment with these optional presentation librari
 
 ```bash
 python -m pip install -r presentation/requirements.txt
+python experiments/exact_fronts.py --study enhancement_validation
 python presentation/build_presentation.py
 ```
 
@@ -32,6 +33,12 @@ The build uses python-pptx, Matplotlib and Pillow. PDF conversion requires
 LibreOffice (`soffice`) on PATH; previews and checks also require Poppler tools
 (`pdfinfo`, `pdftotext`, `pdftoppm`). These were already installed in the cloud
 environment. Their use is separate from the core optimizer requirements.
+Exact rational front cleanup is mandatory before reporting: floating workload SD
+pseudo-ties caused 53 dominated follow-up points to be retained in the raw
+archives. The exact reporting fronts retain 3,242 points from 3,295 feasible raw
+schedules; raw schedules, frozen code and measured timings remain unchanged.
+See [numerical precision](../docs/numerical_precision.md).
+
 The builder reads saved measurements and creates presentation artifacts only;
 it never runs an optimizer or changes experimental records.
 

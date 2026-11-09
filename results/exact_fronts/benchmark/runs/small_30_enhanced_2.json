@@ -1,0 +1,122 @@
+{
+  "run": "results/benchmark/runs/small_30_enhanced_2.json",
+  "run_sha256": "a5785a860ba22703ccb3b09337f9f771c15021d1c21b9b3f67628f5532a4c6a9",
+  "instance_id": "small_30",
+  "size": "small",
+  "method": "enhanced",
+  "protocol": "evaluations",
+  "solver_seed": 2,
+  "raw_archive_count": 8,
+  "exact_front_count": 8,
+  "exact_dominated_indices": [],
+  "exact_duplicate_indices": [],
+  "survivor_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "canonical_survivor_objectives": [
+    [
+      0.0,
+      0.2545454545454545,
+      0.12133516482134196
+    ],
+    [
+      0.0,
+      0.2606060606060606,
+      0.06871842709362767
+    ],
+    [
+      0.0,
+      0.27575757575757576,
+      0.055277079839256664
+    ],
+    [
+      0.5,
+      0.2545454545454545,
+      0.06871842709362767
+    ],
+    [
+      3.0,
+      0.27424242424242423,
+      0.04714045207910317
+    ],
+    [
+      8.0,
+      0.26515151515151514,
+      0.04714045207910317
+    ],
+    [
+      10.5,
+      0.2606060606060606,
+      0.055277079839256664
+    ],
+    [
+      11.0,
+      0.2545454545454545,
+      0.055277079839256664
+    ]
+  ],
+  "exact_survivor_f1_f2_variance": [
+    [
+      "0",
+      "14/55",
+      "53/3600"
+    ],
+    [
+      "0",
+      "43/165",
+      "17/3600"
+    ],
+    [
+      "0",
+      "91/330",
+      "11/3600"
+    ],
+    [
+      "1/2",
+      "14/55",
+      "17/3600"
+    ],
+    [
+      "3",
+      "181/660",
+      "1/450"
+    ],
+    [
+      "8",
+      "35/132",
+      "1/450"
+    ],
+    [
+      "21/2",
+      "43/165",
+      "11/3600"
+    ],
+    [
+      "11",
+      "14/55",
+      "11/3600"
+    ]
+  ],
+  "normalization": [
+    175.0,
+    1.0,
+    0.5
+  ],
+  "reference": [
+    1.1,
+    1.1,
+    1.1
+  ],
+  "raw_hypervolume_saved": 0.9348605147288807,
+  "corrected_hypervolume": 0.9348605147288808,
+  "hypervolume_delta": 1.1102230246251565e-16,
+  "corrected_spacing": 0.03368161072542035,
+  "scope": "Exact non-dominance among supplied saved schedule alternatives; no global optimality claim."
+}

@@ -1,5 +1,14 @@
 {
   "source_sha256": "7ad242177abf49f65dfd192b3ecad6fe614644abf76413b39099aa897ddd854c",
+  "numerical_precision": {
+    "runs": 168,
+    "raw_archived_schedules": 3295,
+    "exact_front_survivors": 3242,
+    "exact_dominated_points": 53,
+    "exact_duplicate_points": 0,
+    "affected_runs": 36,
+    "max_absolute_hypervolume_change": 3.3306690738754696e-16
+  },
   "primary_gains_percent": [
     [
       "medium",
@@ -63,6 +72,7 @@
     "results/enhancement_validation/manifest.json": "6bdfc5e8c3ab92807b27dac3c0c56034f49d2f89bb15c4f09aafa4ed1d2557fe",
     "results/enhancement_validation/representatives.json": "c696072f1a622c474c44d3bd8af1b19e1d18a23f8a7a16d6d9e98f166df4f27e",
     "results/enhancement_validation/small_ideal_certificates.json": "351a2cb5d7c7aa4e32edb8a3e2d5a41dfe2281034dc09f30c88acd43c0502154",
-    "results/exact_micro/room/exact_front.json": "e41ca42885c2722ec8f1585fb3429d67330b7c83177441a61777b99b8a382f47"
+    "results/exact_micro/room/exact_front.json": "e41ca42885c2722ec8f1585fb3429d67330b7c83177441a61777b99b8a382f47",
+    "results/exact_fronts/enhancement_validation/summary.json": "4861884a56f220331176e35ab47f0b73c6a4977b38af370f495c6bed12736fd9"
   }
 }

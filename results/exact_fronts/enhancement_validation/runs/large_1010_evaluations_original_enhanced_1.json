@@ -1,0 +1,100 @@
+{
+  "run": "results/enhancement_validation/runs/large_1010_evaluations_original_enhanced_1.json",
+  "run_sha256": "8b15f3a1bfeca702cd5329189090c1a1e597ee12bf0352c049a5f0583e2e16d1",
+  "instance_id": "large_1010",
+  "size": "large",
+  "method": "original_enhanced",
+  "protocol": "evaluations",
+  "solver_seed": 1,
+  "raw_archive_count": 6,
+  "exact_front_count": 6,
+  "exact_dominated_indices": [],
+  "exact_duplicate_indices": [],
+  "survivor_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "canonical_survivor_objectives": [
+    [
+      4.5,
+      0.20772727272727273,
+      0.08306623862918075
+    ],
+    [
+      5.0,
+      0.20666666666666667,
+      0.1004987562112089
+    ],
+    [
+      6.0,
+      0.20583333333333334,
+      0.08774964387392122
+    ],
+    [
+      6.0,
+      0.20643939393939395,
+      0.08660254037844387
+    ],
+    [
+      7.5,
+      0.20477272727272727,
+      0.10583005244258362
+    ],
+    [
+      12.5,
+      0.20522727272727273,
+      0.08602325267042626
+    ]
+  ],
+  "exact_survivor_f1_f2_variance": [
+    [
+      "9/2",
+      "457/2200",
+      "69/10000"
+    ],
+    [
+      "5",
+      "31/150",
+      "101/10000"
+    ],
+    [
+      "6",
+      "247/1200",
+      "77/10000"
+    ],
+    [
+      "6",
+      "109/528",
+      "3/400"
+    ],
+    [
+      "15/2",
+      "901/4400",
+      "7/625"
+    ],
+    [
+      "25/2",
+      "903/4400",
+      "37/5000"
+    ]
+  ],
+  "normalization": [
+    1575.0,
+    1.0,
+    0.5
+  ],
+  "reference": [
+    1.1,
+    1.1,
+    1.1
+  ],
+  "raw_hypervolume_saved": 0.9171954781502692,
+  "corrected_hypervolume": 0.9171954781502695,
+  "hypervolume_delta": 2.220446049250313e-16,
+  "corrected_spacing": 0.0051163975639019615,
+  "scope": "Exact non-dominance among supplied saved schedule alternatives; no global optimality claim."
+}

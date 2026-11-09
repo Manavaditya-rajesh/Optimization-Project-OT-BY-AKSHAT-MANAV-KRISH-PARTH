@@ -1,0 +1,100 @@
+{
+  "run": "results/benchmark/runs/small_10_seeded_2.json",
+  "run_sha256": "f61cfd71d844b31eca6c15513814786a127189266639d12ade59af6c3a01f25a",
+  "instance_id": "small_10",
+  "size": "small",
+  "method": "seeded",
+  "protocol": "evaluations",
+  "solver_seed": 2,
+  "raw_archive_count": 6,
+  "exact_front_count": 6,
+  "exact_dominated_indices": [],
+  "exact_duplicate_indices": [],
+  "survivor_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "canonical_survivor_objectives": [
+    [
+      0.0,
+      0.2545454545454545,
+      0.10274023338281628
+    ],
+    [
+      0.0,
+      0.2590909090909091,
+      0.06871842709362767
+    ],
+    [
+      0.0,
+      0.26515151515151514,
+      0.04714045207910317
+    ],
+    [
+      0.5,
+      0.2545454545454545,
+      0.08975274678557507
+    ],
+    [
+      0.5,
+      0.2636363636363636,
+      0.04714045207910317
+    ],
+    [
+      2.0,
+      0.2545454545454545,
+      0.07453559924999299
+    ]
+  ],
+  "exact_survivor_f1_f2_variance": [
+    [
+      "0",
+      "14/55",
+      "19/1800"
+    ],
+    [
+      "0",
+      "57/220",
+      "17/3600"
+    ],
+    [
+      "0",
+      "35/132",
+      "1/450"
+    ],
+    [
+      "1/2",
+      "14/55",
+      "29/3600"
+    ],
+    [
+      "1/2",
+      "29/110",
+      "1/450"
+    ],
+    [
+      "2",
+      "14/55",
+      "1/180"
+    ]
+  ],
+  "normalization": [
+    175.0,
+    1.0,
+    0.5
+  ],
+  "reference": [
+    1.1,
+    1.1,
+    1.1
+  ],
+  "raw_hypervolume_saved": 0.9348269227490641,
+  "corrected_hypervolume": 0.9348269227490643,
+  "hypervolume_delta": 2.220446049250313e-16,
+  "corrected_spacing": 0.012327182182393252,
+  "scope": "Exact non-dominance among supplied saved schedule alternatives; no global optimality claim."
+}

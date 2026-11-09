@@ -1,0 +1,45 @@
+{
+  "run": "results/benchmark/runs/medium_20_seeded_0.json",
+  "run_sha256": "5df4e1e06da0eeb757c4ab814fd16af4282125ca3db5073ea6a7917899274758",
+  "instance_id": "medium_20",
+  "size": "medium",
+  "method": "seeded",
+  "protocol": "evaluations",
+  "solver_seed": 0,
+  "raw_archive_count": 1,
+  "exact_front_count": 1,
+  "exact_dominated_indices": [],
+  "exact_duplicate_indices": [],
+  "survivor_indices": [
+    0
+  ],
+  "canonical_survivor_objectives": [
+    [
+      0.0,
+      0.1823293172690763,
+      0.055
+    ]
+  ],
+  "exact_survivor_f1_f2_variance": [
+    [
+      "0",
+      "227/1245",
+      "121/40000"
+    ]
+  ],
+  "normalization": [
+    630.0,
+    1.0,
+    0.5
+  ],
+  "reference": [
+    1.1,
+    1.1,
+    1.1
+  ],
+  "raw_hypervolume_saved": 0.9993433734939763,
+  "corrected_hypervolume": 0.9993433734939763,
+  "hypervolume_delta": 0.0,
+  "corrected_spacing": null,
+  "scope": "Exact non-dominance among supplied saved schedule alternatives; no global optimality claim."
+}

@@ -1,0 +1,86 @@
+{
+  "audit": "independent read-only core oracle",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "git_revision": "3ca05148d1245e08575d9e2b7499e0d825d802af",
+  "script_sha256": "a3c164f671a2b25fca7ca45b4417a79bca5589652bd19689ca6bbfabe6e19af1",
+  "source_sha256": {
+    "src/timetable/model.py": "74a9f9edaa8754e901a9f590103de490627c2ad0c21b1dc4eb917b7d1f07dc80",
+    "src/timetable/generation.py": "c21953f284a2bdd61539b6344ef10529d1f3bfd6382631fa2718a75f47dad3dd",
+    "src/timetable/evaluation.py": "9ab54ad471a35bc7add36c5abea86f60364c2cf537a351d82bc1da28438f492f",
+    "src/timetable/feasible.py": "5e6fbe06a604e4189c51e55187d9fe4ed63d391de5fa1f0eace4c6874a716721",
+    "src/timetable/faculty_search.py": "dd2505ab5918ae1f992a621b3cd6c2a9f860c611aedd656cca27d2ac8d7a3e2d"
+  },
+  "evaluator_oracle": {
+    "random_seed": 93454,
+    "random_candidates": 8000,
+    "random_feasible": 4,
+    "domain_candidates": 131072,
+    "domain_feasible": 5064,
+    "feasibility_mismatches": 0,
+    "objective_mismatches": 0,
+    "total_candidates": 139072,
+    "total_feasible_objective_checks": 5068
+  },
+  "faculty_exhaustive": [
+    {
+      "seed": 9311,
+      "enumerated_assignments": 729,
+      "feasible_assignments": 8,
+      "initial_sd": 0.282842712474619,
+      "exhaustive_min_sd": 5.551115123125783e-17,
+      "returned_sd": 5.551115123125783e-17,
+      "branch_nodes": 8,
+      "complete_assignments": 1,
+      "optimal_within_selected": true
+    },
+    {
+      "seed": 9312,
+      "enumerated_assignments": 729,
+      "feasible_assignments": 48,
+      "initial_sd": 0.282842712474619,
+      "exhaustive_min_sd": 5.551115123125783e-17,
+      "returned_sd": 5.551115123125783e-17,
+      "branch_nodes": 7,
+      "complete_assignments": 1,
+      "optimal_within_selected": true
+    },
+    {
+      "seed": 9313,
+      "enumerated_assignments": 729,
+      "feasible_assignments": 60,
+      "initial_sd": 0.282842712474619,
+      "exhaustive_min_sd": 5.551115123125783e-17,
+      "returned_sd": 5.551115123125783e-17,
+      "branch_nodes": 7,
+      "complete_assignments": 1,
+      "optimal_within_selected": true
+    }
+  ],
+  "multiple_lunch": [
+    {
+      "seed": 9321,
+      "periods_per_day": 9,
+      "lunch_periods": [
+        3,
+        6
+      ],
+      "proposals_checked": 100,
+      "changed_proposals": 83,
+      "invalid_proposals": 0
+    },
+    {
+      "seed": 9322,
+      "periods_per_day": 9,
+      "lunch_periods": [
+        3,
+        6
+      ],
+      "proposals_checked": 100,
+      "changed_proposals": 81,
+      "invalid_proposals": 0
+    }
+  ],
+  "source_unchanged_during_run": true,
+  "passed": true
+}

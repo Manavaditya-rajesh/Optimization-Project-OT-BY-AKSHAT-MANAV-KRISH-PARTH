@@ -1,0 +1,78 @@
+{
+  "run": "results/enhancement_validation/runs/medium_1020_wall_time_original_enhanced_1.json",
+  "run_sha256": "d5bffaeb8231ac1394ef866fe3de08b26774686184029291668a4d8d0ef4984b",
+  "instance_id": "medium_1020",
+  "size": "medium",
+  "method": "original_enhanced",
+  "protocol": "wall_time",
+  "solver_seed": 1,
+  "raw_archive_count": 4,
+  "exact_front_count": 4,
+  "exact_dominated_indices": [],
+  "exact_duplicate_indices": [],
+  "survivor_indices": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "canonical_survivor_objectives": [
+    [
+      0.0,
+      0.18654618473895582,
+      0.0852936105461599
+    ],
+    [
+      0.5,
+      0.20943775100401607,
+      0.07088723439378912
+    ],
+    [
+      2.0,
+      0.192570281124498,
+      0.07433034373659253
+    ],
+    [
+      2.5,
+      0.18493975903614457,
+      0.09630680142129111
+    ]
+  ],
+  "exact_survivor_f1_f2_variance": [
+    [
+      "0",
+      "929/4980",
+      "291/40000"
+    ],
+    [
+      "1/2",
+      "1043/4980",
+      "201/40000"
+    ],
+    [
+      "2",
+      "959/4980",
+      "221/40000"
+    ],
+    [
+      "5/2",
+      "307/1660",
+      "371/40000"
+    ]
+  ],
+  "normalization": [
+    630.0,
+    1.0,
+    0.5
+  ],
+  "reference": [
+    1.1,
+    1.1,
+    1.1
+  ],
+  "raw_hypervolume_saved": 0.9640816383912763,
+  "corrected_hypervolume": 0.9640816383912764,
+  "hypervolume_delta": 1.1102230246251565e-16,
+  "corrected_spacing": 0.00084663825613098,
+  "scope": "Exact non-dominance among supplied saved schedule alternatives; no global optimality claim."
+}

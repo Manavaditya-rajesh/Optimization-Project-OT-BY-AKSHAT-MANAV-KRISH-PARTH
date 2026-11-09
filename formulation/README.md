@@ -27,7 +27,7 @@ Every event occupies a contiguous block on one day. For start $s=(d,p)$, let $B_
 Define the static candidate domain
 
 $$
-A_e=\{(s,r,f): B_e(s)\subseteq T\setminus(D\times L),\;B_e(s)\text{ lies in one day},\;c_r\ge n_e,\;q_r=q_e,\;f\in F_{k(e)},\; B_e(s)\cap(U_r\cup U_f)=\varnothing\}.
+A_e=\{(s,r,f)\in T\times R\times F: B_e(s)\subseteq T\setminus(D\times L),\;B_e(s)\text{ lies in one day},\;c_r\ge n_e,\;q_r=q_e,\;f\in F_{k(e)},\; B_e(s)\cap(U_r\cup U_f)=\varnothing\}.
 $$
 
 This domain filters individual placement restrictions. It does not remove interactions with other events. Empty domains are valid evidence of infeasibility, rather than a reason to invent a placement.
@@ -42,6 +42,8 @@ meaning event $e$ starts at $s$, in room $r$, taught by $f$, and offering assign
 
 $$y_{k,f}\in\{0,1\}\quad(f\in F_k).$$
 
+For unambiguous summation, write a candidate as $q=(s_q,r_q,f_q)\in A_e$ and abbreviate $z_{e,q}=z_{e,s_q,r_q,f_q}$. A sum over $q$ includes all joint alternatives satisfying its displayed filters; any separately quantified room $r$ or faculty $f$ is held fixed.
+
 A teacher is selected **per offering**, and all its weekly sessions share that teacher. This makes workload a genuine decision whenever eligibility permits alternatives; changing only event times cannot change total weekly teaching load. The heuristic representation is equivalent: one `(start, room)` placement per event, plus one eligible faculty ID per offering. Event IDs and ordering are derived deterministically from offering session counts; there is no independent mutable list of required events that could omit a lecture silently.
 
 The joint formulation replaces the proposal's bilinear term $y_{k(e),f}\operatorname{occ}_e(t)$. It gives a finite binary feasibility model directly, without treating a product of decisions as a linear expression. The expanded model can be large; the evolutionary solver uses the compact categorical representation.
@@ -50,25 +52,25 @@ The joint formulation replaces the proposal's bilinear term $y_{k(e),f}\operator
 
 **C1 — Required sessions and one consistent eligible teacher.**
 
-$$\sum_{(s,r,f)\in A_e}z_{e,s,r,f}=1\quad(e\in E),\qquad \sum_{f\in F_k}y_{k,f}=1\quad(k\in K).$$
+$$\sum_{q\in A_e}z_{e,q}=1\quad(e\in E),\qquad \sum_{f\in F_k}y_{k,f}=1\quad(k\in K).$$
 
 For every $e\in E_k$ and $f\in F_k$,
 
-$$\sum_{(s,r,f)\in A_e}z_{e,s,r,f}=y_{k,f}.$$
+$$\sum_{q\in A_e:\ f_q=f}z_{e,q}=y_{k,f}.$$
 
 An empty sum is zero. The latter equation couples every event to the same offering-level faculty assignment. Sessions cannot be dropped, duplicated, split across teachers, or assigned to ineligible faculty.
 
 **C2 — Room clashes.** For every room $r$ and period $t$,
 
-$$\sum_e\sum_{(s,r,f)\in A_e:\;t\in B_e(s)}z_{e,s,r,f}\le1.$$
+$$\sum_e\sum_{q\in A_e:\ r_q=r,\ t\in B_e(s_q)}z_{e,q}\le1.$$
 
 **C3 — Faculty clashes.** For every faculty member $f$ and period $t$,
 
-$$\sum_e\sum_{(s,r,f)\in A_e:\;t\in B_e(s)}z_{e,s,r,f}\le1.$$
+$$\sum_e\sum_{q\in A_e:\ f_q=f,\ t\in B_e(s_q)}z_{e,q}\le1.$$
 
 **C4 — Student clashes.** For every atomic group $g$ and period $t$,
 
-$$\sum_{e:g\in G_e}\sum_{(s,r,f)\in A_e:\;t\in B_e(s)}z_{e,s,r,f}\le1.$$
+$$\sum_{e:g\in G_e}\sum_{q\in A_e:\ t\in B_e(s_q)}z_{e,q}\le1.$$
 
 These sums cover **every occupied period**, including the second or later period of a laboratory.
 
@@ -80,13 +82,13 @@ $$L_f=\sum_{k:f\in F_k}w_k y_{k,f}\le H_f\quad(f\in F).$$
 
 For each $f,d$,
 
-$$\sum_e\sum_{(s,r,f)\in A_e:\;d(s)=d}\ell_e z_{e,s,r,f}\le h_f.$$
+$$\sum_e\sum_{q\in A_e:\ f_q=f,\ d(s_q)=d}\ell_e z_{e,q}\le h_f.$$
 
 Limits count periods, not sessions: a two-period lab consumes two units of load. There is no requirement to fill every faculty member's allowance.
 
 **C8 — Distinct teaching days when requested.** For every $k$ with $a_k=1$ and every day $d$,
 
-$$\sum_{e\in E_k}\sum_{(s,r,f)\in A_e:\;d(s)=d}z_{e,s,r,f}\le1.$$
+$$\sum_{e\in E_k}\sum_{q\in A_e:\ d(s_q)=d}z_{e,q}\le1.$$
 
 The flag is `Offering.distinct_days`; it is normally enabled for repeated theory sessions. When enabled for a lab or another offering, the same rule applies. This is a configurable hard rule rather than an assumed preference.
 
@@ -112,7 +114,7 @@ An exact binary implementation can define `before` as the OR of occupancies up t
 
 With constant total demand $Q=\sum_e\ell_e$,
 
-$$f_2=\frac1Q\sum_e\sum_{(s,r,f)\in A_e}\ell_e\left(\frac{c_r-n_e}{c_r}\right)z_{e,s,r,f}.$$
+$$f_2=\frac1Q\sum_e\sum_{q\in A_e}\ell_e\left(\frac{c_{r_q}-n_e}{c_{r_q}}\right)z_{e,q}.$$
 
 On feasible schedules, $0\le f_2<1$. For the degenerate empty-demand test case, the code defines this objective as zero rather than dividing by zero. This measures seat wastage **during scheduled use**, weighted by session duration. It does not measure how many room-hours are unused across the campus, nor total unused seat-hours, and it does not reward cancelling classes. The denominator remains fixed across solutions.
 
@@ -124,7 +126,7 @@ $$f_3=\sqrt{\frac1m\sum_{f\in F}(\rho_f-\bar\rho)^2}.$$
 
 All listed faculty are included, even if their current load is zero. For the degenerate empty-faculty/empty-demand test case, the code defines imbalance as zero; a nonempty offering with no eligible teacher remains infeasible. Under the hard limits $\rho_f\in[0,1]$, so $f_3\le1/2$. Relative loads recognize unequal teaching allowances; they do not model research, administration, or differences in class preparation effort. Shared eligibility lets an entire offering move between teachers. Individual sessions cannot be reassigned independently to make this metric appear more variable. With fixed teachers or singleton eligibility sets, $f_3$ can become constant; the system should report that degeneracy instead of claiming a three-way trade-off.
 
-No weights combine these three objectives for NSGA-II. Its output is an approximation of the feasible non-dominated set. Globally Pareto-optimal means non-dominated over **all feasible schedules**; a heuristic archive supplies non-domination only over the schedules discovered.
+NSGA-II ranking and survival compare the three objectives separately. Heuristic weighted scores may guide construction or local proposals without replacing the objective vector used for Pareto selection and reporting. The search output approximates the feasible non-dominated set. Globally Pareto-optimal means non-dominated over **all feasible schedules**. Exact cleanup certifies non-domination only among saved archive alternatives; the legacy timed algorithms use floating-point comparisons and need the numerical qualification in Section 6.1.
 
 ## 5. Why a trade-off is possible, and why it must be measured
 
@@ -166,6 +168,21 @@ Constrained dominance follows the standard feasibility rule:
 - Between feasible candidates, $u$ dominates $v$ iff $u_i\le v_i$ for all objectives and $u_j<v_j$ for at least one.
 
 Infeasible candidates may be retained internally to help search, but are excluded from timetable exports, feasible fronts, hypervolume, and claims of usable schedules. Objective values attached to infeasible candidates are diagnostics; they do not establish better timetables.
+
+### 6.1 Numerical precision and reporting
+
+The mathematical dominance definition is exact. Legacy timed search archives instead compare floating-point objective values. An exact-rational audit found 10 dominated saved points in the historical archives and 53 in the final validation archives, primarily because equal exact workload variances produced slightly different floating-point SD values. Every affected timetable remains feasible. Raw archive cardinality and strict mathematical front cardinality must therefore be distinguished.
+
+The separate `experiments/exact_fronts.py` postprocessor compares exact gap, room-waste, and workload-variance keys. For $C=\operatorname{lcm}_{r\in R}c_r$, $D_H=\operatorname{lcm}_{f\in F}H_f$, and $z_f=L_f(D_H/H_f)$,
+
+$$f_2=\frac{\sum_e\ell_e(c_{r(e)}-n_e)(C/c_{r(e)})}{C\sum_e\ell_e},\qquad
+f_3^2=\frac{|F|\sum_f z_f^2-(\sum_f z_f)^2}{|F|^2D_H^2}.$$
+
+The quantities are rational and comparisons are exact; square root is strictly increasing for nonnegative variance, so ordering $f_3^2$ is equivalent to ordering $f_3$. The fixed faculty-gap weight 0.5 gives an exact half-integer gap key. Canonical numeric SD is generated only after exact comparison for display and indicator calculation.
+
+Cleanup leaves 759 historical and 3,242 final non-dominated saved alternatives, while the original 769/3,295 raw feasible schedule records remain unchanged. The maximum per-run HV difference is approximately 3.33e-16 and all published rounded gains remain unchanged. Postprocessing is outside the recorded optimizer runtime. It certifies a front among the **saved candidates**, not every evaluated candidate or the complete feasible space; it cannot recover discarded schedules. Exact global small-instance certificates are independent proofs and remain valid.
+
+Use `python experiments/exact_fronts.py --study enhancement_validation` or `--study benchmark` for the retained studies. For a new run, use `--run RUN.JSON --instance INSTANCE.JSON --output FRONT.JSON`; the output includes full surviving schedules and original survivor indices. The [final report](../report/report.md) gives complete validation/export commands, and [the numerical-precision notes](../docs/numerical_precision.md) describe the artifact policy.
 
 ## 7. Classification, assumptions, and limits
 

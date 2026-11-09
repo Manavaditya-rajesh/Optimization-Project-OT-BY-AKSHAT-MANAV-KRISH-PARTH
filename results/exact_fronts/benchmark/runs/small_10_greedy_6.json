@@ -1,0 +1,45 @@
+{
+  "run": "results/benchmark/runs/small_10_greedy_6.json",
+  "run_sha256": "b78296732b9484e33f1cdfff0ebbfb5a1c9fd1dea0c55f935bcaabbc6f2e6437",
+  "instance_id": "small_10",
+  "size": "small",
+  "method": "greedy",
+  "protocol": "evaluations",
+  "solver_seed": 6,
+  "raw_archive_count": 1,
+  "exact_front_count": 1,
+  "exact_dominated_indices": [],
+  "exact_duplicate_indices": [],
+  "survivor_indices": [
+    0
+  ],
+  "canonical_survivor_objectives": [
+    [
+      0.0,
+      0.2545454545454545,
+      0.04714045207910317
+    ]
+  ],
+  "exact_survivor_f1_f2_variance": [
+    [
+      "0",
+      "14/55",
+      "1/450"
+    ]
+  ],
+  "normalization": [
+    175.0,
+    1.0,
+    0.5
+  ],
+  "reference": [
+    1.1,
+    1.1,
+    1.1
+  ],
+  "raw_hypervolume_saved": 0.9353187591328681,
+  "corrected_hypervolume": 0.9353187591328682,
+  "hypervolume_delta": 1.1102230246251565e-16,
+  "corrected_spacing": null,
+  "scope": "Exact non-dominance among supplied saved schedule alternatives; no global optimality claim."
+}

@@ -1,0 +1,111 @@
+{
+  "run": "results/enhancement_validation/runs/medium_1020_wall_time_greedy_2.json",
+  "run_sha256": "6f80902a65806045164fa86ebab960cda5e1e2d8d839ee8e50ba7f3c5b35dbb8",
+  "instance_id": "medium_1020",
+  "size": "medium",
+  "method": "greedy",
+  "protocol": "wall_time",
+  "solver_seed": 2,
+  "raw_archive_count": 7,
+  "exact_front_count": 7,
+  "exact_dominated_indices": [],
+  "exact_duplicate_indices": [],
+  "survivor_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "canonical_survivor_objectives": [
+    [
+      0.0,
+      0.18815261044176707,
+      0.0792148975887743
+    ],
+    [
+      0.5,
+      0.1897590361445783,
+      0.07762087348130012
+    ],
+    [
+      0.5,
+      0.20823293172690763,
+      0.05937171043518959
+    ],
+    [
+      1.0,
+      0.19377510040160642,
+      0.0653834841531101
+    ],
+    [
+      1.5,
+      0.18493975903614457,
+      0.0852936105461599
+    ],
+    [
+      1.5,
+      0.18654618473895582,
+      0.0653834841531101
+    ],
+    [
+      2.0,
+      0.19136546184738956,
+      0.06144102863722254
+    ]
+  ],
+  "exact_survivor_f1_f2_variance": [
+    [
+      "0",
+      "937/4980",
+      "251/40000"
+    ],
+    [
+      "1/2",
+      "63/332",
+      "241/40000"
+    ],
+    [
+      "1/2",
+      "1037/4980",
+      "141/40000"
+    ],
+    [
+      "1",
+      "193/996",
+      "171/40000"
+    ],
+    [
+      "3/2",
+      "307/1660",
+      "291/40000"
+    ],
+    [
+      "3/2",
+      "929/4980",
+      "171/40000"
+    ],
+    [
+      "2",
+      "953/4980",
+      "151/40000"
+    ]
+  ],
+  "normalization": [
+    630.0,
+    1.0,
+    0.5
+  ],
+  "reference": [
+    1.1,
+    1.1,
+    1.1
+  ],
+  "raw_hypervolume_saved": 0.9874309093949426,
+  "corrected_hypervolume": 0.9874309093949427,
+  "hypervolume_delta": 1.1102230246251565e-16,
+  "corrected_spacing": 0.006765130318144059,
+  "scope": "Exact non-dominance among supplied saved schedule alternatives; no global optimality claim."
+}

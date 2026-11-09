@@ -1,0 +1,45 @@
+{
+  "run": "results/enhancement_validation/runs/small_1010_evaluations_memetic_0.json",
+  "run_sha256": "83d10f643b39940d8596fe7c5865235de038dbb13dce4a23151a40d63045b9e9",
+  "instance_id": "small_1010",
+  "size": "small",
+  "method": "memetic",
+  "protocol": "evaluations",
+  "solver_seed": 0,
+  "raw_archive_count": 1,
+  "exact_front_count": 1,
+  "exact_dominated_indices": [],
+  "exact_duplicate_indices": [],
+  "survivor_indices": [
+    0
+  ],
+  "canonical_survivor_objectives": [
+    [
+      0.0,
+      0.2590909090909091,
+      0.04714045207910317
+    ]
+  ],
+  "exact_survivor_f1_f2_variance": [
+    [
+      "0",
+      "57/220",
+      "1/450"
+    ]
+  ],
+  "normalization": [
+    175.0,
+    1.0,
+    0.5
+  ],
+  "reference": [
+    1.1,
+    1.1,
+    1.1
+  ],
+  "raw_hypervolume_saved": 0.9302901636536594,
+  "corrected_hypervolume": 0.9302901636536594,
+  "hypervolume_delta": 0.0,
+  "corrected_spacing": null,
+  "scope": "Exact non-dominance among supplied saved schedule alternatives; no global optimality claim."
+}

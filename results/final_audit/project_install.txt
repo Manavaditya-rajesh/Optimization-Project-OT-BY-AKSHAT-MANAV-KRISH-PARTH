@@ -1,0 +1,20 @@
+Obtaining file:///workspace/Optimization-Project-OT-BY-AKSHAT-MANAV-KRISH-PARTH/work/final-check-checkout
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Getting requirements to build editable: started
+  Getting requirements to build editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: college-timetable-optimization
+  Building editable for college-timetable-optimization (pyproject.toml): started
+  Building editable for college-timetable-optimization (pyproject.toml): finished with status 'done'
+  Created wheel for college-timetable-optimization: filename=college_timetable_optimization-1.0.0-0.editable-py3-none-any.whl size=1939 sha256=fffee20155c05a7f1cff1ff5524dd9be605dfa7e84cee64ea0175b07c2fa4596
+  Stored in directory: /tmp/pip-ephem-wheel-cache-ekd765fp/wheels/a8/08/7b/191244219ef5b0b0611dada7ff853ea6c865d955d627e5b5ae
+Successfully built college-timetable-optimization
+Installing collected packages: college-timetable-optimization
+Successfully installed college-timetable-optimization-1.0.0
+
+[notice] A new release of pip is available: 25.0.1 -> 26.3
+[notice] To update, run: python -m pip install --upgrade pip

@@ -1,0 +1,111 @@
+{
+  "run": "results/enhancement_validation/runs/large_1030_evaluations_original_enhanced_0.json",
+  "run_sha256": "91c9b5fdc5c6f425d0ee1d94525c8b8384bb05e68fa682af18268a74aaed6bf5",
+  "instance_id": "large_1030",
+  "size": "large",
+  "method": "original_enhanced",
+  "protocol": "evaluations",
+  "solver_seed": 0,
+  "raw_archive_count": 7,
+  "exact_front_count": 7,
+  "exact_dominated_indices": [],
+  "exact_duplicate_indices": [],
+  "survivor_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "canonical_survivor_objectives": [
+    [
+      3.5,
+      0.20704545454545453,
+      0.09643650760992954
+    ],
+    [
+      5.5,
+      0.20696969696969697,
+      0.10392304845413264
+    ],
+    [
+      7.0,
+      0.2059090909090909,
+      0.11874342087037917
+    ],
+    [
+      7.0,
+      0.21053030303030304,
+      0.08831760866327847
+    ],
+    [
+      7.5,
+      0.20515151515151514,
+      0.0888819441731559
+    ],
+    [
+      8.5,
+      0.2046969696969697,
+      0.09327379053088815
+    ],
+    [
+      12.0,
+      0.20325757575757575,
+      0.0670820393249937
+    ]
+  ],
+  "exact_survivor_f1_f2_variance": [
+    [
+      "7/2",
+      "911/4400",
+      "93/10000"
+    ],
+    [
+      "11/2",
+      "683/3300",
+      "27/2500"
+    ],
+    [
+      "7",
+      "453/2200",
+      "141/10000"
+    ],
+    [
+      "7",
+      "2779/13200",
+      "39/5000"
+    ],
+    [
+      "15/2",
+      "677/3300",
+      "79/10000"
+    ],
+    [
+      "17/2",
+      "1351/6600",
+      "87/10000"
+    ],
+    [
+      "12",
+      "2683/13200",
+      "9/2000"
+    ]
+  ],
+  "normalization": [
+    1575.0,
+    1.0,
+    0.5
+  ],
+  "reference": [
+    1.1,
+    1.1,
+    1.1
+  ],
+  "raw_hypervolume_saved": 0.9505415911579883,
+  "corrected_hypervolume": 0.9505415911579883,
+  "hypervolume_delta": 0.0,
+  "corrected_spacing": 0.01559618519693848,
+  "scope": "Exact non-dominance among supplied saved schedule alternatives; no global optimality claim."
+}

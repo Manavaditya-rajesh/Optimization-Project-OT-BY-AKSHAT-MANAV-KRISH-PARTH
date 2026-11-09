@@ -1,0 +1,56 @@
+{
+  "run": "results/enhancement_validation/runs/large_1010_evaluations_original_enhanced_0.json",
+  "run_sha256": "d69e959287b93669c19b1d5eaae874d6db773397883cdc9b06c88d8cbb0a4d13",
+  "instance_id": "large_1010",
+  "size": "large",
+  "method": "original_enhanced",
+  "protocol": "evaluations",
+  "solver_seed": 0,
+  "raw_archive_count": 2,
+  "exact_front_count": 2,
+  "exact_dominated_indices": [],
+  "exact_duplicate_indices": [],
+  "survivor_indices": [
+    0,
+    1
+  ],
+  "canonical_survivor_objectives": [
+    [
+      5.0,
+      0.20462121212121212,
+      0.09110433579144299
+    ],
+    [
+      9.5,
+      0.20833333333333334,
+      0.07874007874011811
+    ]
+  ],
+  "exact_survivor_f1_f2_variance": [
+    [
+      "5",
+      "2701/13200",
+      "83/10000"
+    ],
+    [
+      "19/2",
+      "5/24",
+      "31/5000"
+    ]
+  ],
+  "normalization": [
+    1575.0,
+    1.0,
+    0.5
+  ],
+  "reference": [
+    1.1,
+    1.1,
+    1.1
+  ],
+  "raw_hypervolume_saved": 0.9254607327911631,
+  "corrected_hypervolume": 0.9254607327911631,
+  "hypervolume_delta": 0.0,
+  "corrected_spacing": 0.0,
+  "scope": "Exact non-dominance among supplied saved schedule alternatives; no global optimality claim."
+}

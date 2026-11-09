@@ -1,0 +1,47 @@
+{
+  "status": "PASS_WITH_DOCUMENTED_LOW_PRIORITY_LIMITATIONS",
+  "reviewed_revision": "3ca05148d1245e08575d9e2b7499e0d825d802af",
+  "automated_tests": 209,
+  "clean_original_suite_tests": 201,
+  "isolated_environment": true,
+  "dependency_check": "PASS",
+  "cli_end_to_end_checks": 38,
+  "experiment_smoke_runs": 12,
+  "resume_raw_hash_preservation": "PASS",
+  "independent_oracle_candidates": 139072,
+  "independent_oracle_feasible_objective_checks": 5068,
+  "frozen_measured_source_files_unchanged": 19,
+  "frozen_source_sha256": "7ad242177abf49f65dfd192b3ecad6fe614644abf76413b39099aa897ddd854c",
+  "original_timed_artifacts_unchanged": true,
+  "exact_fronts": {
+    "benchmark": {
+      "runs": 192,
+      "raw_archived_schedules": 769,
+      "exact_front_survivors": 759,
+      "exact_dominated_points": 10,
+      "exact_duplicate_points": 0,
+      "affected_runs": 8,
+      "max_absolute_hypervolume_change": 3.3306690738754696e-16
+    },
+    "enhancement_validation": {
+      "runs": 168,
+      "raw_archived_schedules": 3295,
+      "exact_front_survivors": 3242,
+      "exact_dominated_points": 53,
+      "exact_duplicate_points": 0,
+      "affected_runs": 36,
+      "max_absolute_hypervolume_change": 3.3306690738754696e-16
+    }
+  },
+  "independent_exact_tool_crosscheck_runs": 360,
+  "representatives_surviving_exact_cleanup": 8,
+  "final_report_pages": 21,
+  "presentation_slides": 21,
+  "presentation_notes": 21,
+  "open_low_priority_items": [
+    "theory_sessions_boolean_acceptance",
+    "derived_metadata_config_replay",
+    "defensive_corrupted_checkpoint_validation",
+    "repair_helper_zero_violation_tie_outside_search_callers"
+  ]
+}

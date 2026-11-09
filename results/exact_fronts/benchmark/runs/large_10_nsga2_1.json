@@ -1,0 +1,31 @@
+{
+  "run": "results/benchmark/runs/large_10_nsga2_1.json",
+  "run_sha256": "53651ed636d58b60a4365d7a755ed7269703dd6b64784ce0d57c4d2667292b2d",
+  "instance_id": "large_10",
+  "size": "large",
+  "method": "nsga2",
+  "protocol": "evaluations",
+  "solver_seed": 1,
+  "raw_archive_count": 0,
+  "exact_front_count": 0,
+  "exact_dominated_indices": [],
+  "exact_duplicate_indices": [],
+  "survivor_indices": [],
+  "canonical_survivor_objectives": [],
+  "exact_survivor_f1_f2_variance": [],
+  "normalization": [
+    1575.0,
+    1.0,
+    0.5
+  ],
+  "reference": [
+    1.1,
+    1.1,
+    1.1
+  ],
+  "raw_hypervolume_saved": 0.0,
+  "corrected_hypervolume": 0.0,
+  "hypervolume_delta": 0.0,
+  "corrected_spacing": null,
+  "scope": "Exact non-dominance among supplied saved schedule alternatives; no global optimality claim."
+}

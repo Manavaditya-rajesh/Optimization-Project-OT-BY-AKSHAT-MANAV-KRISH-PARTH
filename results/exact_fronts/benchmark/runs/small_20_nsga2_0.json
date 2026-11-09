@@ -1,0 +1,31 @@
+{
+  "run": "results/benchmark/runs/small_20_nsga2_0.json",
+  "run_sha256": "b0777055d0089869bac0e5aaf2478dfc4c021e3a34210175cc691331cf646edd",
+  "instance_id": "small_20",
+  "size": "small",
+  "method": "nsga2",
+  "protocol": "evaluations",
+  "solver_seed": 0,
+  "raw_archive_count": 0,
+  "exact_front_count": 0,
+  "exact_dominated_indices": [],
+  "exact_duplicate_indices": [],
+  "survivor_indices": [],
+  "canonical_survivor_objectives": [],
+  "exact_survivor_f1_f2_variance": [],
+  "normalization": [
+    175.0,
+    1.0,
+    0.5
+  ],
+  "reference": [
+    1.1,
+    1.1,
+    1.1
+  ],
+  "raw_hypervolume_saved": 0.0,
+  "corrected_hypervolume": 0.0,
+  "hypervolume_delta": 0.0,
+  "corrected_spacing": null,
+  "scope": "Exact non-dominance among supplied saved schedule alternatives; no global optimality claim."
+}

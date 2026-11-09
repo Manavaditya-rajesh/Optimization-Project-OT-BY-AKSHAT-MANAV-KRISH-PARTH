@@ -2,6 +2,8 @@
 
 A tested Python system for assigning weekly college sessions to time blocks, compatible rooms and eligible faculty, with explicit hard constraints and three quality objectives.
 
+**Final audit:** 209 tests pass. Clean installation, all three CLI problem sizes, saved measurements, report and slides were checked. The [audit report](docs/final_audit.md) includes an exact-arithmetic correction for reported fronts; printed hypervolume comparisons are unchanged.
+
 The supplied proposal and professor's assignment are primary references. The [reference review](docs/reference_review.md) explains corrections and scope decisions. **All college datasets and experimental results are synthetic.** No institutional measurements, student contribution history or professor approval are invented.
 
 ## 1. Group details
@@ -103,6 +105,7 @@ python main.py evaluate data/demo.json data/certificates/demo.json
 python main.py solve data/demo.json --method greedy --seed 0 --budget 240 --output results/demo_greedy --figures figures/demo_greedy
 python main.py solve data/demo.json --method memetic --seed 0 --budget 240 --population 24 --output results/demo_memetic --figures figures/demo_memetic
 python main.py evaluate data/demo.json results/demo_memetic/timetables/normalized_compromise/schedule.json
+python experiments/exact_fronts.py --instance data/demo.json --run results/demo_memetic/run.json --output results/demo_memetic/exact_front.json
 ```
 
 The final recommended method is `--method memetic`; optional `--search-seconds 6` caps its native search time. Use `--method enhanced` to reproduce the original repair-based method, `--method nsga2` for the standard comparator, or `--method seeded` for the initialization-only ablation. The CLI's original default is retained for compatibility; select the final method explicitly. At a small budget, standard NSGA-II may find no feasible schedule. The CLI saves diagnostics and returns code 2 instead of exporting an invalid timetable. A search failure is not an infeasibility proof. `validate` aliases `evaluate`; code 0 means feasible, 2 means infeasible/no feasible result (or a standard argument-usage error), and 1 means a data/dependency/I/O error.
@@ -162,6 +165,8 @@ Presentation: [editable PowerPoint](presentation/college_timetable_optimization.
 
 The held-out study completed **168 runs**. Verification rechecked all **3295 archived timetables**, seven feasibility certificates and every cutoff history; nine late completed evaluations were excluded. All 201 pre-freeze tests passed. The original historical benchmark remains unchanged.
 
+**Final numerical audit:** exact-arithmetic cleanup retains **3,242 non-dominated records** from those 3,295 feasible archived schedules. It removes 53 points retained through floating-point workload ties; the maximum per-run HV change is **3.33 × 10⁻¹⁶**, so every printed value below is unchanged. Use the [canonical exact-front summary](results/exact_fronts/enhancement_validation/summary.md) for final fronts and retain the raw records for timing provenance. See [the precision finding and correction](docs/numerical_precision.md). New solve archives should pass through `experiments/exact_fronts.py` as shown above.
+
 | Size | Protocol | Greedy mean HV | Final memetic NSGA-II mean HV | Relative HV change |
 |---|---|---:|---:|---:|
 | small | evaluations | 0.934747 | 0.930290 | -0.48% |
@@ -185,6 +190,8 @@ The table above compares the **final `memetic` method** with greedy on the same 
 <summary>Historical benchmark: original repair-based enhancement (192 runs)</summary>
 
 **Historical-study verification:** 136 tests passed, 192 benchmark runs and 109,440 charged search evaluations. The shared checker revalidated all 769 archived feasible schedules and seven separate instance certificates. Greedy, seeded and enhanced methods each had 48/48 feasible runs; plain NSGA-II had 0/48 at these caps. A clean virtual-environment installation was also tested.
+
+The final exact-arithmetic audit retains **759** records after removing 10 numerically retained dominated points; [canonical historical fronts](results/exact_fronts/benchmark/summary.md) are saved separately. Rounded performance results are unchanged.
 
 | Size | Greedy mean HV | Original enhanced mean HV | Greedy seconds | Original enhanced seconds |
 |---|---:|---:|---:|---:|
@@ -223,6 +230,7 @@ The completed predeclared validation matrix has 168 runs on separate instance se
 python main.py solve data/demo.json --method memetic --seed 0 --budget 360 --population 24 --search-seconds 6 --output results/memetic_demo --figures figures/memetic_demo
 python main.py compare --config experiments/enhancement_validation.json --resume
 python experiments/verify_enhancement.py --study enhancement_validation
+python experiments/exact_fronts.py --study enhancement_validation
 python experiments/plot_enhancement.py --study enhancement_validation
 python experiments/export_enhancement.py --study enhancement_validation
 python experiments/report_enhancement.py --study enhancement_validation

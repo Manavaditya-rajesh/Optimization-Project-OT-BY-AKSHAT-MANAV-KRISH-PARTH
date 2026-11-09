@@ -59,10 +59,18 @@ Pass a JSON overrides file to `generate --config FILE`, or use a scenario's
 - `max_weekly`, `max_daily`, `unavailability_rate`, `eligible_per_offering`, and
   `construction_attempts`.
 
-Unknown keys and invalid parameter domains are rejected. `theory_sessions` and
+Unknown keys and the main invalid parameter domains are rejected. `theory_sessions` and
 an explicit `target_events` cannot be combined. Changing `groups` without a
 target recalculates demand from the offering counts and session defaults. Tight
 custom instances may require more construction attempts or resources.
+
+Two optional-configuration limitations remain in the frozen generator. Supply
+`theory_sessions` as a positive JSON integer: the legacy implementation accepts
+`true` as one session instead of rejecting it. When replaying a configuration
+copied from generated metadata, remove the derived `target_events` if
+`theory_sessions` is present; the recorded metadata can contain both, whereas
+input overrides require one. These cases do not affect the published preset
+instances. Preserve the actual input configuration and seed when reproducing.
 
 For example:
 

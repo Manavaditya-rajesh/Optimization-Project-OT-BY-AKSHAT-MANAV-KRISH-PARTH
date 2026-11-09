@@ -1,0 +1,2 @@
+PASS: both studies, all 360 runs, survivor indices, exact keys and input hashes match independent implementation.
+PASS: fresh-run and canonical-repeat CLI output.

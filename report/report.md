@@ -22,7 +22,7 @@ The inputs contain disjoint atomic student groups and sizes; rooms with capacity
 
 An event can name several atomic groups. It reserves every listed group and sums their headcounts. For split laboratory batches, represent disjoint batches and list all appropriate batches on common lectures. Overlapping parent divisions and batches must not be modeled as independent cohorts. Default generated labs use the entire cohort; the model also supports shared atomic groups and specialized room kinds in custom instances.
 
-Outputs include feasible non-dominated schedule archives, objective values, constraint diagnostics, event CSV/JSON, and weekly grids for groups, faculty, and rooms. A heuristic archive is non-dominated among discovered schedules; global claims require the additional proofs in Sections 10 and 14.
+Outputs include feasible candidate archives, exact postprocessed non-dominated subsets of saved alternatives, objective values, constraint diagnostics, event CSV/JSON, and weekly grids for groups, faculty, and rooms. The timed legacy search uses floating-point comparisons. Exact postprocessing certifies non-domination among the saved schedule alternatives; global claims require the additional proofs in Sections 10 and 14.
 
 ## 3. Literature review / existing approaches
 
@@ -128,7 +128,7 @@ Gradient methods do not directly represent categorical room/teacher decisions or
 
 The strong baseline repeatedly constructs schedules using dynamic saturation/scarcity/degree ordering, long-block prioritization, room fit, compactness, and offering-level faculty selection. An offering's sessions are placed together while respecting teacher consistency and reserving its complete weekly load. The first construction is deterministic; subsequent constructions use seeded restricted candidate lists.
 
-Each completed attempt receives one full shared evaluation, including failed constructions. Every feasible non-dominated objective vector discovered by the repeated baseline is retained. This is stronger than comparing with one poor greedy schedule. The same constructive scheduling policy is unchanged in the final follow-up; the comparison adapter adds common observation and stopping, not a weaker heuristic.
+Each completed attempt receives one full shared evaluation, including failed constructions. The repeated baseline retains a floating-point-comparison archive of feasible candidates; exact non-dominated subsets are now supplied by a separate postprocessing stage. This is stronger than comparing with one poor greedy schedule. The same constructive scheduling policy is unchanged in the final follow-up; the comparison adapter adds common observation and stopping, not a weaker heuristic.
 
 The public `greedy()` function returns one scalar-compromise feasible schedule or an explicit `SchedulingFailure`. Experimental repeated greedy returns an archive and is the primary comparison here. A heuristic failure never proves infeasibility.
 
@@ -148,11 +148,28 @@ NSGA-II provides a transparent population comparator for discrete Pareto trade-o
 
 Feasible objective vector $u$ dominates $v$ if every $u_i\le v_i$ and at least one inequality is strict. Equal vectors are one trade-off vector, even if several schedules attain them. Search uses Deb-style constraint domination: feasible candidates outrank infeasible candidates; among infeasible candidates smaller positive violation wins; among feasible candidates ordinary Pareto dominance applies.
 
-The integer violation score includes incompleteness, invalid assignments, resource-period excess, blocked periods, same-day excess, and teaching overload. It guides search and has no interpretation as an acceptable quality trade-off. Only violation-zero schedules enter reported fronts, hypervolume, and timetable exports.
+The integer violation score includes incompleteness, invalid assignments, resource-period excess, blocked periods, same-day excess, and teaching overload. It guides search and has no interpretation as an acceptable quality trade-off. Only violation-zero schedules enter the search archives, raw hypervolume calculations, and timetable exports. Strict mathematical non-domination of the saved alternatives is established by the exact cleanup described below.
 
 Possible conflict is established by exhaustive controlled micro-instances: compactness/room fit has global front `(0,0.25,0)` and `(1,0,0)` after 64 complete candidate evaluations; compactness/workload has `(0,0,0.5)` and `(1,0,0)` after nine. They are tiny mathematical examples, not college-scale measurements.
 
 Conflict is instance-dependent. Exact lower-bound attainment proves a singleton global ideal `(0,14/55,sqrt(1/450))` for the four checked small college instances (seeds 10,20,30,1010). Medium/large heuristic archives show discovered trade-offs without certifying their full global fronts. The meaning and proof scope of these statements are developed in Section 14.
+
+### Numerical precision and strict non-domination
+
+A later exact-rational audit found an important distinction between the timed search archives and mathematically strict fronts. The frozen algorithms compare floating-point room fractions and workload SD. Equal exact workload variances can produce values one unit in the last place apart for different load multisets; this can reverse a tie and incorrectly retain a truly dominated point. All affected schedules remain feasible. The issue concerns Pareto membership/cardinality, rather than hard-constraint validity.
+
+For example, raw `large_1010_evaluations_memetic_0` archive indices 8 and 9 both have gap value 5 and exact workload variance `83/10000`, but room waste `2701/13200` versus `43/200`. The first mathematically dominates the second. Their recorded SD values differ by approximately one floating-point unit, so the legacy archive retained both.
+
+The independent postprocessor compares exact keys `(gaps, room fraction, workload variance)`. SD is nonnegative, so comparing exact variance gives the same mathematical ordering as comparing SD. Let $C$ be the least common multiple of room capacities and $D_H$ the least common multiple of weekly faculty allowances. With $z_f=L_f(D_H/H_f)$,
+
+$$f_2=\frac{\sum_e\ell_e(c_{r(e)}-n_e)(C/c_{r(e)})}{CQ},\qquad
+f_3^2=\frac{m\sum_f z_f^2-(\sum_f z_f)^2}{m^2D_H^2},\quad m=|F|.$$
+
+Both keys are exact rational quantities; the gap key is an integer or half-integer. This removes floating-point tie ambiguity without changing the problem or optimizing a different objective.
+
+Exact cleanup removes 10 dominated points from eight historical runs and 53 from 36 final-study runs, leaving **759** and **3,242** exactly non-dominated saved alternatives respectively. The raw counts **769** and **3,295** remain intact as measurement records. Canonical recalculation changes any run's computed HV by at most approximately **3.33e-16**; every printed result and the four primary percentage gains are unchanged. Tiny indicator impact does not make the original strict non-domination claim correct, so the corrected fronts are published separately.
+
+Cleanup is **post-study analysis outside the measured runtime**, and the frozen package, source snapshots, raw schedules, timing traces, and measurements are preserved. It establishes non-domination only among the saved archive candidates. It does not replay the complete evaluated search trace, recover candidates previously discarded by the floating-point algorithm, or establish global Pareto optimality. New strict-front workflows therefore include `experiments/exact_fronts.py`; commands appear in Section 19.
 
 ## 11. Algorithm implementation
 
@@ -166,7 +183,7 @@ Conflict is instance-dependent. Exact lower-bound attainment proves a singleton 
 | Diversification | Periodic randomized reconstruction is attempted every 31st proposal unless the faculty-search branch takes priority. No generator certificate is used. |
 | Final NSGA-II selection | Rank/crowding binary tournaments and environmental selection from parent plus offspring populations genuinely affect the search. Mutation-only variation is an explicit variant, not an unimplemented crossover claim. |
 | Scalar-local ablation | Identical construction/RNG prefix, then independent fixed positive scalar directions for local trajectories, uniform trajectory choice, and feasible scalar-improving acceptance. It removes the NSGA-II selection/survival bundle. Subsequent RNG use and candidates diverge. |
-| Common archive | Every fully evaluated feasible proposal can enter, including proposals rejected by local acceptance; one schedule represents each non-dominated objective vector. |
+| Search archive and exact cleanup | Every fully evaluated feasible proposal can enter the legacy floating-point-comparison archive, including locally rejected proposals. A separate exact postprocessor removes mathematically dominated saved alternatives and keeps raw-index references. |
 
 For common weekly allowance $H$, total teaching demand fixes the mean relative load, so faculty intensification can minimize integer $C=\sum_f L_f^2$ without approximating $f_3$. Assigning offering load $w$ to a teacher currently at load $L$ increases $C$ by $2Lw+w^2$. The branch-and-bound lower bound adds each remaining offering's smallest independent marginal cost to the partial cost; shared-teacher competition can only increase those marginals. Faculty eligibility, full-block clashes/availability, daily limits, and weekly limits are checked on insertion. Exhaustion proves optimality only within the selected fixed-time neighborhood; a node-limited result has no such completion guarantee. The returned candidate is always checked on all three objectives.
 
@@ -259,7 +276,7 @@ The final method has higher mean HV on both primary sizes under both resource pr
 
 At equal complete evaluations, final mean runtime was 2.928 versus 20.215 seconds for medium and 8.041 versus 51.671 seconds for large (final versus greedy), ratios about 6.90× and 6.43× in this environment. Under common wall allocations, final mean evaluator counts were about 948 versus 106 medium and 800 versus 75 large. Partial search costs are included in those wall times.
 
-All four final-study methods returned feasible archives in all their runs: 21/21 instance/solver combinations per protocol, or 42/42 runs per method. Every reported archive has violation zero. All 3,295 final archived schedules and seven separate certificates were rechecked; nine late completed evaluations were excluded. Verification also reconstructed the on-time fronts and checked 42 common-initialization groups. See [the verification record](../results/enhancement_validation/verification.json).
+All four final-study methods returned feasible archives in all their runs: 21/21 instance/solver combinations per protocol, or 42/42 runs per method. Every reported archive has violation zero. All 3,295 raw final archived schedules and seven separate certificates were rechecked for feasibility; nine late completed evaluations were excluded. Exact cleanup subsequently retains 3,242 non-dominated saved alternatives from those raw archives. Verification also reconstructed the on-time fronts and checked 42 common-initialization groups. See [the verification record](../results/enhancement_validation/verification.json).
 
 ### Raw objective changes
 
@@ -284,11 +301,11 @@ At equal evaluations, workload balance improves substantially while the mean bes
 
 ### Pareto and convergence visualizations
 
-![Medium fixed-instance discovered archives](../figures/enhancement_validation/medium_1010_wall_time_pareto.png)
+![Medium exact non-dominated saved alternatives by method](../figures/exact_fronts/enhancement_validation/medium_1010_wall_time.png)
 
-![Large fixed-instance discovered archives](../figures/enhancement_validation/large_1010_wall_time_pareto.png)
+![Large exact non-dominated saved alternatives by method](../figures/exact_fronts/enhancement_validation/large_1010_wall_time.png)
 
-These plots use one fixed instance each and pool per-run archives. They show feasible discovered vectors, including vectors that another run may dominate; they are not a global Pareto certificate. The original fixed-instance diagnostics also report opposing objective changes on medium/large instances. Observed opposition alone cannot rule out an undiscovered joint ideal.
+These plots use one fixed instance each. For each method, saved alternatives across its solver seeds are pooled and filtered using exact rational objective ordering. Each displayed method set is therefore non-dominated among that method's saved alternatives; another method can still dominate its points. These are not global Pareto certificates. The original floating-point plots remain preserved with the measured study. Opposing objective changes among discovered alternatives cannot rule out an undiscovered joint ideal.
 
 ![Medium sampled anytime prefixes](../figures/enhancement_validation/medium_anytime.png)
 
@@ -357,13 +374,13 @@ For medium_1010, the final gap-priority timetable has zero gaps, better room fit
 
 ![Final medium group timetable](../figures/enhancement_validation/timetables/medium_1010_memetic_fewest_gaps.png)
 
-The images show one group's weekly grid, rather than the entire faculty allocation. Complete event JSON/CSV and all group/faculty/room CSV grids are in [the final timetable exports](../results/enhancement_validation/timetables/). The [representative index](../results/enhancement_validation/representatives.json) records exact selection and archive references. Human-readable periods start at 1; model slots are zero-based.
+The displayed examples and their original preferences were selected from the legacy floating-point archives. The final audit checked their raw archive indices: all eight survive exact cleanup and remain non-dominated among their respective saved alternatives. The images show one group's weekly grid, rather than the entire faculty allocation. Complete event JSON/CSV and all group/faculty/room CSV grids are in [the final timetable exports](../results/enhancement_validation/timetables/). The [representative index](../results/enhancement_validation/representatives.json) records exact selection and archive references. Human-readable periods start at 1; model slots are zero-based.
 
 ## 16. Limitations
 
 - Data are synthetic and planted feasible, with structural and resource-slack bias. No real-college or ITC validation is claimed. Certificates establish feasibility, not representativeness.
 - Final primary results use only three independent instances per size and three solver seeds each. The small regression has one instance. Statistical generalization is limited despite consistent primary paired wins.
-- The small global ideal makes a broad global trade-off front unnecessary there. Other fronts are discovered non-dominated sets with no global completeness proof.
+- The small global ideal makes a broad global trade-off front unnecessary there. Cleaned fronts are exactly non-dominated among saved candidates, with no global completeness proof for medium/large cases. Legacy floating-point archives can contain spurious non-dominated points from numerical ties.
 - Final small equal-evaluation mean quality regresses; scalar-local remains competitive. The evidence does not establish a consistent NSGA-II selection benefit or isolate one enhancement component.
 - Equal complete evaluations are not equal compute. Wall allocations permit bounded overshoot with late results excluded. Hardware/load, common instrumentation, and caching policy affect times.
 - Hypervolume's conservative fixed gap scale can underweight compactness. No indicator/reference-scale sensitivity study has been completed, and HV is not a coordinator utility.
@@ -427,6 +444,8 @@ Recheck saved evidence and regenerate final plots/exports without changing solve
 ```bash
 python experiments/verify_saved_results.py --study benchmark
 python experiments/verify_enhancement.py --study enhancement_validation
+python experiments/exact_fronts.py --study benchmark
+python experiments/exact_fronts.py --study enhancement_validation
 python experiments/certify_small_ideal.py --study enhancement_validation
 python experiments/plot_enhancement.py --study enhancement_validation
 python experiments/export_enhancement.py --study enhancement_validation
@@ -446,7 +465,34 @@ Path('work/enhancement_reproduction.json').write_text(json.dumps(config, indent=
 PYCONFIG
 python main.py compare --config work/enhancement_reproduction.json
 python experiments/verify_enhancement.py --study enhancement_reproduction
+python experiments/exact_fronts.py --study enhancement_reproduction
 ```
+
+For a fresh single solver run, obtain an exact front without altering `run.json` or its timing:
+
+```bash
+python experiments/exact_fronts.py --run results/demo/run.json --instance results/demo/instance.json --output results/demo_exact/front.json
+```
+
+The fresh output contains the complete surviving `archive`, canonical `objectives`, `exact_keys`, and `survivor_indices` referencing the original raw archive. To validate and export one exact survivor as readable grids:
+
+```bash
+python - <<'PYEXACT'
+import json
+from pathlib import Path
+from timetable.model import problem_from_dict, schedule_from_dict
+from timetable.export import export_schedule
+problem = problem_from_dict(json.loads(Path('results/demo/instance.json').read_text()))
+front = json.loads(Path('results/demo_exact/front.json').read_text())
+if not front['archive']:
+    raise SystemExit('The run contains no feasible saved candidate.')
+schedule = schedule_from_dict(front['archive'][0])
+export_schedule(problem, schedule, Path('results/demo_exact/timetable'), 'Exact saved-archive survivor')
+PYEXACT
+python main.py evaluate results/demo/instance.json results/demo_exact/timetable/schedule.json
+```
+
+Study-level cleanup writes separate summaries and per-run survivor references under `results/exact_fronts/STUDY/`, preserving the original run/index identities. It does not overwrite legacy exports or measurements. The source and [numerical-precision notes](../docs/numerical_precision.md) specify the exact-key policy and limits. Original search plots remain legacy evidence; optional `--plots` generates separate canonical-front plots.
 
 Resume requires the measured source/configuration/runtime; wall-time trajectories naturally vary between machines. Historical benchmark measurements remain associated with their original version and are never spliced into the final timing comparison.
 

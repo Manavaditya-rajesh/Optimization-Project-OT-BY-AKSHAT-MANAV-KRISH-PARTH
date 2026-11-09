@@ -2,6 +2,8 @@
 
 This report uses saved synthetic measurements. Historical benchmark records remain unchanged. The follow-up changes search operators and selection policies, while preserving the original generator, constraints, objectives, normalization, hypervolume reference and greedy scheduling policy.
 
+**Numerical precision:** this detailed study preserves the original floating-point archives and timed measurements. For mathematically non-dominated alternatives among saved schedules, run `python experiments/exact_fronts.py --study enhancement_validation` from the project root. The separate exact-arithmetic audit and its scope are explained in [the numerical precision note](../docs/numerical_precision.md).
+
 All objectives are minimized: student internal teaching gaps plus half faculty gaps (excluding lunch); duration-weighted unused room-seat fraction; and population SD of faculty teaching load divided by weekly allowance. Hard constraints are never traded against these quality measures.
 
 ## What changed and why

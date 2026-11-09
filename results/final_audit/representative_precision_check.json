@@ -1,0 +1,58 @@
+[
+  {
+    "instance": "medium_1010",
+    "method": "greedy",
+    "selection": "fewest_gaps",
+    "archive_index": 0,
+    "exact_front_survivor": true
+  },
+  {
+    "instance": "medium_1010",
+    "method": "greedy",
+    "selection": "balanced_workload",
+    "archive_index": 13,
+    "exact_front_survivor": true
+  },
+  {
+    "instance": "medium_1010",
+    "method": "memetic",
+    "selection": "fewest_gaps",
+    "archive_index": 0,
+    "exact_front_survivor": true
+  },
+  {
+    "instance": "medium_1010",
+    "method": "memetic",
+    "selection": "balanced_workload",
+    "archive_index": 8,
+    "exact_front_survivor": true
+  },
+  {
+    "instance": "large_1010",
+    "method": "greedy",
+    "selection": "fewest_gaps",
+    "archive_index": 0,
+    "exact_front_survivor": true
+  },
+  {
+    "instance": "large_1010",
+    "method": "greedy",
+    "selection": "balanced_workload",
+    "archive_index": 11,
+    "exact_front_survivor": true
+  },
+  {
+    "instance": "large_1010",
+    "method": "memetic",
+    "selection": "fewest_gaps",
+    "archive_index": 0,
+    "exact_front_survivor": true
+  },
+  {
+    "instance": "large_1010",
+    "method": "memetic",
+    "selection": "balanced_workload",
+    "archive_index": 48,
+    "exact_front_survivor": true
+  }
+]

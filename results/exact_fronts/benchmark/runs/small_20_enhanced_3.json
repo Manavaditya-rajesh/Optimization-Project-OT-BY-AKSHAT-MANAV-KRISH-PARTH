@@ -1,0 +1,67 @@
+{
+  "run": "results/benchmark/runs/small_20_enhanced_3.json",
+  "run_sha256": "52964379d8136ce94047856f1ce9a4f65643a213955a9e53e99c5fee73fd5863",
+  "instance_id": "small_20",
+  "size": "small",
+  "method": "enhanced",
+  "protocol": "evaluations",
+  "solver_seed": 3,
+  "raw_archive_count": 3,
+  "exact_front_count": 3,
+  "exact_dominated_indices": [],
+  "exact_duplicate_indices": [],
+  "survivor_indices": [
+    0,
+    1,
+    2
+  ],
+  "canonical_survivor_objectives": [
+    [
+      0.0,
+      0.2545454545454545,
+      0.06871842709362767
+    ],
+    [
+      1.0,
+      0.2772727272727273,
+      0.04714045207910317
+    ],
+    [
+      2.5,
+      0.2545454545454545,
+      0.04714045207910317
+    ]
+  ],
+  "exact_survivor_f1_f2_variance": [
+    [
+      "0",
+      "14/55",
+      "17/3600"
+    ],
+    [
+      "1",
+      "61/220",
+      "1/450"
+    ],
+    [
+      "5/2",
+      "14/55",
+      "1/450"
+    ]
+  ],
+  "normalization": [
+    175.0,
+    1.0,
+    0.5
+  ],
+  "reference": [
+    1.1,
+    1.1,
+    1.1
+  ],
+  "raw_hypervolume_saved": 0.9351018584489559,
+  "corrected_hypervolume": 0.935101858448956,
+  "hypervolume_delta": 1.1102230246251565e-16,
+  "corrected_spacing": 0.015093646734737804,
+  "scope": "Exact non-dominance among supplied saved schedule alternatives; no global optimality claim."
+}

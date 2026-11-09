@@ -1,0 +1,31 @@
+{
+  "run": "results/benchmark/runs/medium_20_nsga2_0.json",
+  "run_sha256": "5b232b784860ec3d95d1f6b8056ef521e791507cc1c586abc48b5f2d9a9434b3",
+  "instance_id": "medium_20",
+  "size": "medium",
+  "method": "nsga2",
+  "protocol": "evaluations",
+  "solver_seed": 0,
+  "raw_archive_count": 0,
+  "exact_front_count": 0,
+  "exact_dominated_indices": [],
+  "exact_duplicate_indices": [],
+  "survivor_indices": [],
+  "canonical_survivor_objectives": [],
+  "exact_survivor_f1_f2_variance": [],
+  "normalization": [
+    630.0,
+    1.0,
+    0.5
+  ],
+  "reference": [
+    1.1,
+    1.1,
+    1.1
+  ],
+  "raw_hypervolume_saved": 0.0,
+  "corrected_hypervolume": 0.0,
+  "hypervolume_delta": 0.0,
+  "corrected_spacing": null,
+  "scope": "Exact non-dominance among supplied saved schedule alternatives; no global optimality claim."
+}

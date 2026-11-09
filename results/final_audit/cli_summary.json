@@ -1,0 +1,658 @@
+{
+  "status": "PASS",
+  "checks": 38,
+  "cases": [
+    {
+      "check": "small_generate",
+      "arguments": [
+        "generate",
+        "--size",
+        "small",
+        "--seed",
+        "2026",
+        "--output",
+        "work/final_cli/small/instance.json",
+        "--certificate",
+        "work/final_cli/small/certificate.json"
+      ],
+      "exit_code": 0,
+      "expected_exit_codes": [
+        0
+      ]
+    },
+    {
+      "check": "small_certificate",
+      "arguments": [
+        "evaluate",
+        "work/final_cli/small/instance.json",
+        "work/final_cli/small/certificate.json"
+      ],
+      "exit_code": 0,
+      "expected_exit_codes": [
+        0
+      ]
+    },
+    {
+      "check": "small_greedy_solve",
+      "arguments": [
+        "solve",
+        "work/final_cli/small/instance.json",
+        "--method",
+        "greedy",
+        "--seed",
+        "0",
+        "--budget",
+        "24",
+        "--population",
+        "12",
+        "--output",
+        "work/final_cli/small/greedy",
+        "--figures",
+        "work/final_cli/small/greedy_figures"
+      ],
+      "exit_code": 0,
+      "expected_exit_codes": [
+        0
+      ]
+    },
+    {
+      "check": "small_greedy_validate",
+      "arguments": [
+        "validate",
+        "work/final_cli/small/instance.json",
+        "work/final_cli/small/greedy/timetables/normalized_compromise/schedule.json"
+      ],
+      "exit_code": 0,
+      "expected_exit_codes": [
+        0
+      ]
+    },
+    {
+      "check": "small_nsga2_solve",
+      "arguments": [
+        "solve",
+        "work/final_cli/small/instance.json",
+        "--method",
+        "nsga2",
+        "--seed",
+        "0",
+        "--budget",
+        "48",
+        "--population",
+        "12",
+        "--output",
+        "work/final_cli/small/nsga2",
+        "--figures",
+        "work/final_cli/small/nsga2_figures"
+      ],
+      "exit_code": 2,
+      "expected_exit_codes": [
+        0,
+        2
+      ]
+    },
+    {
+      "check": "small_seeded_solve",
+      "arguments": [
+        "solve",
+        "work/final_cli/small/instance.json",
+        "--method",
+        "seeded",
+        "--seed",
+        "0",
+        "--budget",
+        "48",
+        "--population",
+        "12",
+        "--output",
+        "work/final_cli/small/seeded",
+        "--figures",
+        "work/final_cli/small/seeded_figures"
+      ],
+      "exit_code": 0,
+      "expected_exit_codes": [
+        0
+      ]
+    },
+    {
+      "check": "small_seeded_validate",
+      "arguments": [
+        "validate",
+        "work/final_cli/small/instance.json",
+        "work/final_cli/small/seeded/timetables/normalized_compromise/schedule.json"
+      ],
+      "exit_code": 0,
+      "expected_exit_codes": [
+        0
+      ]
+    },
+    {
+      "check": "small_enhanced_solve",
+      "arguments": [
+        "solve",
+        "work/final_cli/small/instance.json",
+        "--method",
+        "enhanced",
+        "--seed",
+        "0",
+        "--budget",
+        "48",
+        "--population",
+        "12",
+        "--output",
+        "work/final_cli/small/enhanced",
+        "--figures",
+        "work/final_cli/small/enhanced_figures"
+      ],
+      "exit_code": 0,
+      "expected_exit_codes": [
+        0
+      ]
+    },
+    {
+      "check": "small_enhanced_validate",
+      "arguments": [
+        "validate",
+        "work/final_cli/small/instance.json",
+        "work/final_cli/small/enhanced/timetables/normalized_compromise/schedule.json"
+      ],
+      "exit_code": 0,
+      "expected_exit_codes": [
+        0
+      ]
+    },
+    {
+      "check": "small_memetic_solve",
+      "arguments": [
+        "solve",
+        "work/final_cli/small/instance.json",
+        "--method",
+        "memetic",
+        "--seed",
+        "0",
+        "--budget",
+        "48",
+        "--population",
+        "12",
+        "--output",
+        "work/final_cli/small/memetic",
+        "--figures",
+        "work/final_cli/small/memetic_figures"
+      ],
+      "exit_code": 0,
+      "expected_exit_codes": [
+        0
+      ]
+    },
+    {
+      "check": "small_memetic_validate",
+      "arguments": [
+        "validate",
+        "work/final_cli/small/instance.json",
+        "work/final_cli/small/memetic/timetables/normalized_compromise/schedule.json"
+      ],
+      "exit_code": 0,
+      "expected_exit_codes": [
+        0
+      ]
+    },
+    {
+      "check": "medium_generate",
+      "arguments": [
+        "generate",
+        "--size",
+        "medium",
+        "--seed",
+        "2026",
+        "--output",
+        "work/final_cli/medium/instance.json",
+        "--certificate",
+        "work/final_cli/medium/certificate.json"
+      ],
+      "exit_code": 0,
+      "expected_exit_codes": [
+        0
+      ]
+    },
+    {
+      "check": "medium_certificate",
+      "arguments": [
+        "evaluate",
+        "work/final_cli/medium/instance.json",
+        "work/final_cli/medium/certificate.json"
+      ],
+      "exit_code": 0,
+      "expected_exit_codes": [
+        0
+      ]
+    },
+    {
+      "check": "medium_greedy_solve",
+      "arguments": [
+        "solve",
+        "work/final_cli/medium/instance.json",
+        "--method",
+        "greedy",
+        "--seed",
+        "0",
+        "--budget",
+        "24",
+        "--population",
+        "12",
+        "--output",
+        "work/final_cli/medium/greedy",
+        "--figures",
+        "work/final_cli/medium/greedy_figures"
+      ],
+      "exit_code": 0,
+      "expected_exit_codes": [
+        0
+      ]
+    },
+    {
+      "check": "medium_greedy_validate",
+      "arguments": [
+        "validate",
+        "work/final_cli/medium/instance.json",
+        "work/final_cli/medium/greedy/timetables/normalized_compromise/schedule.json"
+      ],
+      "exit_code": 0,
+      "expected_exit_codes": [
+        0
+      ]
+    },
+    {
+      "check": "medium_nsga2_solve",
+      "arguments": [
+        "solve",
+        "work/final_cli/medium/instance.json",
+        "--method",
+        "nsga2",
+        "--seed",
+        "0",
+        "--budget",
+        "48",
+        "--population",
+        "12",
+        "--output",
+        "work/final_cli/medium/nsga2",
+        "--figures",
+        "work/final_cli/medium/nsga2_figures"
+      ],
+      "exit_code": 2,
+      "expected_exit_codes": [
+        0,
+        2
+      ]
+    },
+    {
+      "check": "medium_seeded_solve",
+      "arguments": [
+        "solve",
+        "work/final_cli/medium/instance.json",
+        "--method",
+        "seeded",
+        "--seed",
+        "0",
+        "--budget",
+        "48",
+        "--population",
+        "12",
+        "--output",
+        "work/final_cli/medium/seeded",
+        "--figures",
+        "work/final_cli/medium/seeded_figures"
+      ],
+      "exit_code": 0,
+      "expected_exit_codes": [
+        0
+      ]
+    },
+    {
+      "check": "medium_seeded_validate",
+      "arguments": [
+        "validate",
+        "work/final_cli/medium/instance.json",
+        "work/final_cli/medium/seeded/timetables/normalized_compromise/schedule.json"
+      ],
+      "exit_code": 0,
+      "expected_exit_codes": [
+        0
+      ]
+    },
+    {
+      "check": "medium_enhanced_solve",
+      "arguments": [
+        "solve",
+        "work/final_cli/medium/instance.json",
+        "--method",
+        "enhanced",
+        "--seed",
+        "0",
+        "--budget",
+        "48",
+        "--population",
+        "12",
+        "--output",
+        "work/final_cli/medium/enhanced",
+        "--figures",
+        "work/final_cli/medium/enhanced_figures"
+      ],
+      "exit_code": 0,
+      "expected_exit_codes": [
+        0
+      ]
+    },
+    {
+      "check": "medium_enhanced_validate",
+      "arguments": [
+        "validate",
+        "work/final_cli/medium/instance.json",
+        "work/final_cli/medium/enhanced/timetables/normalized_compromise/schedule.json"
+      ],
+      "exit_code": 0,
+      "expected_exit_codes": [
+        0
+      ]
+    },
+    {
+      "check": "medium_memetic_solve",
+      "arguments": [
+        "solve",
+        "work/final_cli/medium/instance.json",
+        "--method",
+        "memetic",
+        "--seed",
+        "0",
+        "--budget",
+        "48",
+        "--population",
+        "12",
+        "--output",
+        "work/final_cli/medium/memetic",
+        "--figures",
+        "work/final_cli/medium/memetic_figures"
+      ],
+      "exit_code": 0,
+      "expected_exit_codes": [
+        0
+      ]
+    },
+    {
+      "check": "medium_memetic_validate",
+      "arguments": [
+        "validate",
+        "work/final_cli/medium/instance.json",
+        "work/final_cli/medium/memetic/timetables/normalized_compromise/schedule.json"
+      ],
+      "exit_code": 0,
+      "expected_exit_codes": [
+        0
+      ]
+    },
+    {
+      "check": "large_generate",
+      "arguments": [
+        "generate",
+        "--size",
+        "large",
+        "--seed",
+        "2026",
+        "--output",
+        "work/final_cli/large/instance.json",
+        "--certificate",
+        "work/final_cli/large/certificate.json"
+      ],
+      "exit_code": 0,
+      "expected_exit_codes": [
+        0
+      ]
+    },
+    {
+      "check": "large_certificate",
+      "arguments": [
+        "evaluate",
+        "work/final_cli/large/instance.json",
+        "work/final_cli/large/certificate.json"
+      ],
+      "exit_code": 0,
+      "expected_exit_codes": [
+        0
+      ]
+    },
+    {
+      "check": "large_greedy_solve",
+      "arguments": [
+        "solve",
+        "work/final_cli/large/instance.json",
+        "--method",
+        "greedy",
+        "--seed",
+        "0",
+        "--budget",
+        "24",
+        "--population",
+        "12",
+        "--output",
+        "work/final_cli/large/greedy",
+        "--figures",
+        "work/final_cli/large/greedy_figures"
+      ],
+      "exit_code": 0,
+      "expected_exit_codes": [
+        0
+      ]
+    },
+    {
+      "check": "large_greedy_validate",
+      "arguments": [
+        "validate",
+        "work/final_cli/large/instance.json",
+        "work/final_cli/large/greedy/timetables/normalized_compromise/schedule.json"
+      ],
+      "exit_code": 0,
+      "expected_exit_codes": [
+        0
+      ]
+    },
+    {
+      "check": "large_nsga2_solve",
+      "arguments": [
+        "solve",
+        "work/final_cli/large/instance.json",
+        "--method",
+        "nsga2",
+        "--seed",
+        "0",
+        "--budget",
+        "48",
+        "--population",
+        "12",
+        "--output",
+        "work/final_cli/large/nsga2",
+        "--figures",
+        "work/final_cli/large/nsga2_figures"
+      ],
+      "exit_code": 2,
+      "expected_exit_codes": [
+        0,
+        2
+      ]
+    },
+    {
+      "check": "large_seeded_solve",
+      "arguments": [
+        "solve",
+        "work/final_cli/large/instance.json",
+        "--method",
+        "seeded",
+        "--seed",
+        "0",
+        "--budget",
+        "48",
+        "--population",
+        "12",
+        "--output",
+        "work/final_cli/large/seeded",
+        "--figures",
+        "work/final_cli/large/seeded_figures"
+      ],
+      "exit_code": 0,
+      "expected_exit_codes": [
+        0
+      ]
+    },
+    {
+      "check": "large_seeded_validate",
+      "arguments": [
+        "validate",
+        "work/final_cli/large/instance.json",
+        "work/final_cli/large/seeded/timetables/normalized_compromise/schedule.json"
+      ],
+      "exit_code": 0,
+      "expected_exit_codes": [
+        0
+      ]
+    },
+    {
+      "check": "large_enhanced_solve",
+      "arguments": [
+        "solve",
+        "work/final_cli/large/instance.json",
+        "--method",
+        "enhanced",
+        "--seed",
+        "0",
+        "--budget",
+        "48",
+        "--population",
+        "12",
+        "--output",
+        "work/final_cli/large/enhanced",
+        "--figures",
+        "work/final_cli/large/enhanced_figures"
+      ],
+      "exit_code": 0,
+      "expected_exit_codes": [
+        0
+      ]
+    },
+    {
+      "check": "large_enhanced_validate",
+      "arguments": [
+        "validate",
+        "work/final_cli/large/instance.json",
+        "work/final_cli/large/enhanced/timetables/normalized_compromise/schedule.json"
+      ],
+      "exit_code": 0,
+      "expected_exit_codes": [
+        0
+      ]
+    },
+    {
+      "check": "large_memetic_solve",
+      "arguments": [
+        "solve",
+        "work/final_cli/large/instance.json",
+        "--method",
+        "memetic",
+        "--seed",
+        "0",
+        "--budget",
+        "48",
+        "--population",
+        "12",
+        "--output",
+        "work/final_cli/large/memetic",
+        "--figures",
+        "work/final_cli/large/memetic_figures"
+      ],
+      "exit_code": 0,
+      "expected_exit_codes": [
+        0
+      ]
+    },
+    {
+      "check": "large_memetic_validate",
+      "arguments": [
+        "validate",
+        "work/final_cli/large/instance.json",
+        "work/final_cli/large/memetic/timetables/normalized_compromise/schedule.json"
+      ],
+      "exit_code": 0,
+      "expected_exit_codes": [
+        0
+      ]
+    },
+    {
+      "check": "invalid_schedule_exit_2",
+      "arguments": [
+        "evaluate",
+        "work/final_cli/small/instance.json",
+        "work/final_cli/small/invalid_schedule.json"
+      ],
+      "exit_code": 2,
+      "expected_exit_codes": [
+        2
+      ]
+    },
+    {
+      "check": "missing_file_exit_1",
+      "arguments": [
+        "evaluate",
+        "work/absent.json",
+        "work/absent.json"
+      ],
+      "exit_code": 1,
+      "expected_exit_codes": [
+        1
+      ]
+    },
+    {
+      "check": "bad_arguments_exit_2",
+      "arguments": [
+        "solve"
+      ],
+      "exit_code": 2,
+      "expected_exit_codes": [
+        2
+      ]
+    },
+    {
+      "check": "exact_micro_fronts",
+      "arguments": [
+        "prove-tradeoffs",
+        "--output",
+        "work/final_cli/exact_micro",
+        "--figures",
+        "work/final_cli/exact_figures"
+      ],
+      "exit_code": 0,
+      "expected_exit_codes": [
+        0
+      ]
+    },
+    {
+      "check": "cpsat_small_gaps",
+      "arguments": [
+        "solve",
+        "work/final_cli/small/instance.json",
+        "--method",
+        "cpsat",
+        "--objective",
+        "gaps",
+        "--time-limit",
+        "8",
+        "--output",
+        "work/final_cli/cpsat",
+        "--figures",
+        "work/final_cli/cpsat_figures"
+      ],
+      "exit_code": 0,
+      "expected_exit_codes": [
+        0
+      ]
+    }
+  ],
+  "scope": "CLI smoke checks on separate synthetic seeds; not benchmark measurements."
+}

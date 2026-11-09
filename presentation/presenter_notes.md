@@ -58,9 +58,9 @@ Seven instances times three solver seeds times four methods times two protocols 
 
 ## Slide 10 — Fair budgets and verified cutoff evidence
 
-Verification uses the common checker outside search and reconstructs every cutoff front. It is independent from search execution, not a claim that two independently authored validators exist. Timestamps mark full objective evaluation completion, before observer archive bookkeeping; bookkeeping still consumes measured time. Nine late completed calls were charged but excluded from quality. Bounded atomic work can overrun; actual runtime and overshoot are recorded. No background optimizer continues after a reported run.
+Verification uses the common checker outside search and reconstructs every cutoff front. It is independent from search execution, not a claim that two independently authored validators exist. Timestamps mark full objective evaluation completion, before observer archive bookkeeping; bookkeeping still consumes measured time. Nine late completed calls were charged but excluded from quality. Bounded atomic work can overrun; actual runtime and overshoot are recorded. No background optimizer continues after a reported run. The count 3,295 is raw feasible schedules; mandatory exact rational postprocessing retains 3,242 non-dominated front points, removing 53 falsely retained floating-point ties. This does not change feasibility or timings.
 
-**Evidence:** verification.json; comparison.py; tests_before_validation.txt
+**Evidence:** verification.json; exact_fronts summary; tests_before_validation.txt
 
 ## Slide 11 — The final method improves the primary comparisons
 
@@ -100,13 +100,13 @@ Both are complete feasible schedules from large_1010, solver seed zero and the w
 
 ## Slide 17 — Know which guarantees apply
 
-A feasible small schedule attains independently valid lower bounds for all three objectives simultaneously, certifying one singleton ideal vector. Different schedule identities can attain it. Medium integer load-bound attainment certifies workload alone. The faculty branch-and-bound has selected-offering and node-limit scope. Simplifications include disjoint atomic cohorts, generic full-cohort labs, equal periods and a deterministic week. Travel, uncertain demand, team teaching, overlapping real enrolments and disruption robustness are omitted. These are declared modeling limits.
+All raw schedules remain feasible. A numerical audit found floating-point workload SD values differing by one ULP for mathematically tied workloads; these pseudo-ties could retain truly dominated points. Exact rational objective comparison removes 53 points from 36 follow-up runs (3,295 raw to 3,242 survivors) and 10 points from 8 historical runs (769 to 759). Maximum absolute hypervolume change is about 3.33e-16; the four printed primary gains and practical conclusions remain unchanged. The mandatory separate postprocessor compares exact rational gaps, room waste and workload variance, avoiding a floating square root. Run python experiments/exact_fronts.py --study enhancement_validation before reporting a front. It preserves frozen search code, raw schedules and measured timings. Exact simultaneous lower-bound attainment still certifies the checked small ideal; medium workload-only attainment does not certify the full front. No global medium/large Pareto guarantee or real-college validation is claimed.
 
-**Evidence:** small_ideal_certificates.json; formulation/README.md; enhancement_report.md
+**Evidence:** docs/numerical_precision.md; results/exact_fronts/enhancement_validation/summary.json
 
 ## Slide 18 — Reproduce and demonstrate the decision
 
-Activate the documented Python environment first. The live small example is for transparent execution, not a promise to beat greedy. The three commands are also in presentation/demo.sh and write only to ignored work/presentation_demo. A frozen medium saved alternative can be inspected if the live demo is inappropriate. The project now has a valid formulation, strong reference, tested optimization, controlled repeated comparisons, genuine trade-off examples and reproducible artifacts. The favorable claim is deliberately restricted to the declared primary medium/large synthetic conditions.
+Activate the documented Python environment first. The live small example is for transparent execution, not a promise to beat greedy. The three commands are also in presentation/demo.sh and write only to ignored work/presentation_demo. For new comparison studies, run the mandatory exact rational front cleanup before reporting: python experiments/exact_fronts.py --study YOUR_STUDY. A frozen medium saved alternative can be inspected if the live demo is inappropriate. The project now has a valid formulation, strong reference, tested optimization, controlled repeated comparisons, genuine trade-off examples and reproducible artifacts. The favorable claim is deliberately restricted to the declared primary medium/large synthetic conditions.
 
 **Evidence:** presentation/demo.sh; main.py; report/enhancement_report.md
 
@@ -124,7 +124,7 @@ Each relaxation bound remains valid for the original constrained problem. Equal 
 
 ## Slide 21 — Backup: references and viva checkpoints
 
-Full references and exact roles are in literature/README.md. Every member should explain why teacher choice changes workload, why labs reserve all periods, constraint domination among infeasible candidates, why equal evaluation counts are not equal computation, what makes the final algorithm an NSGA-II variant, the scopes of exact guarantees, and why workload balance can hurt students. The presentation builder reads saved artifacts only and runs no optimizer. The source hash of measured validation is 7ad242177abf49f65dfd192b3ecad6fe614644abf76413b39099aa897ddd854c.
+Full references and exact roles are in literature/README.md. Every member should explain why teacher choice changes workload, why labs reserve all periods, constraint domination among infeasible candidates, why equal evaluation counts are not equal computation, what makes the final algorithm an NSGA-II variant, the scopes of exact guarantees, and why workload balance can hurt students. The mandatory front-cleanup command is python experiments/exact_fronts.py --study enhancement_validation. It leaves frozen search/timing records unchanged and writes exact rational reporting fronts separately. The presentation builder reads saved artifacts only and runs no optimizer. The source hash of measured validation is 7ad242177abf49f65dfd192b3ecad6fe614644abf76413b39099aa897ddd854c.
 
 **Evidence:** literature/README.md; docs/reference_review.md; manifest.json
 
