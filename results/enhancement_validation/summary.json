@@ -1,0 +1,3702 @@
+{
+  "summary": [
+    {
+      "size": "large",
+      "protocol": "evaluations",
+      "method": "ablation_local",
+      "runs": 9,
+      "feasible_runs": 9,
+      "hypervolume_mean": 0.9785175243673057,
+      "hypervolume_sd": 0.013984410089093853,
+      "runtime_mean": 7.960792438444413,
+      "runtime_sd": 0.23134454944701205,
+      "evaluations_mean": 240,
+      "evaluations_sd": 0.0,
+      "archive_size_mean": 26.666666666666668,
+      "archive_size_sd": 6.614378277661476,
+      "duplicate_evaluation_fraction_mean": 0.03981481481481482,
+      "duplicate_evaluation_fraction_sd": 0.013028932666176192,
+      "feasible_evaluation_fraction_mean": 1.0,
+      "feasible_evaluation_fraction_sd": 0.0,
+      "wall_time_overshoot_seconds_mean": 0.0,
+      "wall_time_overshoot_seconds_sd": 0.0,
+      "best_objectives": [
+        1.0,
+        0.20234848484848483,
+        0.03741657386773941
+      ],
+      "mean_run_best_objectives_conditional": [
+        2.888888888888889,
+        0.2040909090909091,
+        0.05236271352692676
+      ],
+      "mean_front_objectives_per_run_conditional": [
+        12.473829453024292,
+        0.2076312235039979,
+        0.08017781301678588
+      ],
+      "time_to_first_feasible_mean_conditional": 0.21298349711107928,
+      "time_to_first_feasible_observations": 9
+    },
+    {
+      "size": "large",
+      "protocol": "evaluations",
+      "method": "greedy",
+      "runs": 9,
+      "feasible_runs": 9,
+      "hypervolume_mean": 0.9408235805568862,
+      "hypervolume_sd": 0.009216751396062966,
+      "runtime_mean": 51.671327538555566,
+      "runtime_sd": 1.3263897896530734,
+      "evaluations_mean": 240,
+      "evaluations_sd": 0.0,
+      "archive_size_mean": 24.444444444444443,
+      "archive_size_sd": 6.002314368456369,
+      "duplicate_evaluation_fraction_mean": 0.0,
+      "duplicate_evaluation_fraction_sd": 0.0,
+      "feasible_evaluation_fraction_mean": 1.0,
+      "feasible_evaluation_fraction_sd": 0.0,
+      "wall_time_overshoot_seconds_mean": 0.0,
+      "wall_time_overshoot_seconds_sd": 0.0,
+      "best_objectives": [
+        1.0,
+        0.20075757575757577,
+        0.0670820393249937
+      ],
+      "mean_run_best_objectives_conditional": [
+        1.7222222222222223,
+        0.20213804713804714,
+        0.07305816195497508
+      ],
+      "mean_front_objectives_per_run_conditional": [
+        5.427329303896347,
+        0.2064768190885521,
+        0.09628924518169384
+      ],
+      "time_to_first_feasible_mean_conditional": 0.2064015481111154,
+      "time_to_first_feasible_observations": 9
+    },
+    {
+      "size": "large",
+      "protocol": "evaluations",
+      "method": "memetic",
+      "runs": 9,
+      "feasible_runs": 9,
+      "hypervolume_mean": 0.9773042425301742,
+      "hypervolume_sd": 0.012987494014743549,
+      "runtime_mean": 8.040930026777712,
+      "runtime_sd": 0.29220878318630056,
+      "evaluations_mean": 240,
+      "evaluations_sd": 0.0,
+      "archive_size_mean": 33.888888888888886,
+      "archive_size_sd": 5.158595846847387,
+      "duplicate_evaluation_fraction_mean": 0.06805555555555555,
+      "duplicate_evaluation_fraction_sd": 0.017921510973005473,
+      "feasible_evaluation_fraction_mean": 1.0,
+      "feasible_evaluation_fraction_sd": 0.0,
+      "wall_time_overshoot_seconds_mean": 0.0,
+      "wall_time_overshoot_seconds_sd": 0.0,
+      "best_objectives": [
+        1.0,
+        0.20234848484848483,
+        0.044721359549995794
+      ],
+      "mean_run_best_objectives_conditional": [
+        2.4444444444444446,
+        0.20374579124579126,
+        0.05338904134161411
+      ],
+      "mean_front_objectives_per_run_conditional": [
+        10.82429063991564,
+        0.2071270526611436,
+        0.08021388389315832
+      ],
+      "time_to_first_feasible_mean_conditional": 0.213820675333232,
+      "time_to_first_feasible_observations": 9
+    },
+    {
+      "size": "large",
+      "protocol": "evaluations",
+      "method": "original_enhanced",
+      "runs": 9,
+      "feasible_runs": 9,
+      "hypervolume_mean": 0.9170140978116748,
+      "hypervolume_sd": 0.015257061864010105,
+      "runtime_mean": 17.029522304111147,
+      "runtime_sd": 0.5628624049307335,
+      "evaluations_mean": 240,
+      "evaluations_sd": 0.0,
+      "archive_size_mean": 5.666666666666667,
+      "archive_size_sd": 2.3979157616563596,
+      "duplicate_evaluation_fraction_mean": 0.007870370370370371,
+      "duplicate_evaluation_fraction_sd": 0.003866503029743071,
+      "feasible_evaluation_fraction_mean": 0.4037037037037037,
+      "feasible_evaluation_fraction_sd": 0.011866671868496572,
+      "wall_time_overshoot_seconds_mean": 0.0,
+      "wall_time_overshoot_seconds_sd": 0.0,
+      "best_objectives": [
+        2.5,
+        0.20280303030303032,
+        0.0670820393249937
+      ],
+      "mean_run_best_objectives_conditional": [
+        3.8333333333333335,
+        0.20402356902356905,
+        0.08362801384846982
+      ],
+      "mean_front_objectives_per_run_conditional": [
+        10.092063492063492,
+        0.2075836740420074,
+        0.09706081944152804
+      ],
+      "time_to_first_feasible_mean_conditional": 0.24413159688891836,
+      "time_to_first_feasible_observations": 9
+    },
+    {
+      "size": "large",
+      "protocol": "wall_time",
+      "method": "ablation_local",
+      "runs": 9,
+      "feasible_runs": 9,
+      "hypervolume_mean": 1.0113179131513028,
+      "hypervolume_sd": 0.005285954534627882,
+      "runtime_mean": 16.01240745588886,
+      "runtime_sd": 0.02330974989754335,
+      "evaluations_mean": 819.1111111111111,
+      "evaluations_sd": 32.79651065450578,
+      "archive_size_mean": 49.44444444444444,
+      "archive_size_sd": 14.151953143569186,
+      "duplicate_evaluation_fraction_mean": 0.058329506550170857,
+      "duplicate_evaluation_fraction_sd": 0.014881255874073102,
+      "feasible_evaluation_fraction_mean": 1.0,
+      "feasible_evaluation_fraction_sd": 0.0,
+      "wall_time_overshoot_seconds_mean": 0.012407455888857536,
+      "wall_time_overshoot_seconds_sd": 0.02330974989754335,
+      "best_objectives": [
+        1.0,
+        0.201969696969697,
+        0.031622776601683784
+      ],
+      "mean_run_best_objectives_conditional": [
+        2.388888888888889,
+        0.20365319865319867,
+        0.03597494333854605
+      ],
+      "mean_front_objectives_per_run_conditional": [
+        15.444712413633141,
+        0.20747897560418077,
+        0.06792402474911505
+      ],
+      "time_to_first_feasible_mean_conditional": 0.2252883744444666,
+      "time_to_first_feasible_observations": 9
+    },
+    {
+      "size": "large",
+      "protocol": "wall_time",
+      "method": "greedy",
+      "runs": 9,
+      "feasible_runs": 9,
+      "hypervolume_mean": 0.9304849579299108,
+      "hypervolume_sd": 0.00925736633868717,
+      "runtime_mean": 16.099428680444387,
+      "runtime_sd": 0.08073696155066915,
+      "evaluations_mean": 74.77777777777777,
+      "evaluations_sd": 1.855921454276674,
+      "archive_size_mean": 16.333333333333332,
+      "archive_size_sd": 4.795831523312719,
+      "duplicate_evaluation_fraction_mean": 0.0,
+      "duplicate_evaluation_fraction_sd": 0.0,
+      "feasible_evaluation_fraction_mean": 1.0,
+      "feasible_evaluation_fraction_sd": 0.0,
+      "wall_time_overshoot_seconds_mean": 0.09942868044438707,
+      "wall_time_overshoot_seconds_sd": 0.08073696155066915,
+      "best_objectives": [
+        1.5,
+        0.201969696969697,
+        0.0670820393249937
+      ],
+      "mean_run_best_objectives_conditional": [
+        2.2222222222222223,
+        0.20311447811447814,
+        0.07769967417891768
+      ],
+      "mean_front_objectives_per_run_conditional": [
+        5.777178068844735,
+        0.2072636982606531,
+        0.09682565344344746
+      ],
+      "time_to_first_feasible_mean_conditional": 0.2075067031110191,
+      "time_to_first_feasible_observations": 9
+    },
+    {
+      "size": "large",
+      "protocol": "wall_time",
+      "method": "memetic",
+      "runs": 9,
+      "feasible_runs": 9,
+      "hypervolume_mean": 1.01396716349329,
+      "hypervolume_sd": 0.0031031279567500228,
+      "runtime_mean": 16.044866706888925,
+      "runtime_sd": 0.07246740272737666,
+      "evaluations_mean": 800.3333333333334,
+      "evaluations_sd": 39.978119015281344,
+      "archive_size_mean": 62.44444444444444,
+      "archive_size_sd": 10.001388792451666,
+      "duplicate_evaluation_fraction_mean": 0.09786056966804837,
+      "duplicate_evaluation_fraction_sd": 0.018606409860904602,
+      "feasible_evaluation_fraction_mean": 1.0,
+      "feasible_evaluation_fraction_sd": 0.0,
+      "wall_time_overshoot_seconds_mean": 0.04486670688892344,
+      "wall_time_overshoot_seconds_sd": 0.07246740272737666,
+      "best_objectives": [
+        1.0,
+        0.2012121212121212,
+        0.03316624790355399
+      ],
+      "mean_run_best_objectives_conditional": [
+        1.8888888888888888,
+        0.20297979797979798,
+        0.03523771620682644
+      ],
+      "mean_front_objectives_per_run_conditional": [
+        13.725556495699085,
+        0.20715593456179843,
+        0.06586814093283545
+      ],
+      "time_to_first_feasible_mean_conditional": 0.23087431611108716,
+      "time_to_first_feasible_observations": 9
+    },
+    {
+      "size": "large",
+      "protocol": "wall_time",
+      "method": "original_enhanced",
+      "runs": 9,
+      "feasible_runs": 9,
+      "hypervolume_mean": 0.9170140978116748,
+      "hypervolume_sd": 0.015257061864010105,
+      "runtime_mean": 16.134540962444337,
+      "runtime_sd": 0.09172714378256452,
+      "evaluations_mean": 226.88888888888889,
+      "evaluations_sd": 4.371625682868,
+      "archive_size_mean": 5.666666666666667,
+      "archive_size_sd": 2.3979157616563596,
+      "duplicate_evaluation_fraction_mean": 0.006874350197503493,
+      "duplicate_evaluation_fraction_sd": 0.0044829782811528,
+      "feasible_evaluation_fraction_mean": 0.4041255519363555,
+      "feasible_evaluation_fraction_sd": 0.012897413919208846,
+      "wall_time_overshoot_seconds_mean": 0.1345409624443366,
+      "wall_time_overshoot_seconds_sd": 0.09172714378256452,
+      "best_objectives": [
+        2.5,
+        0.20280303030303032,
+        0.0670820393249937
+      ],
+      "mean_run_best_objectives_conditional": [
+        3.8333333333333335,
+        0.20402356902356905,
+        0.08362801384846982
+      ],
+      "mean_front_objectives_per_run_conditional": [
+        10.092063492063492,
+        0.2075836740420074,
+        0.09706081944152804
+      ],
+      "time_to_first_feasible_mean_conditional": 0.23317803499983508,
+      "time_to_first_feasible_observations": 9
+    },
+    {
+      "size": "medium",
+      "protocol": "evaluations",
+      "method": "ablation_local",
+      "runs": 9,
+      "feasible_runs": 9,
+      "hypervolume_mean": 1.0541466239008999,
+      "hypervolume_sd": 0.004722942166463069,
+      "runtime_mean": 2.969798577555619,
+      "runtime_sd": 0.13968703932002932,
+      "evaluations_mean": 360,
+      "evaluations_sd": 0.0,
+      "archive_size_mean": 22.555555555555557,
+      "archive_size_sd": 6.875883781578756,
+      "duplicate_evaluation_fraction_mean": 0.04969135802469136,
+      "duplicate_evaluation_fraction_sd": 0.016692367016036987,
+      "feasible_evaluation_fraction_mean": 1.0,
+      "feasible_evaluation_fraction_sd": 0.0,
+      "wall_time_overshoot_seconds_mean": 0.0,
+      "wall_time_overshoot_seconds_sd": 0.0,
+      "best_objectives": [
+        0.0,
+        0.17891566265060244,
+        0.022912878474779196
+      ],
+      "mean_run_best_objectives_conditional": [
+        0.05555555555555555,
+        0.18467202141900937,
+        0.02619684070102647
+      ],
+      "mean_front_objectives_per_run_conditional": [
+        3.865370693886196,
+        0.19149919778448476,
+        0.05837877823598461
+      ],
+      "time_to_first_feasible_mean_conditional": 0.05480005411110748,
+      "time_to_first_feasible_observations": 9
+    },
+    {
+      "size": "medium",
+      "protocol": "evaluations",
+      "method": "greedy",
+      "runs": 9,
+      "feasible_runs": 9,
+      "hypervolume_mean": 1.008330477117352,
+      "hypervolume_sd": 0.012091773599332084,
+      "runtime_mean": 20.215351204666653,
+      "runtime_sd": 0.37455142135737046,
+      "evaluations_mean": 360,
+      "evaluations_sd": 0.0,
+      "archive_size_mean": 15,
+      "archive_size_sd": 3.122498999199199,
+      "duplicate_evaluation_fraction_mean": 0.0,
+      "duplicate_evaluation_fraction_sd": 0.0,
+      "feasible_evaluation_fraction_mean": 1.0,
+      "feasible_evaluation_fraction_sd": 0.0,
+      "wall_time_overshoot_seconds_mean": 0.0,
+      "wall_time_overshoot_seconds_sd": 0.0,
+      "best_objectives": [
+        0.0,
+        0.1785140562248996,
+        0.04213074886588179
+      ],
+      "mean_run_best_objectives_conditional": [
+        0.0,
+        0.1821731369924141,
+        0.05027213830996907
+      ],
+      "mean_front_objectives_per_run_conditional": [
+        0.977327610660944,
+        0.18943570077104216,
+        0.07583531507078727
+      ],
+      "time_to_first_feasible_mean_conditional": 0.055665880777799735,
+      "time_to_first_feasible_observations": 9
+    },
+    {
+      "size": "medium",
+      "protocol": "evaluations",
+      "method": "memetic",
+      "runs": 9,
+      "feasible_runs": 9,
+      "hypervolume_mean": 1.0561048224120422,
+      "hypervolume_sd": 0.007448083224555915,
+      "runtime_mean": 2.9277491469999606,
+      "runtime_sd": 0.09113019217629195,
+      "evaluations_mean": 360,
+      "evaluations_sd": 0.0,
+      "archive_size_mean": 26.444444444444443,
+      "archive_size_sd": 5.897268670984711,
+      "duplicate_evaluation_fraction_mean": 0.09382716049382715,
+      "duplicate_evaluation_fraction_sd": 0.017223217812720626,
+      "feasible_evaluation_fraction_mean": 1.0,
+      "feasible_evaluation_fraction_sd": 0.0,
+      "wall_time_overshoot_seconds_mean": 0.0,
+      "wall_time_overshoot_seconds_sd": 0.0,
+      "best_objectives": [
+        0.0,
+        0.17891566265060244,
+        0.022912878474779196
+      ],
+      "mean_run_best_objectives_conditional": [
+        0.05555555555555555,
+        0.18409192324854975,
+        0.02564951366331859
+      ],
+      "mean_front_objectives_per_run_conditional": [
+        3.852333825371265,
+        0.18955785067171435,
+        0.05344138431925348
+      ],
+      "time_to_first_feasible_mean_conditional": 0.055069183888867376,
+      "time_to_first_feasible_observations": 9
+    },
+    {
+      "size": "medium",
+      "protocol": "evaluations",
+      "method": "original_enhanced",
+      "runs": 9,
+      "feasible_runs": 9,
+      "hypervolume_mean": 0.976718854024637,
+      "hypervolume_sd": 0.009740085401297026,
+      "runtime_mean": 6.490030342444495,
+      "runtime_sd": 0.29646021899683056,
+      "evaluations_mean": 360,
+      "evaluations_sd": 0.0,
+      "archive_size_mean": 6.333333333333333,
+      "archive_size_sd": 2.29128784747792,
+      "duplicate_evaluation_fraction_mean": 0.011419753086419753,
+      "duplicate_evaluation_fraction_sd": 0.0032407407407407406,
+      "feasible_evaluation_fraction_mean": 0.4185185185185185,
+      "feasible_evaluation_fraction_sd": 0.025722582190905733,
+      "wall_time_overshoot_seconds_mean": 0.0,
+      "wall_time_overshoot_seconds_sd": 0.0,
+      "best_objectives": [
+        0.0,
+        0.17891566265060244,
+        0.0526782687642637
+      ],
+      "mean_run_best_objectives_conditional": [
+        0.2222222222222222,
+        0.1856537260151718,
+        0.06391721328065171
+      ],
+      "mean_front_objectives_per_run_conditional": [
+        6.127425044091711,
+        0.19234312913027773,
+        0.09034550907251059
+      ],
+      "time_to_first_feasible_mean_conditional": 0.062367849333339914,
+      "time_to_first_feasible_observations": 9
+    },
+    {
+      "size": "medium",
+      "protocol": "wall_time",
+      "method": "ablation_local",
+      "runs": 9,
+      "feasible_runs": 9,
+      "hypervolume_mean": 1.0613136887715708,
+      "hypervolume_sd": 0.002867191414896886,
+      "runtime_mean": 6.019100179222202,
+      "runtime_sd": 0.022681177222241146,
+      "evaluations_mean": 974.2222222222222,
+      "evaluations_sd": 62.00761601968297,
+      "archive_size_mean": 23,
+      "archive_size_sd": 7.19374728496908,
+      "duplicate_evaluation_fraction_mean": 0.09576216640238218,
+      "duplicate_evaluation_fraction_sd": 0.01633605336642824,
+      "feasible_evaluation_fraction_mean": 1.0,
+      "feasible_evaluation_fraction_sd": 0.0,
+      "wall_time_overshoot_seconds_mean": 0.019100179222202012,
+      "wall_time_overshoot_seconds_sd": 0.022681177222241146,
+      "best_objectives": [
+        0.0,
+        0.17891566265060244,
+        0.022912878474779196
+      ],
+      "mean_run_best_objectives_conditional": [
+        0.0,
+        0.18453815261044176,
+        0.022912878474779196
+      ],
+      "mean_front_objectives_per_run_conditional": [
+        3.592239674857642,
+        0.1897288924147089,
+        0.05241064406989697
+      ],
+      "time_to_first_feasible_mean_conditional": 0.05719720744446022,
+      "time_to_first_feasible_observations": 9
+    },
+    {
+      "size": "medium",
+      "protocol": "wall_time",
+      "method": "greedy",
+      "runs": 9,
+      "feasible_runs": 9,
+      "hypervolume_mean": 0.9887098256973679,
+      "hypervolume_sd": 0.014281204185976127,
+      "runtime_mean": 6.024681285999956,
+      "runtime_sd": 0.014113139419416483,
+      "evaluations_mean": 106.22222222222223,
+      "evaluations_sd": 4.549114687985393,
+      "archive_size_mean": 8.777777777777779,
+      "archive_size_sd": 2.7284509239574835,
+      "duplicate_evaluation_fraction_mean": 0.0,
+      "duplicate_evaluation_fraction_sd": 0.0,
+      "feasible_evaluation_fraction_mean": 1.0,
+      "feasible_evaluation_fraction_sd": 0.0,
+      "wall_time_overshoot_seconds_mean": 0.024681285999956042,
+      "wall_time_overshoot_seconds_sd": 0.014113139419416483,
+      "best_objectives": [
+        0.0,
+        0.1785140562248996,
+        0.04769696007084729
+      ],
+      "mean_run_best_objectives_conditional": [
+        0.0,
+        0.18333333333333335,
+        0.059463420682043765
+      ],
+      "mean_front_objectives_per_run_conditional": [
+        1.1099426807760142,
+        0.19004213503042153,
+        0.07604777488359171
+      ],
+      "time_to_first_feasible_mean_conditional": 0.05340101955554625,
+      "time_to_first_feasible_observations": 9
+    },
+    {
+      "size": "medium",
+      "protocol": "wall_time",
+      "method": "memetic",
+      "runs": 9,
+      "feasible_runs": 9,
+      "hypervolume_mean": 1.060476673593039,
+      "hypervolume_sd": 0.007160194098150233,
+      "runtime_mean": 6.008023471777784,
+      "runtime_sd": 0.008511266065112775,
+      "evaluations_mean": 948.1111111111111,
+      "evaluations_sd": 63.82876397918975,
+      "archive_size_mean": 21.555555555555557,
+      "archive_size_sd": 9.514608650794722,
+      "duplicate_evaluation_fraction_mean": 0.12560100936927251,
+      "duplicate_evaluation_fraction_sd": 0.02176549818950637,
+      "feasible_evaluation_fraction_mean": 1.0,
+      "feasible_evaluation_fraction_sd": 0.0,
+      "wall_time_overshoot_seconds_mean": 0.00802347177778352,
+      "wall_time_overshoot_seconds_sd": 0.008511266065112775,
+      "best_objectives": [
+        0.0,
+        0.178714859437751,
+        0.022912878474779196
+      ],
+      "mean_run_best_objectives_conditional": [
+        0.0,
+        0.18348951360999555,
+        0.024007532550194954
+      ],
+      "mean_front_objectives_per_run_conditional": [
+        2.3074243963712653,
+        0.18765347378345615,
+        0.04415389842729974
+      ],
+      "time_to_first_feasible_mean_conditional": 0.05504460366667748,
+      "time_to_first_feasible_observations": 9
+    },
+    {
+      "size": "medium",
+      "protocol": "wall_time",
+      "method": "original_enhanced",
+      "runs": 9,
+      "feasible_runs": 9,
+      "hypervolume_mean": 0.9766996440731809,
+      "hypervolume_sd": 0.009747611037062077,
+      "runtime_mean": 6.02866095755553,
+      "runtime_sd": 0.022215492709472377,
+      "evaluations_mean": 328,
+      "evaluations_sd": 18.0,
+      "archive_size_mean": 6.222222222222222,
+      "archive_size_sd": 2.488864087178013,
+      "duplicate_evaluation_fraction_mean": 0.011470502874480391,
+      "duplicate_evaluation_fraction_sd": 0.0038478063754582323,
+      "feasible_evaluation_fraction_mean": 0.41945413927463354,
+      "feasible_evaluation_fraction_sd": 0.02582983296482453,
+      "wall_time_overshoot_seconds_mean": 0.02866095755553033,
+      "wall_time_overshoot_seconds_sd": 0.022215492709472377,
+      "best_objectives": [
+        0.0,
+        0.17891566265060244,
+        0.0526782687642637
+      ],
+      "mean_run_best_objectives_conditional": [
+        0.2222222222222222,
+        0.18567603748326642,
+        0.06391721328065171
+      ],
+      "mean_front_objectives_per_run_conditional": [
+        5.00705467372134,
+        0.1924695607828138,
+        0.08804681713676464
+      ],
+      "time_to_first_feasible_mean_conditional": 0.06471697177774634,
+      "time_to_first_feasible_observations": 9
+    },
+    {
+      "size": "small",
+      "protocol": "evaluations",
+      "method": "ablation_local",
+      "runs": 3,
+      "feasible_runs": 3,
+      "hypervolume_mean": 0.9302312153419897,
+      "hypervolume_sd": 0.004945754189557269,
+      "runtime_mean": 2.0340509973333005,
+      "runtime_sd": 0.0747292989854725,
+      "evaluations_mean": 720,
+      "evaluations_sd": 0.0,
+      "archive_size_mean": 3,
+      "archive_size_sd": 2.0,
+      "duplicate_evaluation_fraction_mean": 0.15416666666666667,
+      "duplicate_evaluation_fraction_sd": 0.02138167266436201,
+      "feasible_evaluation_fraction_mean": 1.0,
+      "feasible_evaluation_fraction_sd": 0.0,
+      "wall_time_overshoot_seconds_mean": 0.0,
+      "wall_time_overshoot_seconds_sd": 0.0,
+      "best_objectives": [
+        0.0,
+        0.2545454545454546,
+        0.04714045207910319
+      ],
+      "mean_run_best_objectives_conditional": [
+        0.0,
+        0.2590909090909091,
+        0.04714045207910319
+      ],
+      "mean_front_objectives_per_run_conditional": [
+        0.8555555555555555,
+        0.261010101010101,
+        0.05291377867381457
+      ],
+      "time_to_first_feasible_mean_conditional": 0.01197335233329492,
+      "time_to_first_feasible_observations": 3
+    },
+    {
+      "size": "small",
+      "protocol": "evaluations",
+      "method": "greedy",
+      "runs": 3,
+      "feasible_runs": 3,
+      "hypervolume_mean": 0.9347473589078261,
+      "hypervolume_sd": 0.00012077840051466561,
+      "runtime_mean": 8.911791359666646,
+      "runtime_sd": 0.28572097198053004,
+      "evaluations_mean": 720,
+      "evaluations_sd": 0.0,
+      "archive_size_mean": 2.6666666666666665,
+      "archive_size_sd": 0.5773502691896257,
+      "duplicate_evaluation_fraction_mean": 0.0,
+      "duplicate_evaluation_fraction_sd": 0.0,
+      "feasible_evaluation_fraction_mean": 1.0,
+      "feasible_evaluation_fraction_sd": 0.0,
+      "wall_time_overshoot_seconds_mean": 0.0,
+      "wall_time_overshoot_seconds_sd": 0.0,
+      "best_objectives": [
+        0.0,
+        0.2545454545454546,
+        0.04714045207910319
+      ],
+      "mean_run_best_objectives_conditional": [
+        0.0,
+        0.2545454545454546,
+        0.04714045207910319
+      ],
+      "mean_front_objectives_per_run_conditional": [
+        0.16666666666666666,
+        0.25984848484848483,
+        0.06554841414566474
+      ],
+      "time_to_first_feasible_mean_conditional": 0.015348046333353219,
+      "time_to_first_feasible_observations": 3
+    },
+    {
+      "size": "small",
+      "protocol": "evaluations",
+      "method": "memetic",
+      "runs": 3,
+      "feasible_runs": 3,
+      "hypervolume_mean": 0.9302901636536592,
+      "hypervolume_sd": 0.005028595479208919,
+      "runtime_mean": 2.117979379333216,
+      "runtime_sd": 0.22828741242898212,
+      "evaluations_mean": 720,
+      "evaluations_sd": 0.0,
+      "archive_size_mean": 1,
+      "archive_size_sd": 0.0,
+      "duplicate_evaluation_fraction_mean": 0.12407407407407407,
+      "duplicate_evaluation_fraction_sd": 0.040643296766089985,
+      "feasible_evaluation_fraction_mean": 1.0,
+      "feasible_evaluation_fraction_sd": 0.0,
+      "wall_time_overshoot_seconds_mean": 0.0,
+      "wall_time_overshoot_seconds_sd": 0.0,
+      "best_objectives": [
+        0.0,
+        0.2545454545454546,
+        0.04714045207910319
+      ],
+      "mean_run_best_objectives_conditional": [
+        0.0,
+        0.2590909090909091,
+        0.04714045207910319
+      ],
+      "mean_front_objectives_per_run_conditional": [
+        0.0,
+        0.2590909090909091,
+        0.04714045207910319
+      ],
+      "time_to_first_feasible_mean_conditional": 0.012801059999977346,
+      "time_to_first_feasible_observations": 3
+    },
+    {
+      "size": "small",
+      "protocol": "evaluations",
+      "method": "original_enhanced",
+      "runs": 3,
+      "feasible_runs": 3,
+      "hypervolume_mean": 0.9342422284325088,
+      "hypervolume_sd": 0.0008121229321181947,
+      "runtime_mean": 2.7384670346666553,
+      "runtime_sd": 0.045476143568925056,
+      "evaluations_mean": 720,
+      "evaluations_sd": 0.0,
+      "archive_size_mean": 11.333333333333334,
+      "archive_size_sd": 2.0816659994661326,
+      "duplicate_evaluation_fraction_mean": 0.013888888888888888,
+      "duplicate_evaluation_fraction_sd": 0.0027777777777777775,
+      "feasible_evaluation_fraction_mean": 0.4837962962962963,
+      "feasible_evaluation_fraction_sd": 0.007649403537897364,
+      "wall_time_overshoot_seconds_mean": 0.0,
+      "wall_time_overshoot_seconds_sd": 0.0,
+      "best_objectives": [
+        0.0,
+        0.2545454545454546,
+        0.04714045207910319
+      ],
+      "mean_run_best_objectives_conditional": [
+        0.0,
+        0.2545454545454546,
+        0.04714045207910319
+      ],
+      "mean_front_objectives_per_run_conditional": [
+        3.8290598290598292,
+        0.26606449106449104,
+        0.08068720363903667
+      ],
+      "time_to_first_feasible_mean_conditional": 0.015801970333313875,
+      "time_to_first_feasible_observations": 3
+    },
+    {
+      "size": "small",
+      "protocol": "wall_time",
+      "method": "ablation_local",
+      "runs": 3,
+      "feasible_runs": 3,
+      "hypervolume_mean": 0.9302355691043094,
+      "hypervolume_sd": 0.004952247052815808,
+      "runtime_mean": 2.502635342333406,
+      "runtime_sd": 0.0007448963740208664,
+      "evaluations_mean": 846,
+      "evaluations_sd": 32.046840717924134,
+      "archive_size_mean": 2.6666666666666665,
+      "archive_size_sd": 2.0816659994661326,
+      "duplicate_evaluation_fraction_mean": 0.16935336682142052,
+      "duplicate_evaluation_fraction_sd": 0.013302619717320793,
+      "feasible_evaluation_fraction_mean": 1.0,
+      "feasible_evaluation_fraction_sd": 0.0,
+      "wall_time_overshoot_seconds_mean": 0.002635342333405788,
+      "wall_time_overshoot_seconds_sd": 0.0007448963740208664,
+      "best_objectives": [
+        0.0,
+        0.2545454545454546,
+        0.04714045207910319
+      ],
+      "mean_run_best_objectives_conditional": [
+        0.0,
+        0.2590909090909091,
+        0.04714045207910319
+      ],
+      "mean_front_objectives_per_run_conditional": [
+        0.9666666666666667,
+        0.26025252525252524,
+        0.05336581354937865
+      ],
+      "time_to_first_feasible_mean_conditional": 0.012729557333310973,
+      "time_to_first_feasible_observations": 3
+    },
+    {
+      "size": "small",
+      "protocol": "wall_time",
+      "method": "greedy",
+      "runs": 3,
+      "feasible_runs": 3,
+      "hypervolume_mean": 0.9297808805207414,
+      "hypervolume_sd": 0.004889552191085704,
+      "runtime_mean": 2.507971964000035,
+      "runtime_sd": 0.00461500324246125,
+      "evaluations_mean": 189,
+      "evaluations_sd": 15.620499351813308,
+      "archive_size_mean": 3.6666666666666665,
+      "archive_size_sd": 0.5773502691896257,
+      "duplicate_evaluation_fraction_mean": 0.0,
+      "duplicate_evaluation_fraction_sd": 0.0,
+      "feasible_evaluation_fraction_mean": 1.0,
+      "feasible_evaluation_fraction_sd": 0.0,
+      "wall_time_overshoot_seconds_mean": 0.007971964000034859,
+      "wall_time_overshoot_seconds_sd": 0.00461500324246125,
+      "best_objectives": [
+        0.0,
+        0.2545454545454546,
+        0.04714045207910319
+      ],
+      "mean_run_best_objectives_conditional": [
+        0.0,
+        0.2590909090909091,
+        0.04714045207910319
+      ],
+      "mean_front_objectives_per_run_conditional": [
+        0.2361111111111111,
+        0.26376262626262625,
+        0.07096403448618843
+      ],
+      "time_to_first_feasible_mean_conditional": 0.011898582333363569,
+      "time_to_first_feasible_observations": 3
+    },
+    {
+      "size": "small",
+      "protocol": "wall_time",
+      "method": "memetic",
+      "runs": 3,
+      "feasible_runs": 3,
+      "hypervolume_mean": 0.9302901636536592,
+      "hypervolume_sd": 0.005028595479208919,
+      "runtime_mean": 2.5052012716666163,
+      "runtime_sd": 0.0039181102960925375,
+      "evaluations_mean": 805.6666666666666,
+      "evaluations_sd": 160.65283481262736,
+      "archive_size_mean": 1,
+      "archive_size_sd": 0.0,
+      "duplicate_evaluation_fraction_mean": 0.12309670870899715,
+      "duplicate_evaluation_fraction_sd": 0.027146577298969788,
+      "feasible_evaluation_fraction_mean": 1.0,
+      "feasible_evaluation_fraction_sd": 0.0,
+      "wall_time_overshoot_seconds_mean": 0.005201271666616473,
+      "wall_time_overshoot_seconds_sd": 0.0039181102960925375,
+      "best_objectives": [
+        0.0,
+        0.2545454545454546,
+        0.04714045207910319
+      ],
+      "mean_run_best_objectives_conditional": [
+        0.0,
+        0.2590909090909091,
+        0.04714045207910319
+      ],
+      "mean_front_objectives_per_run_conditional": [
+        0.0,
+        0.2590909090909091,
+        0.04714045207910319
+      ],
+      "time_to_first_feasible_mean_conditional": 0.012626357999882506,
+      "time_to_first_feasible_observations": 3
+    },
+    {
+      "size": "small",
+      "protocol": "wall_time",
+      "method": "original_enhanced",
+      "runs": 3,
+      "feasible_runs": 3,
+      "hypervolume_mean": 0.9314711396912367,
+      "hypervolume_sd": 0.005517528381539769,
+      "runtime_mean": 2.506909006666698,
+      "runtime_sd": 0.004259593157613333,
+      "evaluations_mean": 608.3333333333334,
+      "evaluations_sd": 47.258156262526086,
+      "archive_size_mean": 9.666666666666666,
+      "archive_size_sd": 3.2145502536643185,
+      "duplicate_evaluation_fraction_mean": 0.01138749912703401,
+      "duplicate_evaluation_fraction_sd": 0.0024775665450134355,
+      "feasible_evaluation_fraction_mean": 0.4834024722396815,
+      "feasible_evaluation_fraction_sd": 0.0032549482875713,
+      "wall_time_overshoot_seconds_mean": 0.006909006666698285,
+      "wall_time_overshoot_seconds_sd": 0.004259593157613333,
+      "best_objectives": [
+        0.0,
+        0.2545454545454546,
+        0.04714045207910319
+      ],
+      "mean_run_best_objectives_conditional": [
+        0.0,
+        0.25757575757575757,
+        0.04714045207910319
+      ],
+      "mean_front_objectives_per_run_conditional": [
+        3.0883838383838382,
+        0.26634527089072546,
+        0.07785935373436124
+      ],
+      "time_to_first_feasible_mean_conditional": 0.01454434533343374,
+      "time_to_first_feasible_observations": 3
+    }
+  ],
+  "comparisons": {
+    "large/evaluations/ablation_local_vs_greedy": {
+      "paired_run_descriptive": {
+        "pairs": 9,
+        "wins": 9,
+        "losses": 0,
+        "ties": 0,
+        "median_difference": 0.03350397125041682,
+        "mean_difference": 0.03769394381041951,
+        "paired_superiority": 1.0,
+        "sign_test_p_two_sided": 0.00390625
+      },
+      "instance_mean_sign_test": {
+        "pairs": 3,
+        "wins": 3,
+        "losses": 0,
+        "ties": 0,
+        "median_difference": 0.03804989821049842,
+        "mean_difference": 0.03769394381041954,
+        "paired_superiority": 1.0,
+        "sign_test_p_two_sided": 0.25
+      },
+      "instance_mean_differences": [
+        {
+          "instance_id": "large_1010",
+          "paired_solver_seeds": 3,
+          "method_mean_hypervolume": 0.9687106590380979,
+          "reference_mean_hypervolume": 0.9411048706434925,
+          "difference": 0.02760578839460548
+        },
+        {
+          "instance_id": "large_1020",
+          "paired_solver_seeds": 3,
+          "method_mean_hypervolume": 0.9810881751281914,
+          "reference_mean_hypervolume": 0.9336620303020366,
+          "difference": 0.047426144826154704
+        },
+        {
+          "instance_id": "large_1030",
+          "paired_solver_seeds": 3,
+          "method_mean_hypervolume": 0.9857537389356279,
+          "reference_mean_hypervolume": 0.9477038407251295,
+          "difference": 0.03804989821049842
+        }
+      ],
+      "coverage_method_over_greedy_mean": 0.1725952206173842,
+      "coverage_method_over_greedy_defined_pairs": 9,
+      "coverage_greedy_over_method_mean": 0.39723736205029875,
+      "coverage_greedy_over_method_defined_pairs": 9,
+      "inference_note": "Solver seeds within an instance are clustered; independent-instance mean tests have low power with few instances. No multiplicity-adjusted superiority claim is implied."
+    },
+    "large/evaluations/memetic_vs_greedy": {
+      "paired_run_descriptive": {
+        "pairs": 9,
+        "wins": 9,
+        "losses": 0,
+        "ties": 0,
+        "median_difference": 0.03958791710060716,
+        "mean_difference": 0.036480661973287996,
+        "paired_superiority": 1.0,
+        "sign_test_p_two_sided": 0.00390625
+      },
+      "instance_mean_sign_test": {
+        "pairs": 3,
+        "wins": 3,
+        "losses": 0,
+        "ties": 0,
+        "median_difference": 0.03349047457354193,
+        "mean_difference": 0.03648066197328803,
+        "paired_superiority": 1.0,
+        "sign_test_p_two_sided": 0.25
+      },
+      "instance_mean_differences": [
+        {
+          "instance_id": "large_1010",
+          "paired_solver_seeds": 3,
+          "method_mean_hypervolume": 0.9669910242653975,
+          "reference_mean_hypervolume": 0.9411048706434925,
+          "difference": 0.02588615362190505
+        },
+        {
+          "instance_id": "large_1020",
+          "paired_solver_seeds": 3,
+          "method_mean_hypervolume": 0.9837273880264538,
+          "reference_mean_hypervolume": 0.9336620303020366,
+          "difference": 0.050065357724417114
+        },
+        {
+          "instance_id": "large_1030",
+          "paired_solver_seeds": 3,
+          "method_mean_hypervolume": 0.9811943152986714,
+          "reference_mean_hypervolume": 0.9477038407251295,
+          "difference": 0.03349047457354193
+        }
+      ],
+      "coverage_method_over_greedy_mean": 0.2743329658427405,
+      "coverage_method_over_greedy_defined_pairs": 9,
+      "coverage_greedy_over_method_mean": 0.26936535686535684,
+      "coverage_greedy_over_method_defined_pairs": 9,
+      "inference_note": "Solver seeds within an instance are clustered; independent-instance mean tests have low power with few instances. No multiplicity-adjusted superiority claim is implied."
+    },
+    "large/evaluations/original_enhanced_vs_greedy": {
+      "paired_run_descriptive": {
+        "pairs": 9,
+        "wins": 0,
+        "losses": 9,
+        "ties": 0,
+        "median_difference": -0.02072256064404887,
+        "mean_difference": -0.02380948274521144,
+        "paired_superiority": 0.0,
+        "sign_test_p_two_sided": 0.00390625
+      },
+      "instance_mean_sign_test": {
+        "pairs": 3,
+        "wins": 0,
+        "losses": 3,
+        "ties": 0,
+        "median_difference": -0.023622839958786224,
+        "mean_difference": -0.02380948274521144,
+        "paired_superiority": 0.0,
+        "sign_test_p_two_sided": 0.25
+      },
+      "instance_mean_differences": [
+        {
+          "instance_id": "large_1010",
+          "paired_solver_seeds": 3,
+          "method_mean_hypervolume": 0.9145513448670414,
+          "reference_mean_hypervolume": 0.9411048706434925,
+          "difference": -0.026553525776451092
+        },
+        {
+          "instance_id": "large_1020",
+          "paired_solver_seeds": 3,
+          "method_mean_hypervolume": 0.9100391903432504,
+          "reference_mean_hypervolume": 0.9336620303020366,
+          "difference": -0.023622839958786224
+        },
+        {
+          "instance_id": "large_1030",
+          "paired_solver_seeds": 3,
+          "method_mean_hypervolume": 0.9264517582247325,
+          "reference_mean_hypervolume": 0.9477038407251295,
+          "difference": -0.021252082500397007
+        }
+      ],
+      "coverage_method_over_greedy_mean": 0.05722046792738951,
+      "coverage_method_over_greedy_defined_pairs": 9,
+      "coverage_greedy_over_method_mean": 0.9814814814814815,
+      "coverage_greedy_over_method_defined_pairs": 9,
+      "inference_note": "Solver seeds within an instance are clustered; independent-instance mean tests have low power with few instances. No multiplicity-adjusted superiority claim is implied."
+    },
+    "large/evaluations/memetic_vs_ablation_local": {
+      "method": "memetic",
+      "reference_method": "ablation_local",
+      "paired_run_descriptive": {
+        "pairs": 9,
+        "wins": 4,
+        "losses": 5,
+        "ties": 0,
+        "median_difference": -0.0023857413016866724,
+        "mean_difference": -0.0012132818371315165,
+        "paired_superiority": 0.4444444444444444,
+        "sign_test_p_two_sided": 1.0
+      },
+      "instance_mean_sign_test": {
+        "pairs": 3,
+        "wins": 1,
+        "losses": 2,
+        "ties": 0,
+        "median_difference": -0.001719634772700429,
+        "mean_difference": -0.0012132818371315042,
+        "paired_superiority": 0.3333333333333333,
+        "sign_test_p_two_sided": 1.0
+      },
+      "instance_mean_differences": [
+        {
+          "instance_id": "large_1010",
+          "paired_solver_seeds": 3,
+          "method_mean_hypervolume": 0.9669910242653975,
+          "reference_mean_hypervolume": 0.9687106590380979,
+          "difference": -0.001719634772700429
+        },
+        {
+          "instance_id": "large_1020",
+          "paired_solver_seeds": 3,
+          "method_mean_hypervolume": 0.9837273880264538,
+          "reference_mean_hypervolume": 0.9810881751281914,
+          "difference": 0.002639212898262411
+        },
+        {
+          "instance_id": "large_1030",
+          "paired_solver_seeds": 3,
+          "method_mean_hypervolume": 0.9811943152986714,
+          "reference_mean_hypervolume": 0.9857537389356279,
+          "difference": -0.0045594236369564944
+        }
+      ],
+      "coverage_method_over_reference_mean": 0.6480510991441801,
+      "coverage_method_over_reference_defined_pairs": 9,
+      "coverage_reference_over_method_mean": 0.19112692862692862,
+      "coverage_reference_over_method_defined_pairs": 9,
+      "interpretation": "Compares the NSGA-II tournament/rank/crowding/survival policy bundle against fixed-scalar local trajectories with the same initialization/proposal family; it does not isolate one selection component.",
+      "inference_note": "Instance means are the independent comparison units; run-level results are descriptive, few instances have low power, and no multiplicity correction is applied."
+    },
+    "large/evaluations/memetic_vs_original_enhanced": {
+      "method": "memetic",
+      "reference_method": "original_enhanced",
+      "paired_run_descriptive": {
+        "pairs": 9,
+        "wins": 9,
+        "losses": 0,
+        "ties": 0,
+        "median_difference": 0.06031047774465603,
+        "mean_difference": 0.06029014471849944,
+        "paired_superiority": 1.0,
+        "sign_test_p_two_sided": 0.00390625
+      },
+      "instance_mean_sign_test": {
+        "pairs": 3,
+        "wins": 3,
+        "losses": 0,
+        "ties": 0,
+        "median_difference": 0.054742557073938936,
+        "mean_difference": 0.06029014471849947,
+        "paired_superiority": 1.0,
+        "sign_test_p_two_sided": 0.25
+      },
+      "instance_mean_differences": [
+        {
+          "instance_id": "large_1010",
+          "paired_solver_seeds": 3,
+          "method_mean_hypervolume": 0.9669910242653975,
+          "reference_mean_hypervolume": 0.9145513448670414,
+          "difference": 0.05243967939835614
+        },
+        {
+          "instance_id": "large_1020",
+          "paired_solver_seeds": 3,
+          "method_mean_hypervolume": 0.9837273880264538,
+          "reference_mean_hypervolume": 0.9100391903432504,
+          "difference": 0.07368819768320334
+        },
+        {
+          "instance_id": "large_1030",
+          "paired_solver_seeds": 3,
+          "method_mean_hypervolume": 0.9811943152986714,
+          "reference_mean_hypervolume": 0.9264517582247325,
+          "difference": 0.054742557073938936
+        }
+      ],
+      "coverage_method_over_reference_mean": 0.9703703703703703,
+      "coverage_method_over_reference_defined_pairs": 9,
+      "coverage_reference_over_method_mean": 0.020667064417064417,
+      "coverage_reference_over_method_defined_pairs": 9,
+      "interpretation": "Compares the replacement feasible memetic method against the unchanged original enhanced NSGA-II.",
+      "inference_note": "Instance means are the independent comparison units; run-level results are descriptive, few instances have low power, and no multiplicity correction is applied."
+    },
+    "large/wall_time/ablation_local_vs_greedy": {
+      "paired_run_descriptive": {
+        "pairs": 9,
+        "wins": 9,
+        "losses": 0,
+        "ties": 0,
+        "median_difference": 0.08022782081299162,
+        "mean_difference": 0.08083295522139215,
+        "paired_superiority": 1.0,
+        "sign_test_p_two_sided": 0.00390625
+      },
+      "instance_mean_sign_test": {
+        "pairs": 3,
+        "wins": 3,
+        "losses": 0,
+        "ties": 0,
+        "median_difference": 0.08203312466990087,
+        "mean_difference": 0.08083295522139211,
+        "paired_superiority": 1.0,
+        "sign_test_p_two_sided": 0.25
+      },
+      "instance_mean_differences": [
+        {
+          "instance_id": "large_1010",
+          "paired_solver_seeds": 3,
+          "method_mean_hypervolume": 1.0077385009302235,
+          "reference_mean_hypervolume": 0.9257053762603227,
+          "difference": 0.08203312466990087
+        },
+        {
+          "instance_id": "large_1020",
+          "paired_solver_seeds": 3,
+          "method_mean_hypervolume": 1.0140037179147396,
+          "reference_mean_hypervolume": 0.9261916917313784,
+          "difference": 0.08781202618336126
+        },
+        {
+          "instance_id": "large_1030",
+          "paired_solver_seeds": 3,
+          "method_mean_hypervolume": 1.0122115206089455,
+          "reference_mean_hypervolume": 0.9395578057980313,
+          "difference": 0.0726537148109142
+        }
+      ],
+      "coverage_method_over_greedy_mean": 0.5353081558963912,
+      "coverage_method_over_greedy_defined_pairs": 9,
+      "coverage_greedy_over_method_mean": 0.10459067394061701,
+      "coverage_greedy_over_method_defined_pairs": 9,
+      "inference_note": "Solver seeds within an instance are clustered; independent-instance mean tests have low power with few instances. No multiplicity-adjusted superiority claim is implied."
+    },
+    "large/wall_time/memetic_vs_greedy": {
+      "paired_run_descriptive": {
+        "pairs": 9,
+        "wins": 9,
+        "losses": 0,
+        "ties": 0,
+        "median_difference": 0.08380966863386219,
+        "mean_difference": 0.08348220556337932,
+        "paired_superiority": 1.0,
+        "sign_test_p_two_sided": 0.00390625
+      },
+      "instance_mean_sign_test": {
+        "pairs": 3,
+        "wins": 3,
+        "losses": 0,
+        "ties": 0,
+        "median_difference": 0.0873814598772078,
+        "mean_difference": 0.0834822055633793,
+        "paired_superiority": 1.0,
+        "sign_test_p_two_sided": 0.25
+      },
+      "instance_mean_differences": [
+        {
+          "instance_id": "large_1010",
+          "paired_solver_seeds": 3,
+          "method_mean_hypervolume": 1.0130868361375305,
+          "reference_mean_hypervolume": 0.9257053762603227,
+          "difference": 0.0873814598772078
+        },
+        {
+          "instance_id": "large_1020",
+          "paired_solver_seeds": 3,
+          "method_mean_hypervolume": 1.0137824593302682,
+          "reference_mean_hypervolume": 0.9261916917313784,
+          "difference": 0.08759076759888984
+        },
+        {
+          "instance_id": "large_1030",
+          "paired_solver_seeds": 3,
+          "method_mean_hypervolume": 1.0150321950120715,
+          "reference_mean_hypervolume": 0.9395578057980313,
+          "difference": 0.07547438921404026
+        }
+      ],
+      "coverage_method_over_greedy_mean": 0.7701458309301447,
+      "coverage_method_over_greedy_defined_pairs": 9,
+      "coverage_greedy_over_method_mean": 0.021242733987108624,
+      "coverage_greedy_over_method_defined_pairs": 9,
+      "inference_note": "Solver seeds within an instance are clustered; independent-instance mean tests have low power with few instances. No multiplicity-adjusted superiority claim is implied."
+    },
+    "large/wall_time/original_enhanced_vs_greedy": {
+      "paired_run_descriptive": {
+        "pairs": 9,
+        "wins": 0,
+        "losses": 9,
+        "ties": 0,
+        "median_difference": -0.01793297860146903,
+        "mean_difference": -0.013470860118236012,
+        "paired_superiority": 0.0,
+        "sign_test_p_two_sided": 0.00390625
+      },
+      "instance_mean_sign_test": {
+        "pairs": 3,
+        "wins": 0,
+        "losses": 3,
+        "ties": 0,
+        "median_difference": -0.013106047573298807,
+        "mean_difference": -0.013470860118236025,
+        "paired_superiority": 0.0,
+        "sign_test_p_two_sided": 0.25
+      },
+      "instance_mean_differences": [
+        {
+          "instance_id": "large_1010",
+          "paired_solver_seeds": 3,
+          "method_mean_hypervolume": 0.9145513448670414,
+          "reference_mean_hypervolume": 0.9257053762603227,
+          "difference": -0.011154031393281305
+        },
+        {
+          "instance_id": "large_1020",
+          "paired_solver_seeds": 3,
+          "method_mean_hypervolume": 0.9100391903432504,
+          "reference_mean_hypervolume": 0.9261916917313784,
+          "difference": -0.01615250138812796
+        },
+        {
+          "instance_id": "large_1030",
+          "paired_solver_seeds": 3,
+          "method_mean_hypervolume": 0.9264517582247325,
+          "reference_mean_hypervolume": 0.9395578057980313,
+          "difference": -0.013106047573298807
+        }
+      ],
+      "coverage_method_over_greedy_mean": 0.15926470044117103,
+      "coverage_method_over_greedy_defined_pairs": 9,
+      "coverage_greedy_over_method_mean": 0.9629629629629629,
+      "coverage_greedy_over_method_defined_pairs": 9,
+      "inference_note": "Solver seeds within an instance are clustered; independent-instance mean tests have low power with few instances. No multiplicity-adjusted superiority claim is implied."
+    },
+    "large/wall_time/memetic_vs_ablation_local": {
+      "method": "memetic",
+      "reference_method": "ablation_local",
+      "paired_run_descriptive": {
+        "pairs": 9,
+        "wins": 5,
+        "losses": 4,
+        "ties": 0,
+        "median_difference": 0.0014393096609108813,
+        "mean_difference": 0.002649250341987165,
+        "paired_superiority": 0.5555555555555556,
+        "sign_test_p_two_sided": 1.0
+      },
+      "instance_mean_sign_test": {
+        "pairs": 3,
+        "wins": 2,
+        "losses": 1,
+        "ties": 0,
+        "median_difference": 0.0028206744031260556,
+        "mean_difference": 0.0026492503419871896,
+        "paired_superiority": 0.6666666666666666,
+        "sign_test_p_two_sided": 1.0
+      },
+      "instance_mean_differences": [
+        {
+          "instance_id": "large_1010",
+          "paired_solver_seeds": 3,
+          "method_mean_hypervolume": 1.0130868361375305,
+          "reference_mean_hypervolume": 1.0077385009302235,
+          "difference": 0.005348335207306931
+        },
+        {
+          "instance_id": "large_1020",
+          "paired_solver_seeds": 3,
+          "method_mean_hypervolume": 1.0137824593302682,
+          "reference_mean_hypervolume": 1.0140037179147396,
+          "difference": -0.00022125858447141766
+        },
+        {
+          "instance_id": "large_1030",
+          "paired_solver_seeds": 3,
+          "method_mean_hypervolume": 1.0150321950120715,
+          "reference_mean_hypervolume": 1.0122115206089455,
+          "difference": 0.0028206744031260556
+        }
+      ],
+      "coverage_method_over_reference_mean": 0.6347173179230055,
+      "coverage_method_over_reference_defined_pairs": 9,
+      "coverage_reference_over_method_mean": 0.16988932876618393,
+      "coverage_reference_over_method_defined_pairs": 9,
+      "interpretation": "Compares the NSGA-II tournament/rank/crowding/survival policy bundle against fixed-scalar local trajectories with the same initialization/proposal family; it does not isolate one selection component.",
+      "inference_note": "Instance means are the independent comparison units; run-level results are descriptive, few instances have low power, and no multiplicity correction is applied."
+    },
+    "large/wall_time/memetic_vs_original_enhanced": {
+      "method": "memetic",
+      "reference_method": "original_enhanced",
+      "paired_run_descriptive": {
+        "pairs": 9,
+        "wins": 9,
+        "losses": 0,
+        "ties": 0,
+        "median_difference": 0.09692202990125087,
+        "mean_difference": 0.09695306568161532,
+        "paired_superiority": 1.0,
+        "sign_test_p_two_sided": 0.00390625
+      },
+      "instance_mean_sign_test": {
+        "pairs": 3,
+        "wins": 3,
+        "losses": 0,
+        "ties": 0,
+        "median_difference": 0.0985354912704891,
+        "mean_difference": 0.09695306568161532,
+        "paired_superiority": 1.0,
+        "sign_test_p_two_sided": 0.25
+      },
+      "instance_mean_differences": [
+        {
+          "instance_id": "large_1010",
+          "paired_solver_seeds": 3,
+          "method_mean_hypervolume": 1.0130868361375305,
+          "reference_mean_hypervolume": 0.9145513448670414,
+          "difference": 0.0985354912704891
+        },
+        {
+          "instance_id": "large_1020",
+          "paired_solver_seeds": 3,
+          "method_mean_hypervolume": 1.0137824593302682,
+          "reference_mean_hypervolume": 0.9100391903432504,
+          "difference": 0.1037432689870178
+        },
+        {
+          "instance_id": "large_1030",
+          "paired_solver_seeds": 3,
+          "method_mean_hypervolume": 1.0150321950120715,
+          "reference_mean_hypervolume": 0.9264517582247325,
+          "difference": 0.08858043678733907
+        }
+      ],
+      "coverage_method_over_reference_mean": 0.9888888888888889,
+      "coverage_method_over_reference_defined_pairs": 9,
+      "coverage_reference_over_method_mean": 0.004773629561765155,
+      "coverage_reference_over_method_defined_pairs": 9,
+      "interpretation": "Compares the replacement feasible memetic method against the unchanged original enhanced NSGA-II.",
+      "inference_note": "Instance means are the independent comparison units; run-level results are descriptive, few instances have low power, and no multiplicity correction is applied."
+    },
+    "medium/evaluations/ablation_local_vs_greedy": {
+      "paired_run_descriptive": {
+        "pairs": 9,
+        "wins": 9,
+        "losses": 0,
+        "ties": 0,
+        "median_difference": 0.04454238381643938,
+        "mean_difference": 0.045816146783547715,
+        "paired_superiority": 1.0,
+        "sign_test_p_two_sided": 0.00390625
+      },
+      "instance_mean_sign_test": {
+        "pairs": 3,
+        "wins": 3,
+        "losses": 0,
+        "ties": 0,
+        "median_difference": 0.047806962470391845,
+        "mean_difference": 0.04581614678354776,
+        "paired_superiority": 1.0,
+        "sign_test_p_two_sided": 0.25
+      },
+      "instance_mean_differences": [
+        {
+          "instance_id": "medium_1010",
+          "paired_solver_seeds": 3,
+          "method_mean_hypervolume": 1.0563598077009355,
+          "reference_mean_hypervolume": 1.0185466066090747,
+          "difference": 0.037813201091860815
+        },
+        {
+          "instance_id": "medium_1020",
+          "paired_solver_seeds": 3,
+          "method_mean_hypervolume": 1.0540982278270004,
+          "reference_mean_hypervolume": 1.0062912653566085,
+          "difference": 0.047806962470391845
+        },
+        {
+          "instance_id": "medium_1030",
+          "paired_solver_seeds": 3,
+          "method_mean_hypervolume": 1.0519818361747637,
+          "reference_mean_hypervolume": 1.000153559386373,
+          "difference": 0.05182827678839064
+        }
+      ],
+      "coverage_method_over_greedy_mean": 0.19155227488560822,
+      "coverage_method_over_greedy_defined_pairs": 9,
+      "coverage_greedy_over_method_mean": 0.3518040868660064,
+      "coverage_greedy_over_method_defined_pairs": 9,
+      "inference_note": "Solver seeds within an instance are clustered; independent-instance mean tests have low power with few instances. No multiplicity-adjusted superiority claim is implied."
+    },
+    "medium/evaluations/memetic_vs_greedy": {
+      "paired_run_descriptive": {
+        "pairs": 9,
+        "wins": 9,
+        "losses": 0,
+        "ties": 0,
+        "median_difference": 0.04469105897501846,
+        "mean_difference": 0.04777434529469006,
+        "paired_superiority": 1.0,
+        "sign_test_p_two_sided": 0.00390625
+      },
+      "instance_mean_sign_test": {
+        "pairs": 3,
+        "wins": 3,
+        "losses": 0,
+        "ties": 0,
+        "median_difference": 0.04871869923591299,
+        "mean_difference": 0.04777434529469008,
+        "paired_superiority": 1.0,
+        "sign_test_p_two_sided": 0.25
+      },
+      "instance_mean_differences": [
+        {
+          "instance_id": "medium_1010",
+          "paired_solver_seeds": 3,
+          "method_mean_hypervolume": 1.0572530678000276,
+          "reference_mean_hypervolume": 1.0185466066090747,
+          "difference": 0.03870646119095289
+        },
+        {
+          "instance_id": "medium_1020",
+          "paired_solver_seeds": 3,
+          "method_mean_hypervolume": 1.0621891408138129,
+          "reference_mean_hypervolume": 1.0062912653566085,
+          "difference": 0.05589787545720437
+        },
+        {
+          "instance_id": "medium_1030",
+          "paired_solver_seeds": 3,
+          "method_mean_hypervolume": 1.048872258622286,
+          "reference_mean_hypervolume": 1.000153559386373,
+          "difference": 0.04871869923591299
+        }
+      ],
+      "coverage_method_over_greedy_mean": 0.41091624424957757,
+      "coverage_method_over_greedy_defined_pairs": 9,
+      "coverage_greedy_over_method_mean": 0.19164235836941151,
+      "coverage_greedy_over_method_defined_pairs": 9,
+      "inference_note": "Solver seeds within an instance are clustered; independent-instance mean tests have low power with few instances. No multiplicity-adjusted superiority claim is implied."
+    },
+    "medium/evaluations/original_enhanced_vs_greedy": {
+      "paired_run_descriptive": {
+        "pairs": 9,
+        "wins": 0,
+        "losses": 9,
+        "ties": 0,
+        "median_difference": -0.03532900473275813,
+        "mean_difference": -0.03161162309271512,
+        "paired_superiority": 0.0,
+        "sign_test_p_two_sided": 0.00390625
+      },
+      "instance_mean_sign_test": {
+        "pairs": 3,
+        "wins": 0,
+        "losses": 3,
+        "ties": 0,
+        "median_difference": -0.025952266639732824,
+        "mean_difference": -0.03161162309271507,
+        "paired_superiority": 0.0,
+        "sign_test_p_two_sided": 0.25
+      },
+      "instance_mean_differences": [
+        {
+          "instance_id": "medium_1010",
+          "paired_solver_seeds": 3,
+          "method_mean_hypervolume": 0.974338940533744,
+          "reference_mean_hypervolume": 1.0185466066090747,
+          "difference": -0.044207666075330665
+        },
+        {
+          "instance_id": "medium_1020",
+          "paired_solver_seeds": 3,
+          "method_mean_hypervolume": 0.9816163287935268,
+          "reference_mean_hypervolume": 1.0062912653566085,
+          "difference": -0.02467493656308173
+        },
+        {
+          "instance_id": "medium_1030",
+          "paired_solver_seeds": 3,
+          "method_mean_hypervolume": 0.9742012927466402,
+          "reference_mean_hypervolume": 1.000153559386373,
+          "difference": -0.025952266639732824
+        }
+      ],
+      "coverage_method_over_greedy_mean": 0.05107546774213441,
+      "coverage_method_over_greedy_defined_pairs": 9,
+      "coverage_greedy_over_method_mean": 0.9876543209876543,
+      "coverage_greedy_over_method_defined_pairs": 9,
+      "inference_note": "Solver seeds within an instance are clustered; independent-instance mean tests have low power with few instances. No multiplicity-adjusted superiority claim is implied."
+    },
+    "medium/evaluations/memetic_vs_ablation_local": {
+      "method": "memetic",
+      "reference_method": "ablation_local",
+      "paired_run_descriptive": {
+        "pairs": 9,
+        "wins": 5,
+        "losses": 4,
+        "ties": 0,
+        "median_difference": 0.0002540259171337489,
+        "mean_difference": 0.001958198511142342,
+        "paired_superiority": 0.5555555555555556,
+        "sign_test_p_two_sided": 1.0
+      },
+      "instance_mean_sign_test": {
+        "pairs": 3,
+        "wins": 2,
+        "losses": 1,
+        "ties": 0,
+        "median_difference": 0.0008932600990920747,
+        "mean_difference": 0.0019581985111423172,
+        "paired_superiority": 0.6666666666666666,
+        "sign_test_p_two_sided": 1.0
+      },
+      "instance_mean_differences": [
+        {
+          "instance_id": "medium_1010",
+          "paired_solver_seeds": 3,
+          "method_mean_hypervolume": 1.0572530678000276,
+          "reference_mean_hypervolume": 1.0563598077009355,
+          "difference": 0.0008932600990920747
+        },
+        {
+          "instance_id": "medium_1020",
+          "paired_solver_seeds": 3,
+          "method_mean_hypervolume": 1.0621891408138129,
+          "reference_mean_hypervolume": 1.0540982278270004,
+          "difference": 0.008090912986812526
+        },
+        {
+          "instance_id": "medium_1030",
+          "paired_solver_seeds": 3,
+          "method_mean_hypervolume": 1.048872258622286,
+          "reference_mean_hypervolume": 1.0519818361747637,
+          "difference": -0.0031095775524776492
+        }
+      ],
+      "coverage_method_over_reference_mean": 0.6992603444077398,
+      "coverage_method_over_reference_defined_pairs": 9,
+      "coverage_reference_over_method_mean": 0.22466708426853355,
+      "coverage_reference_over_method_defined_pairs": 9,
+      "interpretation": "Compares the NSGA-II tournament/rank/crowding/survival policy bundle against fixed-scalar local trajectories with the same initialization/proposal family; it does not isolate one selection component.",
+      "inference_note": "Instance means are the independent comparison units; run-level results are descriptive, few instances have low power, and no multiplicity correction is applied."
+    },
+    "medium/evaluations/memetic_vs_original_enhanced": {
+      "method": "memetic",
+      "reference_method": "original_enhanced",
+      "paired_run_descriptive": {
+        "pairs": 9,
+        "wins": 9,
+        "losses": 0,
+        "ties": 0,
+        "median_difference": 0.07682004550530996,
+        "mean_difference": 0.07938596838740518,
+        "paired_superiority": 1.0,
+        "sign_test_p_two_sided": 0.00390625
+      },
+      "instance_mean_sign_test": {
+        "pairs": 3,
+        "wins": 3,
+        "losses": 0,
+        "ties": 0,
+        "median_difference": 0.0805728120202861,
+        "mean_difference": 0.07938596838740515,
+        "paired_superiority": 1.0,
+        "sign_test_p_two_sided": 0.25
+      },
+      "instance_mean_differences": [
+        {
+          "instance_id": "medium_1010",
+          "paired_solver_seeds": 3,
+          "method_mean_hypervolume": 1.0572530678000276,
+          "reference_mean_hypervolume": 0.974338940533744,
+          "difference": 0.08291412726628355
+        },
+        {
+          "instance_id": "medium_1020",
+          "paired_solver_seeds": 3,
+          "method_mean_hypervolume": 1.0621891408138129,
+          "reference_mean_hypervolume": 0.9816163287935268,
+          "difference": 0.0805728120202861
+        },
+        {
+          "instance_id": "medium_1030",
+          "paired_solver_seeds": 3,
+          "method_mean_hypervolume": 1.048872258622286,
+          "reference_mean_hypervolume": 0.9742012927466402,
+          "difference": 0.07467096587564581
+        }
+      ],
+      "coverage_method_over_reference_mean": 1.0,
+      "coverage_method_over_reference_defined_pairs": 9,
+      "coverage_reference_over_method_mean": 0.02032180558750607,
+      "coverage_reference_over_method_defined_pairs": 9,
+      "interpretation": "Compares the replacement feasible memetic method against the unchanged original enhanced NSGA-II.",
+      "inference_note": "Instance means are the independent comparison units; run-level results are descriptive, few instances have low power, and no multiplicity correction is applied."
+    },
+    "medium/wall_time/ablation_local_vs_greedy": {
+      "paired_run_descriptive": {
+        "pairs": 9,
+        "wins": 9,
+        "losses": 0,
+        "ties": 0,
+        "median_difference": 0.07436131808658963,
+        "mean_difference": 0.07260386307420302,
+        "paired_superiority": 1.0,
+        "sign_test_p_two_sided": 0.00390625
+      },
+      "instance_mean_sign_test": {
+        "pairs": 3,
+        "wins": 3,
+        "losses": 0,
+        "ties": 0,
+        "median_difference": 0.06736750030851701,
+        "mean_difference": 0.07260386307420301,
+        "paired_superiority": 1.0,
+        "sign_test_p_two_sided": 0.25
+      },
+      "instance_mean_differences": [
+        {
+          "instance_id": "medium_1010",
+          "paired_solver_seeds": 3,
+          "method_mean_hypervolume": 1.0637306033104852,
+          "reference_mean_hypervolume": 0.9963631030019682,
+          "difference": 0.06736750030851701
+        },
+        {
+          "instance_id": "medium_1020",
+          "paired_solver_seeds": 3,
+          "method_mean_hypervolume": 1.061448561812724,
+          "reference_mean_hypervolume": 0.9766205191161876,
+          "difference": 0.08482804269653643
+        },
+        {
+          "instance_id": "medium_1030",
+          "paired_solver_seeds": 3,
+          "method_mean_hypervolume": 1.0587619011915035,
+          "reference_mean_hypervolume": 0.9931458549739479,
+          "difference": 0.06561604621755557
+        }
+      ],
+      "coverage_method_over_greedy_mean": 0.4697530864197531,
+      "coverage_method_over_greedy_defined_pairs": 9,
+      "coverage_greedy_over_method_mean": 0.20107337308789214,
+      "coverage_greedy_over_method_defined_pairs": 9,
+      "inference_note": "Solver seeds within an instance are clustered; independent-instance mean tests have low power with few instances. No multiplicity-adjusted superiority claim is implied."
+    },
+    "medium/wall_time/memetic_vs_greedy": {
+      "paired_run_descriptive": {
+        "pairs": 9,
+        "wins": 9,
+        "losses": 0,
+        "ties": 0,
+        "median_difference": 0.0747818050170086,
+        "mean_difference": 0.07176684789567123,
+        "paired_superiority": 1.0,
+        "sign_test_p_two_sided": 0.00390625
+      },
+      "instance_mean_sign_test": {
+        "pairs": 3,
+        "wins": 3,
+        "losses": 0,
+        "ties": 0,
+        "median_difference": 0.06992895932001053,
+        "mean_difference": 0.07176684789567127,
+        "paired_superiority": 1.0,
+        "sign_test_p_two_sided": 0.25
+      },
+      "instance_mean_differences": [
+        {
+          "instance_id": "medium_1010",
+          "paired_solver_seeds": 3,
+          "method_mean_hypervolume": 1.0662920623219787,
+          "reference_mean_hypervolume": 0.9963631030019682,
+          "difference": 0.06992895932001053
+        },
+        {
+          "instance_id": "medium_1020",
+          "paired_solver_seeds": 3,
+          "method_mean_hypervolume": 1.0628079015878173,
+          "reference_mean_hypervolume": 0.9766205191161876,
+          "difference": 0.08618738247162971
+        },
+        {
+          "instance_id": "medium_1030",
+          "paired_solver_seeds": 3,
+          "method_mean_hypervolume": 1.0523300568693215,
+          "reference_mean_hypervolume": 0.9931458549739479,
+          "difference": 0.059184201895373545
+        }
+      ],
+      "coverage_method_over_greedy_mean": 0.8985890652557319,
+      "coverage_method_over_greedy_defined_pairs": 9,
+      "coverage_greedy_over_method_mean": 0.026198439241917504,
+      "coverage_greedy_over_method_defined_pairs": 9,
+      "inference_note": "Solver seeds within an instance are clustered; independent-instance mean tests have low power with few instances. No multiplicity-adjusted superiority claim is implied."
+    },
+    "medium/wall_time/original_enhanced_vs_greedy": {
+      "paired_run_descriptive": {
+        "pairs": 9,
+        "wins": 1,
+        "losses": 8,
+        "ties": 0,
+        "median_difference": -0.008082883191420587,
+        "mean_difference": -0.012010181624187075,
+        "paired_superiority": 0.1111111111111111,
+        "sign_test_p_two_sided": 0.0390625
+      },
+      "instance_mean_sign_test": {
+        "pairs": 3,
+        "wins": 1,
+        "losses": 2,
+        "ties": 0,
+        "median_difference": -0.019002192081676195,
+        "mean_difference": -0.012010181624187063,
+        "paired_superiority": 0.3333333333333333,
+        "sign_test_p_two_sided": 1.0
+      },
+      "instance_mean_differences": [
+        {
+          "instance_id": "medium_1010",
+          "paired_solver_seeds": 3,
+          "method_mean_hypervolume": 0.974338940533744,
+          "reference_mean_hypervolume": 0.9963631030019682,
+          "difference": -0.02202416246822414
+        },
+        {
+          "instance_id": "medium_1020",
+          "paired_solver_seeds": 3,
+          "method_mean_hypervolume": 0.9816163287935268,
+          "reference_mean_hypervolume": 0.9766205191161876,
+          "difference": 0.004995809677339147
+        },
+        {
+          "instance_id": "medium_1030",
+          "paired_solver_seeds": 3,
+          "method_mean_hypervolume": 0.9741436628922717,
+          "reference_mean_hypervolume": 0.9931458549739479,
+          "difference": -0.019002192081676195
+        }
+      ],
+      "coverage_method_over_greedy_mean": 0.1232363315696649,
+      "coverage_method_over_greedy_defined_pairs": 9,
+      "coverage_greedy_over_method_mean": 0.9506172839506173,
+      "coverage_greedy_over_method_defined_pairs": 9,
+      "inference_note": "Solver seeds within an instance are clustered; independent-instance mean tests have low power with few instances. No multiplicity-adjusted superiority claim is implied."
+    },
+    "medium/wall_time/memetic_vs_ablation_local": {
+      "method": "memetic",
+      "reference_method": "ablation_local",
+      "paired_run_descriptive": {
+        "pairs": 9,
+        "wins": 6,
+        "losses": 3,
+        "ties": 0,
+        "median_difference": 0.0003022863310340185,
+        "mean_difference": -0.0008370151785317908,
+        "paired_superiority": 0.6666666666666666,
+        "sign_test_p_two_sided": 0.5078125
+      },
+      "instance_mean_sign_test": {
+        "pairs": 3,
+        "wins": 2,
+        "losses": 1,
+        "ties": 0,
+        "median_difference": 0.0013593397750932823,
+        "mean_difference": -0.0008370151785317415,
+        "paired_superiority": 0.6666666666666666,
+        "sign_test_p_two_sided": 1.0
+      },
+      "instance_mean_differences": [
+        {
+          "instance_id": "medium_1010",
+          "paired_solver_seeds": 3,
+          "method_mean_hypervolume": 1.0662920623219787,
+          "reference_mean_hypervolume": 1.0637306033104852,
+          "difference": 0.0025614590114935165
+        },
+        {
+          "instance_id": "medium_1020",
+          "paired_solver_seeds": 3,
+          "method_mean_hypervolume": 1.0628079015878173,
+          "reference_mean_hypervolume": 1.061448561812724,
+          "difference": 0.0013593397750932823
+        },
+        {
+          "instance_id": "medium_1030",
+          "paired_solver_seeds": 3,
+          "method_mean_hypervolume": 1.0523300568693215,
+          "reference_mean_hypervolume": 1.0587619011915035,
+          "difference": -0.006431844322182023
+        }
+      ],
+      "coverage_method_over_reference_mean": 0.8380146086800654,
+      "coverage_method_over_reference_defined_pairs": 9,
+      "coverage_reference_over_method_mean": 0.06704183492402287,
+      "coverage_reference_over_method_defined_pairs": 9,
+      "interpretation": "Compares the NSGA-II tournament/rank/crowding/survival policy bundle against fixed-scalar local trajectories with the same initialization/proposal family; it does not isolate one selection component.",
+      "inference_note": "Instance means are the independent comparison units; run-level results are descriptive, few instances have low power, and no multiplicity correction is applied."
+    },
+    "medium/wall_time/memetic_vs_original_enhanced": {
+      "method": "memetic",
+      "reference_method": "original_enhanced",
+      "paired_run_descriptive": {
+        "pairs": 9,
+        "wins": 9,
+        "losses": 0,
+        "ties": 0,
+        "median_difference": 0.08216080627095568,
+        "mean_difference": 0.0837770295198583,
+        "paired_superiority": 1.0,
+        "sign_test_p_two_sided": 0.00390625
+      },
+      "instance_mean_sign_test": {
+        "pairs": 3,
+        "wins": 3,
+        "losses": 0,
+        "ties": 0,
+        "median_difference": 0.08119157279429057,
+        "mean_difference": 0.08377702951985833,
+        "paired_superiority": 1.0,
+        "sign_test_p_two_sided": 0.25
+      },
+      "instance_mean_differences": [
+        {
+          "instance_id": "medium_1010",
+          "paired_solver_seeds": 3,
+          "method_mean_hypervolume": 1.0662920623219787,
+          "reference_mean_hypervolume": 0.974338940533744,
+          "difference": 0.09195312178823467
+        },
+        {
+          "instance_id": "medium_1020",
+          "paired_solver_seeds": 3,
+          "method_mean_hypervolume": 1.0628079015878173,
+          "reference_mean_hypervolume": 0.9816163287935268,
+          "difference": 0.08119157279429057
+        },
+        {
+          "instance_id": "medium_1030",
+          "paired_solver_seeds": 3,
+          "method_mean_hypervolume": 1.0523300568693215,
+          "reference_mean_hypervolume": 0.9741436628922717,
+          "difference": 0.07818639397704974
+        }
+      ],
+      "coverage_method_over_reference_mean": 1.0,
+      "coverage_method_over_reference_defined_pairs": 9,
+      "coverage_reference_over_method_mean": 0.004273504273504274,
+      "coverage_reference_over_method_defined_pairs": 9,
+      "interpretation": "Compares the replacement feasible memetic method against the unchanged original enhanced NSGA-II.",
+      "inference_note": "Instance means are the independent comparison units; run-level results are descriptive, few instances have low power, and no multiplicity correction is applied."
+    },
+    "small/evaluations/ablation_local_vs_greedy": {
+      "paired_run_descriptive": {
+        "pairs": 3,
+        "wins": 1,
+        "losses": 2,
+        "ties": 0,
+        "median_difference": -0.004380695761889708,
+        "mean_difference": -0.0045161435658363685,
+        "paired_superiority": 0.3333333333333333,
+        "sign_test_p_two_sided": 1.0
+      },
+      "instance_mean_sign_test": {
+        "pairs": 1,
+        "wins": 0,
+        "losses": 1,
+        "ties": 0,
+        "median_difference": -0.004516143565836406,
+        "mean_difference": -0.004516143565836406,
+        "paired_superiority": 0.0,
+        "sign_test_p_two_sided": 1.0
+      },
+      "instance_mean_differences": [
+        {
+          "instance_id": "small_1010",
+          "paired_solver_seeds": 3,
+          "method_mean_hypervolume": 0.9302312153419897,
+          "reference_mean_hypervolume": 0.9347473589078261,
+          "difference": -0.004516143565836406
+        }
+      ],
+      "coverage_method_over_greedy_mean": 0.3333333333333333,
+      "coverage_method_over_greedy_defined_pairs": 3,
+      "coverage_greedy_over_method_mean": 0.4444444444444444,
+      "coverage_greedy_over_method_defined_pairs": 3,
+      "inference_note": "Solver seeds within an instance are clustered; independent-instance mean tests have low power with few instances. No multiplicity-adjusted superiority claim is implied."
+    },
+    "small/evaluations/memetic_vs_greedy": {
+      "paired_run_descriptive": {
+        "pairs": 3,
+        "wins": 1,
+        "losses": 2,
+        "ties": 0,
+        "median_difference": -0.004596431597395645,
+        "mean_difference": -0.004457195254166842,
+        "paired_superiority": 0.3333333333333333,
+        "sign_test_p_two_sided": 1.0
+      },
+      "instance_mean_sign_test": {
+        "pairs": 1,
+        "wins": 0,
+        "losses": 1,
+        "ties": 0,
+        "median_difference": -0.004457195254166879,
+        "mean_difference": -0.004457195254166879,
+        "paired_superiority": 0.0,
+        "sign_test_p_two_sided": 1.0
+      },
+      "instance_mean_differences": [
+        {
+          "instance_id": "small_1010",
+          "paired_solver_seeds": 3,
+          "method_mean_hypervolume": 0.9302901636536592,
+          "reference_mean_hypervolume": 0.9347473589078261,
+          "difference": -0.004457195254166879
+        }
+      ],
+      "coverage_method_over_greedy_mean": 0.4444444444444444,
+      "coverage_method_over_greedy_defined_pairs": 3,
+      "coverage_greedy_over_method_mean": 0.3333333333333333,
+      "coverage_greedy_over_method_defined_pairs": 3,
+      "inference_note": "Solver seeds within an instance are clustered; independent-instance mean tests have low power with few instances. No multiplicity-adjusted superiority claim is implied."
+    },
+    "small/evaluations/original_enhanced_vs_greedy": {
+      "paired_run_descriptive": {
+        "pairs": 3,
+        "wins": 1,
+        "losses": 2,
+        "ties": 0,
+        "median_difference": -0.00045998976873540265,
+        "mean_difference": -0.0005051304753172318,
+        "paired_superiority": 0.3333333333333333,
+        "sign_test_p_two_sided": 1.0
+      },
+      "instance_mean_sign_test": {
+        "pairs": 1,
+        "wins": 0,
+        "losses": 1,
+        "ties": 0,
+        "median_difference": -0.0005051304753173058,
+        "mean_difference": -0.0005051304753173058,
+        "paired_superiority": 0.0,
+        "sign_test_p_two_sided": 1.0
+      },
+      "instance_mean_differences": [
+        {
+          "instance_id": "small_1010",
+          "paired_solver_seeds": 3,
+          "method_mean_hypervolume": 0.9342422284325088,
+          "reference_mean_hypervolume": 0.9347473589078261,
+          "difference": -0.0005051304753173058
+        }
+      ],
+      "coverage_method_over_greedy_mean": 0.0,
+      "coverage_method_over_greedy_defined_pairs": 3,
+      "coverage_greedy_over_method_mean": 0.8418803418803419,
+      "coverage_greedy_over_method_defined_pairs": 3,
+      "inference_note": "Solver seeds within an instance are clustered; independent-instance mean tests have low power with few instances. No multiplicity-adjusted superiority claim is implied."
+    },
+    "small/evaluations/memetic_vs_ablation_local": {
+      "method": "memetic",
+      "reference_method": "ablation_local",
+      "paired_run_descriptive": {
+        "pairs": 3,
+        "wins": 2,
+        "losses": 1,
+        "ties": 0,
+        "median_difference": 5.317694578899079e-06,
+        "mean_difference": 5.894831166952663e-05,
+        "paired_superiority": 0.6666666666666666,
+        "sign_test_p_two_sided": 1.0
+      },
+      "instance_mean_sign_test": {
+        "pairs": 1,
+        "wins": 1,
+        "losses": 0,
+        "ties": 0,
+        "median_difference": 5.894831166952663e-05,
+        "mean_difference": 5.894831166952663e-05,
+        "paired_superiority": 1.0,
+        "sign_test_p_two_sided": 1.0
+      },
+      "instance_mean_differences": [
+        {
+          "instance_id": "small_1010",
+          "paired_solver_seeds": 3,
+          "method_mean_hypervolume": 0.9302901636536592,
+          "reference_mean_hypervolume": 0.9302312153419897,
+          "difference": 5.894831166952663e-05
+        }
+      ],
+      "coverage_method_over_reference_mean": 0.8888888888888888,
+      "coverage_method_over_reference_defined_pairs": 3,
+      "coverage_reference_over_method_mean": 0.0,
+      "coverage_reference_over_method_defined_pairs": 3,
+      "interpretation": "Compares the NSGA-II tournament/rank/crowding/survival policy bundle against fixed-scalar local trajectories with the same initialization/proposal family; it does not isolate one selection component.",
+      "inference_note": "Instance means are the independent comparison units; run-level results are descriptive, few instances have low power, and no multiplicity correction is applied."
+    },
+    "small/evaluations/memetic_vs_original_enhanced": {
+      "method": "memetic",
+      "reference_method": "original_enhanced",
+      "paired_run_descriptive": {
+        "pairs": 3,
+        "wins": 1,
+        "losses": 2,
+        "ties": 0,
+        "median_difference": -0.004136441828660242,
+        "mean_difference": -0.003952064778849611,
+        "paired_superiority": 0.3333333333333333,
+        "sign_test_p_two_sided": 1.0
+      },
+      "instance_mean_sign_test": {
+        "pairs": 1,
+        "wins": 0,
+        "losses": 1,
+        "ties": 0,
+        "median_difference": -0.003952064778849573,
+        "mean_difference": -0.003952064778849573,
+        "paired_superiority": 0.0,
+        "sign_test_p_two_sided": 1.0
+      },
+      "instance_mean_differences": [
+        {
+          "instance_id": "small_1010",
+          "paired_solver_seeds": 3,
+          "method_mean_hypervolume": 0.9302901636536592,
+          "reference_mean_hypervolume": 0.9342422284325088,
+          "difference": -0.003952064778849573
+        }
+      ],
+      "coverage_method_over_reference_mean": 0.8333333333333334,
+      "coverage_method_over_reference_defined_pairs": 3,
+      "coverage_reference_over_method_mean": 0.0,
+      "coverage_reference_over_method_defined_pairs": 3,
+      "interpretation": "Compares the replacement feasible memetic method against the unchanged original enhanced NSGA-II.",
+      "inference_note": "Instance means are the independent comparison units; run-level results are descriptive, few instances have low power, and no multiplicity correction is applied."
+    },
+    "small/wall_time/ablation_local_vs_greedy": {
+      "paired_run_descriptive": {
+        "pairs": 3,
+        "wins": 3,
+        "losses": 0,
+        "ties": 0,
+        "median_difference": 0.0003495095266570214,
+        "mean_difference": 0.00045468858356804515,
+        "paired_superiority": 1.0,
+        "sign_test_p_two_sided": 0.25
+      },
+      "instance_mean_sign_test": {
+        "pairs": 1,
+        "wins": 1,
+        "losses": 0,
+        "ties": 0,
+        "median_difference": 0.0004546885835680081,
+        "mean_difference": 0.0004546885835680081,
+        "paired_superiority": 1.0,
+        "sign_test_p_two_sided": 1.0
+      },
+      "instance_mean_differences": [
+        {
+          "instance_id": "small_1010",
+          "paired_solver_seeds": 3,
+          "method_mean_hypervolume": 0.9302355691043094,
+          "reference_mean_hypervolume": 0.9297808805207414,
+          "difference": 0.0004546885835680081
+        }
+      ],
+      "coverage_method_over_greedy_mean": 0.6111111111111112,
+      "coverage_method_over_greedy_defined_pairs": 3,
+      "coverage_greedy_over_method_mean": 0.19999999999999998,
+      "coverage_greedy_over_method_defined_pairs": 3,
+      "inference_note": "Solver seeds within an instance are clustered; independent-instance mean tests have low power with few instances. No multiplicity-adjusted superiority claim is implied."
+    },
+    "small/wall_time/memetic_vs_greedy": {
+      "paired_run_descriptive": {
+        "pairs": 3,
+        "wins": 2,
+        "losses": 1,
+        "ties": 0,
+        "median_difference": 0.00021662469723426891,
+        "mean_difference": 0.0005092831329179074,
+        "paired_superiority": 0.6666666666666666,
+        "sign_test_p_two_sided": 1.0
+      },
+      "instance_mean_sign_test": {
+        "pairs": 1,
+        "wins": 1,
+        "losses": 0,
+        "ties": 0,
+        "median_difference": 0.0005092831329178704,
+        "mean_difference": 0.0005092831329178704,
+        "paired_superiority": 1.0,
+        "sign_test_p_two_sided": 1.0
+      },
+      "instance_mean_differences": [
+        {
+          "instance_id": "small_1010",
+          "paired_solver_seeds": 3,
+          "method_mean_hypervolume": 0.9302901636536592,
+          "reference_mean_hypervolume": 0.9297808805207414,
+          "difference": 0.0005092831329178704
+        }
+      ],
+      "coverage_method_over_greedy_mean": 0.8333333333333334,
+      "coverage_method_over_greedy_defined_pairs": 3,
+      "coverage_greedy_over_method_mean": 0.0,
+      "coverage_greedy_over_method_defined_pairs": 3,
+      "inference_note": "Solver seeds within an instance are clustered; independent-instance mean tests have low power with few instances. No multiplicity-adjusted superiority claim is implied."
+    },
+    "small/wall_time/original_enhanced_vs_greedy": {
+      "paired_run_descriptive": {
+        "pairs": 3,
+        "wins": 2,
+        "losses": 1,
+        "ties": 0,
+        "median_difference": 6.0515292016560807e-05,
+        "mean_difference": 0.0016902591704954044,
+        "paired_superiority": 0.6666666666666666,
+        "sign_test_p_two_sided": 1.0
+      },
+      "instance_mean_sign_test": {
+        "pairs": 1,
+        "wins": 1,
+        "losses": 0,
+        "ties": 0,
+        "median_difference": 0.0016902591704953673,
+        "mean_difference": 0.0016902591704953673,
+        "paired_superiority": 1.0,
+        "sign_test_p_two_sided": 1.0
+      },
+      "instance_mean_differences": [
+        {
+          "instance_id": "small_1010",
+          "paired_solver_seeds": 3,
+          "method_mean_hypervolume": 0.9314711396912367,
+          "reference_mean_hypervolume": 0.9297808805207414,
+          "difference": 0.0016902591704953673
+        }
+      ],
+      "coverage_method_over_greedy_mean": 0.1111111111111111,
+      "coverage_method_over_greedy_defined_pairs": 3,
+      "coverage_greedy_over_method_mean": 0.6237373737373737,
+      "coverage_greedy_over_method_defined_pairs": 3,
+      "inference_note": "Solver seeds within an instance are clustered; independent-instance mean tests have low power with few instances. No multiplicity-adjusted superiority claim is implied."
+    },
+    "small/wall_time/memetic_vs_ablation_local": {
+      "method": "memetic",
+      "reference_method": "ablation_local",
+      "paired_run_descriptive": {
+        "pairs": 3,
+        "wins": 2,
+        "losses": 1,
+        "ties": 0,
+        "median_difference": 5.317694578899079e-06,
+        "mean_difference": 5.45945493498623e-05,
+        "paired_superiority": 0.6666666666666666,
+        "sign_test_p_two_sided": 1.0
+      },
+      "instance_mean_sign_test": {
+        "pairs": 1,
+        "wins": 1,
+        "losses": 0,
+        "ties": 0,
+        "median_difference": 5.45945493498623e-05,
+        "mean_difference": 5.45945493498623e-05,
+        "paired_superiority": 1.0,
+        "sign_test_p_two_sided": 1.0
+      },
+      "instance_mean_differences": [
+        {
+          "instance_id": "small_1010",
+          "paired_solver_seeds": 3,
+          "method_mean_hypervolume": 0.9302901636536592,
+          "reference_mean_hypervolume": 0.9302355691043094,
+          "difference": 5.45945493498623e-05
+        }
+      ],
+      "coverage_method_over_reference_mean": 0.8333333333333334,
+      "coverage_method_over_reference_defined_pairs": 3,
+      "coverage_reference_over_method_mean": 0.3333333333333333,
+      "coverage_reference_over_method_defined_pairs": 3,
+      "interpretation": "Compares the NSGA-II tournament/rank/crowding/survival policy bundle against fixed-scalar local trajectories with the same initialization/proposal family; it does not isolate one selection component.",
+      "inference_note": "Instance means are the independent comparison units; run-level results are descriptive, few instances have low power, and no multiplicity correction is applied."
+    },
+    "small/wall_time/memetic_vs_original_enhanced": {
+      "method": "memetic",
+      "reference_method": "original_enhanced",
+      "paired_run_descriptive": {
+        "pairs": 3,
+        "wins": 2,
+        "losses": 1,
+        "ties": 0,
+        "median_difference": 0.0001561094052177081,
+        "mean_difference": -0.001180976037577497,
+        "paired_superiority": 0.6666666666666666,
+        "sign_test_p_two_sided": 1.0
+      },
+      "instance_mean_sign_test": {
+        "pairs": 1,
+        "wins": 0,
+        "losses": 1,
+        "ties": 0,
+        "median_difference": -0.001180976037577497,
+        "mean_difference": -0.001180976037577497,
+        "paired_superiority": 0.0,
+        "sign_test_p_two_sided": 1.0
+      },
+      "instance_mean_differences": [
+        {
+          "instance_id": "small_1010",
+          "paired_solver_seeds": 3,
+          "method_mean_hypervolume": 0.9302901636536592,
+          "reference_mean_hypervolume": 0.9314711396912367,
+          "difference": -0.001180976037577497
+        }
+      ],
+      "coverage_method_over_reference_mean": 0.9444444444444444,
+      "coverage_method_over_reference_defined_pairs": 3,
+      "coverage_reference_over_method_mean": 0.0,
+      "coverage_reference_over_method_defined_pairs": 3,
+      "interpretation": "Compares the replacement feasible memetic method against the unchanged original enhanced NSGA-II.",
+      "inference_note": "Instance means are the independent comparison units; run-level results are descriptive, few instances have low power, and no multiplicity correction is applied."
+    }
+  },
+  "paired_endpoint_quality_times": [
+    {
+      "instance_id": "large_1010",
+      "size": "large",
+      "protocol": "evaluations",
+      "solver_seed": 0,
+      "method": "ablation_local",
+      "paired_greedy_final_hypervolume": 0.9372695831305694,
+      "method_time_to_target_seconds": 6.074564232000057,
+      "greedy_time_to_target_seconds": 53.26242272799982,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "large_1010",
+      "size": "large",
+      "protocol": "evaluations",
+      "solver_seed": 1,
+      "method": "ablation_local",
+      "paired_greedy_final_hypervolume": 0.9360643083925821,
+      "method_time_to_target_seconds": 5.463894058999813,
+      "greedy_time_to_target_seconds": 48.88063703900002,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "large_1010",
+      "size": "large",
+      "protocol": "evaluations",
+      "solver_seed": 2,
+      "method": "ablation_local",
+      "paired_greedy_final_hypervolume": 0.9499807204073257,
+      "method_time_to_target_seconds": 6.819095543000003,
+      "greedy_time_to_target_seconds": 50.48683831999983,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "large_1020",
+      "size": "large",
+      "protocol": "evaluations",
+      "solver_seed": 0,
+      "method": "ablation_local",
+      "paired_greedy_final_hypervolume": 0.9389064849867105,
+      "method_time_to_target_seconds": 5.377233342999716,
+      "greedy_time_to_target_seconds": 50.3296614169999,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "large_1020",
+      "size": "large",
+      "protocol": "evaluations",
+      "solver_seed": 1,
+      "method": "ablation_local",
+      "paired_greedy_final_hypervolume": 0.9318571253339331,
+      "method_time_to_target_seconds": 5.1196625309999035,
+      "greedy_time_to_target_seconds": 46.24428654700023,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "large_1020",
+      "size": "large",
+      "protocol": "evaluations",
+      "solver_seed": 2,
+      "method": "ablation_local",
+      "paired_greedy_final_hypervolume": 0.9302224805854664,
+      "method_time_to_target_seconds": 5.861830500999986,
+      "greedy_time_to_target_seconds": 50.89206783700001,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "large_1030",
+      "size": "large",
+      "protocol": "evaluations",
+      "solver_seed": 0,
+      "method": "ablation_local",
+      "paired_greedy_final_hypervolume": 0.9540668144495223,
+      "method_time_to_target_seconds": 5.670103365999694,
+      "greedy_time_to_target_seconds": 48.12268455699996,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "large_1030",
+      "size": "large",
+      "protocol": "evaluations",
+      "solver_seed": 1,
+      "method": "ablation_local",
+      "paired_greedy_final_hypervolume": 0.9535015599449141,
+      "method_time_to_target_seconds": 6.280484874000194,
+      "greedy_time_to_target_seconds": 50.6470898409998,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "large_1030",
+      "size": "large",
+      "protocol": "evaluations",
+      "solver_seed": 2,
+      "method": "ablation_local",
+      "paired_greedy_final_hypervolume": 0.935543147780952,
+      "method_time_to_target_seconds": 5.050061811999967,
+      "greedy_time_to_target_seconds": 51.257137390000025,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "large_1010",
+      "size": "large",
+      "protocol": "evaluations",
+      "solver_seed": 0,
+      "method": "memetic",
+      "paired_greedy_final_hypervolume": 0.9372695831305694,
+      "method_time_to_target_seconds": 6.420087665999972,
+      "greedy_time_to_target_seconds": 53.26242272799982,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "large_1010",
+      "size": "large",
+      "protocol": "evaluations",
+      "solver_seed": 1,
+      "method": "memetic",
+      "paired_greedy_final_hypervolume": 0.9360643083925821,
+      "method_time_to_target_seconds": 4.996305906999851,
+      "greedy_time_to_target_seconds": 48.88063703900002,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "large_1010",
+      "size": "large",
+      "protocol": "evaluations",
+      "solver_seed": 2,
+      "method": "memetic",
+      "paired_greedy_final_hypervolume": 0.9499807204073257,
+      "method_time_to_target_seconds": 6.864845763999938,
+      "greedy_time_to_target_seconds": 50.48683831999983,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "large_1020",
+      "size": "large",
+      "protocol": "evaluations",
+      "solver_seed": 0,
+      "method": "memetic",
+      "paired_greedy_final_hypervolume": 0.9389064849867105,
+      "method_time_to_target_seconds": 6.1388161790000595,
+      "greedy_time_to_target_seconds": 50.3296614169999,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "large_1020",
+      "size": "large",
+      "protocol": "evaluations",
+      "solver_seed": 1,
+      "method": "memetic",
+      "paired_greedy_final_hypervolume": 0.9318571253339331,
+      "method_time_to_target_seconds": 5.955036590999953,
+      "greedy_time_to_target_seconds": 46.24428654700023,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "large_1020",
+      "size": "large",
+      "protocol": "evaluations",
+      "solver_seed": 2,
+      "method": "memetic",
+      "paired_greedy_final_hypervolume": 0.9302224805854664,
+      "method_time_to_target_seconds": 5.258881878000011,
+      "greedy_time_to_target_seconds": 50.89206783700001,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "large_1030",
+      "size": "large",
+      "protocol": "evaluations",
+      "solver_seed": 0,
+      "method": "memetic",
+      "paired_greedy_final_hypervolume": 0.9540668144495223,
+      "method_time_to_target_seconds": 5.098368077000032,
+      "greedy_time_to_target_seconds": 48.12268455699996,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "large_1030",
+      "size": "large",
+      "protocol": "evaluations",
+      "solver_seed": 1,
+      "method": "memetic",
+      "paired_greedy_final_hypervolume": 0.9535015599449141,
+      "method_time_to_target_seconds": 6.316168237000056,
+      "greedy_time_to_target_seconds": 50.6470898409998,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "large_1030",
+      "size": "large",
+      "protocol": "evaluations",
+      "solver_seed": 2,
+      "method": "memetic",
+      "paired_greedy_final_hypervolume": 0.935543147780952,
+      "method_time_to_target_seconds": 5.66556376599965,
+      "greedy_time_to_target_seconds": 51.257137390000025,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "large_1010",
+      "size": "large",
+      "protocol": "evaluations",
+      "solver_seed": 0,
+      "method": "original_enhanced",
+      "paired_greedy_final_hypervolume": 0.9372695831305694,
+      "method_time_to_target_seconds": null,
+      "greedy_time_to_target_seconds": 53.26242272799982,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "large_1010",
+      "size": "large",
+      "protocol": "evaluations",
+      "solver_seed": 1,
+      "method": "original_enhanced",
+      "paired_greedy_final_hypervolume": 0.9360643083925821,
+      "method_time_to_target_seconds": null,
+      "greedy_time_to_target_seconds": 48.88063703900002,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "large_1010",
+      "size": "large",
+      "protocol": "evaluations",
+      "solver_seed": 2,
+      "method": "original_enhanced",
+      "paired_greedy_final_hypervolume": 0.9499807204073257,
+      "method_time_to_target_seconds": null,
+      "greedy_time_to_target_seconds": 50.48683831999983,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "large_1020",
+      "size": "large",
+      "protocol": "evaluations",
+      "solver_seed": 0,
+      "method": "original_enhanced",
+      "paired_greedy_final_hypervolume": 0.9389064849867105,
+      "method_time_to_target_seconds": null,
+      "greedy_time_to_target_seconds": 50.3296614169999,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "large_1020",
+      "size": "large",
+      "protocol": "evaluations",
+      "solver_seed": 1,
+      "method": "original_enhanced",
+      "paired_greedy_final_hypervolume": 0.9318571253339331,
+      "method_time_to_target_seconds": null,
+      "greedy_time_to_target_seconds": 46.24428654700023,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "large_1020",
+      "size": "large",
+      "protocol": "evaluations",
+      "solver_seed": 2,
+      "method": "original_enhanced",
+      "paired_greedy_final_hypervolume": 0.9302224805854664,
+      "method_time_to_target_seconds": null,
+      "greedy_time_to_target_seconds": 50.89206783700001,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "large_1030",
+      "size": "large",
+      "protocol": "evaluations",
+      "solver_seed": 0,
+      "method": "original_enhanced",
+      "paired_greedy_final_hypervolume": 0.9540668144495223,
+      "method_time_to_target_seconds": null,
+      "greedy_time_to_target_seconds": 48.12268455699996,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "large_1030",
+      "size": "large",
+      "protocol": "evaluations",
+      "solver_seed": 1,
+      "method": "original_enhanced",
+      "paired_greedy_final_hypervolume": 0.9535015599449141,
+      "method_time_to_target_seconds": null,
+      "greedy_time_to_target_seconds": 50.6470898409998,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "large_1030",
+      "size": "large",
+      "protocol": "evaluations",
+      "solver_seed": 2,
+      "method": "original_enhanced",
+      "paired_greedy_final_hypervolume": 0.935543147780952,
+      "method_time_to_target_seconds": null,
+      "greedy_time_to_target_seconds": 51.257137390000025,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "large_1010",
+      "size": "large",
+      "protocol": "wall_time",
+      "solver_seed": 0,
+      "method": "ablation_local",
+      "paired_greedy_final_hypervolume": 0.9279833075533853,
+      "method_time_to_target_seconds": 5.605748802000107,
+      "greedy_time_to_target_seconds": 15.351903379000078,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "large_1010",
+      "size": "large",
+      "protocol": "wall_time",
+      "solver_seed": 1,
+      "method": "ablation_local",
+      "paired_greedy_final_hypervolume": 0.9291207366715584,
+      "method_time_to_target_seconds": 6.008554609000157,
+      "greedy_time_to_target_seconds": 15.447808205000001,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "large_1010",
+      "size": "large",
+      "protocol": "wall_time",
+      "solver_seed": 2,
+      "method": "ablation_local",
+      "paired_greedy_final_hypervolume": 0.9200120845560242,
+      "method_time_to_target_seconds": 5.603480518999959,
+      "greedy_time_to_target_seconds": 15.8272929069999,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "large_1020",
+      "size": "large",
+      "protocol": "wall_time",
+      "solver_seed": 0,
+      "method": "ablation_local",
+      "paired_greedy_final_hypervolume": 0.9222815586174797,
+      "method_time_to_target_seconds": 5.173169141000017,
+      "greedy_time_to_target_seconds": 15.586074411000027,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "large_1020",
+      "size": "large",
+      "protocol": "wall_time",
+      "solver_seed": 1,
+      "method": "ablation_local",
+      "paired_greedy_final_hypervolume": 0.9310688406944181,
+      "method_time_to_target_seconds": 4.941837363000104,
+      "greedy_time_to_target_seconds": 15.858747182000116,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "large_1020",
+      "size": "large",
+      "protocol": "wall_time",
+      "solver_seed": 2,
+      "method": "ablation_local",
+      "paired_greedy_final_hypervolume": 0.9252246758822372,
+      "method_time_to_target_seconds": 5.7552112690000286,
+      "greedy_time_to_target_seconds": 15.353010259999792,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "large_1030",
+      "size": "large",
+      "protocol": "wall_time",
+      "solver_seed": 0,
+      "method": "ablation_local",
+      "paired_greedy_final_hypervolume": 0.9516853586550049,
+      "method_time_to_target_seconds": 5.455288815000131,
+      "greedy_time_to_target_seconds": 15.801217486000041,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "large_1030",
+      "size": "large",
+      "protocol": "wall_time",
+      "solver_seed": 1,
+      "method": "ablation_local",
+      "paired_greedy_final_hypervolume": 0.931926074980775,
+      "method_time_to_target_seconds": 5.815351300000202,
+      "greedy_time_to_target_seconds": 15.572534777999863,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "large_1030",
+      "size": "large",
+      "protocol": "wall_time",
+      "solver_seed": 2,
+      "method": "ablation_local",
+      "paired_greedy_final_hypervolume": 0.9350619837583141,
+      "method_time_to_target_seconds": 5.460426336000182,
+      "greedy_time_to_target_seconds": 15.464594499999748,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "large_1010",
+      "size": "large",
+      "protocol": "wall_time",
+      "solver_seed": 0,
+      "method": "memetic",
+      "paired_greedy_final_hypervolume": 0.9279833075533853,
+      "method_time_to_target_seconds": 5.789933053999903,
+      "greedy_time_to_target_seconds": 15.351903379000078,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "large_1010",
+      "size": "large",
+      "protocol": "wall_time",
+      "solver_seed": 1,
+      "method": "memetic",
+      "paired_greedy_final_hypervolume": 0.9291207366715584,
+      "method_time_to_target_seconds": 5.815727039999956,
+      "greedy_time_to_target_seconds": 15.447808205000001,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "large_1010",
+      "size": "large",
+      "protocol": "wall_time",
+      "solver_seed": 2,
+      "method": "memetic",
+      "paired_greedy_final_hypervolume": 0.9200120845560242,
+      "method_time_to_target_seconds": 5.272734476000096,
+      "greedy_time_to_target_seconds": 15.8272929069999,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "large_1020",
+      "size": "large",
+      "protocol": "wall_time",
+      "solver_seed": 0,
+      "method": "memetic",
+      "paired_greedy_final_hypervolume": 0.9222815586174797,
+      "method_time_to_target_seconds": 5.401454227000158,
+      "greedy_time_to_target_seconds": 15.586074411000027,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "large_1020",
+      "size": "large",
+      "protocol": "wall_time",
+      "solver_seed": 1,
+      "method": "memetic",
+      "paired_greedy_final_hypervolume": 0.9310688406944181,
+      "method_time_to_target_seconds": 5.700454237000031,
+      "greedy_time_to_target_seconds": 15.858747182000116,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "large_1020",
+      "size": "large",
+      "protocol": "wall_time",
+      "solver_seed": 2,
+      "method": "memetic",
+      "paired_greedy_final_hypervolume": 0.9252246758822372,
+      "method_time_to_target_seconds": 5.230812572999639,
+      "greedy_time_to_target_seconds": 15.353010259999792,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "large_1030",
+      "size": "large",
+      "protocol": "wall_time",
+      "solver_seed": 0,
+      "method": "memetic",
+      "paired_greedy_final_hypervolume": 0.9516853586550049,
+      "method_time_to_target_seconds": 5.447670405000281,
+      "greedy_time_to_target_seconds": 15.801217486000041,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "large_1030",
+      "size": "large",
+      "protocol": "wall_time",
+      "solver_seed": 1,
+      "method": "memetic",
+      "paired_greedy_final_hypervolume": 0.931926074980775,
+      "method_time_to_target_seconds": 4.980755320999833,
+      "greedy_time_to_target_seconds": 15.572534777999863,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "large_1030",
+      "size": "large",
+      "protocol": "wall_time",
+      "solver_seed": 2,
+      "method": "memetic",
+      "paired_greedy_final_hypervolume": 0.9350619837583141,
+      "method_time_to_target_seconds": 5.301316072999725,
+      "greedy_time_to_target_seconds": 15.464594499999748,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "large_1010",
+      "size": "large",
+      "protocol": "wall_time",
+      "solver_seed": 0,
+      "method": "original_enhanced",
+      "paired_greedy_final_hypervolume": 0.9279833075533853,
+      "method_time_to_target_seconds": null,
+      "greedy_time_to_target_seconds": 15.351903379000078,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "large_1010",
+      "size": "large",
+      "protocol": "wall_time",
+      "solver_seed": 1,
+      "method": "original_enhanced",
+      "paired_greedy_final_hypervolume": 0.9291207366715584,
+      "method_time_to_target_seconds": null,
+      "greedy_time_to_target_seconds": 15.447808205000001,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "large_1010",
+      "size": "large",
+      "protocol": "wall_time",
+      "solver_seed": 2,
+      "method": "original_enhanced",
+      "paired_greedy_final_hypervolume": 0.9200120845560242,
+      "method_time_to_target_seconds": null,
+      "greedy_time_to_target_seconds": 15.8272929069999,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "large_1020",
+      "size": "large",
+      "protocol": "wall_time",
+      "solver_seed": 0,
+      "method": "original_enhanced",
+      "paired_greedy_final_hypervolume": 0.9222815586174797,
+      "method_time_to_target_seconds": null,
+      "greedy_time_to_target_seconds": 15.586074411000027,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "large_1020",
+      "size": "large",
+      "protocol": "wall_time",
+      "solver_seed": 1,
+      "method": "original_enhanced",
+      "paired_greedy_final_hypervolume": 0.9310688406944181,
+      "method_time_to_target_seconds": null,
+      "greedy_time_to_target_seconds": 15.858747182000116,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "large_1020",
+      "size": "large",
+      "protocol": "wall_time",
+      "solver_seed": 2,
+      "method": "original_enhanced",
+      "paired_greedy_final_hypervolume": 0.9252246758822372,
+      "method_time_to_target_seconds": null,
+      "greedy_time_to_target_seconds": 15.353010259999792,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "large_1030",
+      "size": "large",
+      "protocol": "wall_time",
+      "solver_seed": 0,
+      "method": "original_enhanced",
+      "paired_greedy_final_hypervolume": 0.9516853586550049,
+      "method_time_to_target_seconds": null,
+      "greedy_time_to_target_seconds": 15.801217486000041,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "large_1030",
+      "size": "large",
+      "protocol": "wall_time",
+      "solver_seed": 1,
+      "method": "original_enhanced",
+      "paired_greedy_final_hypervolume": 0.931926074980775,
+      "method_time_to_target_seconds": null,
+      "greedy_time_to_target_seconds": 15.572534777999863,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "large_1030",
+      "size": "large",
+      "protocol": "wall_time",
+      "solver_seed": 2,
+      "method": "original_enhanced",
+      "paired_greedy_final_hypervolume": 0.9350619837583141,
+      "method_time_to_target_seconds": null,
+      "greedy_time_to_target_seconds": 15.464594499999748,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "medium_1010",
+      "size": "medium",
+      "protocol": "evaluations",
+      "solver_seed": 0,
+      "method": "ablation_local",
+      "paired_greedy_final_hypervolume": 1.017401850092499,
+      "method_time_to_target_seconds": 1.3324636370000462,
+      "greedy_time_to_target_seconds": 18.56465953599991,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "medium_1010",
+      "size": "medium",
+      "protocol": "evaluations",
+      "solver_seed": 1,
+      "method": "ablation_local",
+      "paired_greedy_final_hypervolume": 1.0153680159780376,
+      "method_time_to_target_seconds": 1.4640214870000818,
+      "greedy_time_to_target_seconds": 19.647410259000026,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "medium_1010",
+      "size": "medium",
+      "protocol": "evaluations",
+      "solver_seed": 2,
+      "method": "ablation_local",
+      "paired_greedy_final_hypervolume": 1.0228699537566877,
+      "method_time_to_target_seconds": 1.4876136000000315,
+      "greedy_time_to_target_seconds": 20.590684369999963,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "medium_1020",
+      "size": "medium",
+      "protocol": "evaluations",
+      "solver_seed": 0,
+      "method": "ablation_local",
+      "paired_greedy_final_hypervolume": 1.0217227232925954,
+      "method_time_to_target_seconds": 1.9609701519998453,
+      "greedy_time_to_target_seconds": 17.91754197199998,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "medium_1020",
+      "size": "medium",
+      "protocol": "evaluations",
+      "solver_seed": 1,
+      "method": "ablation_local",
+      "paired_greedy_final_hypervolume": 0.9994106431240344,
+      "method_time_to_target_seconds": 1.39323139000021,
+      "greedy_time_to_target_seconds": 15.564592793999964,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "medium_1020",
+      "size": "medium",
+      "protocol": "evaluations",
+      "solver_seed": 2,
+      "method": "ablation_local",
+      "paired_greedy_final_hypervolume": 0.9977404296531955,
+      "method_time_to_target_seconds": 1.5347052050001366,
+      "greedy_time_to_target_seconds": 19.322817694999912,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "medium_1030",
+      "size": "medium",
+      "protocol": "evaluations",
+      "solver_seed": 0,
+      "method": "ablation_local",
+      "paired_greedy_final_hypervolume": 0.99435431373237,
+      "method_time_to_target_seconds": 1.5749198500000148,
+      "greedy_time_to_target_seconds": 20.298028648000127,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "medium_1030",
+      "size": "medium",
+      "protocol": "evaluations",
+      "solver_seed": 1,
+      "method": "ablation_local",
+      "paired_greedy_final_hypervolume": 1.0131620184731478,
+      "method_time_to_target_seconds": 1.4577844809998624,
+      "greedy_time_to_target_seconds": 16.70244125299996,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "medium_1030",
+      "size": "medium",
+      "protocol": "evaluations",
+      "solver_seed": 2,
+      "method": "ablation_local",
+      "paired_greedy_final_hypervolume": 0.9929443459536016,
+      "method_time_to_target_seconds": 1.5038857380000081,
+      "greedy_time_to_target_seconds": 20.35690171200008,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "medium_1010",
+      "size": "medium",
+      "protocol": "evaluations",
+      "solver_seed": 0,
+      "method": "memetic",
+      "paired_greedy_final_hypervolume": 1.017401850092499,
+      "method_time_to_target_seconds": 1.4512678510000114,
+      "greedy_time_to_target_seconds": 18.56465953599991,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "medium_1010",
+      "size": "medium",
+      "protocol": "evaluations",
+      "solver_seed": 1,
+      "method": "memetic",
+      "paired_greedy_final_hypervolume": 1.0153680159780376,
+      "method_time_to_target_seconds": 1.5417472560000078,
+      "greedy_time_to_target_seconds": 19.647410259000026,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "medium_1010",
+      "size": "medium",
+      "protocol": "evaluations",
+      "solver_seed": 2,
+      "method": "memetic",
+      "paired_greedy_final_hypervolume": 1.0228699537566877,
+      "method_time_to_target_seconds": 1.4531671979998464,
+      "greedy_time_to_target_seconds": 20.590684369999963,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "medium_1020",
+      "size": "medium",
+      "protocol": "evaluations",
+      "solver_seed": 0,
+      "method": "memetic",
+      "paired_greedy_final_hypervolume": 1.0217227232925954,
+      "method_time_to_target_seconds": 1.6275708619998568,
+      "greedy_time_to_target_seconds": 17.91754197199998,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "medium_1020",
+      "size": "medium",
+      "protocol": "evaluations",
+      "solver_seed": 1,
+      "method": "memetic",
+      "paired_greedy_final_hypervolume": 0.9994106431240344,
+      "method_time_to_target_seconds": 1.3573686089998773,
+      "greedy_time_to_target_seconds": 15.564592793999964,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "medium_1020",
+      "size": "medium",
+      "protocol": "evaluations",
+      "solver_seed": 2,
+      "method": "memetic",
+      "paired_greedy_final_hypervolume": 0.9977404296531955,
+      "method_time_to_target_seconds": 1.3998397720001776,
+      "greedy_time_to_target_seconds": 19.322817694999912,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "medium_1030",
+      "size": "medium",
+      "protocol": "evaluations",
+      "solver_seed": 0,
+      "method": "memetic",
+      "paired_greedy_final_hypervolume": 0.99435431373237,
+      "method_time_to_target_seconds": 1.4043679179999344,
+      "greedy_time_to_target_seconds": 20.298028648000127,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "medium_1030",
+      "size": "medium",
+      "protocol": "evaluations",
+      "solver_seed": 1,
+      "method": "memetic",
+      "paired_greedy_final_hypervolume": 1.0131620184731478,
+      "method_time_to_target_seconds": 1.6098194720000265,
+      "greedy_time_to_target_seconds": 16.70244125299996,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "medium_1030",
+      "size": "medium",
+      "protocol": "evaluations",
+      "solver_seed": 2,
+      "method": "memetic",
+      "paired_greedy_final_hypervolume": 0.9929443459536016,
+      "method_time_to_target_seconds": 1.3733473290001257,
+      "greedy_time_to_target_seconds": 20.35690171200008,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "medium_1010",
+      "size": "medium",
+      "protocol": "evaluations",
+      "solver_seed": 0,
+      "method": "original_enhanced",
+      "paired_greedy_final_hypervolume": 1.017401850092499,
+      "method_time_to_target_seconds": null,
+      "greedy_time_to_target_seconds": 18.56465953599991,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "medium_1010",
+      "size": "medium",
+      "protocol": "evaluations",
+      "solver_seed": 1,
+      "method": "original_enhanced",
+      "paired_greedy_final_hypervolume": 1.0153680159780376,
+      "method_time_to_target_seconds": null,
+      "greedy_time_to_target_seconds": 19.647410259000026,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "medium_1010",
+      "size": "medium",
+      "protocol": "evaluations",
+      "solver_seed": 2,
+      "method": "original_enhanced",
+      "paired_greedy_final_hypervolume": 1.0228699537566877,
+      "method_time_to_target_seconds": null,
+      "greedy_time_to_target_seconds": 20.590684369999963,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "medium_1020",
+      "size": "medium",
+      "protocol": "evaluations",
+      "solver_seed": 0,
+      "method": "original_enhanced",
+      "paired_greedy_final_hypervolume": 1.0217227232925954,
+      "method_time_to_target_seconds": null,
+      "greedy_time_to_target_seconds": 17.91754197199998,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "medium_1020",
+      "size": "medium",
+      "protocol": "evaluations",
+      "solver_seed": 1,
+      "method": "original_enhanced",
+      "paired_greedy_final_hypervolume": 0.9994106431240344,
+      "method_time_to_target_seconds": null,
+      "greedy_time_to_target_seconds": 15.564592793999964,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "medium_1020",
+      "size": "medium",
+      "protocol": "evaluations",
+      "solver_seed": 2,
+      "method": "original_enhanced",
+      "paired_greedy_final_hypervolume": 0.9977404296531955,
+      "method_time_to_target_seconds": null,
+      "greedy_time_to_target_seconds": 19.322817694999912,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "medium_1030",
+      "size": "medium",
+      "protocol": "evaluations",
+      "solver_seed": 0,
+      "method": "original_enhanced",
+      "paired_greedy_final_hypervolume": 0.99435431373237,
+      "method_time_to_target_seconds": null,
+      "greedy_time_to_target_seconds": 20.298028648000127,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "medium_1030",
+      "size": "medium",
+      "protocol": "evaluations",
+      "solver_seed": 1,
+      "method": "original_enhanced",
+      "paired_greedy_final_hypervolume": 1.0131620184731478,
+      "method_time_to_target_seconds": null,
+      "greedy_time_to_target_seconds": 16.70244125299996,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "medium_1030",
+      "size": "medium",
+      "protocol": "evaluations",
+      "solver_seed": 2,
+      "method": "original_enhanced",
+      "paired_greedy_final_hypervolume": 0.9929443459536016,
+      "method_time_to_target_seconds": null,
+      "greedy_time_to_target_seconds": 20.35690171200008,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "medium_1010",
+      "size": "medium",
+      "protocol": "wall_time",
+      "solver_seed": 0,
+      "method": "ablation_local",
+      "paired_greedy_final_hypervolume": 1.0116709669372879,
+      "method_time_to_target_seconds": 1.4328240879999612,
+      "greedy_time_to_target_seconds": 5.907774982999854,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "medium_1010",
+      "size": "medium",
+      "protocol": "wall_time",
+      "solver_seed": 1,
+      "method": "ablation_local",
+      "paired_greedy_final_hypervolume": 0.9839141769987526,
+      "method_time_to_target_seconds": 1.344845768000141,
+      "greedy_time_to_target_seconds": 5.110970526000074,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "medium_1010",
+      "size": "medium",
+      "protocol": "wall_time",
+      "solver_seed": 2,
+      "method": "ablation_local",
+      "paired_greedy_final_hypervolume": 0.9935041650698642,
+      "method_time_to_target_seconds": 1.322220328999947,
+      "greedy_time_to_target_seconds": 5.41310990199986,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "medium_1020",
+      "size": "medium",
+      "protocol": "wall_time",
+      "solver_seed": 0,
+      "method": "ablation_local",
+      "paired_greedy_final_hypervolume": 0.9712413211097997,
+      "method_time_to_target_seconds": 1.380231108000089,
+      "greedy_time_to_target_seconds": 5.862355380000054,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "medium_1020",
+      "size": "medium",
+      "protocol": "wall_time",
+      "solver_seed": 1,
+      "method": "ablation_local",
+      "paired_greedy_final_hypervolume": 0.9711893268438205,
+      "method_time_to_target_seconds": 1.3190294200001063,
+      "greedy_time_to_target_seconds": 5.659043995000047,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "medium_1020",
+      "size": "medium",
+      "protocol": "wall_time",
+      "solver_seed": 2,
+      "method": "ablation_local",
+      "paired_greedy_final_hypervolume": 0.9874309093949426,
+      "method_time_to_target_seconds": 1.3991530380001223,
+      "greedy_time_to_target_seconds": 4.9309320049999315,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "medium_1030",
+      "size": "medium",
+      "protocol": "wall_time",
+      "solver_seed": 0,
+      "method": "ablation_local",
+      "paired_greedy_final_hypervolume": 0.9813126010824614,
+      "method_time_to_target_seconds": 1.6145951369999239,
+      "greedy_time_to_target_seconds": 5.883167903999947,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "medium_1030",
+      "size": "medium",
+      "protocol": "wall_time",
+      "solver_seed": 1,
+      "method": "ablation_local",
+      "paired_greedy_final_hypervolume": 1.0084326027108905,
+      "method_time_to_target_seconds": 1.5197875849999036,
+      "greedy_time_to_target_seconds": 4.466577114000074,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "medium_1030",
+      "size": "medium",
+      "protocol": "wall_time",
+      "solver_seed": 2,
+      "method": "ablation_local",
+      "paired_greedy_final_hypervolume": 0.9896923611284919,
+      "method_time_to_target_seconds": 1.5551176839999243,
+      "greedy_time_to_target_seconds": 4.184528638999836,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "medium_1010",
+      "size": "medium",
+      "protocol": "wall_time",
+      "solver_seed": 0,
+      "method": "memetic",
+      "paired_greedy_final_hypervolume": 1.0116709669372879,
+      "method_time_to_target_seconds": 1.4838418109998202,
+      "greedy_time_to_target_seconds": 5.907774982999854,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "medium_1010",
+      "size": "medium",
+      "protocol": "wall_time",
+      "solver_seed": 1,
+      "method": "memetic",
+      "paired_greedy_final_hypervolume": 0.9839141769987526,
+      "method_time_to_target_seconds": 1.4070070320001378,
+      "greedy_time_to_target_seconds": 5.110970526000074,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "medium_1010",
+      "size": "medium",
+      "protocol": "wall_time",
+      "solver_seed": 2,
+      "method": "memetic",
+      "paired_greedy_final_hypervolume": 0.9935041650698642,
+      "method_time_to_target_seconds": 1.3604651079999712,
+      "greedy_time_to_target_seconds": 5.41310990199986,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "medium_1020",
+      "size": "medium",
+      "protocol": "wall_time",
+      "solver_seed": 0,
+      "method": "memetic",
+      "paired_greedy_final_hypervolume": 0.9712413211097997,
+      "method_time_to_target_seconds": 1.3617700270001478,
+      "greedy_time_to_target_seconds": 5.862355380000054,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "medium_1020",
+      "size": "medium",
+      "protocol": "wall_time",
+      "solver_seed": 1,
+      "method": "memetic",
+      "paired_greedy_final_hypervolume": 0.9711893268438205,
+      "method_time_to_target_seconds": 1.2382594159998916,
+      "greedy_time_to_target_seconds": 5.659043995000047,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "medium_1020",
+      "size": "medium",
+      "protocol": "wall_time",
+      "solver_seed": 2,
+      "method": "memetic",
+      "paired_greedy_final_hypervolume": 0.9874309093949426,
+      "method_time_to_target_seconds": 1.3426795440000205,
+      "greedy_time_to_target_seconds": 4.9309320049999315,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "medium_1030",
+      "size": "medium",
+      "protocol": "wall_time",
+      "solver_seed": 0,
+      "method": "memetic",
+      "paired_greedy_final_hypervolume": 0.9813126010824614,
+      "method_time_to_target_seconds": 1.4155906319999758,
+      "greedy_time_to_target_seconds": 5.883167903999947,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "medium_1030",
+      "size": "medium",
+      "protocol": "wall_time",
+      "solver_seed": 1,
+      "method": "memetic",
+      "paired_greedy_final_hypervolume": 1.0084326027108905,
+      "method_time_to_target_seconds": 1.6249752759999865,
+      "greedy_time_to_target_seconds": 4.466577114000074,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "medium_1030",
+      "size": "medium",
+      "protocol": "wall_time",
+      "solver_seed": 2,
+      "method": "memetic",
+      "paired_greedy_final_hypervolume": 0.9896923611284919,
+      "method_time_to_target_seconds": 1.3600720650001676,
+      "greedy_time_to_target_seconds": 4.184528638999836,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "medium_1010",
+      "size": "medium",
+      "protocol": "wall_time",
+      "solver_seed": 0,
+      "method": "original_enhanced",
+      "paired_greedy_final_hypervolume": 1.0116709669372879,
+      "method_time_to_target_seconds": null,
+      "greedy_time_to_target_seconds": 5.907774982999854,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "medium_1010",
+      "size": "medium",
+      "protocol": "wall_time",
+      "solver_seed": 1,
+      "method": "original_enhanced",
+      "paired_greedy_final_hypervolume": 0.9839141769987526,
+      "method_time_to_target_seconds": null,
+      "greedy_time_to_target_seconds": 5.110970526000074,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "medium_1010",
+      "size": "medium",
+      "protocol": "wall_time",
+      "solver_seed": 2,
+      "method": "original_enhanced",
+      "paired_greedy_final_hypervolume": 0.9935041650698642,
+      "method_time_to_target_seconds": null,
+      "greedy_time_to_target_seconds": 5.41310990199986,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "medium_1020",
+      "size": "medium",
+      "protocol": "wall_time",
+      "solver_seed": 0,
+      "method": "original_enhanced",
+      "paired_greedy_final_hypervolume": 0.9712413211097997,
+      "method_time_to_target_seconds": 2.063600443000041,
+      "greedy_time_to_target_seconds": 5.862355380000054,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "medium_1020",
+      "size": "medium",
+      "protocol": "wall_time",
+      "solver_seed": 1,
+      "method": "original_enhanced",
+      "paired_greedy_final_hypervolume": 0.9711893268438205,
+      "method_time_to_target_seconds": null,
+      "greedy_time_to_target_seconds": 5.659043995000047,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "medium_1020",
+      "size": "medium",
+      "protocol": "wall_time",
+      "solver_seed": 2,
+      "method": "original_enhanced",
+      "paired_greedy_final_hypervolume": 0.9874309093949426,
+      "method_time_to_target_seconds": null,
+      "greedy_time_to_target_seconds": 4.9309320049999315,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "medium_1030",
+      "size": "medium",
+      "protocol": "wall_time",
+      "solver_seed": 0,
+      "method": "original_enhanced",
+      "paired_greedy_final_hypervolume": 0.9813126010824614,
+      "method_time_to_target_seconds": null,
+      "greedy_time_to_target_seconds": 5.883167903999947,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "medium_1030",
+      "size": "medium",
+      "protocol": "wall_time",
+      "solver_seed": 1,
+      "method": "original_enhanced",
+      "paired_greedy_final_hypervolume": 1.0084326027108905,
+      "method_time_to_target_seconds": null,
+      "greedy_time_to_target_seconds": 4.466577114000074,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "medium_1030",
+      "size": "medium",
+      "protocol": "wall_time",
+      "solver_seed": 2,
+      "method": "original_enhanced",
+      "paired_greedy_final_hypervolume": 0.9896923611284919,
+      "method_time_to_target_seconds": null,
+      "greedy_time_to_target_seconds": 4.184528638999836,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "small_1010",
+      "size": "small",
+      "protocol": "evaluations",
+      "solver_seed": 0,
+      "method": "ablation_local",
+      "paired_greedy_final_hypervolume": 0.934886595251055,
+      "method_time_to_target_seconds": 0.5298459539999385,
+      "greedy_time_to_target_seconds": 5.003550633000032,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "small_1010",
+      "size": "small",
+      "protocol": "evaluations",
+      "solver_seed": 1,
+      "method": "ablation_local",
+      "paired_greedy_final_hypervolume": 0.9346708594155491,
+      "method_time_to_target_seconds": null,
+      "greedy_time_to_target_seconds": 8.737880885000095,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "small_1010",
+      "size": "small",
+      "protocol": "evaluations",
+      "solver_seed": 2,
+      "method": "ablation_local",
+      "paired_greedy_final_hypervolume": 0.9346846220568742,
+      "method_time_to_target_seconds": null,
+      "greedy_time_to_target_seconds": 5.171318136999844,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "small_1010",
+      "size": "small",
+      "protocol": "evaluations",
+      "solver_seed": 0,
+      "method": "memetic",
+      "paired_greedy_final_hypervolume": 0.934886595251055,
+      "method_time_to_target_seconds": null,
+      "greedy_time_to_target_seconds": 5.003550633000032,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "small_1010",
+      "size": "small",
+      "protocol": "evaluations",
+      "solver_seed": 1,
+      "method": "memetic",
+      "paired_greedy_final_hypervolume": 0.9346708594155491,
+      "method_time_to_target_seconds": 1.0023568949998207,
+      "greedy_time_to_target_seconds": 8.737880885000095,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "small_1010",
+      "size": "small",
+      "protocol": "evaluations",
+      "solver_seed": 2,
+      "method": "memetic",
+      "paired_greedy_final_hypervolume": 0.9346846220568742,
+      "method_time_to_target_seconds": null,
+      "greedy_time_to_target_seconds": 5.171318136999844,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "small_1010",
+      "size": "small",
+      "protocol": "evaluations",
+      "solver_seed": 0,
+      "method": "original_enhanced",
+      "paired_greedy_final_hypervolume": 0.934886595251055,
+      "method_time_to_target_seconds": null,
+      "greedy_time_to_target_seconds": 5.003550633000032,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "small_1010",
+      "size": "small",
+      "protocol": "evaluations",
+      "solver_seed": 1,
+      "method": "original_enhanced",
+      "paired_greedy_final_hypervolume": 0.9346708594155491,
+      "method_time_to_target_seconds": 0.2528182260000449,
+      "greedy_time_to_target_seconds": 8.737880885000095,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "small_1010",
+      "size": "small",
+      "protocol": "evaluations",
+      "solver_seed": 2,
+      "method": "original_enhanced",
+      "paired_greedy_final_hypervolume": 0.9346846220568742,
+      "method_time_to_target_seconds": null,
+      "greedy_time_to_target_seconds": 5.171318136999844,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "small_1010",
+      "size": "small",
+      "protocol": "wall_time",
+      "solver_seed": 0,
+      "method": "ablation_local",
+      "paired_greedy_final_hypervolume": 0.9348107836527404,
+      "method_time_to_target_seconds": 0.5299134239999148,
+      "greedy_time_to_target_seconds": 2.1447800340001777,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "small_1010",
+      "size": "small",
+      "protocol": "wall_time",
+      "solver_seed": 1,
+      "method": "ablation_local",
+      "paired_greedy_final_hypervolume": 0.9294869144322676,
+      "method_time_to_target_seconds": 0.35967256100002487,
+      "greedy_time_to_target_seconds": 2.4624672689999443,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "small_1010",
+      "size": "small",
+      "protocol": "wall_time",
+      "solver_seed": 2,
+      "method": "ablation_local",
+      "paired_greedy_final_hypervolume": 0.925044943477216,
+      "method_time_to_target_seconds": 0.3538862819998485,
+      "greedy_time_to_target_seconds": 1.3954350640001394,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "small_1010",
+      "size": "small",
+      "protocol": "wall_time",
+      "solver_seed": 0,
+      "method": "memetic",
+      "paired_greedy_final_hypervolume": 0.9348107836527404,
+      "method_time_to_target_seconds": null,
+      "greedy_time_to_target_seconds": 2.1447800340001777,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "small_1010",
+      "size": "small",
+      "protocol": "wall_time",
+      "solver_seed": 1,
+      "method": "memetic",
+      "paired_greedy_final_hypervolume": 0.9294869144322676,
+      "method_time_to_target_seconds": 0.5182763899999827,
+      "greedy_time_to_target_seconds": 2.4624672689999443,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "small_1010",
+      "size": "small",
+      "protocol": "wall_time",
+      "solver_seed": 2,
+      "method": "memetic",
+      "paired_greedy_final_hypervolume": 0.925044943477216,
+      "method_time_to_target_seconds": 0.38494141299997864,
+      "greedy_time_to_target_seconds": 1.3954350640001394,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "small_1010",
+      "size": "small",
+      "protocol": "wall_time",
+      "solver_seed": 0,
+      "method": "original_enhanced",
+      "paired_greedy_final_hypervolume": 0.9348107836527404,
+      "method_time_to_target_seconds": null,
+      "greedy_time_to_target_seconds": 2.1447800340001777,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "small_1010",
+      "size": "small",
+      "protocol": "wall_time",
+      "solver_seed": 1,
+      "method": "original_enhanced",
+      "paired_greedy_final_hypervolume": 0.9294869144322676,
+      "method_time_to_target_seconds": 0.3028588130000571,
+      "greedy_time_to_target_seconds": 2.4624672689999443,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    },
+    {
+      "instance_id": "small_1010",
+      "size": "small",
+      "protocol": "wall_time",
+      "solver_seed": 2,
+      "method": "original_enhanced",
+      "paired_greedy_final_hypervolume": 0.925044943477216,
+      "method_time_to_target_seconds": 0.9370339310000873,
+      "greedy_time_to_target_seconds": 1.3954350640001394,
+      "target_scope": "retrospective paired greedy endpoint, not a predeclared independent quality target; null means not reached or target undefined"
+    }
+  ]
+}

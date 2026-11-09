@@ -8,3 +8,4 @@ dist/
 .coverage
 work/
 .DS_Store
+*.tmp

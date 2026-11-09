@@ -1,6 +1,6 @@
 # Reproducible experiments
 
-Run commands from the repository root after installing the project. The
+Run commands from the repository root after installing the project. Historical `benchmark` measurements belong to source commit `9947d9d`; the follow-up changes the package fingerprint. Verify/replot historical records or use a newly named configuration for fresh runs, rather than resuming old measurements under changed source. The
 experiment runner uses saved JSON configurations, deterministic instance and
 solver seeds, complete-schedule evaluation caps, raw schedule archives, and
 independent validation. A configuration defines a study; it is not evidence that
@@ -9,8 +9,7 @@ to determine actual completion.
 
 ```bash
 python main.py experiment --config experiments/smoke.json
-python main.py experiment --config experiments/benchmark.json
-python main.py experiment --config experiments/benchmark.json --resume
+python experiments/verify_saved_results.py --study benchmark
 python main.py plot --results results/benchmark --figures figures/benchmark
 ```
 
@@ -135,4 +134,22 @@ within each instance, not universal conflict or globally optimal alternatives.
 Neither the protocol nor the documentation assumes NSGA-II must beat the
 baseline; feasibility failures and baseline wins are valid findings.
 
-For the bounded benchmark, run `python experiments/certify_small_ideal.py` to verify the exact small-instance ideal certificates; the complete integer/rational proof is in formulation Section5.1. `python experiments/write_report.py` generates the bounded-study academic report after `verification.json` records PASS.
+For fresh historical-method measurements, copy `benchmark.json`, change its `name`, and run `python main.py experiment --config YOUR_CONFIG.json`; the root README includes exact commands. Resume only a newly named study with matching source/runtime.
+
+For the bounded benchmark, run `python experiments/certify_small_ideal.py` to verify the exact small-instance ideal certificates; the complete integer/rational proof is in formulation Section5.1. `python experiments/write_report.py` generates `report/historical_benchmark_report.md` after `verification.json` records PASS. It does not overwrite the consolidated final report. Build the final printable report with `python report/build_report.py` (optional Pandoc/XeLaTeX dependencies).
+
+## Feasible-domain follow-up
+
+`enhancement_validation.json` declares the held-out comparison of unchanged multi-start greedy, original enhanced NSGA-II, feasible memetic NSGA-II, and a matched scalar-local ablation. It uses separate evaluation and wall-allocation protocols, source snapshots and per-evaluation completion timestamps. All late results are excluded from cutoff quality and bounded overruns are recorded. The development configuration is separate; its existence does not mean every planned development run was executed.
+
+```bash
+python main.py compare --config experiments/enhancement_validation.json --resume
+python experiments/verify_enhancement.py --study enhancement_validation
+python experiments/plot_enhancement.py --study enhancement_validation
+python experiments/export_enhancement.py --study enhancement_validation
+python experiments/report_enhancement.py --study enhancement_validation
+```
+
+For fresh measurements, copy the configuration and change `name` before running `compare`. The common observer retains genotype hashes, feasible-evaluation counts, raw objectives, duplicates and actual elapsed prefixes; it includes native search bookkeeping and initialization in runtime. The comparison clears constructor caches and rotates method order. The scalar-local comparator shares the initial construction prefix but later random streams/states diverge. It removes the NSGA-II selection/survival bundle, not one isolated component.
+
+Full methodology is in `docs/enhancement_study.md`; operator invariants and workload mathematics are in `docs/feasible_variation.md`. The measured follow-up report is generated only after complete-run verification. Original datasets, benchmarks and the original model/indicator/algorithm implementation files are preserved.

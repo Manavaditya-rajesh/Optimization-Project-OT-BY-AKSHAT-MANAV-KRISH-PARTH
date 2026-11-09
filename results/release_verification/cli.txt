@@ -1,0 +1,45 @@
+Generated 40 synthetic events: work/release_demo.json
+{
+  "method": "memetic",
+  "evaluations": 240,
+  "runtime": 0.6891200489999392,
+  "archive_size": 1,
+  "hypervolume": 0.9353187591328681,
+  "minimum_violation": 0
+}
+{
+  "objectives": [
+    0.0,
+    0.2545454545454546,
+    0.04714045207910319
+  ],
+  "violation": 0,
+  "violations": {},
+  "metrics": {
+    "student_gaps": 0,
+    "faculty_gaps": 0,
+    "average_student_gap_per_day": 0.0,
+    "longest_idle_stretch": 0,
+    "room_utilization": 0.7454545454545454,
+    "faculty_loads": {
+      "F01": 8,
+      "F02": 6,
+      "F03": 8,
+      "F04": 8,
+      "F05": 8,
+      "F06": 6
+    },
+    "faculty_relative_loads": {
+      "F01": 0.4,
+      "F02": 0.3,
+      "F03": 0.4,
+      "F04": 0.4,
+      "F05": 0.4,
+      "F06": 0.3
+    },
+    "max_faculty_daily_load": 4,
+    "consecutive_periods_over_three": 1,
+    "required_teaching_periods": 44
+  },
+  "feasible": true
+}

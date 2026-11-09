@@ -18,7 +18,11 @@ assert verification["status"] == "PASS"
 expected_config = json.loads((ROOT / "experiments" / "benchmark.json").read_text())
 assert {**manifest["config"], "name": expected_config["name"]} == expected_config, "Report template targets the bounded benchmark design"
 
-sections = ["""# Multi-Objective College Timetable Optimization: technical report
+sections = ["""# Multi-Objective College Timetable Optimization: historical benchmark report
+
+This report covers the original bounded benchmark only. The final method and
+completed follow-up are discussed in `report/report.md` and
+`report/enhancement_report.md`; this historical generator does not overwrite them.
 
 This report is generated from saved synthetic experiment records. It distinguishes
 measured evidence, mathematical guarantees, and work still required for academic
@@ -401,8 +405,9 @@ experiments and limitations for the viva. Presentation/demo guidance appears in
 ## 19. Repository and reproduction
 
 Repository: https://github.com/akshattikaria/Optimization-Project-OT-BY-AKSHAT-MANAV-KRISH-PARTH.
-Changes remain local and reviewable; this task does not commit, push, open a PR,
-merge or change access. Installation, solving, verification and fresh experiment
+The original implementation was first reviewed locally and later published in
+user-authorized delivery commits. Publication does not certify account access
+or weekly participation. Installation, solving, verification and fresh experiment
 commands are in the root README. `experiments/verify_saved_results.py` validates
 the entire saved study; `experiments/write_report.py` generates this report only
 after the verification JSON reports PASS. Source/runtime manifests and raw
@@ -414,8 +419,8 @@ test_log = (ROOT / "results" / "verification" / "pytest.txt").read_text().strip(
 fresh_log = (ROOT / "results" / "verification" / "fresh_pytest.txt").read_text().strip().splitlines()[-1]
 evidence = (f"Automated verification: **{test_log}** in the working environment; "
             f"**{fresh_log}** after installing the pinned dependencies into a new virtual "
-            "environment from a fresh repository snapshot. This used a snapshot rather "
-            "than a remote clone because changes remain uncommitted/unpushed. The fresh "
+            "environment from a fresh repository snapshot. At the time of that historical "
+            "verification, changes had not yet been published, so a snapshot was used. The fresh "
             "CLI generated, solved and validated a separate seed-42 instance, and the "
             "fresh environment rechecked every stored benchmark schedule. Dependency "
             "checks passed. Logs are in `results/verification/`.\n\n")
@@ -431,5 +436,5 @@ body = body.replace("## 16. Limitations", "\n".join(table) + "\n\n## 16. Limitat
 body = body.replace("results/benchmark", f"results/{STUDY}")
 body = re.sub(r"(?m)^(\|[^\n]*\|)\n\n(?=\|)", r"\1\n", body)
 (ROOT / "report").mkdir(exist_ok=True)
-(ROOT / "report" / "report.md").write_text(body)
-print("Generated report/report.md from verified saved measurements")
+(ROOT / "report" / "historical_benchmark_report.md").write_text(body)
+print("Generated report/historical_benchmark_report.md from verified saved measurements")

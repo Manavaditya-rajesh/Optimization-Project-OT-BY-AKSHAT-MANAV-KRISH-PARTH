@@ -1,0 +1,22 @@
+{
+  "pptx_slides": 21,
+  "speaker_notes_slides": 21,
+  "solver_runs_during_build": 0,
+  "versions": {
+    "python-pptx": "1.0.2",
+    "matplotlib": "3.10.8",
+    "Pillow": "12.3.0"
+  },
+  "pdf_pages": 21,
+  "required_pdf_text": "PASS",
+  "rendered_preview_slides": 21,
+  "demo_script_syntax": "PASS",
+  "demo_execution": {
+    "status": "PASS",
+    "method": "memetic",
+    "charged_evaluations": 120,
+    "feasible_archive_vectors": 1,
+    "minimum_violation": 0,
+    "log": "work/presentation_demo/demo.log"
+  }
+}

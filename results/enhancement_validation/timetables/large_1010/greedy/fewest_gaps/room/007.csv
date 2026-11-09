@@ -1,0 +1,6 @@
+room: R08,P1,P2,P3,P4,P5,P6,P7,P8
+Monday,,,G20-T4 | R08 / F50,G06-T1 | R08 / F33,LUNCH,G15-T6 | R08 / F02,G15-T4 | R08 / F12,
+Tuesday,,,,,LUNCH,G15-T4 | R08 / F12,,G15-T5 | R08 / F15
+Wednesday,,,,G20-T3 | R08 / F44,LUNCH,G20-T5 | R08 / F20,,
+Thursday,,,G19-T3 | R08 / F08,G15-T1 | R08 / F37,LUNCH,G08-T1 | R08 / F12,G15-T5 | R08 / F15,
+Friday,,,,G08-T1 | R08 / F12,LUNCH,G19-T1 | R08 / F13,,

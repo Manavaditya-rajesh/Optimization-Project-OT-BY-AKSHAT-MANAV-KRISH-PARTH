@@ -1,45 +1,54 @@
-# Implementation and review summary
+# Final implementation and release summary
 
-The working optimization system, experiments, tests and academic documentation are complete in the cloud repository. Changes remain uncommitted and unpushed; no PR, merge or access change was made. The original attached proposal and assignment are preserved under `problem/references/`, with a requirements/corrections map in `docs/reference_review.md`.
+The project provides a working optimization system, checked synthetic datasets, reproducible measurements, timetable exports and academic documentation. The recommended method for the evaluated medium/large cases is **feasible-domain memetic NSGA-II (`memetic`)**. Repeated greedy remains a strong baseline and a sensible choice for the small cases. All college data are synthetic; larger heuristic archives are discovered non-dominated sets, not certified global Pareto fronts.
+
+The attached references are retained under `problem/references/`. [Reference review](reference_review.md) documents corrections to the proposal and the professor's requirements. Publication to the main branch is authorized; no student identities, approval, contribution history or eight-week development record are invented.
 
 ## Implemented system
 
-- Typed problem/schedule schema, versioned JSON serialization, validation and a configurable synthetic engineering-college generator at exactly 40, 150 and 400 events.
-- Separate known-feasible certificates. Qualifications and availability preserve the certificate, but optimizer inputs and metadata contain no certificate schedule.
-- An independent-from-search hard-constraint checker covering complete demand, eligible offering-consistent teachers, all occupied periods of multi-period labs, lunch/day boundaries, capacity/type, availability, resource clashes, daily/weekly teaching limits and distinct-day rules.
-- Three objectives: student gaps plus half faculty gaps; duration-weighted unused seat fraction; population SD of relative faculty teaching loads. Offering-level faculty decisions make the last objective genuinely optimizable.
-- A meaningful DSatur-style constructive baseline, strong equal-budget repeated greedy, transparent standard NSGA-II, initialization-only ablation, and enhanced NSGA-II with actual reconstruction repair and feasible local search including whole-offering faculty exchanges.
-- Optional exact CP-SAT gaps/room/feasibility models, exhaustive micro-instance Pareto enumeration, and an exact load-partition relaxation with rational/integer ideal-vector certificates.
-- Exact 3-D hypervolume, non-dominated sorting, spacing, convergence and feasibility histories, paired descriptive statistics and instance-level sign tests. All algorithms use common objectives and within-scenario evaluation caps; runtime includes constructive work.
-- A CLI, event CSV/JSON, Markdown grids, group/faculty/room CSV grids, 24 baseline/enhanced representative selections, Pareto projections/3-D plots, convergence and comparison charts.
+The repository contains **19 Python package modules and 16 test modules**. The implementation includes:
 
-## Executed verification
+- A typed, versioned problem/schedule schema and configurable generators for exactly 40, 150 and 400 events. Separate feasible certificates establish that the generated instances can be scheduled; certificates are excluded from optimizer inputs.
+- Whole-offering faculty assignments and an independent-from-search checker for required sessions, qualifications, room/faculty/student clashes, capacity/type, full-block availability, lunch/day boundaries, daily/weekly limits and distinct-day rules. Multi-period laboratories occupy every required period.
+- Three minimization objectives: student gaps plus half the faculty gaps, duration-weighted unused seat fraction, and population SD of relative faculty teaching loads. Eligible faculty choices make workload balance a genuine decision.
+- A DSatur-style constructor, strong repeated-greedy baseline, standard constrained NSGA-II, initialization-only ablation and the original repair/local-search enhancement.
+- The recommended feasible-domain method: feasible initialization, resource-checked mutation, bounded batch faculty reassignment, rank/crowding tournaments and elitist NSGA-II survival. It deliberately omits crossover. A matched scalar-local ablation tests the selection/survival bundle.
+- Exact CP-SAT scalar references, exhaustive micro-instance Pareto fronts, and integer/rational small-instance ideal certificates. Batch faculty search exactly minimizes squared loads within its bounded fixed-time neighborhood when weekly limits match; unequal limits produce an explicit no-op.
+- Fixed-scale exact 3-D hypervolume, convergence and feasibility traces, paired comparisons, CSV/JSON event tables, Markdown grids, per-group/faculty/room CSV grids, representative timetables and generated scientific figures.
 
-**136 automated tests passed**, and the same **136 passed after a fresh snapshot installation in a new virtual environment using pinned dependencies**. The installed CLI generated, optimized and validated a separate seed-42 instance. Dependency checks passed. A snapshot was used because uncommitted work cannot be retrieved by a remote clone.
+All full search evaluations are charged. Partial resource checks and branch-and-bound scores are disclosed and timed. Equal-time comparisons use actual completed-candidate timestamps and exclude late results from cutoff quality.
 
-Tests include hand-computed objective values; all important hard constraints; invalid and infeasible inputs; laboratory continuation and lunch; shared atomic groups; faculty consistency; variable workload; all three problem sizes; deterministic seeds and JSON round trips; constrained sorting/crowding; hypervolume checked against independent inclusion-exclusion; exact references; load-partition DP checked against brute-force assignments; fair evaluator charging; and resume/cache integrity.
+## Verified evidence
 
-The saved benchmark contains **192 completed runs**, **109,440 charged search evaluations**, seven instance certificates and **769 archived feasible schedules**. The shared checker revalidated every archived schedule and certificate outside search, including in the fresh installation. CP-SAT and hand-derived examples supply additional independent checks; this is not presented as a second independently written constraint checker.
+**201 automated tests passed in the release check**; the log is `results/release_verification/pytest.txt`. Tests cover hand-calculated objectives, hard constraints and edge cases, all instance sizes, assignment consistency, genuine workload variation, deterministic seeds, serialization, Pareto sorting/crowding, independent hypervolume checks, exact references, evaluator charging, feasible operators, bounded faculty search, cutoff timing and resumption integrity.
 
-## Measured findings
+| Study | Completed runs | Charged search evaluations | Revalidated archived timetables |
+|---|---:|---:|---:|
+| Historical benchmark | 192 | 109,440 | 769 |
+| Held-out enhancement validation | 168 | 76,086 | 3,295 |
 
-| Size | Runs per method | Greedy mean HV | Enhanced mean HV | Greedy mean seconds | Enhanced mean seconds |
-|---|---:|---:|---:|---:|---:|
-| Small | 30 | 0.935319 | 0.935173 | 7.918 | 2.432 |
-| Medium | 12 | 1.017029 | 0.981213 | 18.550 | 6.087 |
-| Large | 6 | 0.937241 | 0.909322 | 48.520 | 16.236 |
+The release verification rechecked both studies and their separate instance certificates. Historical datasets, measurements and figures remain unchanged. The **19 current source files match the enhancement study's frozen snapshot**. Manifests preserve configuration, source hashes, dependency versions and timing conventions. These checks use the shared constraint checker outside search; they are not described as a second independently written checker. Hand-derived cases and CP-SAT provide additional checks.
 
-Greedy, seeded and enhanced each found feasible schedules in **48/48 runs**. Plain NSGA-II found none in **48 runs at these caps**, and its empty fronts correctly receive HV=0. This is bounded-search failure on known-feasible inputs, not an infeasibility proof or a claim that NSGA-II can never work.
+## Measured conclusions
 
-Enhanced NSGA-II was about three times faster than repeated greedy but had lower mean hypervolume at every size. Small-instance HV was close; medium/large losses were larger. The evidence supports feasibility recovery and runtime savings, not universal quality superiority. Only two or three independent instances per size limit statistical generalization.
+The original enhancement was faster than repeated greedy but had lower mean hypervolume. The follow-up addresses feasibility destruction using a separate, frozen validation study rather than replacing those unfavorable records.
 
-A stronger result explains the small cases: all three checked 40-event instances attain the exact lower bounds `(gaps, room waste, load SD) = (0,14/55,sqrt(1/450))`. Integer workload partitioning gives minimum squared-load sum 328 and loads `[6,6,8,8,8,8]`; exact rational room calculations and zero integer gaps certify simultaneous attainment. Their **global objective front is a singleton**. No artificial broad front is needed. Separate exhaustive micro-instances prove that genuine unavoidable objective conflicts are possible. Medium/large fronts remain discovered non-dominated sets, without global optimality proofs.
+| Held-out condition | Greedy mean HV | Memetic mean HV | Relative improvement |
+|---|---:|---:|---:|
+| Medium, equal evaluations | 1.008330 | 1.056105 | +4.74% |
+| Medium, equal wall time | 0.988710 | 1.060477 | +7.26% |
+| Large, equal evaluations | 0.940824 | 0.977304 | +3.88% |
+| Large, equal wall time | 0.930485 | 1.013967 | +8.97% |
 
-CP-SAT separately proved gaps=0 and room waste=14/55 on the reference small case, in approximately 2.75 and 2.32 seconds respectively. Those scalar optima do not constrain the other objectives. Bounds, statuses and exact outputs are saved.
+The new method won all nine paired runs in each of these four conditions. This supports higher measured HV on the declared held-out synthetic medium/large instances. It does not establish global optimality, improvement of every objective, or effectiveness on real college data. Only three independent instances per primary size limit generalization.
 
-## Reproduction
+Small-case results are mixed: mean HV changed by **−0.48% at equal evaluations** and **+0.05% at equal wall time**. The scalar-local ablation is competitive, so no consistent isolated advantage of NSGA-II selection is established. Faculty reassignment can improve workload balance while worsening gaps; all feasible proposals are assessed through the common archive.
 
-From the extracted project root or cloud repository, in Bash:
+The three original small instances have certified singleton ideal vectors `(0, 14/55, sqrt(1/450))`; an additional certificate covers held-out small_1010. An algorithm cannot improve beyond an attained ideal vector. Exhaustive micro-instances separately demonstrate genuine objective conflicts. Other medium/large fronts remain empirical.
+
+## Reproduce
+
+Run from the repository root after installing the pinned dependencies:
 
 ```bash
 python3 -m venv .venv
@@ -48,35 +57,33 @@ python -m pip install -r requirements-lock.txt
 python -m pip install -e . --no-deps
 python -m pytest -q
 python main.py generate --size small --seed 42 --output data/demo.json
-python main.py solve data/demo.json --method enhanced --seed 0 --budget 240 --population 24 --output results/demo --figures figures/demo
-python main.py evaluate data/demo.json results/demo/timetables/normalized_compromise/schedule.json
+python main.py solve data/demo.json --method memetic --seed 0 --budget 240 --population 24 --search-seconds 6 --output results/memetic_demo --figures figures/memetic_demo
+python main.py evaluate data/demo.json results/memetic_demo/timetables/normalized_compromise/schedule.json
 python experiments/verify_saved_results.py --study benchmark
-python experiments/certify_small_ideal.py --study benchmark
-python main.py plot --results results/benchmark --figures figures/benchmark
-python experiments/export_review.py --study benchmark
-python experiments/write_report.py
+python experiments/verify_enhancement.py --study enhancement_validation
 ```
 
-For new solver measurements, copy `experiments/benchmark.json`, change its `name`, and run `python main.py experiment --config YOUR_CONFIG.json`. The README provides exact copy commands. `--resume` preserves existing measurements and requires matching source/configuration/runtime versions. Recorded source hashes match the delivered algorithm files. Runtime naturally varies with hardware/load.
+To collect **fresh measurements** without altering the supplied studies, create a newly named configuration:
 
-## Files changed or created
+```bash
+mkdir -p work
+python - <<'PY'
+import json
+from pathlib import Path
+config = json.loads(Path('experiments/enhancement_validation.json').read_text())
+config['name'] = 'enhancement_reproduction'
+Path('work/enhancement_reproduction.json').write_text(json.dumps(config, indent=2))
+PY
+python main.py compare --config work/enhancement_reproduction.json
+python experiments/verify_enhancement.py --study enhancement_reproduction
+```
 
-- Replaced `README.md`; added `.gitignore`, `main.py`, `pyproject.toml`, `requirements.txt` and `requirements-lock.txt`.
-- Added 15 modules in `src/timetable/`: model, generation, evaluation, greedy, NSGA-II, hybrid, exact, metrics, experiments, export, visualization, CLI, analytical examples and package entry points.
-- Added 12 test modules under `tests/`.
-- Added three experiment JSON configurations plus verification, representative export, ideal certification and report-generation scripts under `experiments/`.
-- Added original references, problem statement, literature review, full mathematical formulation, requirement corrections, prospective four-member/eight-week plan, exact guarantees, report and presentation/demo/viva material.
-- Added synthetic instances/certificates under `data/`; raw run records, tables, grids, exact certificates and verification logs under `results/`; generated charts and timetable images under `figures/`.
-- `docs/file_inventory.txt` lists every delivered project file. The full report has the professor's 19 requested sections and derives measured tables from verified records.
+Use `--resume` only for matching source/configuration/runtime records. Wall-time trajectories depend on hardware and load. See [experiment instructions](../experiments/README.md), [frozen study protocol](enhancement_study.md) and [operator invariants](feasible_variation.md).
 
-## Assumptions, incomplete work and recommendations
+## Deliverables and remaining limits
 
-The week repeats with equal periods, fixed session demand, disjoint atomic cohorts, one teacher per offering and exact room-kind matching. Default generator labs use entire cohorts. Model input can represent shared atomic groups and specialized room kinds, but individual enrollment overlaps, travel, alternating weeks, fixed starts, team teaching, uncertainty and non-teaching workloads are omitted.
+Source and tests are under `src/timetable/` and `tests/`; configurations and analysis scripts are under `experiments/`. Data/certificates, measured results and plots are under `data/`, `results/` and `figures/`. [File inventory](file_inventory.txt) lists the release files. The academic package includes the [final report source](../report/report.md), [measured enhancement report](../report/enhancement_report.md), report PDF and presentation deck. The [presentation guide](../presentation/README.md) identifies the slides, demo and viva material. PDF rebuilding uses `python report/build_report.py` with optional Pandoc/XeLaTeX documentation tools.
 
-All data are synthetic and planted feasible. The distribution is biased by its construction and generous staffing/resource limits. Larger heuristic archives have no global Pareto certificate; arbitrary inputs can be infeasible. The hypervolume gap normalization is deliberately loose and its policy sensitivity was not tested. Optional aggregate coverage maps empty targets to zero by documented convention; those undefined cases are excluded from substantive conclusions.
+The model assumes a repeating week, equal periods, fixed demand, disjoint atomic cohorts, one teacher per offering and exact room-kind matching. Default laboratories use whole cohorts. Individual enrollment overlaps, travel, alternating weeks, fixed starts, team teaching, uncertainty and non-teaching workloads are omitted. Planted feasibility conditions the synthetic distribution and can favor constructive scheduling.
 
-The larger five-instance/30-seed-per-instance study is configured but **not executed**. Real-data/ITC validation, systematic sensitivity/disruption studies, equal-runtime comparisons, full repair-versus-local-search ablations, general exact workload optimization, NSGA-III/MOEA/D/SA/weighted GA, Excel export and an interactive UI are not claimed. The full enhancement does not beat strong greedy on HV; further quality improvements need development-instance tuning and new controlled experiments.
-
-Recommended next work: validate anonymized real inputs and resource pressure first; expand independent instances and reference/scale sensitivity; compare quality under equal runtime; profile incremental resource checks and more targeted faculty exchanges; then add true minimum-disruption rescheduling or extra algorithms only where evidence justifies them.
-
-Administrative approval/access, confirmed group/professor details, authentic individual contributions, eight weeks of personal commits and actual presentation/viva delivery remain the group's responsibility. No history or identity was fabricated.
+The larger 30-seed study is configured but unexecuted. Real-data/ITC validation, systematic disruption/sensitivity studies, separate ablation of every operator, general exact workload optimization, extra metaheuristics and a complex frontend are not claimed. Recommended next work is broader independent-instance and real-data validation, sensitivity to objective scaling/resource pressure, and minimum-disruption rescheduling. Confirmed member/course details, professor approval and authentic participation records remain the group's responsibility.

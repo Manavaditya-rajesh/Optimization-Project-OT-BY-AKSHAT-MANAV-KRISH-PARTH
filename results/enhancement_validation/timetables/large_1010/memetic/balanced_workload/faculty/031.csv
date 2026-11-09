@@ -1,0 +1,6 @@
+faculty: F32,P1,P2,P3,P4,P5,P6,P7,P8
+Monday,,G02-T4 | R14 / F32,,,LUNCH,G01-T4 | R09 / F32,,
+Tuesday,,G02-T4 | R10 / F32,G20-T6 | R15 / F32,,LUNCH,,,
+Wednesday,G20-T6 | R03 / F32,,,,LUNCH,,,
+Thursday,,,G20-T6 | R15 / F32,G02-T4 | R10 / F32,LUNCH,G01-T4 | R01 / F32,,
+Friday,,G01-T4 | R05 / F32,,,LUNCH,,,

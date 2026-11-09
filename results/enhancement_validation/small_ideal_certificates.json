@@ -1,0 +1,48 @@
+{
+  "small_1010": {
+    "problem_sha256": "0b3bf2ebb0f01b27e48fad97b31a10ba17ffa9cce0935513fbb473bdf75478a1",
+    "bounds": {
+      "gaps_lower_bound": 0.0,
+      "room_lower_bound_exact": "14/55",
+      "room_lower_bound": 0.2545454545454545,
+      "workload_sd_lower_bound": 0.04714045207910317,
+      "relaxed_minimum_sum_squared_loads": 328,
+      "relative_load_variance_exact": "1/450",
+      "offering_load_multiplicities": {
+        "3": 12,
+        "2": 4
+      },
+      "faculty_count": 6,
+      "common_weekly_allowance": 20,
+      "dp_states": 285,
+      "method": "exact integer load-multiplicity DP relaxation; independent static room lower bound; gaps nonnegative"
+    },
+    "attaining_feasible_certificate": {
+      "run": "results/enhancement_validation/runs/small_1010_evaluations_memetic_1.json",
+      "archive_index": 0,
+      "objectives": [
+        0.0,
+        0.2545454545454546,
+        0.04714045207910319
+      ],
+      "violations": {},
+      "exact_attainment": {
+        "exact_room_fraction": "14/55",
+        "exact_sum_squared_loads": 328,
+        "exact_student_gaps": 0,
+        "exact_faculty_gaps": 0,
+        "sorted_faculty_loads": [
+          6,
+          6,
+          8,
+          8,
+          8,
+          8
+        ],
+        "total_required_teaching_periods": 44
+      }
+    },
+    "status": "CERTIFIED_GLOBAL_IDEAL_VECTOR",
+    "interpretation": "If attained, the global three-objective front is the singleton ideal vector; schedule identities may differ."
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "logical_cpu_count": 3,
+  "available_cpu_affinity_count": 3,
+  "cpu_model": "AMD EPYC 9V74 80-Core Processor",
+  "timing_isolation": "Application-level runs are sequential with rotated order. Exclusive host isolation is not guaranteed. No project test suite was run concurrently with held-out timing."
+}

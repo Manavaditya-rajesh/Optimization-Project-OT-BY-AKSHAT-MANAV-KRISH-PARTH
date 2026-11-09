@@ -1,0 +1,7463 @@
+{
+  "method": "greedy",
+  "solver_seed": 0,
+  "protocol": "wall_time",
+  "population_size": 24,
+  "evaluations": 107,
+  "evaluation_cap": 100000,
+  "paired_evaluation_budget": null,
+  "wall_time_limit": 6.0,
+  "runtime": 6.038451660999954,
+  "quality_cutoff_seconds": 6.0,
+  "wall_time_overshoot_seconds": 0.038451660999953674,
+  "time_to_first_feasible_seconds": 0.05067554300012489,
+  "feasible_run": true,
+  "archive_size": 8,
+  "objectives": [
+    [
+      0.0,
+      0.19036144578313255,
+      0.09367496997597598
+    ],
+    [
+      0.0,
+      0.1917670682730924,
+      0.06910137480542629
+    ],
+    [
+      0.5,
+      0.18674698795180722,
+      0.08381527307120105
+    ],
+    [
+      0.5,
+      0.1953815261044177,
+      0.06910137480542627
+    ],
+    [
+      0.5,
+      0.19678714859437754,
+      0.0634428877022476
+    ],
+    [
+      1.0,
+      0.19016064257028115,
+      0.0792148975887743
+    ],
+    [
+      1.0,
+      0.19678714859437754,
+      0.06144102863722254
+    ],
+    [
+      2.0,
+      0.19136546184738956,
+      0.06538348415311011
+    ]
+  ],
+  "archive": [
+    {
+      "schema_version": 1,
+      "placements": [
+        {
+          "start": 11,
+          "room": "R01"
+        },
+        {
+          "start": 17,
+          "room": "R01"
+        },
+        {
+          "start": 24,
+          "room": "R05"
+        },
+        {
+          "start": 6,
+          "room": "R01"
+        },
+        {
+          "start": 27,
+          "room": "R01"
+        },
+        {
+          "start": 19,
+          "room": "R01"
+        },
+        {
+          "start": 14,
+          "room": "R01"
+        },
+        {
+          "start": 29,
+          "room": "R01"
+        },
+        {
+          "start": 21,
+          "room": "R01"
+        },
+        {
+          "start": 18,
+          "room": "R05"
+        },
+        {
+          "start": 32,
+          "room": "R05"
+        },
+        {
+          "start": 7,
+          "room": "R01"
+        },
+        {
+          "start": 13,
+          "room": "R05"
+        },
+        {
+          "start": 33,
+          "room": "R01"
+        },
+        {
+          "start": 16,
+          "room": "R05"
+        },
+        {
+          "start": 22,
+          "room": "R01"
+        },
+        {
+          "start": 5,
+          "room": "R05"
+        },
+        {
+          "start": 9,
+          "room": "R09"
+        },
+        {
+          "start": 25,
+          "room": "R09"
+        },
+        {
+          "start": 2,
+          "room": "R02"
+        },
+        {
+          "start": 8,
+          "room": "R02"
+        },
+        {
+          "start": 38,
+          "room": "R02"
+        },
+        {
+          "start": 18,
+          "room": "R02"
+        },
+        {
+          "start": 39,
+          "room": "R06"
+        },
+        {
+          "start": 26,
+          "room": "R02"
+        },
+        {
+          "start": 19,
+          "room": "R06"
+        },
+        {
+          "start": 3,
+          "room": "R06"
+        },
+        {
+          "start": 34,
+          "room": "R06"
+        },
+        {
+          "start": 35,
+          "room": "R06"
+        },
+        {
+          "start": 5,
+          "room": "R06"
+        },
+        {
+          "start": 9,
+          "room": "R02"
+        },
+        {
+          "start": 10,
+          "room": "R02"
+        },
+        {
+          "start": 37,
+          "room": "R02"
+        },
+        {
+          "start": 6,
+          "room": "R02"
+        },
+        {
+          "start": 21,
+          "room": "R02"
+        },
+        {
+          "start": 11,
+          "room": "R02"
+        },
+        {
+          "start": 24,
+          "room": "R10"
+        },
+        {
+          "start": 32,
+          "room": "R10"
+        },
+        {
+          "start": 0,
+          "room": "R07"
+        },
+        {
+          "start": 15,
+          "room": "R07"
+        },
+        {
+          "start": 18,
+          "room": "R07"
+        },
+        {
+          "start": 1,
+          "room": "R07"
+        },
+        {
+          "start": 14,
+          "room": "R03"
+        },
+        {
+          "start": 17,
+          "room": "R03"
+        },
+        {
+          "start": 19,
+          "room": "R08"
+        },
+        {
+          "start": 33,
+          "room": "R04"
+        },
+        {
+          "start": 10,
+          "room": "R04"
+        },
+        {
+          "start": 16,
+          "room": "R03"
+        },
+        {
+          "start": 32,
+          "room": "R03"
+        },
+        {
+          "start": 5,
+          "room": "R03"
+        },
+        {
+          "start": 11,
+          "room": "R03"
+        },
+        {
+          "start": 7,
+          "room": "R03"
+        },
+        {
+          "start": 25,
+          "room": "R08"
+        },
+        {
+          "start": 6,
+          "room": "R04"
+        },
+        {
+          "start": 13,
+          "room": "R08"
+        },
+        {
+          "start": 2,
+          "room": "R11"
+        },
+        {
+          "start": 26,
+          "room": "R11"
+        },
+        {
+          "start": 32,
+          "room": "R07"
+        },
+        {
+          "start": 5,
+          "room": "R07"
+        },
+        {
+          "start": 24,
+          "room": "R03"
+        },
+        {
+          "start": 7,
+          "room": "R07"
+        },
+        {
+          "start": 35,
+          "room": "R03"
+        },
+        {
+          "start": 10,
+          "room": "R07"
+        },
+        {
+          "start": 11,
+          "room": "R07"
+        },
+        {
+          "start": 21,
+          "room": "R04"
+        },
+        {
+          "start": 3,
+          "room": "R08"
+        },
+        {
+          "start": 34,
+          "room": "R07"
+        },
+        {
+          "start": 19,
+          "room": "R07"
+        },
+        {
+          "start": 6,
+          "room": "R07"
+        },
+        {
+          "start": 18,
+          "room": "R03"
+        },
+        {
+          "start": 33,
+          "room": "R07"
+        },
+        {
+          "start": 25,
+          "room": "R03"
+        },
+        {
+          "start": 13,
+          "room": "R03"
+        },
+        {
+          "start": 26,
+          "room": "R04"
+        },
+        {
+          "start": 8,
+          "room": "R11"
+        },
+        {
+          "start": 16,
+          "room": "R11"
+        },
+        {
+          "start": 26,
+          "room": "R05"
+        },
+        {
+          "start": 8,
+          "room": "R01"
+        },
+        {
+          "start": 18,
+          "room": "R01"
+        },
+        {
+          "start": 35,
+          "room": "R05"
+        },
+        {
+          "start": 5,
+          "room": "R01"
+        },
+        {
+          "start": 27,
+          "room": "R05"
+        },
+        {
+          "start": 1,
+          "room": "R05"
+        },
+        {
+          "start": 34,
+          "room": "R01"
+        },
+        {
+          "start": 17,
+          "room": "R05"
+        },
+        {
+          "start": 10,
+          "room": "R05"
+        },
+        {
+          "start": 16,
+          "room": "R01"
+        },
+        {
+          "start": 32,
+          "room": "R01"
+        },
+        {
+          "start": 29,
+          "room": "R05"
+        },
+        {
+          "start": 33,
+          "room": "R05"
+        },
+        {
+          "start": 6,
+          "room": "R05"
+        },
+        {
+          "start": 9,
+          "room": "R01"
+        },
+        {
+          "start": 19,
+          "room": "R05"
+        },
+        {
+          "start": 37,
+          "room": "R09"
+        },
+        {
+          "start": 2,
+          "room": "R09"
+        },
+        {
+          "start": 18,
+          "room": "R06"
+        },
+        {
+          "start": 32,
+          "room": "R06"
+        },
+        {
+          "start": 31,
+          "room": "R02"
+        },
+        {
+          "start": 9,
+          "room": "R06"
+        },
+        {
+          "start": 17,
+          "room": "R06"
+        },
+        {
+          "start": 3,
+          "room": "R02"
+        },
+        {
+          "start": 16,
+          "room": "R02"
+        },
+        {
+          "start": 25,
+          "room": "R06"
+        },
+        {
+          "start": 11,
+          "room": "R06"
+        },
+        {
+          "start": 5,
+          "room": "R02"
+        },
+        {
+          "start": 10,
+          "room": "R06"
+        },
+        {
+          "start": 27,
+          "room": "R02"
+        },
+        {
+          "start": 33,
+          "room": "R06"
+        },
+        {
+          "start": 2,
+          "room": "R06"
+        },
+        {
+          "start": 8,
+          "room": "R06"
+        },
+        {
+          "start": 19,
+          "room": "R02"
+        },
+        {
+          "start": 26,
+          "room": "R06"
+        },
+        {
+          "start": 29,
+          "room": "R10"
+        },
+        {
+          "start": 0,
+          "room": "R10"
+        },
+        {
+          "start": 15,
+          "room": "R03"
+        },
+        {
+          "start": 22,
+          "room": "R07"
+        },
+        {
+          "start": 26,
+          "room": "R03"
+        },
+        {
+          "start": 33,
+          "room": "R03"
+        },
+        {
+          "start": 14,
+          "room": "R07"
+        },
+        {
+          "start": 21,
+          "room": "R03"
+        },
+        {
+          "start": 29,
+          "room": "R07"
+        },
+        {
+          "start": 35,
+          "room": "R07"
+        },
+        {
+          "start": 23,
+          "room": "R07"
+        },
+        {
+          "start": 19,
+          "room": "R03"
+        },
+        {
+          "start": 2,
+          "room": "R03"
+        },
+        {
+          "start": 30,
+          "room": "R07"
+        },
+        {
+          "start": 13,
+          "room": "R07"
+        },
+        {
+          "start": 37,
+          "room": "R07"
+        },
+        {
+          "start": 34,
+          "room": "R03"
+        },
+        {
+          "start": 27,
+          "room": "R03"
+        },
+        {
+          "start": 0,
+          "room": "R11"
+        },
+        {
+          "start": 24,
+          "room": "R11"
+        },
+        {
+          "start": 25,
+          "room": "R07"
+        },
+        {
+          "start": 2,
+          "room": "R07"
+        },
+        {
+          "start": 10,
+          "room": "R03"
+        },
+        {
+          "start": 26,
+          "room": "R07"
+        },
+        {
+          "start": 23,
+          "room": "R03"
+        },
+        {
+          "start": 37,
+          "room": "R03"
+        },
+        {
+          "start": 9,
+          "room": "R03"
+        },
+        {
+          "start": 3,
+          "room": "R03"
+        },
+        {
+          "start": 17,
+          "room": "R07"
+        },
+        {
+          "start": 30,
+          "room": "R03"
+        },
+        {
+          "start": 22,
+          "room": "R03"
+        },
+        {
+          "start": 8,
+          "room": "R07"
+        },
+        {
+          "start": 21,
+          "room": "R07"
+        },
+        {
+          "start": 27,
+          "room": "R07"
+        },
+        {
+          "start": 16,
+          "room": "R07"
+        },
+        {
+          "start": 29,
+          "room": "R03"
+        },
+        {
+          "start": 18,
+          "room": "R11"
+        },
+        {
+          "start": 38,
+          "room": "R11"
+        }
+      ],
+      "teachers": [
+        "F12",
+        "F09",
+        "F02",
+        "F04",
+        "F05",
+        "F09",
+        "F01",
+        "F04",
+        "F01",
+        "F06",
+        "F10",
+        "F20",
+        "F20",
+        "F09",
+        "F05",
+        "F11",
+        "F11",
+        "F05",
+        "F07",
+        "F08",
+        "F16",
+        "F19",
+        "F12",
+        "F13",
+        "F14",
+        "F03",
+        "F14",
+        "F04",
+        "F12",
+        "F15",
+        "F18",
+        "F16",
+        "F08",
+        "F19",
+        "F11",
+        "F12",
+        "F03",
+        "F06",
+        "F02",
+        "F17",
+        "F07",
+        "F08",
+        "F17",
+        "F18",
+        "F13",
+        "F11",
+        "F07",
+        "F06",
+        "F10",
+        "F04",
+        "F18",
+        "F02",
+        "F16",
+        "F03",
+        "F15",
+        "F08",
+        "F06",
+        "F19",
+        "F13",
+        "F20",
+        "F10",
+        "F01",
+        "F03",
+        "F09"
+      ]
+    },
+    {
+      "schema_version": 1,
+      "placements": [
+        {
+          "start": 5,
+          "room": "R01"
+        },
+        {
+          "start": 34,
+          "room": "R01"
+        },
+        {
+          "start": 10,
+          "room": "R05"
+        },
+        {
+          "start": 9,
+          "room": "R05"
+        },
+        {
+          "start": 27,
+          "room": "R05"
+        },
+        {
+          "start": 35,
+          "room": "R01"
+        },
+        {
+          "start": 8,
+          "room": "R05"
+        },
+        {
+          "start": 29,
+          "room": "R01"
+        },
+        {
+          "start": 37,
+          "room": "R05"
+        },
+        {
+          "start": 23,
+          "room": "R05"
+        },
+        {
+          "start": 6,
+          "room": "R01"
+        },
+        {
+          "start": 26,
+          "room": "R01"
+        },
+        {
+          "start": 19,
+          "room": "R01"
+        },
+        {
+          "start": 3,
+          "room": "R01"
+        },
+        {
+          "start": 11,
+          "room": "R01"
+        },
+        {
+          "start": 18,
+          "room": "R05"
+        },
+        {
+          "start": 13,
+          "room": "R01"
+        },
+        {
+          "start": 21,
+          "room": "R09"
+        },
+        {
+          "start": 32,
+          "room": "R09"
+        },
+        {
+          "start": 13,
+          "room": "R06"
+        },
+        {
+          "start": 18,
+          "room": "R02"
+        },
+        {
+          "start": 30,
+          "room": "R06"
+        },
+        {
+          "start": 7,
+          "room": "R02"
+        },
+        {
+          "start": 17,
+          "room": "R02"
+        },
+        {
+          "start": 26,
+          "room": "R02"
+        },
+        {
+          "start": 10,
+          "room": "R06"
+        },
+        {
+          "start": 3,
+          "room": "R02"
+        },
+        {
+          "start": 27,
+          "room": "R02"
+        },
+        {
+          "start": 19,
+          "room": "R06"
+        },
+        {
+          "start": 1,
+          "room": "R02"
+        },
+        {
+          "start": 11,
+          "room": "R02"
+        },
+        {
+          "start": 37,
+          "room": "R02"
+        },
+        {
+          "start": 2,
+          "room": "R02"
+        },
+        {
+          "start": 29,
+          "room": "R02"
+        },
+        {
+          "start": 21,
+          "room": "R02"
+        },
+        {
+          "start": 9,
+          "room": "R06"
+        },
+        {
+          "start": 38,
+          "room": "R10"
+        },
+        {
+          "start": 5,
+          "room": "R10"
+        },
+        {
+          "start": 17,
+          "room": "R07"
+        },
+        {
+          "start": 38,
+          "room": "R03"
+        },
+        {
+          "start": 2,
+          "room": "R07"
+        },
+        {
+          "start": 18,
+          "room": "R07"
+        },
+        {
+          "start": 10,
+          "room": "R07"
+        },
+        {
+          "start": 3,
+          "room": "R04"
+        },
+        {
+          "start": 5,
+          "room": "R03"
+        },
+        {
+          "start": 24,
+          "room": "R04"
+        },
+        {
+          "start": 13,
+          "room": "R04"
+        },
+        {
+          "start": 9,
+          "room": "R03"
+        },
+        {
+          "start": 16,
+          "room": "R07"
+        },
+        {
+          "start": 39,
+          "room": "R03"
+        },
+        {
+          "start": 8,
+          "room": "R08"
+        },
+        {
+          "start": 27,
+          "room": "R08"
+        },
+        {
+          "start": 35,
+          "room": "R08"
+        },
+        {
+          "start": 37,
+          "room": "R07"
+        },
+        {
+          "start": 11,
+          "room": "R08"
+        },
+        {
+          "start": 25,
+          "room": "R11"
+        },
+        {
+          "start": 0,
+          "room": "R11"
+        },
+        {
+          "start": 11,
+          "room": "R07"
+        },
+        {
+          "start": 21,
+          "room": "R03"
+        },
+        {
+          "start": 33,
+          "room": "R03"
+        },
+        {
+          "start": 32,
+          "room": "R07"
+        },
+        {
+          "start": 27,
+          "room": "R07"
+        },
+        {
+          "start": 14,
+          "room": "R07"
+        },
+        {
+          "start": 15,
+          "room": "R07"
+        },
+        {
+          "start": 26,
+          "room": "R03"
+        },
+        {
+          "start": 17,
+          "room": "R03"
+        },
+        {
+          "start": 0,
+          "room": "R07"
+        },
+        {
+          "start": 13,
+          "room": "R07"
+        },
+        {
+          "start": 18,
+          "room": "R03"
+        },
+        {
+          "start": 29,
+          "room": "R07"
+        },
+        {
+          "start": 8,
+          "room": "R07"
+        },
+        {
+          "start": 19,
+          "room": "R07"
+        },
+        {
+          "start": 16,
+          "room": "R04"
+        },
+        {
+          "start": 1,
+          "room": "R08"
+        },
+        {
+          "start": 30,
+          "room": "R11"
+        },
+        {
+          "start": 9,
+          "room": "R11"
+        },
+        {
+          "start": 23,
+          "room": "R01"
+        },
+        {
+          "start": 38,
+          "room": "R05"
+        },
+        {
+          "start": 29,
+          "room": "R05"
+        },
+        {
+          "start": 22,
+          "room": "R01"
+        },
+        {
+          "start": 30,
+          "room": "R05"
+        },
+        {
+          "start": 10,
+          "room": "R01"
+        },
+        {
+          "start": 27,
+          "room": "R01"
+        },
+        {
+          "start": 21,
+          "room": "R01"
+        },
+        {
+          "start": 11,
+          "room": "R05"
+        },
+        {
+          "start": 31,
+          "room": "R05"
+        },
+        {
+          "start": 13,
+          "room": "R05"
+        },
+        {
+          "start": 3,
+          "room": "R06"
+        },
+        {
+          "start": 26,
+          "room": "R05"
+        },
+        {
+          "start": 0,
+          "room": "R05"
+        },
+        {
+          "start": 19,
+          "room": "R05"
+        },
+        {
+          "start": 37,
+          "room": "R01"
+        },
+        {
+          "start": 18,
+          "room": "R01"
+        },
+        {
+          "start": 8,
+          "room": "R09"
+        },
+        {
+          "start": 1,
+          "room": "R09"
+        },
+        {
+          "start": 2,
+          "room": "R06"
+        },
+        {
+          "start": 37,
+          "room": "R06"
+        },
+        {
+          "start": 27,
+          "room": "R06"
+        },
+        {
+          "start": 35,
+          "room": "R02"
+        },
+        {
+          "start": 25,
+          "room": "R06"
+        },
+        {
+          "start": 17,
+          "room": "R06"
+        },
+        {
+          "start": 38,
+          "room": "R06"
+        },
+        {
+          "start": 16,
+          "room": "R02"
+        },
+        {
+          "start": 29,
+          "room": "R06"
+        },
+        {
+          "start": 24,
+          "room": "R02"
+        },
+        {
+          "start": 11,
+          "room": "R06"
+        },
+        {
+          "start": 33,
+          "room": "R02"
+        },
+        {
+          "start": 10,
+          "room": "R02"
+        },
+        {
+          "start": 34,
+          "room": "R06"
+        },
+        {
+          "start": 26,
+          "room": "R06"
+        },
+        {
+          "start": 9,
+          "room": "R02"
+        },
+        {
+          "start": 32,
+          "room": "R06"
+        },
+        {
+          "start": 18,
+          "room": "R10"
+        },
+        {
+          "start": 0,
+          "room": "R10"
+        },
+        {
+          "start": 22,
+          "room": "R03"
+        },
+        {
+          "start": 39,
+          "room": "R07"
+        },
+        {
+          "start": 30,
+          "room": "R07"
+        },
+        {
+          "start": 7,
+          "room": "R07"
+        },
+        {
+          "start": 23,
+          "room": "R07"
+        },
+        {
+          "start": 29,
+          "room": "R03"
+        },
+        {
+          "start": 27,
+          "room": "R03"
+        },
+        {
+          "start": 13,
+          "room": "R03"
+        },
+        {
+          "start": 6,
+          "room": "R07"
+        },
+        {
+          "start": 11,
+          "room": "R03"
+        },
+        {
+          "start": 26,
+          "room": "R07"
+        },
+        {
+          "start": 5,
+          "room": "R07"
+        },
+        {
+          "start": 34,
+          "room": "R03"
+        },
+        {
+          "start": 25,
+          "room": "R07"
+        },
+        {
+          "start": 31,
+          "room": "R03"
+        },
+        {
+          "start": 35,
+          "room": "R03"
+        },
+        {
+          "start": 14,
+          "room": "R11"
+        },
+        {
+          "start": 37,
+          "room": "R11"
+        },
+        {
+          "start": 0,
+          "room": "R03"
+        },
+        {
+          "start": 25,
+          "room": "R03"
+        },
+        {
+          "start": 22,
+          "room": "R07"
+        },
+        {
+          "start": 1,
+          "room": "R07"
+        },
+        {
+          "start": 37,
+          "room": "R03"
+        },
+        {
+          "start": 21,
+          "room": "R07"
+        },
+        {
+          "start": 34,
+          "room": "R07"
+        },
+        {
+          "start": 16,
+          "room": "R03"
+        },
+        {
+          "start": 7,
+          "room": "R03"
+        },
+        {
+          "start": 19,
+          "room": "R03"
+        },
+        {
+          "start": 33,
+          "room": "R07"
+        },
+        {
+          "start": 2,
+          "room": "R03"
+        },
+        {
+          "start": 24,
+          "room": "R03"
+        },
+        {
+          "start": 10,
+          "room": "R03"
+        },
+        {
+          "start": 35,
+          "room": "R07"
+        },
+        {
+          "start": 3,
+          "room": "R03"
+        },
+        {
+          "start": 5,
+          "room": "R11"
+        },
+        {
+          "start": 17,
+          "room": "R11"
+        }
+      ],
+      "teachers": [
+        "F12",
+        "F10",
+        "F10",
+        "F18",
+        "F02",
+        "F09",
+        "F11",
+        "F04",
+        "F01",
+        "F13",
+        "F16",
+        "F11",
+        "F11",
+        "F12",
+        "F05",
+        "F13",
+        "F01",
+        "F05",
+        "F07",
+        "F16",
+        "F13",
+        "F07",
+        "F10",
+        "F01",
+        "F06",
+        "F09",
+        "F14",
+        "F20",
+        "F12",
+        "F15",
+        "F15",
+        "F02",
+        "F03",
+        "F04",
+        "F04",
+        "F03",
+        "F19",
+        "F14",
+        "F19",
+        "F20",
+        "F05",
+        "F08",
+        "F17",
+        "F20",
+        "F06",
+        "F15",
+        "F07",
+        "F14",
+        "F03",
+        "F04",
+        "F17",
+        "F08",
+        "F18",
+        "F02",
+        "F17",
+        "F08",
+        "F06",
+        "F19",
+        "F10",
+        "F09",
+        "F18",
+        "F12",
+        "F03",
+        "F16"
+      ]
+    },
+    {
+      "schema_version": 1,
+      "placements": [
+        {
+          "start": 27,
+          "room": "R05"
+        },
+        {
+          "start": 10,
+          "room": "R05"
+        },
+        {
+          "start": 2,
+          "room": "R01"
+        },
+        {
+          "start": 16,
+          "room": "R05"
+        },
+        {
+          "start": 38,
+          "room": "R01"
+        },
+        {
+          "start": 26,
+          "room": "R05"
+        },
+        {
+          "start": 31,
+          "room": "R05"
+        },
+        {
+          "start": 35,
+          "room": "R05"
+        },
+        {
+          "start": 5,
+          "room": "R01"
+        },
+        {
+          "start": 1,
+          "room": "R01"
+        },
+        {
+          "start": 37,
+          "room": "R01"
+        },
+        {
+          "start": 18,
+          "room": "R05"
+        },
+        {
+          "start": 3,
+          "room": "R01"
+        },
+        {
+          "start": 17,
+          "room": "R01"
+        },
+        {
+          "start": 11,
+          "room": "R05"
+        },
+        {
+          "start": 25,
+          "room": "R01"
+        },
+        {
+          "start": 19,
+          "room": "R01"
+        },
+        {
+          "start": 8,
+          "room": "R09"
+        },
+        {
+          "start": 29,
+          "room": "R09"
+        },
+        {
+          "start": 31,
+          "room": "R06"
+        },
+        {
+          "start": 32,
+          "room": "R06"
+        },
+        {
+          "start": 6,
+          "room": "R02"
+        },
+        {
+          "start": 10,
+          "room": "R06"
+        },
+        {
+          "start": 5,
+          "room": "R02"
+        },
+        {
+          "start": 25,
+          "room": "R06"
+        },
+        {
+          "start": 30,
+          "room": "R02"
+        },
+        {
+          "start": 7,
+          "room": "R02"
+        },
+        {
+          "start": 16,
+          "room": "R06"
+        },
+        {
+          "start": 33,
+          "room": "R02"
+        },
+        {
+          "start": 27,
+          "room": "R06"
+        },
+        {
+          "start": 11,
+          "room": "R06"
+        },
+        {
+          "start": 15,
+          "room": "R06"
+        },
+        {
+          "start": 29,
+          "room": "R06"
+        },
+        {
+          "start": 17,
+          "room": "R06"
+        },
+        {
+          "start": 37,
+          "room": "R02"
+        },
+        {
+          "start": 26,
+          "room": "R06"
+        },
+        {
+          "start": 13,
+          "room": "R10"
+        },
+        {
+          "start": 34,
+          "room": "R10"
+        },
+        {
+          "start": 34,
+          "room": "R03"
+        },
+        {
+          "start": 2,
+          "room": "R08"
+        },
+        {
+          "start": 29,
+          "room": "R04"
+        },
+        {
+          "start": 30,
+          "room": "R07"
+        },
+        {
+          "start": 22,
+          "room": "R03"
+        },
+        {
+          "start": 33,
+          "room": "R07"
+        },
+        {
+          "start": 11,
+          "room": "R04"
+        },
+        {
+          "start": 24,
+          "room": "R08"
+        },
+        {
+          "start": 19,
+          "room": "R08"
+        },
+        {
+          "start": 35,
+          "room": "R07"
+        },
+        {
+          "start": 27,
+          "room": "R03"
+        },
+        {
+          "start": 21,
+          "room": "R07"
+        },
+        {
+          "start": 25,
+          "room": "R03"
+        },
+        {
+          "start": 32,
+          "room": "R03"
+        },
+        {
+          "start": 13,
+          "room": "R08"
+        },
+        {
+          "start": 23,
+          "room": "R03"
+        },
+        {
+          "start": 26,
+          "room": "R03"
+        },
+        {
+          "start": 14,
+          "room": "R11"
+        },
+        {
+          "start": 0,
+          "room": "R11"
+        },
+        {
+          "start": 11,
+          "room": "R07"
+        },
+        {
+          "start": 25,
+          "room": "R07"
+        },
+        {
+          "start": 3,
+          "room": "R03"
+        },
+        {
+          "start": 30,
+          "room": "R03"
+        },
+        {
+          "start": 14,
+          "room": "R07"
+        },
+        {
+          "start": 5,
+          "room": "R03"
+        },
+        {
+          "start": 31,
+          "room": "R03"
+        },
+        {
+          "start": 15,
+          "room": "R07"
+        },
+        {
+          "start": 17,
+          "room": "R03"
+        },
+        {
+          "start": 35,
+          "room": "R03"
+        },
+        {
+          "start": 2,
+          "room": "R03"
+        },
+        {
+          "start": 13,
+          "room": "R07"
+        },
+        {
+          "start": 18,
+          "room": "R03"
+        },
+        {
+          "start": 29,
+          "room": "R03"
+        },
+        {
+          "start": 34,
+          "room": "R07"
+        },
+        {
+          "start": 24,
+          "room": "R03"
+        },
+        {
+          "start": 10,
+          "room": "R08"
+        },
+        {
+          "start": 26,
+          "room": "R11"
+        },
+        {
+          "start": 32,
+          "room": "R11"
+        },
+        {
+          "start": 19,
+          "room": "R05"
+        },
+        {
+          "start": 5,
+          "room": "R05"
+        },
+        {
+          "start": 30,
+          "room": "R01"
+        },
+        {
+          "start": 11,
+          "room": "R01"
+        },
+        {
+          "start": 6,
+          "room": "R01"
+        },
+        {
+          "start": 21,
+          "room": "R01"
+        },
+        {
+          "start": 13,
+          "room": "R05"
+        },
+        {
+          "start": 39,
+          "room": "R05"
+        },
+        {
+          "start": 1,
+          "room": "R05"
+        },
+        {
+          "start": 14,
+          "room": "R01"
+        },
+        {
+          "start": 0,
+          "room": "R05"
+        },
+        {
+          "start": 16,
+          "room": "R01"
+        },
+        {
+          "start": 10,
+          "room": "R01"
+        },
+        {
+          "start": 38,
+          "room": "R05"
+        },
+        {
+          "start": 29,
+          "room": "R05"
+        },
+        {
+          "start": 22,
+          "room": "R01"
+        },
+        {
+          "start": 9,
+          "room": "R05"
+        },
+        {
+          "start": 2,
+          "room": "R09"
+        },
+        {
+          "start": 17,
+          "room": "R09"
+        },
+        {
+          "start": 29,
+          "room": "R02"
+        },
+        {
+          "start": 2,
+          "room": "R06"
+        },
+        {
+          "start": 17,
+          "room": "R02"
+        },
+        {
+          "start": 7,
+          "room": "R06"
+        },
+        {
+          "start": 9,
+          "room": "R06"
+        },
+        {
+          "start": 34,
+          "room": "R06"
+        },
+        {
+          "start": 37,
+          "room": "R06"
+        },
+        {
+          "start": 30,
+          "room": "R06"
+        },
+        {
+          "start": 16,
+          "room": "R02"
+        },
+        {
+          "start": 3,
+          "room": "R02"
+        },
+        {
+          "start": 19,
+          "room": "R06"
+        },
+        {
+          "start": 13,
+          "room": "R02"
+        },
+        {
+          "start": 18,
+          "room": "R06"
+        },
+        {
+          "start": 35,
+          "room": "R02"
+        },
+        {
+          "start": 27,
+          "room": "R02"
+        },
+        {
+          "start": 1,
+          "room": "R06"
+        },
+        {
+          "start": 33,
+          "room": "R06"
+        },
+        {
+          "start": 10,
+          "room": "R10"
+        },
+        {
+          "start": 5,
+          "room": "R10"
+        },
+        {
+          "start": 13,
+          "room": "R03"
+        },
+        {
+          "start": 33,
+          "room": "R03"
+        },
+        {
+          "start": 19,
+          "room": "R03"
+        },
+        {
+          "start": 14,
+          "room": "R03"
+        },
+        {
+          "start": 7,
+          "room": "R07"
+        },
+        {
+          "start": 18,
+          "room": "R07"
+        },
+        {
+          "start": 38,
+          "room": "R07"
+        },
+        {
+          "start": 11,
+          "room": "R03"
+        },
+        {
+          "start": 6,
+          "room": "R07"
+        },
+        {
+          "start": 16,
+          "room": "R07"
+        },
+        {
+          "start": 10,
+          "room": "R03"
+        },
+        {
+          "start": 32,
+          "room": "R07"
+        },
+        {
+          "start": 5,
+          "room": "R07"
+        },
+        {
+          "start": 39,
+          "room": "R03"
+        },
+        {
+          "start": 17,
+          "room": "R07"
+        },
+        {
+          "start": 37,
+          "room": "R07"
+        },
+        {
+          "start": 29,
+          "room": "R11"
+        },
+        {
+          "start": 34,
+          "room": "R11"
+        },
+        {
+          "start": 16,
+          "room": "R03"
+        },
+        {
+          "start": 10,
+          "room": "R07"
+        },
+        {
+          "start": 29,
+          "room": "R07"
+        },
+        {
+          "start": 23,
+          "room": "R07"
+        },
+        {
+          "start": 27,
+          "room": "R07"
+        },
+        {
+          "start": 39,
+          "room": "R07"
+        },
+        {
+          "start": 38,
+          "room": "R03"
+        },
+        {
+          "start": 2,
+          "room": "R07"
+        },
+        {
+          "start": 21,
+          "room": "R03"
+        },
+        {
+          "start": 26,
+          "room": "R07"
+        },
+        {
+          "start": 22,
+          "room": "R07"
+        },
+        {
+          "start": 9,
+          "room": "R03"
+        },
+        {
+          "start": 8,
+          "room": "R07"
+        },
+        {
+          "start": 19,
+          "room": "R07"
+        },
+        {
+          "start": 1,
+          "room": "R07"
+        },
+        {
+          "start": 37,
+          "room": "R03"
+        },
+        {
+          "start": 17,
+          "room": "R11"
+        },
+        {
+          "start": 24,
+          "room": "R11"
+        }
+      ],
+      "teachers": [
+        "F10",
+        "F10",
+        "F05",
+        "F04",
+        "F02",
+        "F01",
+        "F08",
+        "F04",
+        "F14",
+        "F15",
+        "F16",
+        "F20",
+        "F12",
+        "F01",
+        "F05",
+        "F10",
+        "F20",
+        "F14",
+        "F13",
+        "F11",
+        "F13",
+        "F07",
+        "F14",
+        "F13",
+        "F06",
+        "F03",
+        "F16",
+        "F04",
+        "F08",
+        "F06",
+        "F02",
+        "F16",
+        "F08",
+        "F18",
+        "F06",
+        "F12",
+        "F19",
+        "F07",
+        "F19",
+        "F20",
+        "F05",
+        "F11",
+        "F05",
+        "F18",
+        "F12",
+        "F07",
+        "F07",
+        "F01",
+        "F03",
+        "F01",
+        "F17",
+        "F02",
+        "F18",
+        "F10",
+        "F17",
+        "F09",
+        "F09",
+        "F19",
+        "F06",
+        "F15",
+        "F11",
+        "F12",
+        "F03",
+        "F18"
+      ]
+    },
+    {
+      "schema_version": 1,
+      "placements": [
+        {
+          "start": 29,
+          "room": "R05"
+        },
+        {
+          "start": 19,
+          "room": "R01"
+        },
+        {
+          "start": 1,
+          "room": "R01"
+        },
+        {
+          "start": 27,
+          "room": "R01"
+        },
+        {
+          "start": 38,
+          "room": "R01"
+        },
+        {
+          "start": 21,
+          "room": "R01"
+        },
+        {
+          "start": 13,
+          "room": "R01"
+        },
+        {
+          "start": 5,
+          "room": "R05"
+        },
+        {
+          "start": 37,
+          "room": "R01"
+        },
+        {
+          "start": 30,
+          "room": "R01"
+        },
+        {
+          "start": 39,
+          "room": "R01"
+        },
+        {
+          "start": 15,
+          "room": "R01"
+        },
+        {
+          "start": 16,
+          "room": "R01"
+        },
+        {
+          "start": 31,
+          "room": "R05"
+        },
+        {
+          "start": 14,
+          "room": "R05"
+        },
+        {
+          "start": 26,
+          "room": "R01"
+        },
+        {
+          "start": 35,
+          "room": "R05"
+        },
+        {
+          "start": 17,
+          "room": "R09"
+        },
+        {
+          "start": 2,
+          "room": "R09"
+        },
+        {
+          "start": 26,
+          "room": "R06"
+        },
+        {
+          "start": 35,
+          "room": "R06"
+        },
+        {
+          "start": 17,
+          "room": "R06"
+        },
+        {
+          "start": 22,
+          "room": "R06"
+        },
+        {
+          "start": 25,
+          "room": "R06"
+        },
+        {
+          "start": 0,
+          "room": "R02"
+        },
+        {
+          "start": 29,
+          "room": "R06"
+        },
+        {
+          "start": 11,
+          "room": "R06"
+        },
+        {
+          "start": 33,
+          "room": "R06"
+        },
+        {
+          "start": 34,
+          "room": "R06"
+        },
+        {
+          "start": 30,
+          "room": "R06"
+        },
+        {
+          "start": 3,
+          "room": "R02"
+        },
+        {
+          "start": 32,
+          "room": "R02"
+        },
+        {
+          "start": 27,
+          "room": "R02"
+        },
+        {
+          "start": 21,
+          "room": "R02"
+        },
+        {
+          "start": 37,
+          "room": "R02"
+        },
+        {
+          "start": 10,
+          "room": "R02"
+        },
+        {
+          "start": 1,
+          "room": "R10"
+        },
+        {
+          "start": 18,
+          "room": "R10"
+        },
+        {
+          "start": 16,
+          "room": "R07"
+        },
+        {
+          "start": 39,
+          "room": "R07"
+        },
+        {
+          "start": 9,
+          "room": "R03"
+        },
+        {
+          "start": 11,
+          "room": "R04"
+        },
+        {
+          "start": 3,
+          "room": "R04"
+        },
+        {
+          "start": 30,
+          "room": "R08"
+        },
+        {
+          "start": 7,
+          "room": "R07"
+        },
+        {
+          "start": 27,
+          "room": "R04"
+        },
+        {
+          "start": 35,
+          "room": "R04"
+        },
+        {
+          "start": 31,
+          "room": "R07"
+        },
+        {
+          "start": 10,
+          "room": "R07"
+        },
+        {
+          "start": 2,
+          "room": "R08"
+        },
+        {
+          "start": 6,
+          "room": "R07"
+        },
+        {
+          "start": 8,
+          "room": "R08"
+        },
+        {
+          "start": 17,
+          "room": "R08"
+        },
+        {
+          "start": 5,
+          "room": "R07"
+        },
+        {
+          "start": 29,
+          "room": "R04"
+        },
+        {
+          "start": 37,
+          "room": "R11"
+        },
+        {
+          "start": 0,
+          "room": "R11"
+        },
+        {
+          "start": 26,
+          "room": "R03"
+        },
+        {
+          "start": 32,
+          "room": "R03"
+        },
+        {
+          "start": 17,
+          "room": "R07"
+        },
+        {
+          "start": 2,
+          "room": "R03"
+        },
+        {
+          "start": 27,
+          "room": "R07"
+        },
+        {
+          "start": 8,
+          "room": "R07"
+        },
+        {
+          "start": 25,
+          "room": "R07"
+        },
+        {
+          "start": 34,
+          "room": "R03"
+        },
+        {
+          "start": 16,
+          "room": "R03"
+        },
+        {
+          "start": 11,
+          "room": "R07"
+        },
+        {
+          "start": 1,
+          "room": "R07"
+        },
+        {
+          "start": 21,
+          "room": "R07"
+        },
+        {
+          "start": 0,
+          "room": "R03"
+        },
+        {
+          "start": 22,
+          "room": "R03"
+        },
+        {
+          "start": 33,
+          "room": "R03"
+        },
+        {
+          "start": 23,
+          "room": "R03"
+        },
+        {
+          "start": 13,
+          "room": "R03"
+        },
+        {
+          "start": 18,
+          "room": "R11"
+        },
+        {
+          "start": 9,
+          "room": "R11"
+        },
+        {
+          "start": 18,
+          "room": "R05"
+        },
+        {
+          "start": 27,
+          "room": "R05"
+        },
+        {
+          "start": 8,
+          "room": "R05"
+        },
+        {
+          "start": 9,
+          "room": "R05"
+        },
+        {
+          "start": 19,
+          "room": "R05"
+        },
+        {
+          "start": 32,
+          "room": "R05"
+        },
+        {
+          "start": 17,
+          "room": "R01"
+        },
+        {
+          "start": 29,
+          "room": "R01"
+        },
+        {
+          "start": 35,
+          "room": "R01"
+        },
+        {
+          "start": 11,
+          "room": "R05"
+        },
+        {
+          "start": 7,
+          "room": "R01"
+        },
+        {
+          "start": 31,
+          "room": "R08"
+        },
+        {
+          "start": 37,
+          "room": "R05"
+        },
+        {
+          "start": 26,
+          "room": "R05"
+        },
+        {
+          "start": 16,
+          "room": "R05"
+        },
+        {
+          "start": 10,
+          "room": "R05"
+        },
+        {
+          "start": 30,
+          "room": "R05"
+        },
+        {
+          "start": 5,
+          "room": "R09"
+        },
+        {
+          "start": 33,
+          "room": "R09"
+        },
+        {
+          "start": 5,
+          "room": "R02"
+        },
+        {
+          "start": 23,
+          "room": "R06"
+        },
+        {
+          "start": 27,
+          "room": "R06"
+        },
+        {
+          "start": 30,
+          "room": "R02"
+        },
+        {
+          "start": 1,
+          "room": "R02"
+        },
+        {
+          "start": 35,
+          "room": "R02"
+        },
+        {
+          "start": 7,
+          "room": "R06"
+        },
+        {
+          "start": 15,
+          "room": "R06"
+        },
+        {
+          "start": 21,
+          "room": "R04"
+        },
+        {
+          "start": 3,
+          "room": "R06"
+        },
+        {
+          "start": 11,
+          "room": "R02"
+        },
+        {
+          "start": 29,
+          "room": "R02"
+        },
+        {
+          "start": 31,
+          "room": "R02"
+        },
+        {
+          "start": 22,
+          "room": "R02"
+        },
+        {
+          "start": 2,
+          "room": "R06"
+        },
+        {
+          "start": 6,
+          "room": "R02"
+        },
+        {
+          "start": 39,
+          "room": "R06"
+        },
+        {
+          "start": 13,
+          "room": "R10"
+        },
+        {
+          "start": 37,
+          "room": "R10"
+        },
+        {
+          "start": 31,
+          "room": "R03"
+        },
+        {
+          "start": 14,
+          "room": "R07"
+        },
+        {
+          "start": 18,
+          "room": "R07"
+        },
+        {
+          "start": 15,
+          "room": "R03"
+        },
+        {
+          "start": 19,
+          "room": "R07"
+        },
+        {
+          "start": 34,
+          "room": "R07"
+        },
+        {
+          "start": 5,
+          "room": "R03"
+        },
+        {
+          "start": 11,
+          "room": "R03"
+        },
+        {
+          "start": 30,
+          "room": "R03"
+        },
+        {
+          "start": 37,
+          "room": "R07"
+        },
+        {
+          "start": 10,
+          "room": "R03"
+        },
+        {
+          "start": 29,
+          "room": "R07"
+        },
+        {
+          "start": 38,
+          "room": "R07"
+        },
+        {
+          "start": 21,
+          "room": "R03"
+        },
+        {
+          "start": 13,
+          "room": "R07"
+        },
+        {
+          "start": 35,
+          "room": "R07"
+        },
+        {
+          "start": 32,
+          "room": "R11"
+        },
+        {
+          "start": 6,
+          "room": "R11"
+        },
+        {
+          "start": 24,
+          "room": "R03"
+        },
+        {
+          "start": 39,
+          "room": "R03"
+        },
+        {
+          "start": 14,
+          "room": "R03"
+        },
+        {
+          "start": 30,
+          "room": "R07"
+        },
+        {
+          "start": 38,
+          "room": "R03"
+        },
+        {
+          "start": 17,
+          "room": "R03"
+        },
+        {
+          "start": 15,
+          "room": "R07"
+        },
+        {
+          "start": 3,
+          "room": "R03"
+        },
+        {
+          "start": 23,
+          "room": "R07"
+        },
+        {
+          "start": 18,
+          "room": "R03"
+        },
+        {
+          "start": 37,
+          "room": "R03"
+        },
+        {
+          "start": 29,
+          "room": "R03"
+        },
+        {
+          "start": 27,
+          "room": "R03"
+        },
+        {
+          "start": 35,
+          "room": "R03"
+        },
+        {
+          "start": 2,
+          "room": "R07"
+        },
+        {
+          "start": 19,
+          "room": "R03"
+        },
+        {
+          "start": 21,
+          "room": "R11"
+        },
+        {
+          "start": 25,
+          "room": "R11"
+        }
+      ],
+      "teachers": [
+        "F10",
+        "F07",
+        "F05",
+        "F10",
+        "F02",
+        "F09",
+        "F17",
+        "F16",
+        "F14",
+        "F15",
+        "F16",
+        "F08",
+        "F12",
+        "F01",
+        "F15",
+        "F20",
+        "F01",
+        "F05",
+        "F13",
+        "F11",
+        "F13",
+        "F07",
+        "F10",
+        "F14",
+        "F03",
+        "F09",
+        "F14",
+        "F20",
+        "F12",
+        "F15",
+        "F13",
+        "F12",
+        "F03",
+        "F11",
+        "F20",
+        "F01",
+        "F13",
+        "F18",
+        "F19",
+        "F02",
+        "F16",
+        "F04",
+        "F19",
+        "F18",
+        "F06",
+        "F07",
+        "F07",
+        "F06",
+        "F10",
+        "F04",
+        "F02",
+        "F17",
+        "F05",
+        "F08",
+        "F04",
+        "F03",
+        "F19",
+        "F01",
+        "F06",
+        "F09",
+        "F18",
+        "F08",
+        "F11",
+        "F18"
+      ]
+    },
+    {
+      "schema_version": 1,
+      "placements": [
+        {
+          "start": 5,
+          "room": "R05"
+        },
+        {
+          "start": 35,
+          "room": "R01"
+        },
+        {
+          "start": 10,
+          "room": "R05"
+        },
+        {
+          "start": 21,
+          "room": "R01"
+        },
+        {
+          "start": 2,
+          "room": "R01"
+        },
+        {
+          "start": 14,
+          "room": "R01"
+        },
+        {
+          "start": 25,
+          "room": "R01"
+        },
+        {
+          "start": 23,
+          "room": "R05"
+        },
+        {
+          "start": 39,
+          "room": "R05"
+        },
+        {
+          "start": 22,
+          "room": "R05"
+        },
+        {
+          "start": 11,
+          "room": "R01"
+        },
+        {
+          "start": 3,
+          "room": "R01"
+        },
+        {
+          "start": 6,
+          "room": "R05"
+        },
+        {
+          "start": 13,
+          "room": "R05"
+        },
+        {
+          "start": 34,
+          "room": "R01"
+        },
+        {
+          "start": 19,
+          "room": "R01"
+        },
+        {
+          "start": 9,
+          "room": "R05"
+        },
+        {
+          "start": 26,
+          "room": "R09"
+        },
+        {
+          "start": 37,
+          "room": "R09"
+        },
+        {
+          "start": 16,
+          "room": "R02"
+        },
+        {
+          "start": 37,
+          "room": "R02"
+        },
+        {
+          "start": 26,
+          "room": "R02"
+        },
+        {
+          "start": 30,
+          "room": "R06"
+        },
+        {
+          "start": 10,
+          "room": "R02"
+        },
+        {
+          "start": 21,
+          "room": "R02"
+        },
+        {
+          "start": 29,
+          "room": "R06"
+        },
+        {
+          "start": 18,
+          "room": "R02"
+        },
+        {
+          "start": 34,
+          "room": "R06"
+        },
+        {
+          "start": 35,
+          "room": "R02"
+        },
+        {
+          "start": 15,
+          "room": "R06"
+        },
+        {
+          "start": 17,
+          "room": "R02"
+        },
+        {
+          "start": 27,
+          "room": "R02"
+        },
+        {
+          "start": 5,
+          "room": "R06"
+        },
+        {
+          "start": 19,
+          "room": "R06"
+        },
+        {
+          "start": 3,
+          "room": "R02"
+        },
+        {
+          "start": 11,
+          "room": "R06"
+        },
+        {
+          "start": 13,
+          "room": "R10"
+        },
+        {
+          "start": 6,
+          "room": "R10"
+        },
+        {
+          "start": 10,
+          "room": "R08"
+        },
+        {
+          "start": 29,
+          "room": "R04"
+        },
+        {
+          "start": 5,
+          "room": "R08"
+        },
+        {
+          "start": 9,
+          "room": "R03"
+        },
+        {
+          "start": 27,
+          "room": "R07"
+        },
+        {
+          "start": 33,
+          "room": "R07"
+        },
+        {
+          "start": 14,
+          "room": "R03"
+        },
+        {
+          "start": 16,
+          "room": "R04"
+        },
+        {
+          "start": 1,
+          "room": "R08"
+        },
+        {
+          "start": 32,
+          "room": "R07"
+        },
+        {
+          "start": 26,
+          "room": "R03"
+        },
+        {
+          "start": 8,
+          "room": "R07"
+        },
+        {
+          "start": 2,
+          "room": "R07"
+        },
+        {
+          "start": 13,
+          "room": "R04"
+        },
+        {
+          "start": 17,
+          "room": "R08"
+        },
+        {
+          "start": 3,
+          "room": "R04"
+        },
+        {
+          "start": 11,
+          "room": "R08"
+        },
+        {
+          "start": 6,
+          "room": "R11"
+        },
+        {
+          "start": 18,
+          "room": "R11"
+        },
+        {
+          "start": 17,
+          "room": "R03"
+        },
+        {
+          "start": 7,
+          "room": "R03"
+        },
+        {
+          "start": 14,
+          "room": "R07"
+        },
+        {
+          "start": 29,
+          "room": "R07"
+        },
+        {
+          "start": 35,
+          "room": "R04"
+        },
+        {
+          "start": 19,
+          "room": "R04"
+        },
+        {
+          "start": 30,
+          "room": "R03"
+        },
+        {
+          "start": 21,
+          "room": "R07"
+        },
+        {
+          "start": 34,
+          "room": "R03"
+        },
+        {
+          "start": 16,
+          "room": "R07"
+        },
+        {
+          "start": 15,
+          "room": "R03"
+        },
+        {
+          "start": 37,
+          "room": "R03"
+        },
+        {
+          "start": 25,
+          "room": "R07"
+        },
+        {
+          "start": 18,
+          "room": "R07"
+        },
+        {
+          "start": 13,
+          "room": "R03"
+        },
+        {
+          "start": 22,
+          "room": "R03"
+        },
+        {
+          "start": 11,
+          "room": "R04"
+        },
+        {
+          "start": 38,
+          "room": "R11"
+        },
+        {
+          "start": 26,
+          "room": "R11"
+        },
+        {
+          "start": 7,
+          "room": "R05"
+        },
+        {
+          "start": 10,
+          "room": "R01"
+        },
+        {
+          "start": 27,
+          "room": "R01"
+        },
+        {
+          "start": 32,
+          "room": "R01"
+        },
+        {
+          "start": 5,
+          "room": "R01"
+        },
+        {
+          "start": 26,
+          "room": "R01"
+        },
+        {
+          "start": 31,
+          "room": "R05"
+        },
+        {
+          "start": 17,
+          "room": "R01"
+        },
+        {
+          "start": 6,
+          "room": "R01"
+        },
+        {
+          "start": 8,
+          "room": "R01"
+        },
+        {
+          "start": 16,
+          "room": "R05"
+        },
+        {
+          "start": 37,
+          "room": "R01"
+        },
+        {
+          "start": 35,
+          "room": "R05"
+        },
+        {
+          "start": 18,
+          "room": "R05"
+        },
+        {
+          "start": 9,
+          "room": "R01"
+        },
+        {
+          "start": 11,
+          "room": "R05"
+        },
+        {
+          "start": 25,
+          "room": "R02"
+        },
+        {
+          "start": 33,
+          "room": "R09"
+        },
+        {
+          "start": 29,
+          "room": "R09"
+        },
+        {
+          "start": 13,
+          "room": "R02"
+        },
+        {
+          "start": 38,
+          "room": "R06"
+        },
+        {
+          "start": 27,
+          "room": "R06"
+        },
+        {
+          "start": 35,
+          "room": "R06"
+        },
+        {
+          "start": 7,
+          "room": "R06"
+        },
+        {
+          "start": 19,
+          "room": "R02"
+        },
+        {
+          "start": 30,
+          "room": "R02"
+        },
+        {
+          "start": 15,
+          "room": "R02"
+        },
+        {
+          "start": 3,
+          "room": "R06"
+        },
+        {
+          "start": 5,
+          "room": "R02"
+        },
+        {
+          "start": 26,
+          "room": "R06"
+        },
+        {
+          "start": 14,
+          "room": "R02"
+        },
+        {
+          "start": 37,
+          "room": "R06"
+        },
+        {
+          "start": 16,
+          "room": "R06"
+        },
+        {
+          "start": 6,
+          "room": "R02"
+        },
+        {
+          "start": 29,
+          "room": "R02"
+        },
+        {
+          "start": 39,
+          "room": "R06"
+        },
+        {
+          "start": 24,
+          "room": "R10"
+        },
+        {
+          "start": 17,
+          "room": "R10"
+        },
+        {
+          "start": 21,
+          "room": "R03"
+        },
+        {
+          "start": 6,
+          "room": "R07"
+        },
+        {
+          "start": 35,
+          "room": "R03"
+        },
+        {
+          "start": 27,
+          "room": "R03"
+        },
+        {
+          "start": 37,
+          "room": "R07"
+        },
+        {
+          "start": 13,
+          "room": "R07"
+        },
+        {
+          "start": 34,
+          "room": "R07"
+        },
+        {
+          "start": 25,
+          "room": "R03"
+        },
+        {
+          "start": 11,
+          "room": "R03"
+        },
+        {
+          "start": 38,
+          "room": "R03"
+        },
+        {
+          "start": 5,
+          "room": "R07"
+        },
+        {
+          "start": 10,
+          "room": "R07"
+        },
+        {
+          "start": 19,
+          "room": "R07"
+        },
+        {
+          "start": 39,
+          "room": "R03"
+        },
+        {
+          "start": 7,
+          "room": "R07"
+        },
+        {
+          "start": 26,
+          "room": "R07"
+        },
+        {
+          "start": 22,
+          "room": "R11"
+        },
+        {
+          "start": 14,
+          "room": "R11"
+        },
+        {
+          "start": 19,
+          "room": "R03"
+        },
+        {
+          "start": 11,
+          "room": "R07"
+        },
+        {
+          "start": 0,
+          "room": "R03"
+        },
+        {
+          "start": 35,
+          "room": "R07"
+        },
+        {
+          "start": 5,
+          "room": "R03"
+        },
+        {
+          "start": 31,
+          "room": "R07"
+        },
+        {
+          "start": 29,
+          "room": "R03"
+        },
+        {
+          "start": 10,
+          "room": "R03"
+        },
+        {
+          "start": 32,
+          "room": "R03"
+        },
+        {
+          "start": 30,
+          "room": "R07"
+        },
+        {
+          "start": 18,
+          "room": "R03"
+        },
+        {
+          "start": 1,
+          "room": "R07"
+        },
+        {
+          "start": 3,
+          "room": "R03"
+        },
+        {
+          "start": 16,
+          "room": "R03"
+        },
+        {
+          "start": 2,
+          "room": "R03"
+        },
+        {
+          "start": 17,
+          "room": "R07"
+        },
+        {
+          "start": 8,
+          "room": "R11"
+        },
+        {
+          "start": 33,
+          "room": "R11"
+        }
+      ],
+      "teachers": [
+        "F12",
+        "F09",
+        "F02",
+        "F10",
+        "F18",
+        "F01",
+        "F17",
+        "F03",
+        "F14",
+        "F15",
+        "F04",
+        "F08",
+        "F11",
+        "F12",
+        "F05",
+        "F11",
+        "F01",
+        "F10",
+        "F13",
+        "F11",
+        "F13",
+        "F19",
+        "F06",
+        "F08",
+        "F14",
+        "F09",
+        "F16",
+        "F20",
+        "F12",
+        "F06",
+        "F13",
+        "F02",
+        "F03",
+        "F19",
+        "F20",
+        "F01",
+        "F19",
+        "F18",
+        "F19",
+        "F20",
+        "F07",
+        "F16",
+        "F05",
+        "F18",
+        "F08",
+        "F07",
+        "F14",
+        "F01",
+        "F03",
+        "F06",
+        "F17",
+        "F02",
+        "F05",
+        "F08",
+        "F15",
+        "F04",
+        "F07",
+        "F15",
+        "F10",
+        "F09",
+        "F18",
+        "F04",
+        "F16",
+        "F12"
+      ]
+    },
+    {
+      "schema_version": 1,
+      "placements": [
+        {
+          "start": 27,
+          "room": "R05"
+        },
+        {
+          "start": 10,
+          "room": "R05"
+        },
+        {
+          "start": 17,
+          "room": "R05"
+        },
+        {
+          "start": 2,
+          "room": "R05"
+        },
+        {
+          "start": 33,
+          "room": "R05"
+        },
+        {
+          "start": 22,
+          "room": "R01"
+        },
+        {
+          "start": 23,
+          "room": "R01"
+        },
+        {
+          "start": 11,
+          "room": "R02"
+        },
+        {
+          "start": 25,
+          "room": "R01"
+        },
+        {
+          "start": 31,
+          "room": "R05"
+        },
+        {
+          "start": 32,
+          "room": "R01"
+        },
+        {
+          "start": 1,
+          "room": "R01"
+        },
+        {
+          "start": 21,
+          "room": "R01"
+        },
+        {
+          "start": 0,
+          "room": "R05"
+        },
+        {
+          "start": 26,
+          "room": "R05"
+        },
+        {
+          "start": 9,
+          "room": "R01"
+        },
+        {
+          "start": 34,
+          "room": "R01"
+        },
+        {
+          "start": 18,
+          "room": "R09"
+        },
+        {
+          "start": 29,
+          "room": "R09"
+        },
+        {
+          "start": 26,
+          "room": "R06"
+        },
+        {
+          "start": 7,
+          "room": "R06"
+        },
+        {
+          "start": 8,
+          "room": "R02"
+        },
+        {
+          "start": 25,
+          "room": "R06"
+        },
+        {
+          "start": 39,
+          "room": "R06"
+        },
+        {
+          "start": 2,
+          "room": "R06"
+        },
+        {
+          "start": 5,
+          "room": "R02"
+        },
+        {
+          "start": 37,
+          "room": "R02"
+        },
+        {
+          "start": 13,
+          "room": "R02"
+        },
+        {
+          "start": 35,
+          "room": "R02"
+        },
+        {
+          "start": 9,
+          "room": "R02"
+        },
+        {
+          "start": 21,
+          "room": "R02"
+        },
+        {
+          "start": 6,
+          "room": "R06"
+        },
+        {
+          "start": 19,
+          "room": "R02"
+        },
+        {
+          "start": 27,
+          "room": "R02"
+        },
+        {
+          "start": 38,
+          "room": "R02"
+        },
+        {
+          "start": 3,
+          "room": "R06"
+        },
+        {
+          "start": 17,
+          "room": "R10"
+        },
+        {
+          "start": 10,
+          "room": "R10"
+        },
+        {
+          "start": 31,
+          "room": "R07"
+        },
+        {
+          "start": 17,
+          "room": "R07"
+        },
+        {
+          "start": 33,
+          "room": "R07"
+        },
+        {
+          "start": 34,
+          "room": "R03"
+        },
+        {
+          "start": 5,
+          "room": "R04"
+        },
+        {
+          "start": 14,
+          "room": "R03"
+        },
+        {
+          "start": 38,
+          "room": "R03"
+        },
+        {
+          "start": 16,
+          "room": "R08"
+        },
+        {
+          "start": 7,
+          "room": "R03"
+        },
+        {
+          "start": 18,
+          "room": "R03"
+        },
+        {
+          "start": 32,
+          "room": "R07"
+        },
+        {
+          "start": 15,
+          "room": "R07"
+        },
+        {
+          "start": 6,
+          "room": "R07"
+        },
+        {
+          "start": 37,
+          "room": "R04"
+        },
+        {
+          "start": 29,
+          "room": "R04"
+        },
+        {
+          "start": 35,
+          "room": "R08"
+        },
+        {
+          "start": 30,
+          "room": "R04"
+        },
+        {
+          "start": 2,
+          "room": "R11"
+        },
+        {
+          "start": 0,
+          "room": "R11"
+        },
+        {
+          "start": 10,
+          "room": "R07"
+        },
+        {
+          "start": 38,
+          "room": "R07"
+        },
+        {
+          "start": 16,
+          "room": "R07"
+        },
+        {
+          "start": 7,
+          "room": "R07"
+        },
+        {
+          "start": 26,
+          "room": "R07"
+        },
+        {
+          "start": 39,
+          "room": "R07"
+        },
+        {
+          "start": 30,
+          "room": "R03"
+        },
+        {
+          "start": 8,
+          "room": "R07"
+        },
+        {
+          "start": 6,
+          "room": "R08"
+        },
+        {
+          "start": 29,
+          "room": "R07"
+        },
+        {
+          "start": 11,
+          "room": "R03"
+        },
+        {
+          "start": 37,
+          "room": "R03"
+        },
+        {
+          "start": 9,
+          "room": "R03"
+        },
+        {
+          "start": 27,
+          "room": "R07"
+        },
+        {
+          "start": 19,
+          "room": "R03"
+        },
+        {
+          "start": 5,
+          "room": "R03"
+        },
+        {
+          "start": 13,
+          "room": "R04"
+        },
+        {
+          "start": 17,
+          "room": "R11"
+        },
+        {
+          "start": 24,
+          "room": "R11"
+        },
+        {
+          "start": 7,
+          "room": "R01"
+        },
+        {
+          "start": 19,
+          "room": "R01"
+        },
+        {
+          "start": 26,
+          "room": "R01"
+        },
+        {
+          "start": 11,
+          "room": "R01"
+        },
+        {
+          "start": 37,
+          "room": "R01"
+        },
+        {
+          "start": 23,
+          "room": "R05"
+        },
+        {
+          "start": 35,
+          "room": "R05"
+        },
+        {
+          "start": 8,
+          "room": "R01"
+        },
+        {
+          "start": 6,
+          "room": "R01"
+        },
+        {
+          "start": 14,
+          "room": "R01"
+        },
+        {
+          "start": 3,
+          "room": "R01"
+        },
+        {
+          "start": 17,
+          "room": "R01"
+        },
+        {
+          "start": 13,
+          "room": "R01"
+        },
+        {
+          "start": 18,
+          "room": "R01"
+        },
+        {
+          "start": 27,
+          "room": "R01"
+        },
+        {
+          "start": 29,
+          "room": "R05"
+        },
+        {
+          "start": 5,
+          "room": "R05"
+        },
+        {
+          "start": 21,
+          "room": "R09"
+        },
+        {
+          "start": 9,
+          "room": "R09"
+        },
+        {
+          "start": 29,
+          "room": "R02"
+        },
+        {
+          "start": 15,
+          "room": "R06"
+        },
+        {
+          "start": 33,
+          "room": "R06"
+        },
+        {
+          "start": 7,
+          "room": "R02"
+        },
+        {
+          "start": 30,
+          "room": "R02"
+        },
+        {
+          "start": 18,
+          "room": "R06"
+        },
+        {
+          "start": 17,
+          "room": "R06"
+        },
+        {
+          "start": 0,
+          "room": "R02"
+        },
+        {
+          "start": 10,
+          "room": "R02"
+        },
+        {
+          "start": 1,
+          "room": "R06"
+        },
+        {
+          "start": 31,
+          "room": "R06"
+        },
+        {
+          "start": 14,
+          "room": "R06"
+        },
+        {
+          "start": 32,
+          "room": "R06"
+        },
+        {
+          "start": 13,
+          "room": "R06"
+        },
+        {
+          "start": 19,
+          "room": "R06"
+        },
+        {
+          "start": 11,
+          "room": "R06"
+        },
+        {
+          "start": 27,
+          "room": "R06"
+        },
+        {
+          "start": 5,
+          "room": "R10"
+        },
+        {
+          "start": 2,
+          "room": "R10"
+        },
+        {
+          "start": 19,
+          "room": "R07"
+        },
+        {
+          "start": 32,
+          "room": "R03"
+        },
+        {
+          "start": 5,
+          "room": "R07"
+        },
+        {
+          "start": 10,
+          "room": "R03"
+        },
+        {
+          "start": 18,
+          "room": "R07"
+        },
+        {
+          "start": 31,
+          "room": "R03"
+        },
+        {
+          "start": 16,
+          "room": "R03"
+        },
+        {
+          "start": 30,
+          "room": "R07"
+        },
+        {
+          "start": 37,
+          "room": "R07"
+        },
+        {
+          "start": 11,
+          "room": "R07"
+        },
+        {
+          "start": 21,
+          "room": "R07"
+        },
+        {
+          "start": 29,
+          "room": "R03"
+        },
+        {
+          "start": 22,
+          "room": "R03"
+        },
+        {
+          "start": 13,
+          "room": "R03"
+        },
+        {
+          "start": 17,
+          "room": "R03"
+        },
+        {
+          "start": 35,
+          "room": "R07"
+        },
+        {
+          "start": 8,
+          "room": "R11"
+        },
+        {
+          "start": 33,
+          "room": "R11"
+        },
+        {
+          "start": 3,
+          "room": "R03"
+        },
+        {
+          "start": 34,
+          "room": "R07"
+        },
+        {
+          "start": 21,
+          "room": "R03"
+        },
+        {
+          "start": 24,
+          "room": "R03"
+        },
+        {
+          "start": 13,
+          "room": "R07"
+        },
+        {
+          "start": 2,
+          "room": "R07"
+        },
+        {
+          "start": 22,
+          "room": "R07"
+        },
+        {
+          "start": 0,
+          "room": "R03"
+        },
+        {
+          "start": 14,
+          "room": "R07"
+        },
+        {
+          "start": 23,
+          "room": "R03"
+        },
+        {
+          "start": 25,
+          "room": "R03"
+        },
+        {
+          "start": 39,
+          "room": "R03"
+        },
+        {
+          "start": 27,
+          "room": "R03"
+        },
+        {
+          "start": 35,
+          "room": "R03"
+        },
+        {
+          "start": 26,
+          "room": "R03"
+        },
+        {
+          "start": 1,
+          "room": "R07"
+        },
+        {
+          "start": 37,
+          "room": "R11"
+        },
+        {
+          "start": 29,
+          "room": "R11"
+        }
+      ],
+      "teachers": [
+        "F01",
+        "F07",
+        "F02",
+        "F04",
+        "F18",
+        "F06",
+        "F01",
+        "F04",
+        "F12",
+        "F14",
+        "F10",
+        "F01",
+        "F20",
+        "F09",
+        "F15",
+        "F11",
+        "F11",
+        "F05",
+        "F13",
+        "F16",
+        "F13",
+        "F07",
+        "F10",
+        "F08",
+        "F14",
+        "F02",
+        "F15",
+        "F20",
+        "F12",
+        "F09",
+        "F13",
+        "F16",
+        "F16",
+        "F19",
+        "F06",
+        "F03",
+        "F03",
+        "F07",
+        "F19",
+        "F02",
+        "F05",
+        "F11",
+        "F17",
+        "F18",
+        "F08",
+        "F07",
+        "F14",
+        "F06",
+        "F03",
+        "F06",
+        "F17",
+        "F08",
+        "F05",
+        "F10",
+        "F17",
+        "F03",
+        "F07",
+        "F19",
+        "F04",
+        "F09",
+        "F18",
+        "F01",
+        "F12",
+        "F18"
+      ]
+    },
+    {
+      "schema_version": 1,
+      "placements": [
+        {
+          "start": 1,
+          "room": "R05"
+        },
+        {
+          "start": 25,
+          "room": "R01"
+        },
+        {
+          "start": 11,
+          "room": "R05"
+        },
+        {
+          "start": 7,
+          "room": "R05"
+        },
+        {
+          "start": 37,
+          "room": "R01"
+        },
+        {
+          "start": 19,
+          "room": "R05"
+        },
+        {
+          "start": 13,
+          "room": "R05"
+        },
+        {
+          "start": 18,
+          "room": "R05"
+        },
+        {
+          "start": 26,
+          "room": "R05"
+        },
+        {
+          "start": 21,
+          "room": "R01"
+        },
+        {
+          "start": 5,
+          "room": "R01"
+        },
+        {
+          "start": 35,
+          "room": "R05"
+        },
+        {
+          "start": 6,
+          "room": "R05"
+        },
+        {
+          "start": 32,
+          "room": "R05"
+        },
+        {
+          "start": 24,
+          "room": "R01"
+        },
+        {
+          "start": 10,
+          "room": "R05"
+        },
+        {
+          "start": 27,
+          "room": "R05"
+        },
+        {
+          "start": 33,
+          "room": "R09"
+        },
+        {
+          "start": 2,
+          "room": "R09"
+        },
+        {
+          "start": 9,
+          "room": "R06"
+        },
+        {
+          "start": 29,
+          "room": "R02"
+        },
+        {
+          "start": 5,
+          "room": "R06"
+        },
+        {
+          "start": 19,
+          "room": "R02"
+        },
+        {
+          "start": 13,
+          "room": "R02"
+        },
+        {
+          "start": 6,
+          "room": "R06"
+        },
+        {
+          "start": 18,
+          "room": "R02"
+        },
+        {
+          "start": 26,
+          "room": "R06"
+        },
+        {
+          "start": 38,
+          "room": "R06"
+        },
+        {
+          "start": 10,
+          "room": "R02"
+        },
+        {
+          "start": 1,
+          "room": "R02"
+        },
+        {
+          "start": 17,
+          "room": "R06"
+        },
+        {
+          "start": 27,
+          "room": "R06"
+        },
+        {
+          "start": 0,
+          "room": "R02"
+        },
+        {
+          "start": 37,
+          "room": "R02"
+        },
+        {
+          "start": 39,
+          "room": "R06"
+        },
+        {
+          "start": 11,
+          "room": "R06"
+        },
+        {
+          "start": 2,
+          "room": "R10"
+        },
+        {
+          "start": 24,
+          "room": "R10"
+        },
+        {
+          "start": 34,
+          "room": "R03"
+        },
+        {
+          "start": 10,
+          "room": "R07"
+        },
+        {
+          "start": 1,
+          "room": "R04"
+        },
+        {
+          "start": 32,
+          "room": "R07"
+        },
+        {
+          "start": 19,
+          "room": "R08"
+        },
+        {
+          "start": 29,
+          "room": "R03"
+        },
+        {
+          "start": 17,
+          "room": "R03"
+        },
+        {
+          "start": 37,
+          "room": "R07"
+        },
+        {
+          "start": 13,
+          "room": "R08"
+        },
+        {
+          "start": 33,
+          "room": "R03"
+        },
+        {
+          "start": 27,
+          "room": "R07"
+        },
+        {
+          "start": 2,
+          "room": "R03"
+        },
+        {
+          "start": 30,
+          "room": "R03"
+        },
+        {
+          "start": 18,
+          "room": "R08"
+        },
+        {
+          "start": 35,
+          "room": "R08"
+        },
+        {
+          "start": 11,
+          "room": "R08"
+        },
+        {
+          "start": 26,
+          "room": "R04"
+        },
+        {
+          "start": 8,
+          "room": "R11"
+        },
+        {
+          "start": 21,
+          "room": "R11"
+        },
+        {
+          "start": 22,
+          "room": "R07"
+        },
+        {
+          "start": 14,
+          "room": "R07"
+        },
+        {
+          "start": 29,
+          "room": "R07"
+        },
+        {
+          "start": 19,
+          "room": "R07"
+        },
+        {
+          "start": 15,
+          "room": "R07"
+        },
+        {
+          "start": 25,
+          "room": "R03"
+        },
+        {
+          "start": 23,
+          "room": "R07"
+        },
+        {
+          "start": 31,
+          "room": "R07"
+        },
+        {
+          "start": 13,
+          "room": "R04"
+        },
+        {
+          "start": 21,
+          "room": "R03"
+        },
+        {
+          "start": 39,
+          "room": "R03"
+        },
+        {
+          "start": 7,
+          "room": "R07"
+        },
+        {
+          "start": 18,
+          "room": "R07"
+        },
+        {
+          "start": 30,
+          "room": "R07"
+        },
+        {
+          "start": 35,
+          "room": "R04"
+        },
+        {
+          "start": 11,
+          "room": "R07"
+        },
+        {
+          "start": 24,
+          "room": "R04"
+        },
+        {
+          "start": 37,
+          "room": "R11"
+        },
+        {
+          "start": 26,
+          "room": "R11"
+        },
+        {
+          "start": 17,
+          "room": "R05"
+        },
+        {
+          "start": 2,
+          "room": "R01"
+        },
+        {
+          "start": 38,
+          "room": "R05"
+        },
+        {
+          "start": 39,
+          "room": "R05"
+        },
+        {
+          "start": 19,
+          "room": "R01"
+        },
+        {
+          "start": 24,
+          "room": "R05"
+        },
+        {
+          "start": 37,
+          "room": "R05"
+        },
+        {
+          "start": 25,
+          "room": "R06"
+        },
+        {
+          "start": 18,
+          "room": "R01"
+        },
+        {
+          "start": 1,
+          "room": "R01"
+        },
+        {
+          "start": 22,
+          "room": "R01"
+        },
+        {
+          "start": 11,
+          "room": "R01"
+        },
+        {
+          "start": 3,
+          "room": "R01"
+        },
+        {
+          "start": 29,
+          "room": "R01"
+        },
+        {
+          "start": 35,
+          "room": "R01"
+        },
+        {
+          "start": 30,
+          "room": "R01"
+        },
+        {
+          "start": 21,
+          "room": "R04"
+        },
+        {
+          "start": 13,
+          "room": "R09"
+        },
+        {
+          "start": 26,
+          "room": "R09"
+        },
+        {
+          "start": 18,
+          "room": "R06"
+        },
+        {
+          "start": 24,
+          "room": "R02"
+        },
+        {
+          "start": 5,
+          "room": "R02"
+        },
+        {
+          "start": 11,
+          "room": "R02"
+        },
+        {
+          "start": 26,
+          "room": "R02"
+        },
+        {
+          "start": 38,
+          "room": "R02"
+        },
+        {
+          "start": 17,
+          "room": "R02"
+        },
+        {
+          "start": 9,
+          "room": "R02"
+        },
+        {
+          "start": 33,
+          "room": "R02"
+        },
+        {
+          "start": 21,
+          "room": "R02"
+        },
+        {
+          "start": 25,
+          "room": "R02"
+        },
+        {
+          "start": 13,
+          "room": "R06"
+        },
+        {
+          "start": 37,
+          "room": "R06"
+        },
+        {
+          "start": 19,
+          "room": "R06"
+        },
+        {
+          "start": 10,
+          "room": "R06"
+        },
+        {
+          "start": 14,
+          "room": "R06"
+        },
+        {
+          "start": 22,
+          "room": "R06"
+        },
+        {
+          "start": 6,
+          "room": "R10"
+        },
+        {
+          "start": 34,
+          "room": "R10"
+        },
+        {
+          "start": 3,
+          "room": "R03"
+        },
+        {
+          "start": 16,
+          "room": "R03"
+        },
+        {
+          "start": 37,
+          "room": "R03"
+        },
+        {
+          "start": 17,
+          "room": "R07"
+        },
+        {
+          "start": 5,
+          "room": "R03"
+        },
+        {
+          "start": 26,
+          "room": "R07"
+        },
+        {
+          "start": 18,
+          "room": "R03"
+        },
+        {
+          "start": 1,
+          "room": "R07"
+        },
+        {
+          "start": 35,
+          "room": "R03"
+        },
+        {
+          "start": 0,
+          "room": "R03"
+        },
+        {
+          "start": 19,
+          "room": "R03"
+        },
+        {
+          "start": 39,
+          "room": "R07"
+        },
+        {
+          "start": 34,
+          "room": "R07"
+        },
+        {
+          "start": 13,
+          "room": "R07"
+        },
+        {
+          "start": 2,
+          "room": "R07"
+        },
+        {
+          "start": 38,
+          "room": "R03"
+        },
+        {
+          "start": 24,
+          "room": "R11"
+        },
+        {
+          "start": 14,
+          "room": "R11"
+        },
+        {
+          "start": 25,
+          "room": "R07"
+        },
+        {
+          "start": 35,
+          "room": "R07"
+        },
+        {
+          "start": 14,
+          "room": "R03"
+        },
+        {
+          "start": 21,
+          "room": "R07"
+        },
+        {
+          "start": 13,
+          "room": "R03"
+        },
+        {
+          "start": 7,
+          "room": "R03"
+        },
+        {
+          "start": 11,
+          "room": "R03"
+        },
+        {
+          "start": 5,
+          "room": "R07"
+        },
+        {
+          "start": 27,
+          "room": "R03"
+        },
+        {
+          "start": 31,
+          "room": "R03"
+        },
+        {
+          "start": 10,
+          "room": "R03"
+        },
+        {
+          "start": 6,
+          "room": "R07"
+        },
+        {
+          "start": 22,
+          "room": "R03"
+        },
+        {
+          "start": 32,
+          "room": "R03"
+        },
+        {
+          "start": 23,
+          "room": "R03"
+        },
+        {
+          "start": 26,
+          "room": "R03"
+        },
+        {
+          "start": 29,
+          "room": "R11"
+        },
+        {
+          "start": 33,
+          "room": "R11"
+        }
+      ],
+      "teachers": [
+        "F12",
+        "F09",
+        "F05",
+        "F18",
+        "F02",
+        "F01",
+        "F17",
+        "F16",
+        "F14",
+        "F06",
+        "F10",
+        "F11",
+        "F12",
+        "F01",
+        "F05",
+        "F20",
+        "F20",
+        "F05",
+        "F07",
+        "F11",
+        "F16",
+        "F19",
+        "F10",
+        "F13",
+        "F18",
+        "F02",
+        "F15",
+        "F04",
+        "F09",
+        "F06",
+        "F15",
+        "F02",
+        "F08",
+        "F19",
+        "F06",
+        "F03",
+        "F13",
+        "F14",
+        "F01",
+        "F03",
+        "F07",
+        "F04",
+        "F20",
+        "F03",
+        "F13",
+        "F15",
+        "F14",
+        "F06",
+        "F08",
+        "F01",
+        "F17",
+        "F10",
+        "F16",
+        "F03",
+        "F04",
+        "F08",
+        "F07",
+        "F19",
+        "F13",
+        "F09",
+        "F14",
+        "F12",
+        "F11",
+        "F18"
+      ]
+    },
+    {
+      "schema_version": 1,
+      "placements": [
+        {
+          "start": 35,
+          "room": "R01"
+        },
+        {
+          "start": 25,
+          "room": "R01"
+        },
+        {
+          "start": 7,
+          "room": "R01"
+        },
+        {
+          "start": 11,
+          "room": "R05"
+        },
+        {
+          "start": 32,
+          "room": "R05"
+        },
+        {
+          "start": 17,
+          "room": "R05"
+        },
+        {
+          "start": 37,
+          "room": "R01"
+        },
+        {
+          "start": 16,
+          "room": "R05"
+        },
+        {
+          "start": 27,
+          "room": "R05"
+        },
+        {
+          "start": 6,
+          "room": "R05"
+        },
+        {
+          "start": 24,
+          "room": "R05"
+        },
+        {
+          "start": 14,
+          "room": "R01"
+        },
+        {
+          "start": 13,
+          "room": "R05"
+        },
+        {
+          "start": 5,
+          "room": "R05"
+        },
+        {
+          "start": 26,
+          "room": "R01"
+        },
+        {
+          "start": 10,
+          "room": "R05"
+        },
+        {
+          "start": 38,
+          "room": "R05"
+        },
+        {
+          "start": 18,
+          "room": "R09"
+        },
+        {
+          "start": 33,
+          "room": "R09"
+        },
+        {
+          "start": 35,
+          "room": "R06"
+        },
+        {
+          "start": 3,
+          "room": "R06"
+        },
+        {
+          "start": 27,
+          "room": "R06"
+        },
+        {
+          "start": 22,
+          "room": "R02"
+        },
+        {
+          "start": 11,
+          "room": "R06"
+        },
+        {
+          "start": 38,
+          "room": "R06"
+        },
+        {
+          "start": 24,
+          "room": "R06"
+        },
+        {
+          "start": 19,
+          "room": "R06"
+        },
+        {
+          "start": 13,
+          "room": "R02"
+        },
+        {
+          "start": 5,
+          "room": "R06"
+        },
+        {
+          "start": 21,
+          "room": "R02"
+        },
+        {
+          "start": 25,
+          "room": "R02"
+        },
+        {
+          "start": 18,
+          "room": "R06"
+        },
+        {
+          "start": 26,
+          "room": "R02"
+        },
+        {
+          "start": 32,
+          "room": "R02"
+        },
+        {
+          "start": 14,
+          "room": "R02"
+        },
+        {
+          "start": 37,
+          "room": "R06"
+        },
+        {
+          "start": 6,
+          "room": "R10"
+        },
+        {
+          "start": 33,
+          "room": "R10"
+        },
+        {
+          "start": 0,
+          "room": "R03"
+        },
+        {
+          "start": 8,
+          "room": "R04"
+        },
+        {
+          "start": 35,
+          "room": "R04"
+        },
+        {
+          "start": 3,
+          "room": "R08"
+        },
+        {
+          "start": 18,
+          "room": "R04"
+        },
+        {
+          "start": 27,
+          "room": "R08"
+        },
+        {
+          "start": 21,
+          "room": "R03"
+        },
+        {
+          "start": 6,
+          "room": "R08"
+        },
+        {
+          "start": 37,
+          "room": "R08"
+        },
+        {
+          "start": 34,
+          "room": "R03"
+        },
+        {
+          "start": 17,
+          "room": "R03"
+        },
+        {
+          "start": 31,
+          "room": "R07"
+        },
+        {
+          "start": 25,
+          "room": "R07"
+        },
+        {
+          "start": 19,
+          "room": "R04"
+        },
+        {
+          "start": 5,
+          "room": "R04"
+        },
+        {
+          "start": 26,
+          "room": "R03"
+        },
+        {
+          "start": 9,
+          "room": "R08"
+        },
+        {
+          "start": 1,
+          "room": "R11"
+        },
+        {
+          "start": 29,
+          "room": "R11"
+        },
+        {
+          "start": 10,
+          "room": "R07"
+        },
+        {
+          "start": 18,
+          "room": "R03"
+        },
+        {
+          "start": 7,
+          "room": "R07"
+        },
+        {
+          "start": 33,
+          "room": "R03"
+        },
+        {
+          "start": 27,
+          "room": "R03"
+        },
+        {
+          "start": 16,
+          "room": "R03"
+        },
+        {
+          "start": 14,
+          "room": "R03"
+        },
+        {
+          "start": 38,
+          "room": "R07"
+        },
+        {
+          "start": 5,
+          "room": "R07"
+        },
+        {
+          "start": 24,
+          "room": "R03"
+        },
+        {
+          "start": 11,
+          "room": "R07"
+        },
+        {
+          "start": 17,
+          "room": "R07"
+        },
+        {
+          "start": 13,
+          "room": "R03"
+        },
+        {
+          "start": 37,
+          "room": "R03"
+        },
+        {
+          "start": 6,
+          "room": "R07"
+        },
+        {
+          "start": 32,
+          "room": "R03"
+        },
+        {
+          "start": 15,
+          "room": "R07"
+        },
+        {
+          "start": 34,
+          "room": "R11"
+        },
+        {
+          "start": 25,
+          "room": "R11"
+        },
+        {
+          "start": 27,
+          "room": "R01"
+        },
+        {
+          "start": 21,
+          "room": "R01"
+        },
+        {
+          "start": 2,
+          "room": "R01"
+        },
+        {
+          "start": 39,
+          "room": "R05"
+        },
+        {
+          "start": 1,
+          "room": "R01"
+        },
+        {
+          "start": 19,
+          "room": "R01"
+        },
+        {
+          "start": 35,
+          "room": "R05"
+        },
+        {
+          "start": 15,
+          "room": "R05"
+        },
+        {
+          "start": 29,
+          "room": "R01"
+        },
+        {
+          "start": 17,
+          "room": "R01"
+        },
+        {
+          "start": 0,
+          "room": "R05"
+        },
+        {
+          "start": 33,
+          "room": "R01"
+        },
+        {
+          "start": 18,
+          "room": "R05"
+        },
+        {
+          "start": 3,
+          "room": "R01"
+        },
+        {
+          "start": 26,
+          "room": "R05"
+        },
+        {
+          "start": 14,
+          "room": "R05"
+        },
+        {
+          "start": 5,
+          "room": "R01"
+        },
+        {
+          "start": 37,
+          "room": "R09"
+        },
+        {
+          "start": 22,
+          "room": "R09"
+        },
+        {
+          "start": 6,
+          "room": "R02"
+        },
+        {
+          "start": 10,
+          "room": "R06"
+        },
+        {
+          "start": 18,
+          "room": "R02"
+        },
+        {
+          "start": 5,
+          "room": "R02"
+        },
+        {
+          "start": 25,
+          "room": "R06"
+        },
+        {
+          "start": 16,
+          "room": "R06"
+        },
+        {
+          "start": 1,
+          "room": "R06"
+        },
+        {
+          "start": 9,
+          "room": "R06"
+        },
+        {
+          "start": 34,
+          "room": "R06"
+        },
+        {
+          "start": 26,
+          "room": "R06"
+        },
+        {
+          "start": 17,
+          "room": "R06"
+        },
+        {
+          "start": 11,
+          "room": "R02"
+        },
+        {
+          "start": 24,
+          "room": "R02"
+        },
+        {
+          "start": 15,
+          "room": "R02"
+        },
+        {
+          "start": 35,
+          "room": "R02"
+        },
+        {
+          "start": 37,
+          "room": "R02"
+        },
+        {
+          "start": 27,
+          "room": "R02"
+        },
+        {
+          "start": 2,
+          "room": "R10"
+        },
+        {
+          "start": 13,
+          "room": "R10"
+        },
+        {
+          "start": 8,
+          "room": "R07"
+        },
+        {
+          "start": 19,
+          "room": "R03"
+        },
+        {
+          "start": 1,
+          "room": "R07"
+        },
+        {
+          "start": 31,
+          "room": "R03"
+        },
+        {
+          "start": 0,
+          "room": "R07"
+        },
+        {
+          "start": 23,
+          "room": "R03"
+        },
+        {
+          "start": 29,
+          "room": "R07"
+        },
+        {
+          "start": 10,
+          "room": "R03"
+        },
+        {
+          "start": 35,
+          "room": "R07"
+        },
+        {
+          "start": 34,
+          "room": "R07"
+        },
+        {
+          "start": 18,
+          "room": "R07"
+        },
+        {
+          "start": 2,
+          "room": "R03"
+        },
+        {
+          "start": 33,
+          "room": "R07"
+        },
+        {
+          "start": 11,
+          "room": "R03"
+        },
+        {
+          "start": 9,
+          "room": "R03"
+        },
+        {
+          "start": 30,
+          "room": "R07"
+        },
+        {
+          "start": 21,
+          "room": "R11"
+        },
+        {
+          "start": 37,
+          "room": "R11"
+        },
+        {
+          "start": 26,
+          "room": "R07"
+        },
+        {
+          "start": 13,
+          "room": "R07"
+        },
+        {
+          "start": 39,
+          "room": "R03"
+        },
+        {
+          "start": 38,
+          "room": "R03"
+        },
+        {
+          "start": 27,
+          "room": "R07"
+        },
+        {
+          "start": 16,
+          "room": "R07"
+        },
+        {
+          "start": 29,
+          "room": "R03"
+        },
+        {
+          "start": 19,
+          "room": "R07"
+        },
+        {
+          "start": 37,
+          "room": "R07"
+        },
+        {
+          "start": 3,
+          "room": "R03"
+        },
+        {
+          "start": 14,
+          "room": "R07"
+        },
+        {
+          "start": 30,
+          "room": "R03"
+        },
+        {
+          "start": 35,
+          "room": "R03"
+        },
+        {
+          "start": 15,
+          "room": "R03"
+        },
+        {
+          "start": 21,
+          "room": "R07"
+        },
+        {
+          "start": 5,
+          "room": "R03"
+        },
+        {
+          "start": 17,
+          "room": "R11"
+        },
+        {
+          "start": 6,
+          "room": "R11"
+        }
+      ],
+      "teachers": [
+        "F12",
+        "F09",
+        "F10",
+        "F10",
+        "F05",
+        "F01",
+        "F11",
+        "F03",
+        "F06",
+        "F15",
+        "F16",
+        "F08",
+        "F03",
+        "F14",
+        "F15",
+        "F13",
+        "F11",
+        "F05",
+        "F07",
+        "F11",
+        "F13",
+        "F19",
+        "F14",
+        "F01",
+        "F18",
+        "F09",
+        "F16",
+        "F04",
+        "F12",
+        "F08",
+        "F18",
+        "F10",
+        "F03",
+        "F19",
+        "F20",
+        "F02",
+        "F13",
+        "F07",
+        "F19",
+        "F20",
+        "F04",
+        "F04",
+        "F17",
+        "F18",
+        "F13",
+        "F15",
+        "F08",
+        "F06",
+        "F03",
+        "F01",
+        "F17",
+        "F02",
+        "F05",
+        "F02",
+        "F17",
+        "F04",
+        "F07",
+        "F14",
+        "F06",
+        "F20",
+        "F10",
+        "F12",
+        "F16",
+        "F09"
+      ]
+    }
+  ],
+  "normalization": [
+    630.0,
+    1.0,
+    0.5
+  ],
+  "reference": [
+    1.1,
+    1.1,
+    1.1
+  ],
+  "hypervolume": 0.9813126010824614,
+  "spacing": 0.006974408216682467,
+  "feasible_evaluation_fraction": 1.0,
+  "on_time_feasible_evaluation_fraction": 1.0,
+  "minimum_violation": 0,
+  "duplicate_evaluation_fraction": 0.0,
+  "genotype_evaluation_counts": {
+    "025bebcf2e05342b5a8e7a7e15f98f37d79bd817f56631dd1f9d3ca7d39053a4": 1,
+    "05c16fd99fb2999b6b27676ecb57f0b6760011ae27bf8f3c48510a61abf8bfe3": 1,
+    "075732917ee014b620953220f7e22f8be442711a2084b65401f00e6299bae0ff": 1,
+    "08a63b986bb5bfe65378383571469dcc9e27e9dd00cf0e8fde7f5b90f3929122": 1,
+    "08c8582608d6dae731ff42c3c00e3959e206a5e2c27a6d49556a50057d3f60cd": 1,
+    "09ff4a4a462cb5cd425e39be24926dbe614820270d7773f0920b37575320a7ec": 1,
+    "0ee565cd6dc4db42e3dcf946c42c711b4afdec41feaba931251f8ffb73fb9d96": 1,
+    "0fcd97b9bdac46f7c52931211313552003fd8430a42e1bf0906f0909e083de11": 1,
+    "13487c60b6b652ace5520c66d4ac712d411b57095ae5f789fb3b9dbe51fb4705": 1,
+    "17923a978e7948ccb53af37c4914344884d60020314ee0d0d89962dd02b54368": 1,
+    "189109016777de5065926e6b205beba9e51a3e9159ccd96a4fce381d9b1df7cc": 1,
+    "1e38616369984738b1e78d54ff62ada91e84cd62dc67a04086453c3f71271a6d": 1,
+    "239a7d5e05063a0d1b145ba1b6113ad4e6298502c0f82433b3bec9d8aeac46e6": 1,
+    "258f2f60be1f9865ba70289aa15399e9d43a6349d8ba59c726e6dd1c996afc2a": 1,
+    "26bf667c408001ba2e46f14504b6dd5c5d901ec548553e8d2849570548025e76": 1,
+    "29feeb87b7d42a42d0789303d8793aa13f7233bdcfe17d2836243de1e18ebdcb": 1,
+    "2c487c3a0d1c6e2412b1a167028040b8b704cddc3f2a14f6f61e30c5ad1d9624": 1,
+    "32f16be50d9b3885f215fce4aad32639eadd1bc5f0698edbd38fce18e1fb0009": 1,
+    "34fe89a323b33f0a89d3ccb476a901778cd6e1a7532519d10bc8300fc40f8ce7": 1,
+    "3bfed431df544ff5637e5bd9825621e177e2c3e84e4c8b99592600f78b400d2b": 1,
+    "3c0be1a9386c12c03ef007933cefe9385b766201b039e3d10c89fc82eef11f95": 1,
+    "3ebcb531ea92671d4d09eadc946d4873ffcf193ccc4283e85a5aad621d1385b4": 1,
+    "405a1f7a5fa73a3a2242623c4e17ff04170a842738cbc58d28b6b8f8fc6cf32a": 1,
+    "40996e11ce4484871b7c0c4b739471f456e6455a1f628ad02aefc2781cd6e43e": 1,
+    "44aecde992080f1142d68b79bba5dbdae2748c101f3381dbb0e56ccae1951f6e": 1,
+    "46364ef1b573d7ff2b2ac863b845951412080d94289aa954654e70b5b23bd40f": 1,
+    "4711b60b10ade5467bba400ff7a3a3cec2c1316bb05f660048d6d009da4f9e53": 1,
+    "47c66e67a72bf12633639b231c7cb7fdf09d48c2ed79b077456550aca0e3d127": 1,
+    "487ef97f2fb4c8d2bcacb7c3b79357f4a286619de4c9b47c33c9973bd167bed3": 1,
+    "494c45f25033b24c83ef7898efe18640900e89436927aea63357f296a8bbc859": 1,
+    "4acf400bee382d5f04093086bbc7722f309b9840305cc0dd001521a5ddcbf73b": 1,
+    "4ba82619209cae56155a833e28ad075811c9a5ace03bfcc1946d0e5cbb81146a": 1,
+    "4cdfd4e448f51d86a81df2c1261e8de75e2712f9b86299f1c4df7491c722cab4": 1,
+    "4ddde00f1b257c15ac37ff5470d0f5dc591ec532e0c30d0520ca97a1a38203b6": 1,
+    "4df69f7d0a001c44cf3db36f78345fa33496a4999c4fa1dee74e6090e6e226c9": 1,
+    "4e67818f374bee3dc9bf9a4d31ab81654793f67610a9853874fa482510b8c24f": 1,
+    "505b5de5c8359d0a7ee2e05a5aad8e313335f2989d39fae154adf3483cf76bee": 1,
+    "523a12124386034e84579177c25078c25d9c8ce52968e5aebd9a82af33104068": 1,
+    "53b0d629a9d9566ff39ac542ba1d6edbe16406ba7750dc0e716b023f689e8bb4": 1,
+    "5e7a6999e79762e667af8ac8db9a4b579a5fe04ae5e75ecdd01471cb6b2a9582": 1,
+    "63f99a6a391ac0336b3a63959a4515cdbf0be04e49bc1417b018e18d08cf2124": 1,
+    "6490a86adc25dd94107e7704c5b99080e604a19588321780a067726146e80446": 1,
+    "65b95b95d45a8b353d50d72e83bb2cc1775c2d551956c1c628c501bb946c2741": 1,
+    "6811c4af7383d9ded5af29ef130ef42032796036a65c75ce139885247ea598a8": 1,
+    "68cd28cf0b6fd5e825c4c11f93acb3ae87825de75923dee80641e5db8b52d367": 1,
+    "6e7713dbc10bcbe2152714c995e0f9486704523eef029bf58b357b275e3b2b21": 1,
+    "72e203aeadd7f4227eb7633ae257271540d1dd72ddf440c77c88562c2bb54d08": 1,
+    "767d20c371b54e403ec3ecaf177a1c5be68d69e8f10667b399d7ac663114588e": 1,
+    "76daee3543bc9f4819558f74445d803716f1e942d12f9307dc641c615037c849": 1,
+    "770144fd4d10fcf82ba41849708a987e01608ead64b6d53378bf6ef462eca224": 1,
+    "7ce778d66a608579353366da087e7baa99136b48aa354a4707a329f2789e8f3b": 1,
+    "81d9ff34d1284178c3118bdafee1d69e5cf9b31df83e1ffc08808117cb45d367": 1,
+    "8383b151d38004dd58be7139cb3b59e24919d961549bda7d34e8a9fee8aad29e": 1,
+    "84a099b1f47d2f808b86f053ea60add6b5923b0c9e5264e58e541c89e6ec2ede": 1,
+    "86acaddd73781366a1512a94f84113e97ff9fe6804b2ef8825606b388eb84440": 1,
+    "87668618919a211e9e8f2546f8bc259269e77ed3c2362eba64b4aae014ad92f8": 1,
+    "8a24c3a4d8ac187d5f84fd99fc657f5295332841b39c915ce102b28ed7e82854": 1,
+    "8d8f8f30d45ecb70a1672256aa5e9c7a19c4ecb5d1b663189416d799abfee065": 1,
+    "8daf6eb96ea838124b88ec3f795784c772fa789187dcc13934309cabbddfd7a6": 1,
+    "8e2b790738a901768f62e4eb53f50f9aec61e0ebd66fbe321dc0f4c5ffe8415a": 1,
+    "8f6b799ae1ab13e8e26588f9a353980b57767e18afb75820c0a7485b96745175": 1,
+    "95ecc9b35d82a72554e35692c2e445d425718ae90ae1829244a4c25de286a806": 1,
+    "98e809e1731ebd8b784013fb8fa055039482019502af60b39b2062c87e8cf239": 1,
+    "9c148d12f15e3b5f56b06b439897c0786ce9959dd38394f48f70892146e5b0f5": 1,
+    "9ce59e6550aa8e66ea78f764a0542315f5b94190d31fb8ca0d4754c11efaa992": 1,
+    "9f2cd13922d22505ca95b8f34192de8f49fd2cb473dca5878c306cf8ade00aa4": 1,
+    "a2242ed8c25c0f754edd84b34ac7e5d3354a845ebb7c2a238acc9c8850372e6b": 1,
+    "a33d106f11373eb0bf409d1ab8c59c98b84b2f2698807170afc29bc77ca0aa95": 1,
+    "a3bd384416176eb99263ff950a6179e6ca0ca87676a2a4b2d0972dde5217dd29": 1,
+    "a5609ee7a22a68ff142800305566045c7ba08e252413cb315c79dc2e7ca26008": 1,
+    "a7160d5a93fc84bf79429061e5c69c06f295de805866925ca1022af440a574b2": 1,
+    "a973d2b953fa7608898a2f4ca0e3f39111a2e3f0beecaa2df1846be7005c1f74": 1,
+    "abef036a19ccb16e2974b3862f29c55d341bc2fd1ba09d66e47f3d9df69816a7": 1,
+    "ad7f76c53c50e504e0b26628c694902e482694b99d6a00bc53f723ceae572539": 1,
+    "b4bb28a70dec40e46478a50e9bda013d39e37f983c56cdaef0d3558272b90c8a": 1,
+    "b654c5cf5353bb3efcbf2293bb6c9529be8b36a900a95afeb984fd729fb9563e": 1,
+    "bbc4915ce96dd9711531332e62475487055efe2aac86408fb9e14600be8b1ae7": 1,
+    "bcd52995064d577f1c7b7afa3bdbe516dca26e1818b5c6d7aa7c3deeb6275c43": 1,
+    "c1d89b5168e374d3d571ae9ab899183ad24e9bb8c82ca26fded1b627e6022553": 1,
+    "c35340fc4dabdf85879eba7b785e5bc7f37832c1665586744a18aca1553cda1a": 1,
+    "c4aaf65741b3bfadc00332aaa4255ba35cf99e050d2285c791ae80945cda5d36": 1,
+    "c9cc4b1fd0bb258b5d4f7a5e0875a5452afa847b4032fdc78d220a2044b8b637": 1,
+    "cabe9add3a7a4d9ae065dd35049271549f4745ab967eff14cf08e65cd9e5e657": 1,
+    "ce5c04fbbd6eddc20069f53375f86bc28d297710068f91d1d807017a1bd7fbdb": 1,
+    "cec7087af22333e893c5bfbc1e17d0ecce3d074af19082cd45838b0c00fc5e3b": 1,
+    "cf3d56362990b4a2eb8aec317523778a9fc0821492f1587deee2bf982b6e1be5": 1,
+    "d05c35e815e0e555fa008a73a569a49d8e8dbccb82b702e56ebf4488fdb45327": 1,
+    "d26d08c94df0e789b31bd18ad6e71d75ec89d2ad1d7c195720ddee473d1ab9b3": 1,
+    "d2c14dbb1b0f1e656276ec42b60160aef892ecf6dc936709bf4d6eda0e04eda9": 1,
+    "d33dbd91aece9bbd6a779084b56ee59ef987fcc9897c5a671ca27d2f6d392016": 1,
+    "d40f9d59b7c55c4e79262eb34c146353a57d175858a93fc365322339c0bf4ad3": 1,
+    "d48d6c569b21d81949c4e06c28be0e7f9f3dbc3363c5b052f75d9ef02489f1f3": 1,
+    "d559286d2f8f4ada4692aee4ee82baa62c15172d1822f200c4a5437eff82d735": 1,
+    "d70124e733e0bd9b2935bf72c41afed4e46d4193c59c47a730531b6b942f0595": 1,
+    "d7d434667fcfc13150184ccc5c803a486664c0dc53cfeafd77d8d1ac3994522a": 1,
+    "dade32f93340c4881eba5e593393026cdec24c2a90f52d913a860e9a0e9ba542": 1,
+    "dc7f9eaaa23d6dfcbc721446165e246ff3c48fb2573320aba417ae040b2e4811": 1,
+    "dfd1468b612f54f28a4d833aa63c1136e4e8d69aced81cac119f8c37d6adff01": 1,
+    "e091c51667c831956d666367f3bd8c68852a4bab03cd8b9d3fc4d21a00267e29": 1,
+    "e30af1da9722aa3ae47cf627e013157ed3995bd9cf07b2be8228f45bd2312f66": 1,
+    "e7270012ad2e6e23596db4aef7b43f77103f8f9b26bc649b7c11a39bae1d0847": 1,
+    "e9ef4c8122e721058f01fca314956daf60abf00eb1445a87fac9c7bd16e62023": 1,
+    "f45422693093d27db3792ff91016cca9435a2f82a16131231191444b7c92c371": 1,
+    "f9055490713716ed94e755454d034a44f224222292d48558637c0dff4ce2806a": 1,
+    "fde2df25018136339605b5f5ca1630aaebecaba3be27dc70c86e4125a8a7e775": 1,
+    "ff1de31742a0b1237587a767a2f4611d2aa1ace61195cba85254e9021335c460": 1,
+    "ff49a332ab8ae22634aaa361d99672f95950ceae0506e218b96f2693522776e8": 1
+  },
+  "history": [
+    {
+      "generation": 0,
+      "evaluations": 1,
+      "elapsed_seconds": 0.05067554300012489,
+      "schedule_sha256": "025bebcf2e05342b5a8e7a7e15f98f37d79bd817f56631dd1f9d3ca7d39053a4",
+      "candidate_feasible": true,
+      "candidate_violation": 0,
+      "candidate_objectives": [
+        1.0,
+        0.18674698795180722,
+        0.08529361054615993
+      ],
+      "completed_after_deadline": false,
+      "evaluated_feasible_fraction": 1.0,
+      "min_violation": 0,
+      "hypervolume": 0.9323206375925016
+    },
+    {
+      "generation": 1,
+      "evaluations": 2,
+      "elapsed_seconds": 0.10636521500009621,
+      "schedule_sha256": "84a099b1f47d2f808b86f053ea60add6b5923b0c9e5264e58e541c89e6ec2ede",
+      "candidate_feasible": true,
+      "candidate_violation": 0,
+      "candidate_objectives": [
+        0.0,
+        0.19036144578313255,
+        0.09367496997597598
+      ],
+      "completed_after_deadline": false,
+      "evaluated_feasible_fraction": 1.0,
+      "min_violation": 0,
+      "hypervolume": 0.9336383862927049
+    },
+    {
+      "generation": 2,
+      "evaluations": 3,
+      "elapsed_seconds": 0.16080436200013537,
+      "schedule_sha256": "8f6b799ae1ab13e8e26588f9a353980b57767e18afb75820c0a7485b96745175",
+      "candidate_feasible": true,
+      "candidate_violation": 0,
+      "candidate_objectives": [
+        1.0,
+        0.21746987951807228,
+        0.08077747210701756
+      ],
+      "completed_after_deadline": false,
+      "evaluated_feasible_fraction": 1.0,
+      "min_violation": 0,
+      "hypervolume": 0.9423941155465465
+    },
+    {
+      "generation": 3,
+      "evaluations": 4,
+      "elapsed_seconds": 0.21560916399994312,
+      "schedule_sha256": "c1d89b5168e374d3d571ae9ab899183ad24e9bb8c82ca26fded1b627e6022553",
+      "candidate_feasible": true,
+      "candidate_violation": 0,
+      "candidate_objectives": [
+        0.0,
+        0.20421686746987952,
+        0.11842719282327012
+      ],
+      "completed_after_deadline": false,
+      "evaluated_feasible_fraction": 1.0,
+      "min_violation": 0,
+      "hypervolume": 0.9423941155465465
+    },
+    {
+      "generation": 4,
+      "evaluations": 5,
+      "elapsed_seconds": 0.27238342900000134,
+      "schedule_sha256": "63f99a6a391ac0336b3a63959a4515cdbf0be04e49bc1417b018e18d08cf2124",
+      "candidate_feasible": true,
+      "candidate_violation": 0,
+      "candidate_objectives": [
+        1.0,
+        0.20943775100401607,
+        0.06910137480542627
+      ],
+      "completed_after_deadline": false,
+      "evaluated_feasible_fraction": 1.0,
+      "min_violation": 0,
+      "hypervolume": 0.9653170344300328
+    },
+    {
+      "generation": 5,
+      "evaluations": 6,
+      "elapsed_seconds": 0.33495651199996246,
+      "schedule_sha256": "3c0be1a9386c12c03ef007933cefe9385b766201b039e3d10c89fc82eef11f95",
+      "candidate_feasible": true,
+      "candidate_violation": 0,
+      "candidate_objectives": [
+        0.5,
+        0.19738955823293172,
+        0.095
+      ],
+      "completed_after_deadline": false,
+      "evaluated_feasible_fraction": 1.0,
+      "min_violation": 0,
+      "hypervolume": 0.9653170344300328
+    },
+    {
+      "generation": 6,
+      "evaluations": 7,
+      "elapsed_seconds": 0.405392220000067,
+      "schedule_sha256": "d26d08c94df0e789b31bd18ad6e71d75ec89d2ad1d7c195720ddee473d1ab9b3",
+      "candidate_feasible": true,
+      "candidate_violation": 0,
+      "candidate_objectives": [
+        0.0,
+        0.19518072289156627,
+        0.09630680142129111
+      ],
+      "completed_after_deadline": false,
+      "evaluated_feasible_fraction": 1.0,
+      "min_violation": 0,
+      "hypervolume": 0.9653170344300328
+    },
+    {
+      "generation": 7,
+      "evaluations": 8,
+      "elapsed_seconds": 0.4640221280001242,
+      "schedule_sha256": "8daf6eb96ea838124b88ec3f795784c772fa789187dcc13934309cabbddfd7a6",
+      "candidate_feasible": true,
+      "candidate_violation": 0,
+      "candidate_objectives": [
+        1.0,
+        0.19518072289156627,
+        0.10136567466356647
+      ],
+      "completed_after_deadline": false,
+      "evaluated_feasible_fraction": 1.0,
+      "min_violation": 0,
+      "hypervolume": 0.9653170344300328
+    },
+    {
+      "generation": 8,
+      "evaluations": 9,
+      "elapsed_seconds": 0.5166184120000707,
+      "schedule_sha256": "d559286d2f8f4ada4692aee4ee82baa62c15172d1822f200c4a5437eff82d735",
+      "candidate_feasible": true,
+      "candidate_violation": 0,
+      "candidate_objectives": [
+        0.0,
+        0.19096385542168676,
+        0.10012492197250394
+      ],
+      "completed_after_deadline": false,
+      "evaluated_feasible_fraction": 1.0,
+      "min_violation": 0,
+      "hypervolume": 0.9653170344300328
+    },
+    {
+      "generation": 9,
+      "evaluations": 10,
+      "elapsed_seconds": 0.5701294220000364,
+      "schedule_sha256": "405a1f7a5fa73a3a2242623c4e17ff04170a842738cbc58d28b6b8f8fc6cf32a",
+      "candidate_feasible": true,
+      "candidate_violation": 0,
+      "candidate_objectives": [
+        1.5,
+        0.2022088353413655,
+        0.10735455276791946
+      ],
+      "completed_after_deadline": false,
+      "evaluated_feasible_fraction": 1.0,
+      "min_violation": 0,
+      "hypervolume": 0.9653170344300328
+    },
+    {
+      "generation": 10,
+      "evaluations": 11,
+      "elapsed_seconds": 0.6276532940000834,
+      "schedule_sha256": "9c148d12f15e3b5f56b06b439897c0786ce9959dd38394f48f70892146e5b0f5",
+      "candidate_feasible": true,
+      "candidate_violation": 0,
+      "candidate_objectives": [
+        0.5,
+        0.19678714859437754,
+        0.0634428877022476
+      ],
+      "completed_after_deadline": false,
+      "evaluated_feasible_fraction": 1.0,
+      "min_violation": 0,
+      "hypervolume": 0.9770379537616669
+    },
+    {
+      "generation": 11,
+      "evaluations": 12,
+      "elapsed_seconds": 0.6896933100001661,
+      "schedule_sha256": "a3bd384416176eb99263ff950a6179e6ca0ca87676a2a4b2d0972dde5217dd29",
+      "candidate_feasible": true,
+      "candidate_violation": 0,
+      "candidate_objectives": [
+        1.0,
+        0.19899598393574297,
+        0.07599342076785333
+      ],
+      "completed_after_deadline": false,
+      "evaluated_feasible_fraction": 1.0,
+      "min_violation": 0,
+      "hypervolume": 0.9770379537616669
+    },
+    {
+      "generation": 12,
+      "evaluations": 13,
+      "elapsed_seconds": 0.7463643090000005,
+      "schedule_sha256": "8e2b790738a901768f62e4eb53f50f9aec61e0ebd66fbe321dc0f4c5ffe8415a",
+      "candidate_feasible": true,
+      "candidate_violation": 0,
+      "candidate_objectives": [
+        1.0,
+        0.19196787148594377,
+        0.1107925990308017
+      ],
+      "completed_after_deadline": false,
+      "evaluated_feasible_fraction": 1.0,
+      "min_violation": 0,
+      "hypervolume": 0.9770379537616669
+    },
+    {
+      "generation": 13,
+      "evaluations": 14,
+      "elapsed_seconds": 0.8031893310001124,
+      "schedule_sha256": "c9cc4b1fd0bb258b5d4f7a5e0875a5452afa847b4032fdc78d220a2044b8b637",
+      "candidate_feasible": true,
+      "candidate_violation": 0,
+      "candidate_objectives": [
+        2.0,
+        0.20120481927710843,
+        0.11521718621802912
+      ],
+      "completed_after_deadline": false,
+      "evaluated_feasible_fraction": 1.0,
+      "min_violation": 0,
+      "hypervolume": 0.9770379537616669
+    },
+    {
+      "generation": 14,
+      "evaluations": 15,
+      "elapsed_seconds": 0.8582541260000198,
+      "schedule_sha256": "523a12124386034e84579177c25078c25d9c8ce52968e5aebd9a82af33104068",
+      "candidate_feasible": true,
+      "candidate_violation": 0,
+      "candidate_objectives": [
+        2.0,
+        0.19016064257028115,
+        0.08381527307120105
+      ],
+      "completed_after_deadline": false,
+      "evaluated_feasible_fraction": 1.0,
+      "min_violation": 0,
+      "hypervolume": 0.9770594432302978
+    },
+    {
+      "generation": 15,
+      "evaluations": 16,
+      "elapsed_seconds": 0.9175855670000601,
+      "schedule_sha256": "72e203aeadd7f4227eb7633ae257271540d1dd72ddf440c77c88562c2bb54d08",
+      "candidate_feasible": true,
+      "candidate_violation": 0,
+      "candidate_objectives": [
+        0.0,
+        0.2096385542168675,
+        0.09233092656309695
+      ],
+      "completed_after_deadline": false,
+      "evaluated_feasible_fraction": 1.0,
+      "min_violation": 0,
+      "hypervolume": 0.977061342729403
+    },
+    {
+      "generation": 16,
+      "evaluations": 17,
+      "elapsed_seconds": 0.9723996019999959,
+      "schedule_sha256": "cec7087af22333e893c5bfbc1e17d0ecce3d074af19082cd45838b0c00fc5e3b",
+      "candidate_feasible": true,
+      "candidate_violation": 0,
+      "candidate_objectives": [
+        1.0,
+        0.1953815261044177,
+        0.07088723439378915
+      ],
+      "completed_after_deadline": false,
+      "evaluated_feasible_fraction": 1.0,
+      "min_violation": 0,
+      "hypervolume": 0.9771012699096897
+    },
+    {
+      "generation": 17,
+      "evaluations": 18,
+      "elapsed_seconds": 1.028473576000124,
+      "schedule_sha256": "95ecc9b35d82a72554e35692c2e445d425718ae90ae1829244a4c25de286a806",
+      "candidate_feasible": true,
+      "candidate_violation": 0,
+      "candidate_objectives": [
+        2.0,
+        0.20180722891566266,
+        0.07433034373659254
+      ],
+      "completed_after_deadline": false,
+      "evaluated_feasible_fraction": 1.0,
+      "min_violation": 0,
+      "hypervolume": 0.9771012699096897
+    },
+    {
+      "generation": 18,
+      "evaluations": 19,
+      "elapsed_seconds": 1.0829472259999875,
+      "schedule_sha256": "8a24c3a4d8ac187d5f84fd99fc657f5295332841b39c915ce102b28ed7e82854",
+      "candidate_feasible": true,
+      "candidate_violation": 0,
+      "candidate_objectives": [
+        1.0,
+        0.19718875502008032,
+        0.12559856687080473
+      ],
+      "completed_after_deadline": false,
+      "evaluated_feasible_fraction": 1.0,
+      "min_violation": 0,
+      "hypervolume": 0.9771012699096897
+    },
+    {
+      "generation": 19,
+      "evaluations": 20,
+      "elapsed_seconds": 1.1389034410001386,
+      "schedule_sha256": "68cd28cf0b6fd5e825c4c11f93acb3ae87825de75923dee80641e5db8b52d367",
+      "candidate_feasible": true,
+      "candidate_violation": 0,
+      "candidate_objectives": [
+        0.0,
+        0.1965863453815261,
+        0.14239030865898142
+      ],
+      "completed_after_deadline": false,
+      "evaluated_feasible_fraction": 1.0,
+      "min_violation": 0,
+      "hypervolume": 0.9771012699096897
+    },
+    {
+      "generation": 20,
+      "evaluations": 21,
+      "elapsed_seconds": 1.2027282720000585,
+      "schedule_sha256": "44aecde992080f1142d68b79bba5dbdae2748c101f3381dbb0e56ccae1951f6e",
+      "candidate_feasible": true,
+      "candidate_violation": 0,
+      "candidate_objectives": [
+        1.0,
+        0.1965863453815261,
+        0.11302654555457316
+      ],
+      "completed_after_deadline": false,
+      "evaluated_feasible_fraction": 1.0,
+      "min_violation": 0,
+      "hypervolume": 0.9771012699096897
+    },
+    {
+      "generation": 21,
+      "evaluations": 22,
+      "elapsed_seconds": 1.2603298650001307,
+      "schedule_sha256": "cabe9add3a7a4d9ae065dd35049271549f4745ab967eff14cf08e65cd9e5e657",
+      "candidate_feasible": true,
+      "candidate_violation": 0,
+      "candidate_objectives": [
+        1.0,
+        0.19016064257028115,
+        0.0792148975887743
+      ],
+      "completed_after_deadline": false,
+      "evaluated_feasible_fraction": 1.0,
+      "min_violation": 0,
+      "hypervolume": 0.9771540578184386
+    },
+    {
+      "generation": 22,
+      "evaluations": 23,
+      "elapsed_seconds": 1.3212291320000986,
+      "schedule_sha256": "0fcd97b9bdac46f7c52931211313552003fd8430a42e1bf0906f0909e083de11",
+      "candidate_feasible": true,
+      "candidate_violation": 0,
+      "candidate_objectives": [
+        2.0,
+        0.21385542168674698,
+        0.12359207094308276
+      ],
+      "completed_after_deadline": false,
+      "evaluated_feasible_fraction": 1.0,
+      "min_violation": 0,
+      "hypervolume": 0.9771540578184386
+    },
+    {
+      "generation": 23,
+      "evaluations": 24,
+      "elapsed_seconds": 1.3791263400000844,
+      "schedule_sha256": "bcd52995064d577f1c7b7afa3bdbe516dca26e1818b5c6d7aa7c3deeb6275c43",
+      "candidate_feasible": true,
+      "candidate_violation": 0,
+      "candidate_objectives": [
+        3.0,
+        0.21646586345381527,
+        0.095
+      ],
+      "completed_after_deadline": false,
+      "evaluated_feasible_fraction": 1.0,
+      "min_violation": 0,
+      "hypervolume": 0.9771540578184386
+    },
+    {
+      "generation": 24,
+      "evaluations": 25,
+      "elapsed_seconds": 1.434747808000111,
+      "schedule_sha256": "494c45f25033b24c83ef7898efe18640900e89436927aea63357f296a8bbc859",
+      "candidate_feasible": true,
+      "candidate_violation": 0,
+      "candidate_objectives": [
+        1.5,
+        0.19477911646586346,
+        0.10851267207105354
+      ],
+      "completed_after_deadline": false,
+      "evaluated_feasible_fraction": 1.0,
+      "min_violation": 0,
+      "hypervolume": 0.9771540578184386
+    },
+    {
+      "generation": 25,
+      "evaluations": 26,
+      "elapsed_seconds": 1.4897280449999926,
+      "schedule_sha256": "505b5de5c8359d0a7ee2e05a5aad8e313335f2989d39fae154adf3483cf76bee",
+      "candidate_feasible": true,
+      "candidate_violation": 0,
+      "candidate_objectives": [
+        1.5,
+        0.20361445783132534,
+        0.10012492197250393
+      ],
+      "completed_after_deadline": false,
+      "evaluated_feasible_fraction": 1.0,
+      "min_violation": 0,
+      "hypervolume": 0.9771540578184386
+    },
+    {
+      "generation": 26,
+      "evaluations": 27,
+      "elapsed_seconds": 1.5483645270001034,
+      "schedule_sha256": "81d9ff34d1284178c3118bdafee1d69e5cf9b31df83e1ffc08808117cb45d367",
+      "candidate_feasible": true,
+      "candidate_violation": 0,
+      "candidate_objectives": [
+        1.0,
+        0.19578313253012047,
+        0.08381527307120105
+      ],
+      "completed_after_deadline": false,
+      "evaluated_feasible_fraction": 1.0,
+      "min_violation": 0,
+      "hypervolume": 0.9771540578184386
+    },
+    {
+      "generation": 27,
+      "evaluations": 28,
+      "elapsed_seconds": 1.6015469200001462,
+      "schedule_sha256": "1e38616369984738b1e78d54ff62ada91e84cd62dc67a04086453c3f71271a6d",
+      "candidate_feasible": true,
+      "candidate_violation": 0,
+      "candidate_objectives": [
+        2.5,
+        0.19518072289156627,
+        0.09233092656309695
+      ],
+      "completed_after_deadline": false,
+      "evaluated_feasible_fraction": 1.0,
+      "min_violation": 0,
+      "hypervolume": 0.9771540578184386
+    },
+    {
+      "generation": 28,
+      "evaluations": 29,
+      "elapsed_seconds": 1.6563689869999507,
+      "schedule_sha256": "5e7a6999e79762e667af8ac8db9a4b579a5fe04ae5e75ecdd01471cb6b2a9582",
+      "candidate_feasible": true,
+      "candidate_violation": 0,
+      "candidate_objectives": [
+        0.5,
+        0.18674698795180722,
+        0.08381527307120105
+      ],
+      "completed_after_deadline": false,
+      "evaluated_feasible_fraction": 1.0,
+      "min_violation": 0,
+      "hypervolume": 0.9771679193469321
+    },
+    {
+      "generation": 29,
+      "evaluations": 30,
+      "elapsed_seconds": 1.715580096000167,
+      "schedule_sha256": "767d20c371b54e403ec3ecaf177a1c5be68d69e8f10667b399d7ac663114588e",
+      "candidate_feasible": true,
+      "candidate_violation": 0,
+      "candidate_objectives": [
+        1.0,
+        0.2058232931726908,
+        0.09500000000000001
+      ],
+      "completed_after_deadline": false,
+      "evaluated_feasible_fraction": 1.0,
+      "min_violation": 0,
+      "hypervolume": 0.9771679193469321
+    },
+    {
+      "generation": 30,
+      "evaluations": 31,
+      "elapsed_seconds": 1.7699089560001084,
+      "schedule_sha256": "f9055490713716ed94e755454d034a44f224222292d48558637c0dff4ce2806a",
+      "candidate_feasible": true,
+      "candidate_violation": 0,
+      "candidate_objectives": [
+        0.5,
+        0.20742971887550202,
+        0.08674675786448736
+      ],
+      "completed_after_deadline": false,
+      "evaluated_feasible_fraction": 1.0,
+      "min_violation": 0,
+      "hypervolume": 0.9771679193469321
+    },
+    {
+      "generation": 31,
+      "evaluations": 32,
+      "elapsed_seconds": 1.8248629229999551,
+      "schedule_sha256": "a2242ed8c25c0f754edd84b34ac7e5d3354a845ebb7c2a238acc9c8850372e6b",
+      "candidate_feasible": true,
+      "candidate_violation": 0,
+      "candidate_objectives": [
+        0.5,
+        0.19979919678714864,
+        0.10735455276791946
+      ],
+      "completed_after_deadline": false,
+      "evaluated_feasible_fraction": 1.0,
+      "min_violation": 0,
+      "hypervolume": 0.9771679193469321
+    },
+    {
+      "generation": 32,
+      "evaluations": 33,
+      "elapsed_seconds": 1.8808148420000634,
+      "schedule_sha256": "e7270012ad2e6e23596db4aef7b43f77103f8f9b26bc649b7c11a39bae1d0847",
+      "candidate_feasible": true,
+      "candidate_violation": 0,
+      "candidate_objectives": [
+        0.0,
+        0.21566265060240966,
+        0.10012492197250393
+      ],
+      "completed_after_deadline": false,
+      "evaluated_feasible_fraction": 1.0,
+      "min_violation": 0,
+      "hypervolume": 0.9771679193469321
+    },
+    {
+      "generation": 33,
+      "evaluations": 34,
+      "elapsed_seconds": 1.9334618830000636,
+      "schedule_sha256": "9ce59e6550aa8e66ea78f764a0542315f5b94190d31fb8ca0d4754c11efaa992",
+      "candidate_feasible": true,
+      "candidate_violation": 0,
+      "candidate_objectives": [
+        1.5,
+        0.20240963855421687,
+        0.08231038816577164
+      ],
+      "completed_after_deadline": false,
+      "evaluated_feasible_fraction": 1.0,
+      "min_violation": 0,
+      "hypervolume": 0.9771679193469321
+    },
+    {
+      "generation": 34,
+      "evaluations": 35,
+      "elapsed_seconds": 1.9934281560001637,
+      "schedule_sha256": "4acf400bee382d5f04093086bbc7722f309b9840305cc0dd001521a5ddcbf73b",
+      "candidate_feasible": true,
+      "candidate_violation": 0,
+      "candidate_objectives": [
+        0.5,
+        0.20240963855421687,
+        0.09759610647971569
+      ],
+      "completed_after_deadline": false,
+      "evaluated_feasible_fraction": 1.0,
+      "min_violation": 0,
+      "hypervolume": 0.9771679193469321
+    },
+    {
+      "generation": 35,
+      "evaluations": 36,
+      "elapsed_seconds": 2.0492548160000297,
+      "schedule_sha256": "87668618919a211e9e8f2546f8bc259269e77ed3c2362eba64b4aae014ad92f8",
+      "candidate_feasible": true,
+      "candidate_violation": 0,
+      "candidate_objectives": [
+        2.0,
+        0.1927710843373494,
+        0.09096702699330127
+      ],
+      "completed_after_deadline": false,
+      "evaluated_feasible_fraction": 1.0,
+      "min_violation": 0,
+      "hypervolume": 0.9771679193469321
+    },
+    {
+      "generation": 36,
+      "evaluations": 37,
+      "elapsed_seconds": 2.103587702000141,
+      "schedule_sha256": "c35340fc4dabdf85879eba7b785e5bc7f37832c1665586744a18aca1553cda1a",
+      "candidate_feasible": true,
+      "candidate_violation": 0,
+      "candidate_objectives": [
+        0.5,
+        0.19518072289156627,
+        0.11629703349613006
+      ],
+      "completed_after_deadline": false,
+      "evaluated_feasible_fraction": 1.0,
+      "min_violation": 0,
+      "hypervolume": 0.9771679193469321
+    },
+    {
+      "generation": 37,
+      "evaluations": 38,
+      "elapsed_seconds": 2.155215508000083,
+      "schedule_sha256": "05c16fd99fb2999b6b27676ecb57f0b6760011ae27bf8f3c48510a61abf8bfe3",
+      "candidate_feasible": true,
+      "candidate_violation": 0,
+      "candidate_objectives": [
+        1.5,
+        0.1945783132530121,
+        0.09233092656309695
+      ],
+      "completed_after_deadline": false,
+      "evaluated_feasible_fraction": 1.0,
+      "min_violation": 0,
+      "hypervolume": 0.9771679193469321
+    },
+    {
+      "generation": 38,
+      "evaluations": 39,
+      "elapsed_seconds": 2.210669904000042,
+      "schedule_sha256": "c4aaf65741b3bfadc00332aaa4255ba35cf99e050d2285c791ae80945cda5d36",
+      "candidate_feasible": true,
+      "candidate_violation": 0,
+      "candidate_objectives": [
+        1.5,
+        0.1897590361445783,
+        0.09096702699330127
+      ],
+      "completed_after_deadline": false,
+      "evaluated_feasible_fraction": 1.0,
+      "min_violation": 0,
+      "hypervolume": 0.9771679193469321
+    },
+    {
+      "generation": 39,
+      "evaluations": 40,
+      "elapsed_seconds": 2.2689314340000237,
+      "schedule_sha256": "08a63b986bb5bfe65378383571469dcc9e27e9dd00cf0e8fde7f5b90f3929122",
+      "candidate_feasible": true,
+      "candidate_violation": 0,
+      "candidate_objectives": [
+        2.0,
+        0.20481927710843373,
+        0.08231038816577164
+      ],
+      "completed_after_deadline": false,
+      "evaluated_feasible_fraction": 1.0,
+      "min_violation": 0,
+      "hypervolume": 0.9771679193469321
+    },
+    {
+      "generation": 40,
+      "evaluations": 41,
+      "elapsed_seconds": 2.3235137270000905,
+      "schedule_sha256": "d48d6c569b21d81949c4e06c28be0e7f9f3dbc3363c5b052f75d9ef02489f1f3",
+      "candidate_feasible": true,
+      "candidate_violation": 0,
+      "candidate_objectives": [
+        1.0,
+        0.20883534136546186,
+        0.088175960442742
+      ],
+      "completed_after_deadline": false,
+      "evaluated_feasible_fraction": 1.0,
+      "min_violation": 0,
+      "hypervolume": 0.9771679193469321
+    },
+    {
+      "generation": 41,
+      "evaluations": 42,
+      "elapsed_seconds": 2.3825738560001355,
+      "schedule_sha256": "0ee565cd6dc4db42e3dcf946c42c711b4afdec41feaba931251f8ffb73fb9d96",
+      "candidate_feasible": true,
+      "candidate_violation": 0,
+      "candidate_objectives": [
+        1.0,
+        0.19196787148594377,
+        0.12854960132182444
+      ],
+      "completed_after_deadline": false,
+      "evaluated_feasible_fraction": 1.0,
+      "min_violation": 0,
+      "hypervolume": 0.9771679193469321
+    },
+    {
+      "generation": 42,
+      "evaluations": 43,
+      "elapsed_seconds": 2.438582202000134,
+      "schedule_sha256": "e091c51667c831956d666367f3bd8c68852a4bab03cd8b9d3fc4d21a00267e29",
+      "candidate_feasible": true,
+      "candidate_violation": 0,
+      "candidate_objectives": [
+        0.5,
+        0.1917670682730924,
+        0.10500000000000001
+      ],
+      "completed_after_deadline": false,
+      "evaluated_feasible_fraction": 1.0,
+      "min_violation": 0,
+      "hypervolume": 0.9771679193469321
+    },
+    {
+      "generation": 43,
+      "evaluations": 44,
+      "elapsed_seconds": 2.503219953000098,
+      "schedule_sha256": "9f2cd13922d22505ca95b8f34192de8f49fd2cb473dca5878c306cf8ade00aa4",
+      "candidate_feasible": true,
+      "candidate_violation": 0,
+      "candidate_objectives": [
+        1.5,
+        0.19236947791164657,
+        0.07433034373659253
+      ],
+      "completed_after_deadline": false,
+      "evaluated_feasible_fraction": 1.0,
+      "min_violation": 0,
+      "hypervolume": 0.9772002168128796
+    },
+    {
+      "generation": 44,
+      "evaluations": 45,
+      "elapsed_seconds": 2.574079494999978,
+      "schedule_sha256": "189109016777de5065926e6b205beba9e51a3e9159ccd96a4fce381d9b1df7cc",
+      "candidate_feasible": true,
+      "candidate_violation": 0,
+      "candidate_objectives": [
+        0.5,
+        0.20060240963855425,
+        0.10851267207105353
+      ],
+      "completed_after_deadline": false,
+      "evaluated_feasible_fraction": 1.0,
+      "min_violation": 0,
+      "hypervolume": 0.9772002168128796
+    },
+    {
+      "generation": 45,
+      "evaluations": 46,
+      "elapsed_seconds": 2.636744507000003,
+      "schedule_sha256": "4df69f7d0a001c44cf3db36f78345fa33496a4999c4fa1dee74e6090e6e226c9",
+      "candidate_feasible": true,
+      "candidate_violation": 0,
+      "candidate_objectives": [
+        2.5,
+        0.19819277108433733,
+        0.10380269746013347
+      ],
+      "completed_after_deadline": false,
+      "evaluated_feasible_fraction": 1.0,
+      "min_violation": 0,
+      "hypervolume": 0.9772002168128796
+    },
+    {
+      "generation": 46,
+      "evaluations": 47,
+      "elapsed_seconds": 2.7084356170000774,
+      "schedule_sha256": "a973d2b953fa7608898a2f4ca0e3f39111a2e3f0beecaa2df1846be7005c1f74",
+      "candidate_feasible": true,
+      "candidate_violation": 0,
+      "candidate_objectives": [
+        1.5,
+        0.19698795180722894,
+        0.07088723439378913
+      ],
+      "completed_after_deadline": false,
+      "evaluated_feasible_fraction": 1.0,
+      "min_violation": 0,
+      "hypervolume": 0.9772002168128796
+    },
+    {
+      "generation": 47,
+      "evaluations": 48,
+      "elapsed_seconds": 2.770461422000153,
+      "schedule_sha256": "a7160d5a93fc84bf79429061e5c69c06f295de805866925ca1022af440a574b2",
+      "candidate_feasible": true,
+      "candidate_violation": 0,
+      "candidate_objectives": [
+        1.0,
+        0.19959839357429718,
+        0.10259142264341597
+      ],
+      "completed_after_deadline": false,
+      "evaluated_feasible_fraction": 1.0,
+      "min_violation": 0,
+      "hypervolume": 0.9772002168128796
+    },
+    {
+      "generation": 48,
+      "evaluations": 49,
+      "elapsed_seconds": 2.8316070710000076,
+      "schedule_sha256": "4ba82619209cae56155a833e28ad075811c9a5ace03bfcc1946d0e5cbb81146a",
+      "candidate_feasible": true,
+      "candidate_violation": 0,
+      "candidate_objectives": [
+        1.0,
+        0.2104417670682731,
+        0.10500000000000001
+      ],
+      "completed_after_deadline": false,
+      "evaluated_feasible_fraction": 1.0,
+      "min_violation": 0,
+      "hypervolume": 0.9772002168128796
+    },
+    {
+      "generation": 49,
+      "evaluations": 50,
+      "elapsed_seconds": 2.8910619289999886,
+      "schedule_sha256": "4711b60b10ade5467bba400ff7a3a3cec2c1316bb05f660048d6d009da4f9e53",
+      "candidate_feasible": true,
+      "candidate_violation": 0,
+      "candidate_objectives": [
+        0.0,
+        0.2022088353413655,
+        0.09233092656309695
+      ],
+      "completed_after_deadline": false,
+      "evaluated_feasible_fraction": 1.0,
+      "min_violation": 0,
+      "hypervolume": 0.9772002326634586
+    },
+    {
+      "generation": 50,
+      "evaluations": 51,
+      "elapsed_seconds": 2.9498459700000694,
+      "schedule_sha256": "4e67818f374bee3dc9bf9a4d31ab81654793f67610a9853874fa482510b8c24f",
+      "candidate_feasible": true,
+      "candidate_violation": 0,
+      "candidate_objectives": [
+        0.5,
+        0.19497991967871486,
+        0.10259142264341596
+      ],
+      "completed_after_deadline": false,
+      "evaluated_feasible_fraction": 1.0,
+      "min_violation": 0,
+      "hypervolume": 0.9772002326634586
+    },
+    {
+      "generation": 51,
+      "evaluations": 52,
+      "elapsed_seconds": 3.0114334190000136,
+      "schedule_sha256": "d70124e733e0bd9b2935bf72c41afed4e46d4193c59c47a730531b6b942f0595",
+      "candidate_feasible": true,
+      "candidate_violation": 0,
+      "candidate_objectives": [
+        1.0,
+        0.19357429718875502,
+        0.07762087348130012
+      ],
+      "completed_after_deadline": false,
+      "evaluated_feasible_fraction": 1.0,
+      "min_violation": 0,
+      "hypervolume": 0.9772002372361037
+    },
+    {
+      "generation": 52,
+      "evaluations": 53,
+      "elapsed_seconds": 3.069189624000046,
+      "schedule_sha256": "770144fd4d10fcf82ba41849708a987e01608ead64b6d53378bf6ef462eca224",
+      "candidate_feasible": true,
+      "candidate_violation": 0,
+      "candidate_objectives": [
+        0.0,
+        0.19759036144578315,
+        0.1205197079319395
+      ],
+      "completed_after_deadline": false,
+      "evaluated_feasible_fraction": 1.0,
+      "min_violation": 0,
+      "hypervolume": 0.9772002372361037
+    },
+    {
+      "generation": 53,
+      "evaluations": 54,
+      "elapsed_seconds": 3.123590722000017,
+      "schedule_sha256": "40996e11ce4484871b7c0c4b739471f456e6455a1f628ad02aefc2781cd6e43e",
+      "candidate_feasible": true,
+      "candidate_violation": 0,
+      "candidate_objectives": [
+        1.0,
+        0.20060240963855425,
+        0.07921489758877431
+      ],
+      "completed_after_deadline": false,
+      "evaluated_feasible_fraction": 1.0,
+      "min_violation": 0,
+      "hypervolume": 0.9772002372361037
+    },
+    {
+      "generation": 54,
+      "evaluations": 55,
+      "elapsed_seconds": 3.1810729210001227,
+      "schedule_sha256": "4ddde00f1b257c15ac37ff5470d0f5dc591ec532e0c30d0520ca97a1a38203b6",
+      "candidate_feasible": true,
+      "candidate_violation": 0,
+      "candidate_objectives": [
+        1.5,
+        0.198995983935743,
+        0.09096702699330128
+      ],
+      "completed_after_deadline": false,
+      "evaluated_feasible_fraction": 1.0,
+      "min_violation": 0,
+      "hypervolume": 0.9772002372361037
+    },
+    {
+      "generation": 55,
+      "evaluations": 56,
+      "elapsed_seconds": 3.2425423209999735,
+      "schedule_sha256": "3bfed431df544ff5637e5bd9825621e177e2c3e84e4c8b99592600f78b400d2b",
+      "candidate_feasible": true,
+      "candidate_violation": 0,
+      "candidate_objectives": [
+        1.5,
+        0.1965863453815261,
+        0.10618380290797652
+      ],
+      "completed_after_deadline": false,
+      "evaluated_feasible_fraction": 1.0,
+      "min_violation": 0,
+      "hypervolume": 0.9772002372361037
+    },
+    {
+      "generation": 56,
+      "evaluations": 57,
+      "elapsed_seconds": 3.3029028810001364,
+      "schedule_sha256": "e30af1da9722aa3ae47cf627e013157ed3995bd9cf07b2be8228f45bd2312f66",
+      "candidate_feasible": true,
+      "candidate_violation": 0,
+      "candidate_objectives": [
+        0.5,
+        0.19698795180722894,
+        0.07762087348130013
+      ],
+      "completed_after_deadline": false,
+      "evaluated_feasible_fraction": 1.0,
+      "min_violation": 0,
+      "hypervolume": 0.9772002372361037
+    },
+    {
+      "generation": 57,
+      "evaluations": 58,
+      "elapsed_seconds": 3.3603238670000337,
+      "schedule_sha256": "13487c60b6b652ace5520c66d4ac712d411b57095ae5f789fb3b9dbe51fb4705",
+      "candidate_feasible": true,
+      "candidate_violation": 0,
+      "candidate_objectives": [
+        1.0,
+        0.20080321285140565,
+        0.0792148975887743
+      ],
+      "completed_after_deadline": false,
+      "evaluated_feasible_fraction": 1.0,
+      "min_violation": 0,
+      "hypervolume": 0.9772002372361037
+    },
+    {
+      "generation": 58,
+      "evaluations": 59,
+      "elapsed_seconds": 3.418152381000027,
+      "schedule_sha256": "46364ef1b573d7ff2b2ac863b845951412080d94289aa954654e70b5b23bd40f",
+      "candidate_feasible": true,
+      "candidate_violation": 0,
+      "candidate_objectives": [
+        4.0,
+        0.20642570281124498,
+        0.07433034373659253
+      ],
+      "completed_after_deadline": false,
+      "evaluated_feasible_fraction": 1.0,
+      "min_violation": 0,
+      "hypervolume": 0.9772002372361037
+    },
+    {
+      "generation": 59,
+      "evaluations": 60,
+      "elapsed_seconds": 3.474796599000001,
+      "schedule_sha256": "b4bb28a70dec40e46478a50e9bda013d39e37f983c56cdaef0d3558272b90c8a",
+      "candidate_feasible": true,
+      "candidate_violation": 0,
+      "candidate_objectives": [
+        1.5,
+        0.20200803212851404,
+        0.08231038816577164
+      ],
+      "completed_after_deadline": false,
+      "evaluated_feasible_fraction": 1.0,
+      "min_violation": 0,
+      "hypervolume": 0.9772002372361037
+    },
+    {
+      "generation": 60,
+      "evaluations": 61,
+      "elapsed_seconds": 3.531850198000029,
+      "schedule_sha256": "4cdfd4e448f51d86a81df2c1261e8de75e2712f9b86299f1c4df7491c722cab4",
+      "candidate_feasible": true,
+      "candidate_violation": 0,
+      "candidate_objectives": [
+        1.5,
+        0.19377510040160645,
+        0.1205197079319395
+      ],
+      "completed_after_deadline": false,
+      "evaluated_feasible_fraction": 1.0,
+      "min_violation": 0,
+      "hypervolume": 0.9772002372361037
+    },
+    {
+      "generation": 61,
+      "evaluations": 62,
+      "elapsed_seconds": 3.5901692439999806,
+      "schedule_sha256": "98e809e1731ebd8b784013fb8fa055039482019502af60b39b2062c87e8cf239",
+      "candidate_feasible": true,
+      "candidate_violation": 0,
+      "candidate_objectives": [
+        0.5,
+        0.19417670682730925,
+        0.07433034373659253
+      ],
+      "completed_after_deadline": false,
+      "evaluated_feasible_fraction": 1.0,
+      "min_violation": 0,
+      "hypervolume": 0.977200282830309
+    },
+    {
+      "generation": 62,
+      "evaluations": 63,
+      "elapsed_seconds": 3.6475367390000883,
+      "schedule_sha256": "ad7f76c53c50e504e0b26628c694902e482694b99d6a00bc53f723ceae572539",
+      "candidate_feasible": true,
+      "candidate_violation": 0,
+      "candidate_objectives": [
+        0.0,
+        0.19859437751004017,
+        0.09233092656309695
+      ],
+      "completed_after_deadline": false,
+      "evaluated_feasible_fraction": 1.0,
+      "min_violation": 0,
+      "hypervolume": 0.9772002905414015
+    },
+    {
+      "generation": 63,
+      "evaluations": 64,
+      "elapsed_seconds": 3.7021719839999605,
+      "schedule_sha256": "8d8f8f30d45ecb70a1672256aa5e9c7a19c4ecb5d1b663189416d799abfee065",
+      "candidate_feasible": true,
+      "candidate_violation": 0,
+      "candidate_objectives": [
+        1.5,
+        0.19497991967871486,
+        0.10735455276791946
+      ],
+      "completed_after_deadline": false,
+      "evaluated_feasible_fraction": 1.0,
+      "min_violation": 0,
+      "hypervolume": 0.9772002905414015
+    },
+    {
+      "generation": 64,
+      "evaluations": 65,
+      "elapsed_seconds": 3.7580704320000677,
+      "schedule_sha256": "ff1de31742a0b1237587a767a2f4611d2aa1ace61195cba85254e9021335c460",
+      "candidate_feasible": true,
+      "candidate_violation": 0,
+      "candidate_objectives": [
+        1.5,
+        0.19377510040160645,
+        0.08674675786448738
+      ],
+      "completed_after_deadline": false,
+      "evaluated_feasible_fraction": 1.0,
+      "min_violation": 0,
+      "hypervolume": 0.9772002905414015
+    },
+    {
+      "generation": 65,
+      "evaluations": 66,
+      "elapsed_seconds": 3.8135759240001335,
+      "schedule_sha256": "26bf667c408001ba2e46f14504b6dd5c5d901ec548553e8d2849570548025e76",
+      "candidate_feasible": true,
+      "candidate_violation": 0,
+      "candidate_objectives": [
+        1.0,
+        0.1953815261044177,
+        0.11302654555457317
+      ],
+      "completed_after_deadline": false,
+      "evaluated_feasible_fraction": 1.0,
+      "min_violation": 0,
+      "hypervolume": 0.9772002905414015
+    },
+    {
+      "generation": 66,
+      "evaluations": 67,
+      "elapsed_seconds": 3.8742038899999898,
+      "schedule_sha256": "86acaddd73781366a1512a94f84113e97ff9fe6804b2ef8825606b388eb84440",
+      "candidate_feasible": true,
+      "candidate_violation": 0,
+      "candidate_objectives": [
+        0.0,
+        0.19497991967871486,
+        0.08674675786448738
+      ],
+      "completed_after_deadline": false,
+      "evaluated_feasible_fraction": 1.0,
+      "min_violation": 0,
+      "hypervolume": 0.9772083201331354
+    },
+    {
+      "generation": 67,
+      "evaluations": 68,
+      "elapsed_seconds": 3.9311744630001613,
+      "schedule_sha256": "3ebcb531ea92671d4d09eadc946d4873ffcf193ccc4283e85a5aad621d1385b4",
+      "candidate_feasible": true,
+      "candidate_violation": 0,
+      "candidate_objectives": [
+        2.5,
+        0.19678714859437754,
+        0.06144102863722255
+      ],
+      "completed_after_deadline": false,
+      "evaluated_feasible_fraction": 1.0,
+      "min_violation": 0,
+      "hypervolume": 0.9811718007300821
+    },
+    {
+      "generation": 68,
+      "evaluations": 69,
+      "elapsed_seconds": 3.9866458040000907,
+      "schedule_sha256": "8383b151d38004dd58be7139cb3b59e24919d961549bda7d34e8a9fee8aad29e",
+      "candidate_feasible": true,
+      "candidate_violation": 0,
+      "candidate_objectives": [
+        2.0,
+        0.1955823293172691,
+        0.0792148975887743
+      ],
+      "completed_after_deadline": false,
+      "evaluated_feasible_fraction": 1.0,
+      "min_violation": 0,
+      "hypervolume": 0.9811718007300821
+    },
+    {
+      "generation": 69,
+      "evaluations": 70,
+      "elapsed_seconds": 4.042192299000135,
+      "schedule_sha256": "f45422693093d27db3792ff91016cca9435a2f82a16131231191444b7c92c371",
+      "candidate_feasible": true,
+      "candidate_violation": 0,
+      "candidate_objectives": [
+        0.5,
+        0.19477911646586346,
+        0.07762087348130013
+      ],
+      "completed_after_deadline": false,
+      "evaluated_feasible_fraction": 1.0,
+      "min_violation": 0,
+      "hypervolume": 0.9811718007300821
+    },
+    {
+      "generation": 70,
+      "evaluations": 71,
+      "elapsed_seconds": 4.097628266000129,
+      "schedule_sha256": "47c66e67a72bf12633639b231c7cb7fdf09d48c2ed79b077456550aca0e3d127",
+      "candidate_feasible": true,
+      "candidate_violation": 0,
+      "candidate_objectives": [
+        0.5,
+        0.20140562248995986,
+        0.07762087348130012
+      ],
+      "completed_after_deadline": false,
+      "evaluated_feasible_fraction": 1.0,
+      "min_violation": 0,
+      "hypervolume": 0.9811718007300821
+    },
+    {
+      "generation": 71,
+      "evaluations": 72,
+      "elapsed_seconds": 4.152678589000061,
+      "schedule_sha256": "cf3d56362990b4a2eb8aec317523778a9fc0821492f1587deee2bf982b6e1be5",
+      "candidate_feasible": true,
+      "candidate_violation": 0,
+      "candidate_objectives": [
+        0.5,
+        0.1983935742971888,
+        0.07262919523166975
+      ],
+      "completed_after_deadline": false,
+      "evaluated_feasible_fraction": 1.0,
+      "min_violation": 0,
+      "hypervolume": 0.9811718007300821
+    },
+    {
+      "generation": 72,
+      "evaluations": 73,
+      "elapsed_seconds": 4.211332543000026,
+      "schedule_sha256": "dade32f93340c4881eba5e593393026cdec24c2a90f52d913a860e9a0e9ba542",
+      "candidate_feasible": true,
+      "candidate_violation": 0,
+      "candidate_objectives": [
+        0.5,
+        0.20060240963855425,
+        0.11079259903080171
+      ],
+      "completed_after_deadline": false,
+      "evaluated_feasible_fraction": 1.0,
+      "min_violation": 0,
+      "hypervolume": 0.9811718007300821
+    },
+    {
+      "generation": 73,
+      "evaluations": 74,
+      "elapsed_seconds": 4.262534956000081,
+      "schedule_sha256": "6e7713dbc10bcbe2152714c995e0f9486704523eef029bf58b357b275e3b2b21",
+      "candidate_feasible": true,
+      "candidate_violation": 0,
+      "candidate_objectives": [
+        1.0,
+        0.1983935742971888,
+        0.11412712210513327
+      ],
+      "completed_after_deadline": false,
+      "evaluated_feasible_fraction": 1.0,
+      "min_violation": 0,
+      "hypervolume": 0.9811718007300821
+    },
+    {
+      "generation": 74,
+      "evaluations": 75,
+      "elapsed_seconds": 4.31656632399995,
+      "schedule_sha256": "487ef97f2fb4c8d2bcacb7c3b79357f4a286619de4c9b47c33c9973bd167bed3",
+      "candidate_feasible": true,
+      "candidate_violation": 0,
+      "candidate_objectives": [
+        1.0,
+        0.19497991967871486,
+        0.10012492197250394
+      ],
+      "completed_after_deadline": false,
+      "evaluated_feasible_fraction": 1.0,
+      "min_violation": 0,
+      "hypervolume": 0.9811718007300821
+    },
+    {
+      "generation": 75,
+      "evaluations": 76,
+      "elapsed_seconds": 4.366919831000132,
+      "schedule_sha256": "d7d434667fcfc13150184ccc5c803a486664c0dc53cfeafd77d8d1ac3994522a",
+      "candidate_feasible": true,
+      "candidate_violation": 0,
+      "candidate_objectives": [
+        0.5,
+        0.19738955823293172,
+        0.08077747210701756
+      ],
+      "completed_after_deadline": false,
+      "evaluated_feasible_fraction": 1.0,
+      "min_violation": 0,
+      "hypervolume": 0.9811718007300821
+    },
+    {
+      "generation": 76,
+      "evaluations": 77,
+      "elapsed_seconds": 4.421147717000167,
+      "schedule_sha256": "ce5c04fbbd6eddc20069f53375f86bc28d297710068f91d1d807017a1bd7fbdb",
+      "candidate_feasible": true,
+      "candidate_violation": 0,
+      "candidate_objectives": [
+        2.0,
+        0.21626506024096384,
+        0.088175960442742
+      ],
+      "completed_after_deadline": false,
+      "evaluated_feasible_fraction": 1.0,
+      "min_violation": 0,
+      "hypervolume": 0.9811718007300821
+    },
+    {
+      "generation": 77,
+      "evaluations": 78,
+      "elapsed_seconds": 4.475526653000088,
+      "schedule_sha256": "d05c35e815e0e555fa008a73a569a49d8e8dbccb82b702e56ebf4488fdb45327",
+      "candidate_feasible": true,
+      "candidate_violation": 0,
+      "candidate_objectives": [
+        1.0,
+        0.1983935742971888,
+        0.06726812023536856
+      ],
+      "completed_after_deadline": false,
+      "evaluated_feasible_fraction": 1.0,
+      "min_violation": 0,
+      "hypervolume": 0.9811718007300821
+    },
+    {
+      "generation": 78,
+      "evaluations": 79,
+      "elapsed_seconds": 4.528833072999987,
+      "schedule_sha256": "e9ef4c8122e721058f01fca314956daf60abf00eb1445a87fac9c7bd16e62023",
+      "candidate_feasible": true,
+      "candidate_violation": 0,
+      "candidate_objectives": [
+        1.5,
+        0.19156626506024096,
+        0.10012492197250394
+      ],
+      "completed_after_deadline": false,
+      "evaluated_feasible_fraction": 1.0,
+      "min_violation": 0,
+      "hypervolume": 0.9811718007300821
+    },
+    {
+      "generation": 79,
+      "evaluations": 80,
+      "elapsed_seconds": 4.583847205999973,
+      "schedule_sha256": "29feeb87b7d42a42d0789303d8793aa13f7233bdcfe17d2836243de1e18ebdcb",
+      "candidate_feasible": true,
+      "candidate_violation": 0,
+      "candidate_objectives": [
+        2.5,
+        0.19196787148594377,
+        0.09233092656309694
+      ],
+      "completed_after_deadline": false,
+      "evaluated_feasible_fraction": 1.0,
+      "min_violation": 0,
+      "hypervolume": 0.9811718007300821
+    },
+    {
+      "generation": 80,
+      "evaluations": 81,
+      "elapsed_seconds": 4.637569327000165,
+      "schedule_sha256": "d2c14dbb1b0f1e656276ec42b60160aef892ecf6dc936709bf4d6eda0e04eda9",
+      "candidate_feasible": true,
+      "candidate_violation": 0,
+      "candidate_objectives": [
+        4.5,
+        0.19678714859437754,
+        0.09367496997597598
+      ],
+      "completed_after_deadline": false,
+      "evaluated_feasible_fraction": 1.0,
+      "min_violation": 0,
+      "hypervolume": 0.9811718007300821
+    },
+    {
+      "generation": 81,
+      "evaluations": 82,
+      "elapsed_seconds": 4.689505251000128,
+      "schedule_sha256": "dc7f9eaaa23d6dfcbc721446165e246ff3c48fb2573320aba417ae040b2e4811",
+      "candidate_feasible": true,
+      "candidate_violation": 0,
+      "candidate_objectives": [
+        3.0,
+        0.19156626506024096,
+        0.10618380290797652
+      ],
+      "completed_after_deadline": false,
+      "evaluated_feasible_fraction": 1.0,
+      "min_violation": 0,
+      "hypervolume": 0.9811718007300821
+    },
+    {
+      "generation": 82,
+      "evaluations": 83,
+      "elapsed_seconds": 4.740961768000034,
+      "schedule_sha256": "d33dbd91aece9bbd6a779084b56ee59ef987fcc9897c5a671ca27d2f6d392016",
+      "candidate_feasible": true,
+      "candidate_violation": 0,
+      "candidate_objectives": [
+        0.5,
+        0.2002008032128514,
+        0.10500000000000001
+      ],
+      "completed_after_deadline": false,
+      "evaluated_feasible_fraction": 1.0,
+      "min_violation": 0,
+      "hypervolume": 0.9811718007300821
+    },
+    {
+      "generation": 83,
+      "evaluations": 84,
+      "elapsed_seconds": 4.79156553200005,
+      "schedule_sha256": "a5609ee7a22a68ff142800305566045c7ba08e252413cb315c79dc2e7ca26008",
+      "candidate_feasible": true,
+      "candidate_violation": 0,
+      "candidate_objectives": [
+        1.0,
+        0.19678714859437754,
+        0.06144102863722254
+      ],
+      "completed_after_deadline": false,
+      "evaluated_feasible_fraction": 1.0,
+      "min_violation": 0,
+      "hypervolume": 0.9811804107531024
+    },
+    {
+      "generation": 84,
+      "evaluations": 85,
+      "elapsed_seconds": 4.847877066000137,
+      "schedule_sha256": "239a7d5e05063a0d1b145ba1b6113ad4e6298502c0f82433b3bec9d8aeac46e6",
+      "candidate_feasible": true,
+      "candidate_violation": 0,
+      "candidate_objectives": [
+        2.0,
+        0.1991967871485944,
+        0.088175960442742
+      ],
+      "completed_after_deadline": false,
+      "evaluated_feasible_fraction": 1.0,
+      "min_violation": 0,
+      "hypervolume": 0.9811804107531024
+    },
+    {
+      "generation": 85,
+      "evaluations": 86,
+      "elapsed_seconds": 4.900395634000006,
+      "schedule_sha256": "dfd1468b612f54f28a4d833aa63c1136e4e8d69aced81cac119f8c37d6adff01",
+      "candidate_feasible": true,
+      "candidate_violation": 0,
+      "candidate_objectives": [
+        1.0,
+        0.19819277108433733,
+        0.09233092656309695
+      ],
+      "completed_after_deadline": false,
+      "evaluated_feasible_fraction": 1.0,
+      "min_violation": 0,
+      "hypervolume": 0.9811804107531024
+    },
+    {
+      "generation": 86,
+      "evaluations": 87,
+      "elapsed_seconds": 4.950911304000101,
+      "schedule_sha256": "76daee3543bc9f4819558f74445d803716f1e942d12f9307dc641c615037c849",
+      "candidate_feasible": true,
+      "candidate_violation": 0,
+      "candidate_objectives": [
+        0.0,
+        0.20883534136546186,
+        0.08381527307120105
+      ],
+      "completed_after_deadline": false,
+      "evaluated_feasible_fraction": 1.0,
+      "min_violation": 0,
+      "hypervolume": 0.9811845574763486
+    },
+    {
+      "generation": 87,
+      "evaluations": 88,
+      "elapsed_seconds": 5.0032538740001655,
+      "schedule_sha256": "2c487c3a0d1c6e2412b1a167028040b8b704cddc3f2a14f6f61e30c5ad1d9624",
+      "candidate_feasible": true,
+      "candidate_violation": 0,
+      "candidate_objectives": [
+        0.0,
+        0.21987951807228914,
+        0.09630680142129112
+      ],
+      "completed_after_deadline": false,
+      "evaluated_feasible_fraction": 1.0,
+      "min_violation": 0,
+      "hypervolume": 0.9811845574763486
+    },
+    {
+      "generation": 88,
+      "evaluations": 89,
+      "elapsed_seconds": 5.054245637000122,
+      "schedule_sha256": "258f2f60be1f9865ba70289aa15399e9d43a6349d8ba59c726e6dd1c996afc2a",
+      "candidate_feasible": true,
+      "candidate_violation": 0,
+      "candidate_objectives": [
+        1.5,
+        0.1897590361445783,
+        0.11079259903080169
+      ],
+      "completed_after_deadline": false,
+      "evaluated_feasible_fraction": 1.0,
+      "min_violation": 0,
+      "hypervolume": 0.9811845574763486
+    },
+    {
+      "generation": 89,
+      "evaluations": 90,
+      "elapsed_seconds": 5.105928948000155,
+      "schedule_sha256": "a33d106f11373eb0bf409d1ab8c59c98b84b2f2698807170afc29bc77ca0aa95",
+      "candidate_feasible": true,
+      "candidate_violation": 0,
+      "candidate_objectives": [
+        0.5,
+        0.2066265060240964,
+        0.07599342076785333
+      ],
+      "completed_after_deadline": false,
+      "evaluated_feasible_fraction": 1.0,
+      "min_violation": 0,
+      "hypervolume": 0.9811845574763486
+    },
+    {
+      "generation": 90,
+      "evaluations": 91,
+      "elapsed_seconds": 5.157613531000152,
+      "schedule_sha256": "6811c4af7383d9ded5af29ef130ef42032796036a65c75ce139885247ea598a8",
+      "candidate_feasible": true,
+      "candidate_violation": 0,
+      "candidate_objectives": [
+        1.0,
+        0.19196787148594377,
+        0.07762087348130013
+      ],
+      "completed_after_deadline": false,
+      "evaluated_feasible_fraction": 1.0,
+      "min_violation": 0,
+      "hypervolume": 0.9811859668672054
+    },
+    {
+      "generation": 91,
+      "evaluations": 92,
+      "elapsed_seconds": 5.211100505000104,
+      "schedule_sha256": "075732917ee014b620953220f7e22f8be442711a2084b65401f00e6299bae0ff",
+      "candidate_feasible": true,
+      "candidate_violation": 0,
+      "candidate_objectives": [
+        1.0,
+        0.19337349397590362,
+        0.10380269746013346
+      ],
+      "completed_after_deadline": false,
+      "evaluated_feasible_fraction": 1.0,
+      "min_violation": 0,
+      "hypervolume": 0.9811859668672054
+    },
+    {
+      "generation": 92,
+      "evaluations": 93,
+      "elapsed_seconds": 5.263907948999986,
+      "schedule_sha256": "08c8582608d6dae731ff42c3c00e3959e206a5e2c27a6d49556a50057d3f60cd",
+      "candidate_feasible": true,
+      "candidate_violation": 0,
+      "candidate_objectives": [
+        0.0,
+        0.20803212851405622,
+        0.1107925990308017
+      ],
+      "completed_after_deadline": false,
+      "evaluated_feasible_fraction": 1.0,
+      "min_violation": 0,
+      "hypervolume": 0.9811859668672054
+    },
+    {
+      "generation": 93,
+      "evaluations": 94,
+      "elapsed_seconds": 5.315399178999996,
+      "schedule_sha256": "53b0d629a9d9566ff39ac542ba1d6edbe16406ba7750dc0e716b023f689e8bb4",
+      "candidate_feasible": true,
+      "candidate_violation": 0,
+      "candidate_objectives": [
+        2.0,
+        0.19136546184738956,
+        0.06538348415311011
+      ],
+      "completed_after_deadline": false,
+      "evaluated_feasible_fraction": 1.0,
+      "min_violation": 0,
+      "hypervolume": 0.9812911115294102
+    },
+    {
+      "generation": 94,
+      "evaluations": 95,
+      "elapsed_seconds": 5.366169686000148,
+      "schedule_sha256": "65b95b95d45a8b353d50d72e83bb2cc1775c2d551956c1c628c501bb946c2741",
+      "candidate_feasible": true,
+      "candidate_violation": 0,
+      "candidate_objectives": [
+        1.0,
+        0.19477911646586346,
+        0.09233092656309695
+      ],
+      "completed_after_deadline": false,
+      "evaluated_feasible_fraction": 1.0,
+      "min_violation": 0,
+      "hypervolume": 0.9812911115294102
+    },
+    {
+      "generation": 95,
+      "evaluations": 96,
+      "elapsed_seconds": 5.420264310999983,
+      "schedule_sha256": "34fe89a323b33f0a89d3ccb476a901778cd6e1a7532519d10bc8300fc40f8ce7",
+      "candidate_feasible": true,
+      "candidate_violation": 0,
+      "candidate_objectives": [
+        3.0,
+        0.20542168674698796,
+        0.09233092656309695
+      ],
+      "completed_after_deadline": false,
+      "evaluated_feasible_fraction": 1.0,
+      "min_violation": 0,
+      "hypervolume": 0.9812911115294102
+    },
+    {
+      "generation": 96,
+      "evaluations": 97,
+      "elapsed_seconds": 5.473534195999946,
+      "schedule_sha256": "b654c5cf5353bb3efcbf2293bb6c9529be8b36a900a95afeb984fd729fb9563e",
+      "candidate_feasible": true,
+      "candidate_violation": 0,
+      "candidate_objectives": [
+        1.0,
+        0.19859437751004017,
+        0.10965856099730655
+      ],
+      "completed_after_deadline": false,
+      "evaluated_feasible_fraction": 1.0,
+      "min_violation": 0,
+      "hypervolume": 0.9812911115294102
+    },
+    {
+      "generation": 97,
+      "evaluations": 98,
+      "elapsed_seconds": 5.5239953750001405,
+      "schedule_sha256": "17923a978e7948ccb53af37c4914344884d60020314ee0d0d89962dd02b54368",
+      "candidate_feasible": true,
+      "candidate_violation": 0,
+      "candidate_objectives": [
+        1.0,
+        0.2028112449799197,
+        0.088175960442742
+      ],
+      "completed_after_deadline": false,
+      "evaluated_feasible_fraction": 1.0,
+      "min_violation": 0,
+      "hypervolume": 0.9812911115294102
+    },
+    {
+      "generation": 98,
+      "evaluations": 99,
+      "elapsed_seconds": 5.5750433820001035,
+      "schedule_sha256": "fde2df25018136339605b5f5ca1630aaebecaba3be27dc70c86e4125a8a7e775",
+      "candidate_feasible": true,
+      "candidate_violation": 0,
+      "candidate_objectives": [
+        1.0,
+        0.19337349397590362,
+        0.08817596044274201
+      ],
+      "completed_after_deadline": false,
+      "evaluated_feasible_fraction": 1.0,
+      "min_violation": 0,
+      "hypervolume": 0.9812911115294102
+    },
+    {
+      "generation": 99,
+      "evaluations": 100,
+      "elapsed_seconds": 5.625280052000107,
+      "schedule_sha256": "7ce778d66a608579353366da087e7baa99136b48aa354a4707a329f2789e8f3b",
+      "candidate_feasible": true,
+      "candidate_violation": 0,
+      "candidate_objectives": [
+        0.0,
+        0.20080321285140565,
+        0.11521718621802912
+      ],
+      "completed_after_deadline": false,
+      "evaluated_feasible_fraction": 1.0,
+      "min_violation": 0,
+      "hypervolume": 0.9812911115294102
+    },
+    {
+      "generation": 100,
+      "evaluations": 101,
+      "elapsed_seconds": 5.676485187000026,
+      "schedule_sha256": "32f16be50d9b3885f215fce4aad32639eadd1bc5f0698edbd38fce18e1fb0009",
+      "candidate_feasible": true,
+      "candidate_violation": 0,
+      "candidate_objectives": [
+        3.5,
+        0.20160642570281126,
+        0.09500000000000001
+      ],
+      "completed_after_deadline": false,
+      "evaluated_feasible_fraction": 1.0,
+      "min_violation": 0,
+      "hypervolume": 0.9812911115294102
+    },
+    {
+      "generation": 101,
+      "evaluations": 102,
+      "elapsed_seconds": 5.72848448700006,
+      "schedule_sha256": "09ff4a4a462cb5cd425e39be24926dbe614820270d7773f0920b37575320a7ec",
+      "candidate_feasible": true,
+      "candidate_violation": 0,
+      "candidate_objectives": [
+        1.0,
+        0.20341365461847388,
+        0.11629703349613008
+      ],
+      "completed_after_deadline": false,
+      "evaluated_feasible_fraction": 1.0,
+      "min_violation": 0,
+      "hypervolume": 0.9812911115294102
+    },
+    {
+      "generation": 102,
+      "evaluations": 103,
+      "elapsed_seconds": 5.779774983000152,
+      "schedule_sha256": "d40f9d59b7c55c4e79262eb34c146353a57d175858a93fc365322339c0bf4ad3",
+      "candidate_feasible": true,
+      "candidate_violation": 0,
+      "candidate_objectives": [
+        0.5,
+        0.1953815261044177,
+        0.06910137480542627
+      ],
+      "completed_after_deadline": false,
+      "evaluated_feasible_fraction": 1.0,
+      "min_violation": 0,
+      "hypervolume": 0.9812911311650374
+    },
+    {
+      "generation": 103,
+      "evaluations": 104,
+      "elapsed_seconds": 5.831075133000013,
+      "schedule_sha256": "ff49a332ab8ae22634aaa361d99672f95950ceae0506e218b96f2693522776e8",
+      "candidate_feasible": true,
+      "candidate_violation": 0,
+      "candidate_objectives": [
+        1.0,
+        0.20240963855421687,
+        0.09630680142129111
+      ],
+      "completed_after_deadline": false,
+      "evaluated_feasible_fraction": 1.0,
+      "min_violation": 0,
+      "hypervolume": 0.9812911311650374
+    },
+    {
+      "generation": 104,
+      "evaluations": 105,
+      "elapsed_seconds": 5.883167903999947,
+      "schedule_sha256": "abef036a19ccb16e2974b3862f29c55d341bc2fd1ba09d66e47f3d9df69816a7",
+      "candidate_feasible": true,
+      "candidate_violation": 0,
+      "candidate_objectives": [
+        0.0,
+        0.1917670682730924,
+        0.06910137480542629
+      ],
+      "completed_after_deadline": false,
+      "evaluated_feasible_fraction": 1.0,
+      "min_violation": 0,
+      "hypervolume": 0.9813126010824614
+    },
+    {
+      "generation": 105,
+      "evaluations": 106,
+      "elapsed_seconds": 5.93453665800007,
+      "schedule_sha256": "6490a86adc25dd94107e7704c5b99080e604a19588321780a067726146e80446",
+      "candidate_feasible": true,
+      "candidate_violation": 0,
+      "candidate_objectives": [
+        1.0,
+        0.21887550200803213,
+        0.08674675786448738
+      ],
+      "completed_after_deadline": false,
+      "evaluated_feasible_fraction": 1.0,
+      "min_violation": 0,
+      "hypervolume": 0.9813126010824614
+    },
+    {
+      "generation": 106,
+      "evaluations": 107,
+      "elapsed_seconds": 5.987803578000012,
+      "schedule_sha256": "bbc4915ce96dd9711531332e62475487055efe2aac86408fb9e14600be8b1ae7",
+      "candidate_feasible": true,
+      "candidate_violation": 0,
+      "candidate_objectives": [
+        1.0,
+        0.2068273092369478,
+        0.10851267207105354
+      ],
+      "completed_after_deadline": false,
+      "evaluated_feasible_fraction": 1.0,
+      "min_violation": 0,
+      "hypervolume": 0.9813126010824614
+    }
+  ],
+  "metadata": {
+    "comparison_method": "greedy",
+    "native_search_metadata": {},
+    "postprocessing_distinct_history_fronts": 23,
+    "evaluation_adapter_interrupted": true,
+    "termination": "wall_time",
+    "full_evaluator_calls": 107,
+    "evaluated_feasible": 107,
+    "on_time_feasible_evaluations": 107,
+    "late_completed_evaluations": 0,
+    "minimum_violation": 0,
+    "unique_genotypes_evaluated": 107,
+    "duplicate_evaluations": 0,
+    "unique_feasible_genotypes_by_cutoff": 107,
+    "unique_feasible_objective_vectors_by_cutoff": 107,
+    "initialization_and_partial_resource_checks_timed": true,
+    "partial_resource_checks_counted_as_full_evaluations": false,
+    "construction_cache_reset_before_each_run": true,
+    "archive_policy": "all feasible candidates fully evaluated by quality cutoff; one representative per objective vector",
+    "ablation_scope": null
+  },
+  "best_candidate_diagnostic": {
+    "objectives": [
+      1.0,
+      0.18674698795180722,
+      0.08529361054615993
+    ],
+    "violation": 0,
+    "violations": {},
+    "metrics": {
+      "student_gaps": 0,
+      "faculty_gaps": 2,
+      "average_student_gap_per_day": 0.0,
+      "longest_idle_stretch": 1,
+      "room_utilization": 0.8132530120481928,
+      "faculty_loads": {
+        "F01": 7,
+        "F02": 8,
+        "F03": 8,
+        "F04": 8,
+        "F05": 8,
+        "F06": 11,
+        "F07": 9,
+        "F08": 7,
+        "F09": 7,
+        "F10": 11,
+        "F11": 10,
+        "F12": 11,
+        "F13": 11,
+        "F14": 7,
+        "F15": 5,
+        "F16": 7,
+        "F17": 8,
+        "F18": 9,
+        "F19": 8,
+        "F20": 6
+      },
+      "faculty_relative_loads": {
+        "F01": 0.35,
+        "F02": 0.4,
+        "F03": 0.4,
+        "F04": 0.4,
+        "F05": 0.4,
+        "F06": 0.55,
+        "F07": 0.45,
+        "F08": 0.35,
+        "F09": 0.35,
+        "F10": 0.55,
+        "F11": 0.5,
+        "F12": 0.55,
+        "F13": 0.55,
+        "F14": 0.35,
+        "F15": 0.25,
+        "F16": 0.35,
+        "F17": 0.4,
+        "F18": 0.45,
+        "F19": 0.4,
+        "F20": 0.3
+      },
+      "max_faculty_daily_load": 5,
+      "consecutive_periods_over_three": 18,
+      "required_teaching_periods": 166
+    }
+  },
+  "instance_id": "medium_1030",
+  "instance_seed": 1030,
+  "size": "medium",
+  "instance_sha256": "6f4390d591a9d82caaef22b46d2d0c879b0f3c3fd2cee672759151effccf9b55",
+  "phase": "held_out_validation"
+}

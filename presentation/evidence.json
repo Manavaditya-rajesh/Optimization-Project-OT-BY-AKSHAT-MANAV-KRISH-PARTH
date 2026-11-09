@@ -1,0 +1,68 @@
+{
+  "source_sha256": "7ad242177abf49f65dfd192b3ecad6fe614644abf76413b39099aa897ddd854c",
+  "primary_gains_percent": [
+    [
+      "medium",
+      "evaluations",
+      4.737965020284718
+    ],
+    [
+      "medium",
+      "wall_time",
+      7.258636055836898
+    ],
+    [
+      "large",
+      "evaluations",
+      3.8775241955239403
+    ],
+    [
+      "large",
+      "wall_time",
+      8.971902753710893
+    ]
+  ],
+  "ablation_differences_percent": [
+    [
+      "medium",
+      "evaluations",
+      0.18576149339604164
+    ],
+    [
+      "medium",
+      "wall_time",
+      -0.07886595522013096
+    ],
+    [
+      "large",
+      "evaluations",
+      -0.123991835293491
+    ],
+    [
+      "large",
+      "wall_time",
+      0.2619601915021974
+    ]
+  ],
+  "verification": {
+    "status": "PASS",
+    "study": "enhancement_validation",
+    "runs": 168,
+    "expected_runs": 168,
+    "certificates": 7,
+    "archived_feasible_schedules": 3295,
+    "excluded_late_evaluations": 9,
+    "empty_archives": 0,
+    "source_snapshot_matches_current": true,
+    "all_cutoff_fronts_reconstructed": true,
+    "common_initialization_groups_checked": 42
+  },
+  "evidence_sha256": {
+    "results/enhancement_validation/summary.json": "7f59b8ddb027a896507ad643ffebf24fa69767c04240621984fa389dec6902c8",
+    "results/enhancement_validation/verification.json": "b523037544a46ce21238c2bc96015f70ed793c5fec90df4ed23533481a938f3f",
+    "results/enhancement_validation/manifest.json": "6bdfc5e8c3ab92807b27dac3c0c56034f49d2f89bb15c4f09aafa4ed1d2557fe",
+    "results/enhancement_validation/representatives.json": "c696072f1a622c474c44d3bd8af1b19e1d18a23f8a7a16d6d9e98f166df4f27e",
+    "results/enhancement_validation/small_ideal_certificates.json": "351a2cb5d7c7aa4e32edb8a3e2d5a41dfe2281034dc09f30c88acd43c0502154",
+    "results/exact_micro/room/exact_front.json": "e41ca42885c2722ec8f1585fb3429d67330b7c83177441a61777b99b8a382f47"
+  }
+}

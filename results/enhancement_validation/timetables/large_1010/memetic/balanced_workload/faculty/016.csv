@@ -1,0 +1,6 @@
+faculty: F17,P1,P2,P3,P4,P5,P6,P7,P8
+Monday,,,,,LUNCH,,G06-T3 | R10 / F17,G01-T1 | R09 / F17
+Tuesday,,,,,LUNCH,,,G06-T3 | R06 / F17
+Wednesday,,G20-T2 | R11 / F17,,,LUNCH,,,
+Thursday,,,,G20-T2 | R15 / F17,LUNCH,G06-T3 | R02 / F17,G01-T1 | R01 / F17,
+Friday,G20-T2 | R11 / F17,,G01-T1 | R09 / F17,,LUNCH,,,

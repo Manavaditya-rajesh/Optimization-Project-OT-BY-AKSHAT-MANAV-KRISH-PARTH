@@ -1,0 +1,3347 @@
+{
+  "schema_version": 1,
+  "name": "synthetic-large-1020",
+  "days": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday"
+  ],
+  "periods_per_day": 8,
+  "lunch_periods": [
+    4
+  ],
+  "groups": [
+    {
+      "id": "G01",
+      "size": 24
+    },
+    {
+      "id": "G02",
+      "size": 36
+    },
+    {
+      "id": "G03",
+      "size": 48
+    },
+    {
+      "id": "G04",
+      "size": 54
+    },
+    {
+      "id": "G05",
+      "size": 24
+    },
+    {
+      "id": "G06",
+      "size": 36
+    },
+    {
+      "id": "G07",
+      "size": 48
+    },
+    {
+      "id": "G08",
+      "size": 54
+    },
+    {
+      "id": "G09",
+      "size": 24
+    },
+    {
+      "id": "G10",
+      "size": 36
+    },
+    {
+      "id": "G11",
+      "size": 48
+    },
+    {
+      "id": "G12",
+      "size": 54
+    },
+    {
+      "id": "G13",
+      "size": 24
+    },
+    {
+      "id": "G14",
+      "size": 36
+    },
+    {
+      "id": "G15",
+      "size": 48
+    },
+    {
+      "id": "G16",
+      "size": 54
+    },
+    {
+      "id": "G17",
+      "size": 24
+    },
+    {
+      "id": "G18",
+      "size": 36
+    },
+    {
+      "id": "G19",
+      "size": 48
+    },
+    {
+      "id": "G20",
+      "size": 54
+    }
+  ],
+  "rooms": [
+    {
+      "id": "R01",
+      "capacity": 30,
+      "kind": "classroom",
+      "unavailable": []
+    },
+    {
+      "id": "R02",
+      "capacity": 45,
+      "kind": "classroom",
+      "unavailable": [
+        18
+      ]
+    },
+    {
+      "id": "R03",
+      "capacity": 60,
+      "kind": "classroom",
+      "unavailable": [
+        0
+      ]
+    },
+    {
+      "id": "R04",
+      "capacity": 90,
+      "kind": "classroom",
+      "unavailable": []
+    },
+    {
+      "id": "R05",
+      "capacity": 30,
+      "kind": "classroom",
+      "unavailable": [
+        34
+      ]
+    },
+    {
+      "id": "R06",
+      "capacity": 45,
+      "kind": "classroom",
+      "unavailable": [
+        7,
+        19,
+        30
+      ]
+    },
+    {
+      "id": "R07",
+      "capacity": 60,
+      "kind": "classroom",
+      "unavailable": []
+    },
+    {
+      "id": "R08",
+      "capacity": 90,
+      "kind": "classroom",
+      "unavailable": [
+        0
+      ]
+    },
+    {
+      "id": "R09",
+      "capacity": 30,
+      "kind": "classroom",
+      "unavailable": [
+        23,
+        24,
+        25,
+        26,
+        39
+      ]
+    },
+    {
+      "id": "R10",
+      "capacity": 45,
+      "kind": "classroom",
+      "unavailable": [
+        6
+      ]
+    },
+    {
+      "id": "R11",
+      "capacity": 60,
+      "kind": "classroom",
+      "unavailable": []
+    },
+    {
+      "id": "R12",
+      "capacity": 90,
+      "kind": "classroom",
+      "unavailable": [
+        10
+      ]
+    },
+    {
+      "id": "R13",
+      "capacity": 30,
+      "kind": "classroom",
+      "unavailable": [
+        6,
+        17,
+        25
+      ]
+    },
+    {
+      "id": "R14",
+      "capacity": 45,
+      "kind": "classroom",
+      "unavailable": [
+        29,
+        30
+      ]
+    },
+    {
+      "id": "R15",
+      "capacity": 60,
+      "kind": "classroom",
+      "unavailable": []
+    },
+    {
+      "id": "R16",
+      "capacity": 90,
+      "kind": "classroom",
+      "unavailable": []
+    },
+    {
+      "id": "R17",
+      "capacity": 30,
+      "kind": "lab",
+      "unavailable": [
+        19,
+        34,
+        39
+      ]
+    },
+    {
+      "id": "R18",
+      "capacity": 45,
+      "kind": "lab",
+      "unavailable": [
+        0,
+        31
+      ]
+    },
+    {
+      "id": "R19",
+      "capacity": 60,
+      "kind": "lab",
+      "unavailable": [
+        15,
+        33
+      ]
+    },
+    {
+      "id": "R20",
+      "capacity": 90,
+      "kind": "lab",
+      "unavailable": []
+    },
+    {
+      "id": "R21",
+      "capacity": 30,
+      "kind": "lab",
+      "unavailable": [
+        23
+      ]
+    },
+    {
+      "id": "R22",
+      "capacity": 45,
+      "kind": "lab",
+      "unavailable": [
+        10,
+        35,
+        37
+      ]
+    },
+    {
+      "id": "R23",
+      "capacity": 60,
+      "kind": "lab",
+      "unavailable": [
+        11,
+        31
+      ]
+    },
+    {
+      "id": "R24",
+      "capacity": 90,
+      "kind": "lab",
+      "unavailable": [
+        18,
+        22
+      ]
+    },
+    {
+      "id": "R25",
+      "capacity": 30,
+      "kind": "lab",
+      "unavailable": [
+        1,
+        29
+      ]
+    }
+  ],
+  "faculty": [
+    {
+      "id": "F01",
+      "max_weekly": 20,
+      "max_daily": 6,
+      "unavailable": [
+        21
+      ]
+    },
+    {
+      "id": "F02",
+      "max_weekly": 20,
+      "max_daily": 6,
+      "unavailable": [
+        2,
+        32,
+        37
+      ]
+    },
+    {
+      "id": "F03",
+      "max_weekly": 20,
+      "max_daily": 6,
+      "unavailable": [
+        6,
+        19
+      ]
+    },
+    {
+      "id": "F04",
+      "max_weekly": 20,
+      "max_daily": 6,
+      "unavailable": [
+        19,
+        29
+      ]
+    },
+    {
+      "id": "F05",
+      "max_weekly": 20,
+      "max_daily": 6,
+      "unavailable": [
+        22
+      ]
+    },
+    {
+      "id": "F06",
+      "max_weekly": 20,
+      "max_daily": 6,
+      "unavailable": [
+        0,
+        7,
+        21
+      ]
+    },
+    {
+      "id": "F07",
+      "max_weekly": 20,
+      "max_daily": 6,
+      "unavailable": [
+        31,
+        37
+      ]
+    },
+    {
+      "id": "F08",
+      "max_weekly": 20,
+      "max_daily": 6,
+      "unavailable": [
+        14
+      ]
+    },
+    {
+      "id": "F09",
+      "max_weekly": 20,
+      "max_daily": 6,
+      "unavailable": [
+        11,
+        14,
+        27
+      ]
+    },
+    {
+      "id": "F10",
+      "max_weekly": 20,
+      "max_daily": 6,
+      "unavailable": []
+    },
+    {
+      "id": "F11",
+      "max_weekly": 20,
+      "max_daily": 6,
+      "unavailable": [
+        24
+      ]
+    },
+    {
+      "id": "F12",
+      "max_weekly": 20,
+      "max_daily": 6,
+      "unavailable": [
+        10,
+        30
+      ]
+    },
+    {
+      "id": "F13",
+      "max_weekly": 20,
+      "max_daily": 6,
+      "unavailable": [
+        5,
+        9,
+        22,
+        30
+      ]
+    },
+    {
+      "id": "F14",
+      "max_weekly": 20,
+      "max_daily": 6,
+      "unavailable": [
+        15,
+        38
+      ]
+    },
+    {
+      "id": "F15",
+      "max_weekly": 20,
+      "max_daily": 6,
+      "unavailable": [
+        32,
+        33,
+        38
+      ]
+    },
+    {
+      "id": "F16",
+      "max_weekly": 20,
+      "max_daily": 6,
+      "unavailable": [
+        2,
+        9
+      ]
+    },
+    {
+      "id": "F17",
+      "max_weekly": 20,
+      "max_daily": 6,
+      "unavailable": [
+        8
+      ]
+    },
+    {
+      "id": "F18",
+      "max_weekly": 20,
+      "max_daily": 6,
+      "unavailable": [
+        2,
+        7,
+        17
+      ]
+    },
+    {
+      "id": "F19",
+      "max_weekly": 20,
+      "max_daily": 6,
+      "unavailable": [
+        25,
+        39
+      ]
+    },
+    {
+      "id": "F20",
+      "max_weekly": 20,
+      "max_daily": 6,
+      "unavailable": [
+        31,
+        37
+      ]
+    },
+    {
+      "id": "F21",
+      "max_weekly": 20,
+      "max_daily": 6,
+      "unavailable": [
+        2
+      ]
+    },
+    {
+      "id": "F22",
+      "max_weekly": 20,
+      "max_daily": 6,
+      "unavailable": [
+        19,
+        37
+      ]
+    },
+    {
+      "id": "F23",
+      "max_weekly": 20,
+      "max_daily": 6,
+      "unavailable": [
+        13,
+        16,
+        23
+      ]
+    },
+    {
+      "id": "F24",
+      "max_weekly": 20,
+      "max_daily": 6,
+      "unavailable": [
+        24,
+        37
+      ]
+    },
+    {
+      "id": "F25",
+      "max_weekly": 20,
+      "max_daily": 6,
+      "unavailable": [
+        13,
+        31
+      ]
+    },
+    {
+      "id": "F26",
+      "max_weekly": 20,
+      "max_daily": 6,
+      "unavailable": [
+        0
+      ]
+    },
+    {
+      "id": "F27",
+      "max_weekly": 20,
+      "max_daily": 6,
+      "unavailable": [
+        9,
+        35
+      ]
+    },
+    {
+      "id": "F28",
+      "max_weekly": 20,
+      "max_daily": 6,
+      "unavailable": [
+        6,
+        15,
+        25
+      ]
+    },
+    {
+      "id": "F29",
+      "max_weekly": 20,
+      "max_daily": 6,
+      "unavailable": [
+        8,
+        16,
+        32
+      ]
+    },
+    {
+      "id": "F30",
+      "max_weekly": 20,
+      "max_daily": 6,
+      "unavailable": [
+        11
+      ]
+    },
+    {
+      "id": "F31",
+      "max_weekly": 20,
+      "max_daily": 6,
+      "unavailable": []
+    },
+    {
+      "id": "F32",
+      "max_weekly": 20,
+      "max_daily": 6,
+      "unavailable": [
+        24,
+        30,
+        33
+      ]
+    },
+    {
+      "id": "F33",
+      "max_weekly": 20,
+      "max_daily": 6,
+      "unavailable": [
+        8,
+        17,
+        37
+      ]
+    },
+    {
+      "id": "F34",
+      "max_weekly": 20,
+      "max_daily": 6,
+      "unavailable": [
+        27
+      ]
+    },
+    {
+      "id": "F35",
+      "max_weekly": 20,
+      "max_daily": 6,
+      "unavailable": [
+        6,
+        15
+      ]
+    },
+    {
+      "id": "F36",
+      "max_weekly": 20,
+      "max_daily": 6,
+      "unavailable": []
+    },
+    {
+      "id": "F37",
+      "max_weekly": 20,
+      "max_daily": 6,
+      "unavailable": [
+        1,
+        2,
+        6,
+        7
+      ]
+    },
+    {
+      "id": "F38",
+      "max_weekly": 20,
+      "max_daily": 6,
+      "unavailable": [
+        3,
+        11,
+        35
+      ]
+    },
+    {
+      "id": "F39",
+      "max_weekly": 20,
+      "max_daily": 6,
+      "unavailable": [
+        2,
+        30
+      ]
+    },
+    {
+      "id": "F40",
+      "max_weekly": 20,
+      "max_daily": 6,
+      "unavailable": []
+    },
+    {
+      "id": "F41",
+      "max_weekly": 20,
+      "max_daily": 6,
+      "unavailable": [
+        2,
+        9,
+        18,
+        23,
+        26
+      ]
+    },
+    {
+      "id": "F42",
+      "max_weekly": 20,
+      "max_daily": 6,
+      "unavailable": [
+        34
+      ]
+    },
+    {
+      "id": "F43",
+      "max_weekly": 20,
+      "max_daily": 6,
+      "unavailable": [
+        15
+      ]
+    },
+    {
+      "id": "F44",
+      "max_weekly": 20,
+      "max_daily": 6,
+      "unavailable": [
+        11,
+        35
+      ]
+    },
+    {
+      "id": "F45",
+      "max_weekly": 20,
+      "max_daily": 6,
+      "unavailable": []
+    },
+    {
+      "id": "F46",
+      "max_weekly": 20,
+      "max_daily": 6,
+      "unavailable": [
+        0
+      ]
+    },
+    {
+      "id": "F47",
+      "max_weekly": 20,
+      "max_daily": 6,
+      "unavailable": [
+        3,
+        21,
+        26,
+        30,
+        32
+      ]
+    },
+    {
+      "id": "F48",
+      "max_weekly": 20,
+      "max_daily": 6,
+      "unavailable": [
+        17,
+        38,
+        39
+      ]
+    },
+    {
+      "id": "F49",
+      "max_weekly": 20,
+      "max_daily": 6,
+      "unavailable": [
+        5,
+        13,
+        14,
+        25,
+        34
+      ]
+    },
+    {
+      "id": "F50",
+      "max_weekly": 20,
+      "max_daily": 6,
+      "unavailable": [
+        15
+      ]
+    }
+  ],
+  "offerings": [
+    {
+      "id": "G01-T1",
+      "groups": [
+        "G01"
+      ],
+      "eligible_faculty": [
+        "F06",
+        "F09",
+        "F34",
+        "F38"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G01-T2",
+      "groups": [
+        "G01"
+      ],
+      "eligible_faculty": [
+        "F06",
+        "F21",
+        "F44",
+        "F47"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G01-T3",
+      "groups": [
+        "G01"
+      ],
+      "eligible_faculty": [
+        "F07",
+        "F25",
+        "F49",
+        "F50"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G01-T4",
+      "groups": [
+        "G01"
+      ],
+      "eligible_faculty": [
+        "F03",
+        "F11",
+        "F33",
+        "F38"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G01-T5",
+      "groups": [
+        "G01"
+      ],
+      "eligible_faculty": [
+        "F05",
+        "F11",
+        "F17",
+        "F45"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G01-T6",
+      "groups": [
+        "G01"
+      ],
+      "eligible_faculty": [
+        "F12",
+        "F18",
+        "F24",
+        "F28"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G01-L1",
+      "groups": [
+        "G01"
+      ],
+      "eligible_faculty": [
+        "F29",
+        "F33",
+        "F38",
+        "F47"
+      ],
+      "sessions": 1,
+      "duration": 2,
+      "room_kind": "lab",
+      "distinct_days": false
+    },
+    {
+      "id": "G01-L2",
+      "groups": [
+        "G01"
+      ],
+      "eligible_faculty": [
+        "F11",
+        "F12",
+        "F22",
+        "F26"
+      ],
+      "sessions": 1,
+      "duration": 2,
+      "room_kind": "lab",
+      "distinct_days": false
+    },
+    {
+      "id": "G02-T1",
+      "groups": [
+        "G02"
+      ],
+      "eligible_faculty": [
+        "F05",
+        "F07",
+        "F39",
+        "F45"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G02-T2",
+      "groups": [
+        "G02"
+      ],
+      "eligible_faculty": [
+        "F06",
+        "F10",
+        "F35",
+        "F37"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G02-T3",
+      "groups": [
+        "G02"
+      ],
+      "eligible_faculty": [
+        "F26",
+        "F32",
+        "F36",
+        "F42"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G02-T4",
+      "groups": [
+        "G02"
+      ],
+      "eligible_faculty": [
+        "F05",
+        "F14",
+        "F39",
+        "F47"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G02-T5",
+      "groups": [
+        "G02"
+      ],
+      "eligible_faculty": [
+        "F21",
+        "F27",
+        "F28",
+        "F47"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G02-T6",
+      "groups": [
+        "G02"
+      ],
+      "eligible_faculty": [
+        "F33",
+        "F39",
+        "F43",
+        "F46"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G02-L1",
+      "groups": [
+        "G02"
+      ],
+      "eligible_faculty": [
+        "F15",
+        "F28",
+        "F33",
+        "F40"
+      ],
+      "sessions": 1,
+      "duration": 2,
+      "room_kind": "lab",
+      "distinct_days": false
+    },
+    {
+      "id": "G02-L2",
+      "groups": [
+        "G02"
+      ],
+      "eligible_faculty": [
+        "F06",
+        "F22",
+        "F26",
+        "F28"
+      ],
+      "sessions": 1,
+      "duration": 2,
+      "room_kind": "lab",
+      "distinct_days": false
+    },
+    {
+      "id": "G03-T1",
+      "groups": [
+        "G03"
+      ],
+      "eligible_faculty": [
+        "F10",
+        "F18",
+        "F31",
+        "F35"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G03-T2",
+      "groups": [
+        "G03"
+      ],
+      "eligible_faculty": [
+        "F06",
+        "F11",
+        "F24",
+        "F41"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G03-T3",
+      "groups": [
+        "G03"
+      ],
+      "eligible_faculty": [
+        "F22",
+        "F27",
+        "F29",
+        "F42"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G03-T4",
+      "groups": [
+        "G03"
+      ],
+      "eligible_faculty": [
+        "F11",
+        "F14",
+        "F34",
+        "F47"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G03-T5",
+      "groups": [
+        "G03"
+      ],
+      "eligible_faculty": [
+        "F05",
+        "F13",
+        "F29",
+        "F36"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G03-T6",
+      "groups": [
+        "G03"
+      ],
+      "eligible_faculty": [
+        "F05",
+        "F16",
+        "F38",
+        "F44"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G03-L1",
+      "groups": [
+        "G03"
+      ],
+      "eligible_faculty": [
+        "F02",
+        "F19",
+        "F25",
+        "F44"
+      ],
+      "sessions": 1,
+      "duration": 2,
+      "room_kind": "lab",
+      "distinct_days": false
+    },
+    {
+      "id": "G03-L2",
+      "groups": [
+        "G03"
+      ],
+      "eligible_faculty": [
+        "F03",
+        "F16",
+        "F32",
+        "F40"
+      ],
+      "sessions": 1,
+      "duration": 2,
+      "room_kind": "lab",
+      "distinct_days": false
+    },
+    {
+      "id": "G04-T1",
+      "groups": [
+        "G04"
+      ],
+      "eligible_faculty": [
+        "F02",
+        "F05",
+        "F29",
+        "F48"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G04-T2",
+      "groups": [
+        "G04"
+      ],
+      "eligible_faculty": [
+        "F04",
+        "F15",
+        "F43",
+        "F47"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G04-T3",
+      "groups": [
+        "G04"
+      ],
+      "eligible_faculty": [
+        "F22",
+        "F31",
+        "F35",
+        "F42"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G04-T4",
+      "groups": [
+        "G04"
+      ],
+      "eligible_faculty": [
+        "F03",
+        "F06",
+        "F22",
+        "F24"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G04-T5",
+      "groups": [
+        "G04"
+      ],
+      "eligible_faculty": [
+        "F14",
+        "F15",
+        "F37",
+        "F46"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G04-T6",
+      "groups": [
+        "G04"
+      ],
+      "eligible_faculty": [
+        "F08",
+        "F19",
+        "F25",
+        "F34"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G04-L1",
+      "groups": [
+        "G04"
+      ],
+      "eligible_faculty": [
+        "F09",
+        "F10",
+        "F28",
+        "F48"
+      ],
+      "sessions": 1,
+      "duration": 2,
+      "room_kind": "lab",
+      "distinct_days": false
+    },
+    {
+      "id": "G04-L2",
+      "groups": [
+        "G04"
+      ],
+      "eligible_faculty": [
+        "F04",
+        "F11",
+        "F19",
+        "F21"
+      ],
+      "sessions": 1,
+      "duration": 2,
+      "room_kind": "lab",
+      "distinct_days": false
+    },
+    {
+      "id": "G05-T1",
+      "groups": [
+        "G05"
+      ],
+      "eligible_faculty": [
+        "F03",
+        "F28",
+        "F31",
+        "F49"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G05-T2",
+      "groups": [
+        "G05"
+      ],
+      "eligible_faculty": [
+        "F13",
+        "F14",
+        "F18",
+        "F24"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G05-T3",
+      "groups": [
+        "G05"
+      ],
+      "eligible_faculty": [
+        "F13",
+        "F15",
+        "F36",
+        "F41"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G05-T4",
+      "groups": [
+        "G05"
+      ],
+      "eligible_faculty": [
+        "F26",
+        "F38",
+        "F42",
+        "F49"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G05-T5",
+      "groups": [
+        "G05"
+      ],
+      "eligible_faculty": [
+        "F14",
+        "F34",
+        "F45",
+        "F50"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G05-T6",
+      "groups": [
+        "G05"
+      ],
+      "eligible_faculty": [
+        "F08",
+        "F17",
+        "F29",
+        "F31"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G05-L1",
+      "groups": [
+        "G05"
+      ],
+      "eligible_faculty": [
+        "F01",
+        "F08",
+        "F19",
+        "F39"
+      ],
+      "sessions": 1,
+      "duration": 2,
+      "room_kind": "lab",
+      "distinct_days": false
+    },
+    {
+      "id": "G05-L2",
+      "groups": [
+        "G05"
+      ],
+      "eligible_faculty": [
+        "F07",
+        "F10",
+        "F22",
+        "F25"
+      ],
+      "sessions": 1,
+      "duration": 2,
+      "room_kind": "lab",
+      "distinct_days": false
+    },
+    {
+      "id": "G06-T1",
+      "groups": [
+        "G06"
+      ],
+      "eligible_faculty": [
+        "F11",
+        "F24",
+        "F28",
+        "F32"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G06-T2",
+      "groups": [
+        "G06"
+      ],
+      "eligible_faculty": [
+        "F22",
+        "F26",
+        "F38",
+        "F40"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G06-T3",
+      "groups": [
+        "G06"
+      ],
+      "eligible_faculty": [
+        "F04",
+        "F07",
+        "F23",
+        "F42"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G06-T4",
+      "groups": [
+        "G06"
+      ],
+      "eligible_faculty": [
+        "F08",
+        "F19",
+        "F37",
+        "F48"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G06-T5",
+      "groups": [
+        "G06"
+      ],
+      "eligible_faculty": [
+        "F25",
+        "F33",
+        "F36",
+        "F45"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G06-T6",
+      "groups": [
+        "G06"
+      ],
+      "eligible_faculty": [
+        "F01",
+        "F19",
+        "F32",
+        "F35"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G06-L1",
+      "groups": [
+        "G06"
+      ],
+      "eligible_faculty": [
+        "F06",
+        "F13",
+        "F21",
+        "F28"
+      ],
+      "sessions": 1,
+      "duration": 2,
+      "room_kind": "lab",
+      "distinct_days": false
+    },
+    {
+      "id": "G06-L2",
+      "groups": [
+        "G06"
+      ],
+      "eligible_faculty": [
+        "F07",
+        "F08",
+        "F22",
+        "F50"
+      ],
+      "sessions": 1,
+      "duration": 2,
+      "room_kind": "lab",
+      "distinct_days": false
+    },
+    {
+      "id": "G07-T1",
+      "groups": [
+        "G07"
+      ],
+      "eligible_faculty": [
+        "F11",
+        "F20",
+        "F35",
+        "F40"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G07-T2",
+      "groups": [
+        "G07"
+      ],
+      "eligible_faculty": [
+        "F09",
+        "F18",
+        "F37",
+        "F44"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G07-T3",
+      "groups": [
+        "G07"
+      ],
+      "eligible_faculty": [
+        "F30",
+        "F33",
+        "F34",
+        "F38"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G07-T4",
+      "groups": [
+        "G07"
+      ],
+      "eligible_faculty": [
+        "F09",
+        "F11",
+        "F23",
+        "F40"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G07-T5",
+      "groups": [
+        "G07"
+      ],
+      "eligible_faculty": [
+        "F06",
+        "F07",
+        "F10",
+        "F26"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G07-T6",
+      "groups": [
+        "G07"
+      ],
+      "eligible_faculty": [
+        "F08",
+        "F30",
+        "F34",
+        "F35"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G07-L1",
+      "groups": [
+        "G07"
+      ],
+      "eligible_faculty": [
+        "F17",
+        "F34",
+        "F44",
+        "F46"
+      ],
+      "sessions": 1,
+      "duration": 2,
+      "room_kind": "lab",
+      "distinct_days": false
+    },
+    {
+      "id": "G07-L2",
+      "groups": [
+        "G07"
+      ],
+      "eligible_faculty": [
+        "F06",
+        "F19",
+        "F43",
+        "F49"
+      ],
+      "sessions": 1,
+      "duration": 2,
+      "room_kind": "lab",
+      "distinct_days": false
+    },
+    {
+      "id": "G08-T1",
+      "groups": [
+        "G08"
+      ],
+      "eligible_faculty": [
+        "F25",
+        "F40",
+        "F45",
+        "F48"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G08-T2",
+      "groups": [
+        "G08"
+      ],
+      "eligible_faculty": [
+        "F15",
+        "F18",
+        "F35",
+        "F45"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G08-T3",
+      "groups": [
+        "G08"
+      ],
+      "eligible_faculty": [
+        "F16",
+        "F29",
+        "F42",
+        "F45"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G08-T4",
+      "groups": [
+        "G08"
+      ],
+      "eligible_faculty": [
+        "F02",
+        "F03",
+        "F04",
+        "F20"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G08-T5",
+      "groups": [
+        "G08"
+      ],
+      "eligible_faculty": [
+        "F05",
+        "F20",
+        "F36",
+        "F38"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G08-T6",
+      "groups": [
+        "G08"
+      ],
+      "eligible_faculty": [
+        "F02",
+        "F18",
+        "F28",
+        "F42"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G08-L1",
+      "groups": [
+        "G08"
+      ],
+      "eligible_faculty": [
+        "F08",
+        "F18",
+        "F28",
+        "F42"
+      ],
+      "sessions": 1,
+      "duration": 2,
+      "room_kind": "lab",
+      "distinct_days": false
+    },
+    {
+      "id": "G08-L2",
+      "groups": [
+        "G08"
+      ],
+      "eligible_faculty": [
+        "F03",
+        "F23",
+        "F38",
+        "F43"
+      ],
+      "sessions": 1,
+      "duration": 2,
+      "room_kind": "lab",
+      "distinct_days": false
+    },
+    {
+      "id": "G09-T1",
+      "groups": [
+        "G09"
+      ],
+      "eligible_faculty": [
+        "F03",
+        "F08",
+        "F11",
+        "F33"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G09-T2",
+      "groups": [
+        "G09"
+      ],
+      "eligible_faculty": [
+        "F13",
+        "F18",
+        "F38",
+        "F39"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G09-T3",
+      "groups": [
+        "G09"
+      ],
+      "eligible_faculty": [
+        "F02",
+        "F10",
+        "F18",
+        "F36"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G09-T4",
+      "groups": [
+        "G09"
+      ],
+      "eligible_faculty": [
+        "F16",
+        "F20",
+        "F34",
+        "F39"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G09-T5",
+      "groups": [
+        "G09"
+      ],
+      "eligible_faculty": [
+        "F11",
+        "F13",
+        "F16",
+        "F32"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G09-T6",
+      "groups": [
+        "G09"
+      ],
+      "eligible_faculty": [
+        "F27",
+        "F32",
+        "F33",
+        "F48"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G09-L1",
+      "groups": [
+        "G09"
+      ],
+      "eligible_faculty": [
+        "F16",
+        "F22",
+        "F27",
+        "F38"
+      ],
+      "sessions": 1,
+      "duration": 2,
+      "room_kind": "lab",
+      "distinct_days": false
+    },
+    {
+      "id": "G09-L2",
+      "groups": [
+        "G09"
+      ],
+      "eligible_faculty": [
+        "F07",
+        "F18",
+        "F22",
+        "F45"
+      ],
+      "sessions": 1,
+      "duration": 2,
+      "room_kind": "lab",
+      "distinct_days": false
+    },
+    {
+      "id": "G10-T1",
+      "groups": [
+        "G10"
+      ],
+      "eligible_faculty": [
+        "F04",
+        "F39",
+        "F44",
+        "F50"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G10-T2",
+      "groups": [
+        "G10"
+      ],
+      "eligible_faculty": [
+        "F16",
+        "F27",
+        "F33",
+        "F44"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G10-T3",
+      "groups": [
+        "G10"
+      ],
+      "eligible_faculty": [
+        "F05",
+        "F32",
+        "F45",
+        "F48"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G10-T4",
+      "groups": [
+        "G10"
+      ],
+      "eligible_faculty": [
+        "F23",
+        "F29",
+        "F30",
+        "F33"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G10-T5",
+      "groups": [
+        "G10"
+      ],
+      "eligible_faculty": [
+        "F27",
+        "F32",
+        "F40",
+        "F41"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G10-T6",
+      "groups": [
+        "G10"
+      ],
+      "eligible_faculty": [
+        "F05",
+        "F28",
+        "F30",
+        "F44"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G10-L1",
+      "groups": [
+        "G10"
+      ],
+      "eligible_faculty": [
+        "F28",
+        "F31",
+        "F42",
+        "F43"
+      ],
+      "sessions": 1,
+      "duration": 2,
+      "room_kind": "lab",
+      "distinct_days": false
+    },
+    {
+      "id": "G10-L2",
+      "groups": [
+        "G10"
+      ],
+      "eligible_faculty": [
+        "F05",
+        "F07",
+        "F12",
+        "F42"
+      ],
+      "sessions": 1,
+      "duration": 2,
+      "room_kind": "lab",
+      "distinct_days": false
+    },
+    {
+      "id": "G11-T1",
+      "groups": [
+        "G11"
+      ],
+      "eligible_faculty": [
+        "F04",
+        "F26",
+        "F34",
+        "F35"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G11-T2",
+      "groups": [
+        "G11"
+      ],
+      "eligible_faculty": [
+        "F04",
+        "F10",
+        "F21",
+        "F40"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G11-T3",
+      "groups": [
+        "G11"
+      ],
+      "eligible_faculty": [
+        "F15",
+        "F34",
+        "F45",
+        "F46"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G11-T4",
+      "groups": [
+        "G11"
+      ],
+      "eligible_faculty": [
+        "F01",
+        "F28",
+        "F39",
+        "F45"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G11-T5",
+      "groups": [
+        "G11"
+      ],
+      "eligible_faculty": [
+        "F09",
+        "F23",
+        "F25",
+        "F47"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G11-T6",
+      "groups": [
+        "G11"
+      ],
+      "eligible_faculty": [
+        "F10",
+        "F33",
+        "F42",
+        "F48"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G11-L1",
+      "groups": [
+        "G11"
+      ],
+      "eligible_faculty": [
+        "F14",
+        "F33",
+        "F36",
+        "F47"
+      ],
+      "sessions": 1,
+      "duration": 2,
+      "room_kind": "lab",
+      "distinct_days": false
+    },
+    {
+      "id": "G11-L2",
+      "groups": [
+        "G11"
+      ],
+      "eligible_faculty": [
+        "F22",
+        "F23",
+        "F33",
+        "F38"
+      ],
+      "sessions": 1,
+      "duration": 2,
+      "room_kind": "lab",
+      "distinct_days": false
+    },
+    {
+      "id": "G12-T1",
+      "groups": [
+        "G12"
+      ],
+      "eligible_faculty": [
+        "F13",
+        "F17",
+        "F28",
+        "F33"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G12-T2",
+      "groups": [
+        "G12"
+      ],
+      "eligible_faculty": [
+        "F12",
+        "F13",
+        "F31",
+        "F32"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G12-T3",
+      "groups": [
+        "G12"
+      ],
+      "eligible_faculty": [
+        "F33",
+        "F34",
+        "F35",
+        "F41"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G12-T4",
+      "groups": [
+        "G12"
+      ],
+      "eligible_faculty": [
+        "F14",
+        "F30",
+        "F42",
+        "F45"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G12-T5",
+      "groups": [
+        "G12"
+      ],
+      "eligible_faculty": [
+        "F04",
+        "F10",
+        "F17",
+        "F48"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G12-T6",
+      "groups": [
+        "G12"
+      ],
+      "eligible_faculty": [
+        "F01",
+        "F04",
+        "F41",
+        "F48"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G12-L1",
+      "groups": [
+        "G12"
+      ],
+      "eligible_faculty": [
+        "F11",
+        "F14",
+        "F25",
+        "F40"
+      ],
+      "sessions": 1,
+      "duration": 2,
+      "room_kind": "lab",
+      "distinct_days": false
+    },
+    {
+      "id": "G12-L2",
+      "groups": [
+        "G12"
+      ],
+      "eligible_faculty": [
+        "F11",
+        "F23",
+        "F29",
+        "F44"
+      ],
+      "sessions": 1,
+      "duration": 2,
+      "room_kind": "lab",
+      "distinct_days": false
+    },
+    {
+      "id": "G13-T1",
+      "groups": [
+        "G13"
+      ],
+      "eligible_faculty": [
+        "F07",
+        "F12",
+        "F14",
+        "F42"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G13-T2",
+      "groups": [
+        "G13"
+      ],
+      "eligible_faculty": [
+        "F01",
+        "F10",
+        "F12",
+        "F38"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G13-T3",
+      "groups": [
+        "G13"
+      ],
+      "eligible_faculty": [
+        "F19",
+        "F36",
+        "F46",
+        "F47"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G13-T4",
+      "groups": [
+        "G13"
+      ],
+      "eligible_faculty": [
+        "F05",
+        "F15",
+        "F42",
+        "F50"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G13-T5",
+      "groups": [
+        "G13"
+      ],
+      "eligible_faculty": [
+        "F07",
+        "F12",
+        "F30",
+        "F48"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G13-T6",
+      "groups": [
+        "G13"
+      ],
+      "eligible_faculty": [
+        "F30",
+        "F35",
+        "F40",
+        "F44"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G13-L1",
+      "groups": [
+        "G13"
+      ],
+      "eligible_faculty": [
+        "F06",
+        "F31",
+        "F37",
+        "F45"
+      ],
+      "sessions": 1,
+      "duration": 2,
+      "room_kind": "lab",
+      "distinct_days": false
+    },
+    {
+      "id": "G13-L2",
+      "groups": [
+        "G13"
+      ],
+      "eligible_faculty": [
+        "F04",
+        "F20",
+        "F25",
+        "F38"
+      ],
+      "sessions": 1,
+      "duration": 2,
+      "room_kind": "lab",
+      "distinct_days": false
+    },
+    {
+      "id": "G14-T1",
+      "groups": [
+        "G14"
+      ],
+      "eligible_faculty": [
+        "F15",
+        "F19",
+        "F20",
+        "F38"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G14-T2",
+      "groups": [
+        "G14"
+      ],
+      "eligible_faculty": [
+        "F04",
+        "F17",
+        "F22",
+        "F46"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G14-T3",
+      "groups": [
+        "G14"
+      ],
+      "eligible_faculty": [
+        "F07",
+        "F12",
+        "F35",
+        "F43"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G14-T4",
+      "groups": [
+        "G14"
+      ],
+      "eligible_faculty": [
+        "F16",
+        "F20",
+        "F37",
+        "F38"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G14-T5",
+      "groups": [
+        "G14"
+      ],
+      "eligible_faculty": [
+        "F01",
+        "F31",
+        "F42",
+        "F46"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G14-T6",
+      "groups": [
+        "G14"
+      ],
+      "eligible_faculty": [
+        "F05",
+        "F26",
+        "F27",
+        "F37"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G14-L1",
+      "groups": [
+        "G14"
+      ],
+      "eligible_faculty": [
+        "F12",
+        "F22",
+        "F38",
+        "F44"
+      ],
+      "sessions": 1,
+      "duration": 2,
+      "room_kind": "lab",
+      "distinct_days": false
+    },
+    {
+      "id": "G14-L2",
+      "groups": [
+        "G14"
+      ],
+      "eligible_faculty": [
+        "F04",
+        "F28",
+        "F35",
+        "F44"
+      ],
+      "sessions": 1,
+      "duration": 2,
+      "room_kind": "lab",
+      "distinct_days": false
+    },
+    {
+      "id": "G15-T1",
+      "groups": [
+        "G15"
+      ],
+      "eligible_faculty": [
+        "F22",
+        "F42",
+        "F46",
+        "F49"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G15-T2",
+      "groups": [
+        "G15"
+      ],
+      "eligible_faculty": [
+        "F07",
+        "F15",
+        "F18",
+        "F46"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G15-T3",
+      "groups": [
+        "G15"
+      ],
+      "eligible_faculty": [
+        "F03",
+        "F32",
+        "F43",
+        "F48"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G15-T4",
+      "groups": [
+        "G15"
+      ],
+      "eligible_faculty": [
+        "F25",
+        "F42",
+        "F43",
+        "F45"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G15-T5",
+      "groups": [
+        "G15"
+      ],
+      "eligible_faculty": [
+        "F14",
+        "F38",
+        "F45",
+        "F47"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G15-T6",
+      "groups": [
+        "G15"
+      ],
+      "eligible_faculty": [
+        "F13",
+        "F15",
+        "F39",
+        "F48"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G15-L1",
+      "groups": [
+        "G15"
+      ],
+      "eligible_faculty": [
+        "F04",
+        "F23",
+        "F30",
+        "F50"
+      ],
+      "sessions": 1,
+      "duration": 2,
+      "room_kind": "lab",
+      "distinct_days": false
+    },
+    {
+      "id": "G15-L2",
+      "groups": [
+        "G15"
+      ],
+      "eligible_faculty": [
+        "F12",
+        "F15",
+        "F19",
+        "F34"
+      ],
+      "sessions": 1,
+      "duration": 2,
+      "room_kind": "lab",
+      "distinct_days": false
+    },
+    {
+      "id": "G16-T1",
+      "groups": [
+        "G16"
+      ],
+      "eligible_faculty": [
+        "F03",
+        "F10",
+        "F12",
+        "F40"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G16-T2",
+      "groups": [
+        "G16"
+      ],
+      "eligible_faculty": [
+        "F04",
+        "F08",
+        "F13",
+        "F30"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G16-T3",
+      "groups": [
+        "G16"
+      ],
+      "eligible_faculty": [
+        "F12",
+        "F14",
+        "F17",
+        "F47"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G16-T4",
+      "groups": [
+        "G16"
+      ],
+      "eligible_faculty": [
+        "F10",
+        "F15",
+        "F26",
+        "F33"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G16-T5",
+      "groups": [
+        "G16"
+      ],
+      "eligible_faculty": [
+        "F01",
+        "F02",
+        "F06",
+        "F31"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G16-T6",
+      "groups": [
+        "G16"
+      ],
+      "eligible_faculty": [
+        "F02",
+        "F11",
+        "F22",
+        "F48"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G16-L1",
+      "groups": [
+        "G16"
+      ],
+      "eligible_faculty": [
+        "F06",
+        "F12",
+        "F30",
+        "F33"
+      ],
+      "sessions": 1,
+      "duration": 2,
+      "room_kind": "lab",
+      "distinct_days": false
+    },
+    {
+      "id": "G16-L2",
+      "groups": [
+        "G16"
+      ],
+      "eligible_faculty": [
+        "F01",
+        "F12",
+        "F16",
+        "F33"
+      ],
+      "sessions": 1,
+      "duration": 2,
+      "room_kind": "lab",
+      "distinct_days": false
+    },
+    {
+      "id": "G17-T1",
+      "groups": [
+        "G17"
+      ],
+      "eligible_faculty": [
+        "F29",
+        "F42",
+        "F44",
+        "F47"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G17-T2",
+      "groups": [
+        "G17"
+      ],
+      "eligible_faculty": [
+        "F11",
+        "F15",
+        "F31",
+        "F36"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G17-T3",
+      "groups": [
+        "G17"
+      ],
+      "eligible_faculty": [
+        "F08",
+        "F30",
+        "F39",
+        "F41"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G17-T4",
+      "groups": [
+        "G17"
+      ],
+      "eligible_faculty": [
+        "F02",
+        "F03",
+        "F38",
+        "F39"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G17-T5",
+      "groups": [
+        "G17"
+      ],
+      "eligible_faculty": [
+        "F20",
+        "F27",
+        "F36",
+        "F43"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G17-T6",
+      "groups": [
+        "G17"
+      ],
+      "eligible_faculty": [
+        "F21",
+        "F28",
+        "F35",
+        "F43"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G17-L1",
+      "groups": [
+        "G17"
+      ],
+      "eligible_faculty": [
+        "F27",
+        "F37",
+        "F42",
+        "F48"
+      ],
+      "sessions": 1,
+      "duration": 2,
+      "room_kind": "lab",
+      "distinct_days": false
+    },
+    {
+      "id": "G17-L2",
+      "groups": [
+        "G17"
+      ],
+      "eligible_faculty": [
+        "F08",
+        "F20",
+        "F24",
+        "F49"
+      ],
+      "sessions": 1,
+      "duration": 2,
+      "room_kind": "lab",
+      "distinct_days": false
+    },
+    {
+      "id": "G18-T1",
+      "groups": [
+        "G18"
+      ],
+      "eligible_faculty": [
+        "F02",
+        "F27",
+        "F37",
+        "F45"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G18-T2",
+      "groups": [
+        "G18"
+      ],
+      "eligible_faculty": [
+        "F06",
+        "F14",
+        "F30",
+        "F42"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G18-T3",
+      "groups": [
+        "G18"
+      ],
+      "eligible_faculty": [
+        "F25",
+        "F27",
+        "F33",
+        "F42"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G18-T4",
+      "groups": [
+        "G18"
+      ],
+      "eligible_faculty": [
+        "F07",
+        "F31",
+        "F32",
+        "F38"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G18-T5",
+      "groups": [
+        "G18"
+      ],
+      "eligible_faculty": [
+        "F03",
+        "F09",
+        "F11",
+        "F32"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G18-T6",
+      "groups": [
+        "G18"
+      ],
+      "eligible_faculty": [
+        "F04",
+        "F36",
+        "F37",
+        "F50"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G18-L1",
+      "groups": [
+        "G18"
+      ],
+      "eligible_faculty": [
+        "F11",
+        "F21",
+        "F31",
+        "F37"
+      ],
+      "sessions": 1,
+      "duration": 2,
+      "room_kind": "lab",
+      "distinct_days": false
+    },
+    {
+      "id": "G18-L2",
+      "groups": [
+        "G18"
+      ],
+      "eligible_faculty": [
+        "F09",
+        "F27",
+        "F28",
+        "F38"
+      ],
+      "sessions": 1,
+      "duration": 2,
+      "room_kind": "lab",
+      "distinct_days": false
+    },
+    {
+      "id": "G19-T1",
+      "groups": [
+        "G19"
+      ],
+      "eligible_faculty": [
+        "F30",
+        "F40",
+        "F43",
+        "F44"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G19-T2",
+      "groups": [
+        "G19"
+      ],
+      "eligible_faculty": [
+        "F02",
+        "F13",
+        "F16",
+        "F24"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G19-T3",
+      "groups": [
+        "G19"
+      ],
+      "eligible_faculty": [
+        "F06",
+        "F21",
+        "F36",
+        "F41"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G19-T4",
+      "groups": [
+        "G19"
+      ],
+      "eligible_faculty": [
+        "F11",
+        "F20",
+        "F33",
+        "F37"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G19-T5",
+      "groups": [
+        "G19"
+      ],
+      "eligible_faculty": [
+        "F03",
+        "F12",
+        "F14",
+        "F38"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G19-T6",
+      "groups": [
+        "G19"
+      ],
+      "eligible_faculty": [
+        "F01",
+        "F17",
+        "F20",
+        "F29"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G19-L1",
+      "groups": [
+        "G19"
+      ],
+      "eligible_faculty": [
+        "F24",
+        "F25",
+        "F48",
+        "F50"
+      ],
+      "sessions": 1,
+      "duration": 2,
+      "room_kind": "lab",
+      "distinct_days": false
+    },
+    {
+      "id": "G19-L2",
+      "groups": [
+        "G19"
+      ],
+      "eligible_faculty": [
+        "F09",
+        "F12",
+        "F21",
+        "F25"
+      ],
+      "sessions": 1,
+      "duration": 2,
+      "room_kind": "lab",
+      "distinct_days": false
+    },
+    {
+      "id": "G20-T1",
+      "groups": [
+        "G20"
+      ],
+      "eligible_faculty": [
+        "F05",
+        "F25",
+        "F47",
+        "F50"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G20-T2",
+      "groups": [
+        "G20"
+      ],
+      "eligible_faculty": [
+        "F21",
+        "F27",
+        "F34",
+        "F38"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G20-T3",
+      "groups": [
+        "G20"
+      ],
+      "eligible_faculty": [
+        "F13",
+        "F20",
+        "F36",
+        "F49"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G20-T4",
+      "groups": [
+        "G20"
+      ],
+      "eligible_faculty": [
+        "F04",
+        "F10",
+        "F25",
+        "F38"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G20-T5",
+      "groups": [
+        "G20"
+      ],
+      "eligible_faculty": [
+        "F01",
+        "F09",
+        "F19",
+        "F48"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G20-T6",
+      "groups": [
+        "G20"
+      ],
+      "eligible_faculty": [
+        "F02",
+        "F07",
+        "F20",
+        "F22"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "G20-L1",
+      "groups": [
+        "G20"
+      ],
+      "eligible_faculty": [
+        "F23",
+        "F34",
+        "F39",
+        "F48"
+      ],
+      "sessions": 1,
+      "duration": 2,
+      "room_kind": "lab",
+      "distinct_days": false
+    },
+    {
+      "id": "G20-L2",
+      "groups": [
+        "G20"
+      ],
+      "eligible_faculty": [
+        "F02",
+        "F11",
+        "F34",
+        "F42"
+      ],
+      "sessions": 1,
+      "duration": 2,
+      "room_kind": "lab",
+      "distinct_days": false
+    }
+  ],
+  "metadata": {
+    "synthetic": true,
+    "generator_version": 1,
+    "seed": 1020,
+    "preset": "large",
+    "config": {
+      "days": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "periods_per_day": 8,
+      "lunch_periods": [
+        4
+      ],
+      "theory_offerings_per_group": 6,
+      "lab_offerings_per_group": 2,
+      "lab_duration": 2,
+      "max_weekly": 20,
+      "max_daily": 6,
+      "unavailability_rate": 0.08,
+      "eligible_per_offering": 4,
+      "construction_attempts": 40,
+      "groups": 20,
+      "rooms": 25,
+      "faculty": 50,
+      "target_events": 400
+    },
+    "sampling": "planted feasible; availability sampled from resource-free certificate slots",
+    "group_assumption": "disjoint cohorts; full-cohort labs; no split-batch inference"
+  }
+}

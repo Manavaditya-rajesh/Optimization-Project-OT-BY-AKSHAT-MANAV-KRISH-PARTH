@@ -1,0 +1,15 @@
+{
+  "name": "enhancement_development",
+  "phase": "development",
+  "population_size": 24,
+  "methods": ["greedy", "original_enhanced", "memetic", "ablation_local"],
+  "protocols": ["evaluations", "wall_time"],
+  "evaluation_ceiling": 100000,
+  "instance_seeds": [9000, 9001],
+  "solver_seeds": [9000, 9001],
+  "scenarios": [
+    {"size": "medium", "budget": 240, "wall_time_seconds": 6.0},
+    {"size": "large", "budget": 240, "wall_time_seconds": 16.0}
+  ],
+  "purpose": "Development-only profiling/tuning on unchanged generator presets; never pooled into held-out validation."
+}

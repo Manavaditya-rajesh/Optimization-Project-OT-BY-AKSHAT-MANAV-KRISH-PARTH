@@ -1,6 +1,6 @@
 # Four-member, eight-week project plan and evidence record
 
-This is a **prospective/adaptable plan**, not an assertion that eight weeks of work or student commits have occurred. The supplied assignment requires four students to make meaningful contributions in parallel every week. The present task creates local reviewable implementation artifacts; it does not create commits or assign authorship to students. Names, roll numbers, usernames, approval date, professor details, actual weekly evidence, and repository access must be confirmed by the group.
+This is a **prospective/adaptable plan**, not an assertion that eight weeks of work or student commits have occurred. The supplied assignment requires four students to make meaningful contributions in parallel every week. The implementation and its follow-up are published in user-authorized delivery commits; those commits do not assign individual student authorship or establish weekly participation. Names, roll numbers, usernames, approval date, professor details, actual weekly evidence, and repository access must be confirmed by the group.
 
 ## Parallel work plan
 
@@ -23,7 +23,7 @@ The following fields must be filled with **actual evidence**, not retroactively 
 
 | Week/date | Member/name | Actual contribution | Evidence path and authorized commit/PR reference | Validation/review performed |
 |---|---|---|---|---|
-| Not recorded in this task | Not supplied | No historical claim | No commits created by this task | Group to complete from actual records |
+| Not recorded in this task | Not supplied | No historical claim | Delivery commits are not individual weekly evidence | Group to complete from actual records |
 
 ## Administrative items outside the implementation
 
@@ -33,8 +33,8 @@ The following fields must be filled with **actual evidence**, not retroactively 
 | Three distinct proposals and final faculty approval | Supplied timetable proposal is a reference; no approval date or other proposals supplied. |
 | Private repository and professor/member access | Do not infer or modify access from this local task. Group must verify in its repository settings. |
 | Repository-link document after approval | Group must provide the real link, approved title/date, and confirmed access details. |
-| Eight weeks of meaningful personal commits | Cannot be manufactured in a single implementation task; no commits made here. |
-| Presentation and viva | Presenter notes/demo guide supplied; students must understand and deliver it themselves. |
+| Eight weeks of meaningful personal commits | Cannot be manufactured in a single implementation task; delivery commits do not establish weekly participation. |
+| Presentation and viva | Final slide material and demo guide supplied; students must understand and deliver it themselves. |
 
 ## Technical risks to revisit during the project
 

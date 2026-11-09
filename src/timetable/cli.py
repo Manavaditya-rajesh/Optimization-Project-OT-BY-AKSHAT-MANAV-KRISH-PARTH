@@ -33,7 +33,7 @@ def parser() -> argparse.ArgumentParser:
     gen.add_argument("--certificate", help="Optional separate certificate file; never used by solve")
     solve = sub.add_parser("solve", help="Optimize and export feasible non-dominated timetables")
     solve.add_argument("instance")
-    solve.add_argument("--method", choices=["greedy", "nsga2", "seeded", "enhanced", "cpsat"], default="enhanced")
+    solve.add_argument("--method", choices=["greedy", "nsga2", "seeded", "enhanced", "memetic", "cpsat"], default="enhanced")
     solve.add_argument("--seed", type=int, default=0)
     solve.add_argument("--budget", type=int, default=480)
     solve.add_argument("--population", type=int, default=24)
@@ -41,12 +41,16 @@ def parser() -> argparse.ArgumentParser:
     solve.add_argument("--figures", default="figures/demo")
     solve.add_argument("--objective", choices=["feasibility", "gaps", "room"], default="gaps", help="CP-SAT objective only")
     solve.add_argument("--time-limit", type=float, default=15.0, help="CP-SAT solver time limit, excluding model build")
+    solve.add_argument("--search-seconds", type=float, help="Optional total search deadline for the memetic method")
     val = sub.add_parser("evaluate", aliases=["validate"], help="Independently check a schedule (nonzero exit if infeasible)")
     val.add_argument("instance")
     val.add_argument("schedule")
     exp = sub.add_parser("experiment", help="Run/resume a saved paired benchmark configuration")
     exp.add_argument("--config", default="experiments/benchmark.json")
     exp.add_argument("--resume", action="store_true")
+    compare = sub.add_parser("compare", help="Compare the new search with unchanged baselines under evaluation/time budgets")
+    compare.add_argument("--config", default="experiments/enhancement_validation.json")
+    compare.add_argument("--resume", action="store_true")
     plot = sub.add_parser("plot", help="Regenerate summary tables and figures from saved raw runs")
     plot.add_argument("--results", default="results/benchmark")
     plot.add_argument("--figures")
@@ -76,6 +80,10 @@ def main(argv=None) -> int:
         if args.command == "experiment":
             from .experiments import run_suite
             print(run_suite(args.config, resume=args.resume))
+            return 0
+        if args.command == "compare":
+            from .comparison import run_comparison
+            print(run_comparison(args.config, resume=args.resume))
             return 0
         if args.command == "plot":
             from .experiments import analyze_suite
@@ -118,7 +126,12 @@ def main(argv=None) -> int:
                 _write(out / "exact.json", payload)
                 print(json.dumps({key: value for key, value in payload.items() if key not in {"schedule", "metadata"}}, indent=2))
                 return 0 if result.schedule is not None else 2
-            result = run_method(problem, args.method, args.seed, args.budget, args.population)
+            if args.method == "memetic":
+                from .memetic import memetic_nsga2
+                result = memetic_nsga2(problem, seed=args.seed, population_size=args.population,
+                                       max_evaluations=args.budget, time_limit=args.search_seconds)
+            else:
+                result = run_method(problem, args.method, args.seed, args.budget, args.population)
             payload = serialize_run(problem, result, args.method, args.seed)
             _write(out / "run.json", payload)
             _write(out / "instance.json", problem_to_dict(problem))

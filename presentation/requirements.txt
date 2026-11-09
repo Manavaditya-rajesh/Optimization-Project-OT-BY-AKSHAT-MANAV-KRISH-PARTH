@@ -1,0 +1,6 @@
+# Optional: rebuilding slides. Opening supplied PPTX/PDF needs none of these.
+python-pptx>=1.0,<2
+matplotlib>=3.8,<4
+Pillow>=10,<13
+# PDF export additionally uses installed LibreOffice (soffice).
+# Preview/checks additionally use installed Poppler (pdfinfo/pdftotext/pdftoppm).

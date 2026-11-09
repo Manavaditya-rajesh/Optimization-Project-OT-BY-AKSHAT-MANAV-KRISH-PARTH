@@ -1,0 +1,337 @@
+enhancement_validation: small_1010 evaluations greedy seed=0
+  HV=0.93488660 feasible=True evals=720 elapsed=8.670s overshoot=0.000s
+enhancement_validation: small_1010 evaluations original_enhanced seed=0
+  HV=0.93442661 feasible=True evals=720 elapsed=2.710s overshoot=0.000s
+enhancement_validation: small_1010 evaluations memetic seed=0
+  HV=0.93029016 feasible=True evals=720 elapsed=1.993s overshoot=0.000s
+enhancement_validation: small_1010 evaluations ablation_local seed=0
+  HV=0.93514723 feasible=True evals=720 elapsed=2.062s overshoot=0.000s
+enhancement_validation: small_1010 wall_time greedy seed=0
+  HV=0.93481078 feasible=True evals=199 elapsed=2.511s overshoot=0.011s
+enhancement_validation: small_1010 wall_time original_enhanced seed=0
+  HV=0.93442661 feasible=True evals=625 elapsed=2.512s overshoot=0.012s
+enhancement_validation: small_1010 wall_time memetic seed=0
+  HV=0.93029016 feasible=True evals=869 elapsed=2.505s overshoot=0.005s
+enhancement_validation: small_1010 wall_time ablation_local seed=0
+  HV=0.93516029 feasible=True evals=879 elapsed=2.502s overshoot=0.002s
+enhancement_validation: small_1010 wall_time original_enhanced seed=1
+  HV=0.93488135 feasible=True evals=645 elapsed=2.504s overshoot=0.004s
+enhancement_validation: small_1010 wall_time memetic seed=1
+  HV=0.93531876 feasible=True evals=925 elapsed=2.501s overshoot=0.001s
+enhancement_validation: small_1010 wall_time ablation_local seed=1
+  HV=0.93029016 feasible=True evals=844 elapsed=2.503s overshoot=0.003s
+enhancement_validation: small_1010 wall_time greedy seed=1
+  HV=0.92948691 feasible=True evals=197 elapsed=2.510s overshoot=0.010s
+enhancement_validation: small_1010 evaluations original_enhanced seed=1
+  HV=0.93494631 feasible=True evals=720 elapsed=2.791s overshoot=0.000s
+enhancement_validation: small_1010 evaluations memetic seed=1
+  HV=0.93531876 feasible=True evals=720 elapsed=1.979s overshoot=0.000s
+enhancement_validation: small_1010 evaluations ablation_local seed=1
+  HV=0.93029016 feasible=True evals=720 elapsed=1.949s overshoot=0.000s
+enhancement_validation: small_1010 evaluations greedy seed=1
+  HV=0.93467086 feasible=True evals=720 elapsed=8.839s overshoot=0.000s
+enhancement_validation: small_1010 evaluations memetic seed=2
+  HV=0.92526157 feasible=True evals=720 elapsed=2.381s overshoot=0.000s
+enhancement_validation: small_1010 evaluations ablation_local seed=2
+  HV=0.92525625 feasible=True evals=720 elapsed=2.091s overshoot=0.000s
+enhancement_validation: small_1010 evaluations greedy seed=2
+  HV=0.93468462 feasible=True evals=720 elapsed=9.227s overshoot=0.000s
+enhancement_validation: small_1010 evaluations original_enhanced seed=2
+  HV=0.93335377 feasible=True evals=720 elapsed=2.715s overshoot=0.000s
+enhancement_validation: small_1010 wall_time memetic seed=2
+  HV=0.92526157 feasible=True evals=623 elapsed=2.509s overshoot=0.009s
+enhancement_validation: small_1010 wall_time ablation_local seed=2
+  HV=0.92525625 feasible=True evals=815 elapsed=2.503s overshoot=0.003s
+enhancement_validation: small_1010 wall_time greedy seed=2
+  HV=0.92504494 feasible=True evals=171 elapsed=2.503s overshoot=0.003s
+enhancement_validation: small_1010 wall_time original_enhanced seed=2
+  HV=0.92510546 feasible=True evals=555 elapsed=2.505s overshoot=0.005s
+enhancement_validation: medium_1010 evaluations greedy seed=0
+  HV=1.01740185 feasible=True evals=360 elapsed=20.265s overshoot=0.000s
+enhancement_validation: medium_1010 evaluations original_enhanced seed=0
+  HV=0.96860744 feasible=True evals=360 elapsed=6.523s overshoot=0.000s
+enhancement_validation: medium_1010 evaluations memetic seed=0
+  HV=1.05012668 feasible=True evals=360 elapsed=2.818s overshoot=0.000s
+enhancement_validation: medium_1010 evaluations ablation_local seed=0
+  HV=1.05138654 feasible=True evals=360 elapsed=2.947s overshoot=0.000s
+enhancement_validation: medium_1010 wall_time greedy seed=0
+  HV=1.01167097 feasible=True evals=105 elapsed=6.022s overshoot=0.022s
+enhancement_validation: medium_1010 wall_time original_enhanced seed=0
+  HV=0.96860744 feasible=True evals=321 elapsed=6.006s overshoot=0.006s
+enhancement_validation: medium_1010 wall_time memetic seed=0
+  HV=1.06240377 feasible=True evals=945 elapsed=6.003s overshoot=0.003s
+enhancement_validation: medium_1010 wall_time ablation_local seed=0
+  HV=1.06178196 feasible=True evals=988 elapsed=6.003s overshoot=0.003s
+enhancement_validation: medium_1010 wall_time original_enhanced seed=1
+  HV=0.97803348 feasible=True evals=332 elapsed=6.019s overshoot=0.019s
+enhancement_validation: medium_1010 wall_time memetic seed=1
+  HV=1.06818645 feasible=True evals=953 elapsed=6.022s overshoot=0.022s
+enhancement_validation: medium_1010 wall_time ablation_local seed=1
+  HV=1.06154436 feasible=True evals=984 elapsed=6.056s overshoot=0.056s
+enhancement_validation: medium_1010 wall_time greedy seed=1
+  HV=0.98391418 feasible=True evals=102 elapsed=6.014s overshoot=0.014s
+enhancement_validation: medium_1010 evaluations original_enhanced seed=1
+  HV=0.97803348 feasible=True evals=360 elapsed=6.784s overshoot=0.000s
+enhancement_validation: medium_1010 evaluations memetic seed=1
+  HV=1.05407151 feasible=True evals=360 elapsed=2.946s overshoot=0.000s
+enhancement_validation: medium_1010 evaluations ablation_local seed=1
+  HV=1.05991040 feasible=True evals=360 elapsed=2.977s overshoot=0.000s
+enhancement_validation: medium_1010 evaluations greedy seed=1
+  HV=1.01536802 feasible=True evals=360 elapsed=20.520s overshoot=0.000s
+enhancement_validation: medium_1010 evaluations memetic seed=2
+  HV=1.06756101 feasible=True evals=360 elapsed=2.831s overshoot=0.000s
+enhancement_validation: medium_1010 evaluations ablation_local seed=2
+  HV=1.05778248 feasible=True evals=360 elapsed=2.814s overshoot=0.000s
+enhancement_validation: medium_1010 evaluations greedy seed=2
+  HV=1.02286995 feasible=True evals=360 elapsed=20.646s overshoot=0.000s
+enhancement_validation: medium_1010 evaluations original_enhanced seed=2
+  HV=0.97637590 feasible=True evals=360 elapsed=6.436s overshoot=0.000s
+enhancement_validation: medium_1010 wall_time memetic seed=2
+  HV=1.06828597 feasible=True evals=993 elapsed=6.006s overshoot=0.006s
+enhancement_validation: medium_1010 wall_time ablation_local seed=2
+  HV=1.06786548 feasible=True evals=1015 elapsed=6.032s overshoot=0.032s
+enhancement_validation: medium_1010 wall_time greedy seed=2
+  HV=0.99350417 feasible=True evals=101 elapsed=6.020s overshoot=0.020s
+enhancement_validation: medium_1010 wall_time original_enhanced seed=2
+  HV=0.97637590 feasible=True evals=325 elapsed=6.051s overshoot=0.051s
+enhancement_validation: medium_1020 evaluations greedy seed=0
+  HV=1.02172272 feasible=True evals=360 elapsed=19.997s overshoot=0.000s
+enhancement_validation: medium_1020 evaluations original_enhanced seed=0
+  HV=0.99833763 feasible=True evals=360 elapsed=6.338s overshoot=0.000s
+enhancement_validation: medium_1020 evaluations memetic seed=0
+  HV=1.06056930 feasible=True evals=360 elapsed=2.900s overshoot=0.000s
+enhancement_validation: medium_1020 evaluations ablation_local seed=0
+  HV=1.05045890 feasible=True evals=360 elapsed=2.874s overshoot=0.000s
+enhancement_validation: medium_1020 wall_time greedy seed=0
+  HV=0.97124132 feasible=True evals=109 elapsed=6.024s overshoot=0.024s
+enhancement_validation: medium_1020 wall_time original_enhanced seed=0
+  HV=0.99833763 feasible=True evals=329 elapsed=6.006s overshoot=0.006s
+enhancement_validation: medium_1020 wall_time memetic seed=0
+  HV=1.06098531 feasible=True evals=988 elapsed=6.003s overshoot=0.003s
+enhancement_validation: medium_1020 wall_time ablation_local seed=0
+  HV=1.06068303 feasible=True evals=993 elapsed=6.055s overshoot=0.055s
+enhancement_validation: medium_1020 wall_time original_enhanced seed=1
+  HV=0.96408164 feasible=True evals=346 elapsed=6.019s overshoot=0.019s
+enhancement_validation: medium_1020 wall_time memetic seed=1
+  HV=1.06284787 feasible=True evals=1046 elapsed=6.024s overshoot=0.024s
+enhancement_validation: medium_1020 wall_time ablation_local seed=1
+  HV=1.06284960 feasible=True evals=1046 elapsed=6.016s overshoot=0.016s
+enhancement_validation: medium_1020 wall_time greedy seed=1
+  HV=0.97118933 feasible=True evals=113 elapsed=6.053s overshoot=0.053s
+enhancement_validation: medium_1020 evaluations original_enhanced seed=1
+  HV=0.96408164 feasible=True evals=360 elapsed=6.441s overshoot=0.000s
+enhancement_validation: medium_1020 evaluations memetic seed=1
+  HV=1.06240232 feasible=True evals=360 elapsed=2.888s overshoot=0.000s
+enhancement_validation: medium_1020 evaluations ablation_local seed=1
+  HV=1.05204803 feasible=True evals=360 elapsed=2.837s overshoot=0.000s
+enhancement_validation: medium_1020 evaluations greedy seed=1
+  HV=0.99941064 feasible=True evals=360 elapsed=19.827s overshoot=0.000s
+enhancement_validation: medium_1020 evaluations memetic seed=2
+  HV=1.06359580 feasible=True evals=360 elapsed=3.118s overshoot=0.000s
+enhancement_validation: medium_1020 evaluations ablation_local seed=2
+  HV=1.05978776 feasible=True evals=360 elapsed=3.169s overshoot=0.000s
+enhancement_validation: medium_1020 evaluations greedy seed=2
+  HV=0.99774043 feasible=True evals=360 elapsed=19.484s overshoot=0.000s
+enhancement_validation: medium_1020 evaluations original_enhanced seed=2
+  HV=0.98242972 feasible=True evals=360 elapsed=6.174s overshoot=0.000s
+enhancement_validation: medium_1020 wall_time memetic seed=2
+  HV=1.06459053 feasible=True evals=985 elapsed=6.003s overshoot=0.003s
+enhancement_validation: medium_1020 wall_time ablation_local seed=2
+  HV=1.06081306 feasible=True evals=1006 elapsed=6.002s overshoot=0.002s
+enhancement_validation: medium_1020 wall_time greedy seed=2
+  HV=0.98743091 feasible=True evals=111 elapsed=6.010s overshoot=0.010s
+enhancement_validation: medium_1020 wall_time original_enhanced seed=2
+  HV=0.98242972 feasible=True evals=356 elapsed=6.046s overshoot=0.046s
+enhancement_validation: medium_1030 evaluations greedy seed=0
+  HV=0.99435431 feasible=True evals=360 elapsed=20.360s overshoot=0.000s
+enhancement_validation: medium_1030 evaluations original_enhanced seed=0
+  HV=0.97340261 feasible=True evals=360 elapsed=7.066s overshoot=0.000s
+enhancement_validation: medium_1030 evaluations memetic seed=0
+  HV=1.04888576 feasible=True evals=360 elapsed=2.898s overshoot=0.000s
+enhancement_validation: medium_1030 evaluations ablation_local seed=0
+  HV=1.05833270 feasible=True evals=360 elapsed=3.056s overshoot=0.000s
+enhancement_validation: medium_1030 wall_time greedy seed=0
+  HV=0.98131260 feasible=True evals=107 elapsed=6.038s overshoot=0.038s
+enhancement_validation: medium_1030 wall_time original_enhanced seed=0
+  HV=0.97322972 feasible=True evals=330 elapsed=6.004s overshoot=0.004s
+enhancement_validation: medium_1030 wall_time memetic seed=0
+  HV=1.04901994 feasible=True evals=842 elapsed=6.005s overshoot=0.005s
+enhancement_validation: medium_1030 wall_time ablation_local seed=0
+  HV=1.05863461 feasible=True evals=837 elapsed=6.004s overshoot=0.004s
+enhancement_validation: medium_1030 wall_time original_enhanced seed=1
+  HV=0.97701491 feasible=True evals=291 elapsed=6.060s overshoot=0.060s
+enhancement_validation: medium_1030 wall_time memetic seed=1
+  HV=1.05886698 feasible=True evals=898 elapsed=6.003s overshoot=0.003s
+enhancement_validation: medium_1030 wall_time ablation_local seed=1
+  HV=1.05885060 feasible=True evals=983 elapsed=6.002s overshoot=0.002s
+enhancement_validation: medium_1030 wall_time greedy seed=1
+  HV=1.00843260 feasible=True evals=108 elapsed=6.011s overshoot=0.011s
+enhancement_validation: medium_1030 evaluations original_enhanced seed=1
+  HV=0.97701491 feasible=True evals=360 elapsed=6.101s overshoot=0.000s
+enhancement_validation: medium_1030 evaluations memetic seed=1
+  HV=1.04872461 feasible=True evals=360 elapsed=2.956s overshoot=0.000s
+enhancement_validation: medium_1030 evaluations ablation_local seed=1
+  HV=1.04886043 feasible=True evals=360 elapsed=2.868s overshoot=0.000s
+enhancement_validation: medium_1030 evaluations greedy seed=1
+  HV=1.01316202 feasible=True evals=360 elapsed=20.374s overshoot=0.000s
+enhancement_validation: medium_1030 evaluations memetic seed=2
+  HV=1.04900641 feasible=True evals=360 elapsed=2.995s overshoot=0.000s
+enhancement_validation: medium_1030 evaluations ablation_local seed=2
+  HV=1.04875238 feasible=True evals=360 elapsed=3.186s overshoot=0.000s
+enhancement_validation: medium_1030 evaluations greedy seed=2
+  HV=0.99294435 feasible=True evals=360 elapsed=20.465s overshoot=0.000s
+enhancement_validation: medium_1030 evaluations original_enhanced seed=2
+  HV=0.97218636 feasible=True evals=360 elapsed=6.548s overshoot=0.000s
+enhancement_validation: medium_1030 wall_time memetic seed=2
+  HV=1.04910326 feasible=True evals=883 elapsed=6.003s overshoot=0.003s
+enhancement_validation: medium_1030 wall_time ablation_local seed=2
+  HV=1.05880049 feasible=True evals=916 elapsed=6.002s overshoot=0.002s
+enhancement_validation: medium_1030 wall_time greedy seed=2
+  HV=0.98969236 feasible=True evals=100 elapsed=6.029s overshoot=0.029s
+enhancement_validation: medium_1030 wall_time original_enhanced seed=2
+  HV=0.97218636 feasible=True evals=322 elapsed=6.047s overshoot=0.047s
+enhancement_validation: large_1010 evaluations greedy seed=0
+  HV=0.93726958 feasible=True evals=240 elapsed=54.130s overshoot=0.000s
+enhancement_validation: large_1010 evaluations original_enhanced seed=0
+  HV=0.92546073 feasible=True evals=240 elapsed=16.919s overshoot=0.000s
+enhancement_validation: large_1010 evaluations memetic seed=0
+  HV=0.95502609 feasible=True evals=240 elapsed=8.366s overshoot=0.000s
+enhancement_validation: large_1010 evaluations ablation_local seed=0
+  HV=0.96655446 feasible=True evals=240 elapsed=7.920s overshoot=0.000s
+enhancement_validation: large_1010 wall_time greedy seed=0
+  HV=0.92798331 feasible=True evals=75 elapsed=16.212s overshoot=0.212s
+enhancement_validation: large_1010 wall_time original_enhanced seed=0
+  HV=0.92546073 feasible=True evals=231 elapsed=16.118s overshoot=0.118s
+enhancement_validation: large_1010 wall_time memetic seed=0
+  HV=1.01179298 feasible=True evals=824 elapsed=16.006s overshoot=0.006s
+enhancement_validation: large_1010 wall_time ablation_local seed=0
+  HV=1.01340416 feasible=True evals=832 elapsed=16.005s overshoot=0.005s
+enhancement_validation: large_1010 wall_time original_enhanced seed=1
+  HV=0.91719548 feasible=True evals=232 elapsed=16.322s overshoot=0.322s
+enhancement_validation: large_1010 wall_time memetic seed=1
+  HV=1.01132512 feasible=True evals=732 elapsed=16.009s overshoot=0.009s
+enhancement_validation: large_1010 wall_time ablation_local seed=1
+  HV=1.00972078 feasible=True evals=750 elapsed=16.003s overshoot=0.003s
+enhancement_validation: large_1010 wall_time greedy seed=1
+  HV=0.92912074 feasible=True evals=77 elapsed=16.090s overshoot=0.090s
+enhancement_validation: large_1010 evaluations original_enhanced seed=1
+  HV=0.91719548 feasible=True evals=240 elapsed=16.437s overshoot=0.000s
+enhancement_validation: large_1010 evaluations memetic seed=1
+  HV=0.98649411 feasible=True evals=240 elapsed=7.485s overshoot=0.000s
+enhancement_validation: large_1010 evaluations ablation_local seed=1
+  HV=0.96956828 feasible=True evals=240 elapsed=7.603s overshoot=0.000s
+enhancement_validation: large_1010 evaluations greedy seed=1
+  HV=0.93606431 feasible=True evals=240 elapsed=50.666s overshoot=0.000s
+enhancement_validation: large_1010 evaluations memetic seed=2
+  HV=0.95945287 feasible=True evals=240 elapsed=8.382s overshoot=0.000s
+enhancement_validation: large_1010 evaluations ablation_local seed=2
+  HV=0.97000924 feasible=True evals=240 elapsed=8.013s overshoot=0.000s
+enhancement_validation: large_1010 evaluations greedy seed=2
+  HV=0.94998072 feasible=True evals=240 elapsed=51.445s overshoot=0.000s
+enhancement_validation: large_1010 evaluations original_enhanced seed=2
+  HV=0.90099782 feasible=True evals=240 elapsed=16.973s overshoot=0.000s
+enhancement_validation: large_1010 wall_time memetic seed=2
+  HV=1.01614241 feasible=True evals=798 elapsed=16.224s overshoot=0.224s
+enhancement_validation: large_1010 wall_time ablation_local seed=2
+  HV=1.00009056 feasible=True evals=860 elapsed=16.074s overshoot=0.074s
+enhancement_validation: large_1010 wall_time greedy seed=2
+  HV=0.92001208 feasible=True evals=76 elapsed=16.026s overshoot=0.026s
+enhancement_validation: large_1010 wall_time original_enhanced seed=2
+  HV=0.90099782 feasible=True evals=232 elapsed=16.003s overshoot=0.003s
+enhancement_validation: large_1020 evaluations greedy seed=0
+  HV=0.93890648 feasible=True evals=240 elapsed=50.331s overshoot=0.000s
+enhancement_validation: large_1020 evaluations original_enhanced seed=0
+  HV=0.92192689 feasible=True evals=240 elapsed=16.983s overshoot=0.000s
+enhancement_validation: large_1020 evaluations memetic seed=0
+  HV=0.97940643 feasible=True evals=240 elapsed=7.793s overshoot=0.000s
+enhancement_validation: large_1020 evaluations ablation_local seed=0
+  HV=0.96676721 feasible=True evals=240 elapsed=8.065s overshoot=0.000s
+enhancement_validation: large_1020 wall_time greedy seed=0
+  HV=0.92228156 feasible=True evals=75 elapsed=16.019s overshoot=0.019s
+enhancement_validation: large_1020 wall_time original_enhanced seed=0
+  HV=0.92192689 feasible=True evals=221 elapsed=16.106s overshoot=0.106s
+enhancement_validation: large_1020 wall_time memetic seed=0
+  HV=1.01551311 feasible=True evals=806 elapsed=16.005s overshoot=0.005s
+enhancement_validation: large_1020 wall_time ablation_local seed=0
+  HV=1.01200296 feasible=True evals=835 elapsed=16.005s overshoot=0.005s
+enhancement_validation: large_1020 wall_time original_enhanced seed=1
+  HV=0.90847537 feasible=True evals=226 elapsed=16.030s overshoot=0.030s
+enhancement_validation: large_1020 wall_time memetic seed=1
+  HV=1.00955122 feasible=True evals=862 elapsed=16.012s overshoot=0.012s
+enhancement_validation: large_1020 wall_time ablation_local seed=1
+  HV=1.01060324 feasible=True evals=853 elapsed=16.005s overshoot=0.005s
+enhancement_validation: large_1020 wall_time greedy seed=1
+  HV=0.93106884 feasible=True evals=76 elapsed=16.054s overshoot=0.054s
+enhancement_validation: large_1020 evaluations original_enhanced seed=1
+  HV=0.90847537 feasible=True evals=240 elapsed=17.387s overshoot=0.000s
+enhancement_validation: large_1020 evaluations memetic seed=1
+  HV=0.97885457 feasible=True evals=240 elapsed=8.076s overshoot=0.000s
+enhancement_validation: large_1020 evaluations ablation_local seed=1
+  HV=0.97002451 feasible=True evals=240 elapsed=7.729s overshoot=0.000s
+enhancement_validation: large_1020 evaluations greedy seed=1
+  HV=0.93185713 feasible=True evals=240 elapsed=50.187s overshoot=0.000s
+enhancement_validation: large_1020 evaluations memetic seed=2
+  HV=0.99292116 feasible=True evals=240 elapsed=7.846s overshoot=0.000s
+enhancement_validation: large_1020 evaluations ablation_local seed=2
+  HV=1.00647281 feasible=True evals=240 elapsed=8.209s overshoot=0.000s
+enhancement_validation: large_1020 evaluations greedy seed=2
+  HV=0.93022248 feasible=True evals=240 elapsed=52.495s overshoot=0.000s
+enhancement_validation: large_1020 evaluations original_enhanced seed=2
+  HV=0.89971532 feasible=True evals=240 elapsed=18.327s overshoot=0.000s
+enhancement_validation: large_1020 wall_time memetic seed=2
+  HV=1.01628305 feasible=True evals=807 elapsed=16.006s overshoot=0.006s
+enhancement_validation: large_1020 wall_time ablation_local seed=2
+  HV=1.01940495 feasible=True evals=820 elapsed=16.004s overshoot=0.004s
+enhancement_validation: large_1020 wall_time greedy seed=2
+  HV=0.92522468 feasible=True evals=74 elapsed=16.199s overshoot=0.199s
+enhancement_validation: large_1020 wall_time original_enhanced seed=2
+  HV=0.89971532 feasible=True evals=229 elapsed=16.156s overshoot=0.156s
+enhancement_validation: large_1030 evaluations greedy seed=0
+  HV=0.95406681 feasible=True evals=240 elapsed=53.058s overshoot=0.000s
+enhancement_validation: large_1030 evaluations original_enhanced seed=0
+  HV=0.95054159 feasible=True evals=240 elapsed=16.473s overshoot=0.000s
+enhancement_validation: large_1030 evaluations memetic seed=0
+  HV=0.99125110 feasible=True evals=240 elapsed=8.046s overshoot=0.000s
+enhancement_validation: large_1030 evaluations ablation_local seed=0
+  HV=0.98684260 feasible=True evals=240 elapsed=8.304s overshoot=0.000s
+enhancement_validation: large_1030 wall_time greedy seed=0
+  HV=0.95168536 feasible=True evals=71 elapsed=16.015s overshoot=0.015s
+enhancement_validation: large_1030 wall_time original_enhanced seed=0
+  HV=0.95054159 feasible=True evals=221 elapsed=16.144s overshoot=0.144s
+enhancement_validation: large_1030 wall_time memetic seed=0
+  HV=1.01405903 feasible=True evals=747 elapsed=16.004s overshoot=0.004s
+enhancement_validation: large_1030 wall_time ablation_local seed=0
+  HV=1.01261972 feasible=True evals=797 elapsed=16.005s overshoot=0.005s
+enhancement_validation: large_1030 wall_time original_enhanced seed=1
+  HV=0.91399310 feasible=True evals=226 elapsed=16.173s overshoot=0.173s
+enhancement_validation: large_1030 wall_time memetic seed=1
+  HV=1.01929494 feasible=True evals=829 elapsed=16.063s overshoot=0.063s
+enhancement_validation: large_1030 wall_time ablation_local seed=1
+  HV=1.00872503 feasible=True evals=815 elapsed=16.008s overshoot=0.008s
+enhancement_validation: large_1030 wall_time greedy seed=1
+  HV=0.93192607 feasible=True evals=76 elapsed=16.192s overshoot=0.192s
+enhancement_validation: large_1030 evaluations original_enhanced seed=1
+  HV=0.91399310 feasible=True evals=240 elapsed=16.859s overshoot=0.000s
+enhancement_validation: large_1030 evaluations memetic seed=1
+  HV=0.97720078 feasible=True evals=240 elapsed=8.125s overshoot=0.000s
+enhancement_validation: large_1030 evaluations ablation_local seed=1
+  HV=0.99290181 feasible=True evals=240 elapsed=8.053s overshoot=0.000s
+enhancement_validation: large_1030 evaluations greedy seed=1
+  HV=0.95350156 feasible=True evals=240 elapsed=51.067s overshoot=0.000s
+enhancement_validation: large_1030 evaluations memetic seed=2
+  HV=0.97513106 feasible=True evals=240 elapsed=8.249s overshoot=0.000s
+enhancement_validation: large_1030 evaluations ablation_local seed=2
+  HV=0.97751681 feasible=True evals=240 elapsed=7.751s overshoot=0.000s
+enhancement_validation: large_1030 evaluations greedy seed=2
+  HV=0.93554315 feasible=True evals=240 elapsed=51.664s overshoot=0.000s
+enhancement_validation: large_1030 evaluations original_enhanced seed=2
+  HV=0.91482059 feasible=True evals=240 elapsed=16.907s overshoot=0.000s
+enhancement_validation: large_1030 wall_time memetic seed=2
+  HV=1.01174262 feasible=True evals=798 elapsed=16.074s overshoot=0.074s
+enhancement_validation: large_1030 wall_time ablation_local seed=2
+  HV=1.01528980 feasible=True evals=810 elapsed=16.003s overshoot=0.003s
+enhancement_validation: large_1030 wall_time greedy seed=2
+  HV=0.93506198 feasible=True evals=73 elapsed=16.088s overshoot=0.088s
+enhancement_validation: large_1030 wall_time original_enhanced seed=2
+  HV=0.91482059 feasible=True evals=224 elapsed=16.158s overshoot=0.158s
+results/enhancement_validation

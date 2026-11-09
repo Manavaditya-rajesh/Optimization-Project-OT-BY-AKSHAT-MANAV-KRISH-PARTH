@@ -1,0 +1,17 @@
+{
+  "name": "enhancement_validation",
+  "phase": "held_out_validation",
+  "population_size": 24,
+  "methods": ["greedy", "original_enhanced", "memetic", "ablation_local"],
+  "protocols": ["evaluations", "wall_time"],
+  "evaluation_ceiling": 100000,
+  "instance_seeds": [1010, 1020, 1030],
+  "solver_seeds": [0, 1, 2],
+  "scenarios": [
+    {"size": "small", "instance_seeds": [1010], "budget": 720, "wall_time_seconds": 2.5,
+     "interpretation": "Small-instance regression/sanity comparison; not the main quality-superiority claim."},
+    {"size": "medium", "budget": 360, "wall_time_seconds": 6.0},
+    {"size": "large", "budget": 240, "wall_time_seconds": 16.0}
+  ],
+  "predeclaration": "Seeds, original generator presets, objectives, constraints, comparison methods, and allocations fixed before held-out runs. Do not tune against validation outcomes or silently replace this study."
+}

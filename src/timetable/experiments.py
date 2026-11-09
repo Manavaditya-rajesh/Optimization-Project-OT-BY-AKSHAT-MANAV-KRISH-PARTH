@@ -106,7 +106,7 @@ def serialize_run(problem, result: SearchResult, method: str, seed: int) -> dict
             "history": history, "metadata": result.metadata,
             "best_candidate_diagnostic": asdict(diagnostic) if diagnostic else None,
             "feasible_run": bool(objectives),
-            "feasible_evaluation_fraction": result.metadata.get("evaluated_feasible", 0) / result.evaluations,
+            "feasible_evaluation_fraction": result.metadata.get("evaluated_feasible", 0) / result.evaluations if result.evaluations else 0.0,
             "minimum_violation": result.metadata.get("minimum_violation", 0)}
 
 

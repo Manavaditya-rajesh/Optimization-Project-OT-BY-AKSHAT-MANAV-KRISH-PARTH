@@ -1,0 +1,5 @@
+PPTX: 21 slides, all with embedded speaker notes.
+PDF: 21 pages; required evidence text checks PASS.
+Rendered contact sheet and selected slides inspected.
+No extracted words outside slide bounds.
+Builder reads saved evidence; no solver measurements rerun.
