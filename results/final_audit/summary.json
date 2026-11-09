@@ -43,5 +43,7 @@
     "derived_metadata_config_replay",
     "defensive_corrupted_checkpoint_validation",
     "repair_helper_zero_violation_tie_outside_search_callers"
-  ]
+  ],
+  "matplotlib_declared_minimum": "3.9",
+  "matplotlib_tested_version": "3.10.8"
 }

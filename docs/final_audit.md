@@ -36,6 +36,11 @@ used the intended constraints.
 branch-and-bound certifies a selected-neighborhood optimum only when it finishes
 or attains a valid bound. A 12,000-node cap alone supplies no such guarantee.
 
+**Plotting dependency floor.** Flexible dependency declarations now require
+Matplotlib 3.9 or newer: the plotting code uses `boxplot(tick_labels=...)`, which
+was introduced in 3.9. The pinned, tested version remains 3.10.8. This corrects an
+overly permissive lower bound without changing the measured environment.
+
 **Numerical Pareto ties.** Exact arithmetic found mathematically dominated points
 retained by the frozen floating-point archive comparator. The separate
 `experiments/exact_fronts.py` tool now produces canonical fronts among saved

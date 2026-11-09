@@ -2888,6 +2888,7 @@ results/final_audit/core_oracle.py
 results/final_audit/core_oracle_results.json
 results/final_audit/dependency_check.txt
 results/final_audit/exact_tool_crosscheck.txt
+results/final_audit/final_project_install.txt
 results/final_audit/final_pytest.txt
 results/final_audit/independent_precision_audit.json
 results/final_audit/independent_precision_audit.py
