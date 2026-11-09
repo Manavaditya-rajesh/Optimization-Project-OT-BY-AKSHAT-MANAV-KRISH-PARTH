@@ -152,61 +152,17 @@ The generator builds a feasible weekly certificate before sampling qualification
 
 ## 10. Results
 
-See [the consolidated final report](report/report.md), [printable report](report/final_report.pdf), and [completed presentation and demo guide](presentation/README.md). The historical [benchmark summary](results/benchmark/summary.md), [raw measurements](results/benchmark/runs.csv), [manifest](results/benchmark/manifest.json) and `results/benchmark/runs/` remain available. Failed runs remain visible and receive hypervolume zero. Figures are generated from saved records.
+See [the consolidated final report](report/report.md), [printable report](report/final_report.pdf), and [completed presentation and demo guide](presentation/README.md). Current measurements are in the [held-out summary](results/enhancement_validation/summary.md), [raw runs](results/enhancement_validation/runs.csv), and [manifest](results/enhancement_validation/manifest.json). Historical records remain available in `results/benchmark/`. Failed runs remain visible and receive hypervolume zero. Figures are generated from saved records.
 
 Presentation: [editable PowerPoint](presentation/college_timetable_optimization.pptx), [PDF slides](presentation/college_timetable_optimization.pdf), and [complete presenter notes](presentation/presenter_notes.md). Optional document rebuild instructions are in [report/README.md](report/README.md) and the presentation guide.
 
-**Historical-study verification:** 136 tests passed, 192 benchmark runs and 109,440 charged search evaluations. The shared checker revalidated all 769 archived feasible schedules and seven separate instance certificates. Greedy, seeded and enhanced methods each had 48/48 feasible runs; plain NSGA-II had 0/48 at these caps. A clean virtual-environment installation was also tested.
-
-| Size | Greedy mean HV | Enhanced mean HV | Greedy seconds | Enhanced seconds |
-|---|---:|---:|---:|---:|
-| small | 0.935319 | 0.935173 | 7.918 | 2.432 |
-| medium | 1.017029 | 0.981213 | 18.550 | 6.087 |
-| large | 0.937241 | 0.909322 | 48.520 | 16.236 |
-
-Enhanced NSGA-II was about three times faster but had lower mean hypervolume than repeated greedy. Small-instance quality was close; medium/large differences were larger. These results support feasibility recovery and runtime savings, not universal evolutionary superiority. Exact lower-bound certificates prove the three checked small instances have the singleton global ideal `(0,14/55,sqrt(1/450))`; multi-objective search is unnecessary for choosing among globally optimal objective vectors there. Larger-instance trade-offs remain empirical.
-
-![Small discovered feasible fronts](figures/benchmark/small_pareto.png)
-![Large convergence](figures/benchmark/large_convergence.png)
-
-Heuristic archives are non-dominated over discovered feasible schedules. Exhaustive micro-instances and independently certified small-instance ideal vectors have global guarantees; other fronts are empirical. Objective conflict is investigated per instance; it is not assumed. CP-SAT `OPTIMAL` certifies the selected scalar objective, not the full multi-objective front.
-
-## 11. Individual contributions
-
-Personal contributions were not supplied and are **not retrospectively assigned**. The group must record authentic work, review, understanding and authorized commits. Suggested parallel responsibilities are model/formulation, algorithms, Pareto/verification, and data/experiments, with weekly cross-review. See [the evidence template](docs/project_plan.md).
-
-## 12. Weekly progress log
-
-Eight weeks of personal development history cannot be created in one cloud task. Technical artifacts and verification records exist; historical weekly participation is unrecorded. The [prospective eight-week plan](docs/project_plan.md) supplies parallel tasks without inventing dates or commits. The original project was published in one authorized commit (`9947d9d`); the completed follow-up and final presentation are published as a separate authorized update. This publication records the delivered work and does not establish eight weeks of individual participation.
-
-## 13. References
-
-Deb et al., NSGA-II (2002), DOI [10.1109/4235.996017](https://doi.org/10.1109/4235.996017); Brélaz, DSatur (1979), DOI [10.1145/359094.359101](https://doi.org/10.1145/359094.359101); Schaerf, automated timetabling survey (1999); Lewis, university timetabling metaheuristics survey (2008); Zitzler et al., multi-objective performance assessment (2003); Google OR-Tools CP-SAT documentation. Full titles, identifiers and precise roles are in [literature/README.md](literature/README.md). Attached academic references are mapped in [docs/reference_review.md](docs/reference_review.md).
-
-## Follow-up: feasible-domain enhancement
-
-The follow-up addresses the high rate of infeasible offspring, while preserving the historical algorithms, datasets and indicator definitions. It uses 24 feasible constructive seeds, five resource-checked mutation neighborhoods, bounded batch faculty assignment, and the existing tested NSGA-II ranking/crowding/survival core. A scalar-local ablation retains the same initialization/proposal family and removes the selection/survival bundle. The method intentionally omits destructive crossover.
-
-The completed predeclared validation matrix has 168 runs on separate instance seeds, with both equal full-evaluation caps and equal wall-time allocations. Late completed results are excluded from cutoff quality; initialization and all partial checks are timed. The larger development matrix is supplied but was not run in full. See [the study protocol](docs/enhancement_study.md) and [the measured follow-up report](report/enhancement_report.md).
-
-```bash
-python main.py solve data/demo.json --method memetic --seed 0 --budget 360 --population 24 --search-seconds 6 --output results/memetic_demo --figures figures/memetic_demo
-python main.py compare --config experiments/enhancement_validation.json --resume
-python experiments/verify_enhancement.py --study enhancement_validation
-python experiments/plot_enhancement.py --study enhancement_validation
-python experiments/export_enhancement.py --study enhancement_validation
-python experiments/report_enhancement.py --study enhancement_validation
-```
-
-For fresh follow-up measurements, copy `experiments/enhancement_validation.json`, change its `name`, and run `compare --config YOUR_CONFIG.json`. Historical `results/benchmark` cannot be resumed under the changed package-source fingerprint; verify/replot it or run a newly named original-method study instead. The new comparison saves a complete measured source snapshot, per-candidate timing/duplicate information, paired statistics and separate feasibility certificates.
-
 <!-- enhancement-results:start -->
 
-### Completed follow-up results
+### Current results: feasible memetic NSGA-II
 
 The held-out study completed **168 runs**. Verification rechecked all **3295 archived timetables**, seven feasibility certificates and every cutoff history; nine late completed evaluations were excluded. All 201 pre-freeze tests passed. The original historical benchmark remains unchanged.
 
-| Size | Protocol | Greedy mean HV | New NSGA-II mean HV | Relative HV change |
+| Size | Protocol | Greedy mean HV | Final memetic NSGA-II mean HV | Relative HV change |
 |---|---|---:|---:|---:|
 | small | evaluations | 0.934747 | 0.930290 | -0.48% |
 | small | wall_time | 0.929781 | 0.930290 | +0.05% |
@@ -222,3 +178,54 @@ See [the measured follow-up report](report/enhancement_report.md), [study protoc
 ![Large held-out anytime comparison](figures/enhancement_validation/large_anytime.png)
 
 <!-- enhancement-results:end -->
+
+The table above compares the **final `memetic` method** with greedy on the same held-out instances and paired seeds within each row. Evaluation and wall-time budgets are separate protocols. The historical study below used different instance/solver seeds, so its greedy means differ; compare methods within a study, not numbers across the two studies.
+
+<details>
+<summary>Historical benchmark: original repair-based enhancement (192 runs)</summary>
+
+**Historical-study verification:** 136 tests passed, 192 benchmark runs and 109,440 charged search evaluations. The shared checker revalidated all 769 archived feasible schedules and seven separate instance certificates. Greedy, seeded and enhanced methods each had 48/48 feasible runs; plain NSGA-II had 0/48 at these caps. A clean virtual-environment installation was also tested.
+
+| Size | Greedy mean HV | Original enhanced mean HV | Greedy seconds | Original enhanced seconds |
+|---|---:|---:|---:|---:|
+| small | 0.935319 | 0.935173 | 7.918 | 2.432 |
+| medium | 1.017029 | 0.981213 | 18.550 | 6.087 |
+| large | 0.937241 | 0.909322 | 48.520 | 16.236 |
+
+In the original study, repair-based `enhanced` NSGA-II was about three times faster but had lower mean hypervolume than repeated greedy. Small-instance quality was close; medium/large differences were larger. These results support feasibility recovery and runtime savings, not universal evolutionary superiority. Exact lower-bound certificates prove the three checked small instances have the singleton global ideal `(0,14/55,sqrt(1/450))`; multi-objective search is unnecessary for choosing among globally optimal objective vectors there. Larger-instance trade-offs remain empirical.
+
+![Small discovered feasible fronts](figures/benchmark/small_pareto.png)
+![Large convergence](figures/benchmark/large_convergence.png)
+
+Heuristic archives are non-dominated over discovered feasible schedules. Exhaustive micro-instances and independently certified small-instance ideal vectors have global guarantees; other fronts are empirical. Objective conflict is investigated per instance; it is not assumed. CP-SAT `OPTIMAL` certifies the selected scalar objective, not the full multi-objective front.
+
+</details>
+
+## 11. Individual contributions
+
+Personal contributions were not supplied and are **not retrospectively assigned**. The group must record authentic work, review, understanding and authorized commits. Suggested parallel responsibilities are model/formulation, algorithms, Pareto/verification, and data/experiments, with weekly cross-review. See [the evidence template](docs/project_plan.md).
+
+## 12. Weekly progress log
+
+Eight weeks of personal development history cannot be created in one cloud task. Technical artifacts and verification records exist; historical weekly participation is unrecorded. The [prospective eight-week plan](docs/project_plan.md) supplies parallel tasks without inventing dates or commits. The original project was published in one authorized commit (`9947d9d`); the completed follow-up and final presentation are published as a separate authorized update. This publication records the delivered work and does not establish eight weeks of individual participation.
+
+## 13. References
+
+Deb et al., NSGA-II (2002), DOI [10.1109/4235.996017](https://doi.org/10.1109/4235.996017); Brélaz, DSatur (1979), DOI [10.1145/359094.359101](https://doi.org/10.1145/359094.359101); Schaerf, automated timetabling survey (1999); Lewis, university timetabling metaheuristics survey (2008); Zitzler et al., multi-objective performance assessment (2003); Google OR-Tools CP-SAT documentation. Full titles, identifiers and precise roles are in [literature/README.md](literature/README.md). Attached academic references are mapped in [docs/reference_review.md](docs/reference_review.md).
+
+## Enhancement method and reproduction
+
+The final `memetic` method, whose measured results appear in [Section 10](#10-results), addresses the high rate of infeasible offspring, while preserving the historical algorithms, datasets and indicator definitions. It uses 24 feasible constructive seeds, five resource-checked mutation neighborhoods, bounded batch faculty assignment, and the existing tested NSGA-II ranking/crowding/survival core. A scalar-local ablation retains the same initialization/proposal family and removes the selection/survival bundle. The method intentionally omits destructive crossover.
+
+The completed predeclared validation matrix has 168 runs on separate instance seeds, with both equal full-evaluation caps and equal wall-time allocations. Late completed results are excluded from cutoff quality; initialization and all partial checks are timed. The larger development matrix is supplied but was not run in full. See [the study protocol](docs/enhancement_study.md) and [the measured follow-up report](report/enhancement_report.md).
+
+```bash
+python main.py solve data/demo.json --method memetic --seed 0 --budget 360 --population 24 --search-seconds 6 --output results/memetic_demo --figures figures/memetic_demo
+python main.py compare --config experiments/enhancement_validation.json --resume
+python experiments/verify_enhancement.py --study enhancement_validation
+python experiments/plot_enhancement.py --study enhancement_validation
+python experiments/export_enhancement.py --study enhancement_validation
+python experiments/report_enhancement.py --study enhancement_validation
+```
+
+For fresh follow-up measurements, copy `experiments/enhancement_validation.json`, change its `name`, and run `compare --config YOUR_CONFIG.json`. Historical `results/benchmark` cannot be resumed under the changed package-source fingerprint; verify/replot it or run a newly named original-method study instead. The new comparison saves a complete measured source snapshot, per-candidate timing/duplicate information, paired statistics and separate feasibility certificates.
