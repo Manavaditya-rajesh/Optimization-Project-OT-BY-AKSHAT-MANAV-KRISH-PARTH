@@ -1,0 +1,5654 @@
+[
+ {
+  "disruption": "teacher_absent",
+  "resource": "F10",
+  "seed": 0,
+  "sessions": 150,
+  "original_objectives": [
+   3.0,
+   0.18755020080321286,
+   0.059371710435189594
+  ],
+  "repair": {
+   "broken": 4,
+   "changes": 4,
+   "proven_minimal": true,
+   "method": "reinsert",
+   "runtime": 0.004280199995264411,
+   "objectives": [
+    7.5,
+    0.19236947791164657,
+    0.059371710435189594
+   ],
+   "hypervolume": 0.9690776630872588
+  },
+  "epsilon": {
+   "evaluations": 531,
+   "runtime": 10.737016600032803,
+   "levels": [
+    {
+     "epsilon": 4,
+     "offset": 0,
+     "feasible": true,
+     "front": 1,
+     "hypervolume": 0.9840361445783137,
+     "evaluations": 4,
+     "rejected": 1822,
+     "min_changes": 4,
+     "compromise": {
+      "objectives": [
+       5.5,
+       0.1891566265060241,
+       0.05500000000000001
+      ],
+      "changes": 4
+     }
+    },
+    {
+     "epsilon": 6,
+     "offset": 2,
+     "feasible": true,
+     "front": 5,
+     "hypervolume": 0.998611694954547,
+     "evaluations": 47,
+     "rejected": 1612,
+     "min_changes": 6,
+     "compromise": {
+      "objectives": [
+       6.5,
+       0.1891566265060241,
+       0.05024937810560445
+      ],
+      "changes": 6
+     }
+    },
+    {
+     "epsilon": 9,
+     "offset": 5,
+     "feasible": true,
+     "front": 4,
+     "hypervolume": 1.010793130400917,
+     "evaluations": 120,
+     "rejected": 1224,
+     "min_changes": 8,
+     "compromise": {
+      "objectives": [
+       6.0,
+       0.1857429718875502,
+       0.05024937810560445
+      ],
+      "changes": 9
+     }
+    },
+    {
+     "epsilon": 14,
+     "offset": 10,
+     "feasible": true,
+     "front": 3,
+     "hypervolume": 1.0109017097478712,
+     "evaluations": 120,
+     "rejected": 31,
+     "min_changes": 8,
+     "compromise": {
+      "objectives": [
+       4.5,
+       0.184136546184739,
+       0.05500000000000001
+      ],
+      "changes": 8
+     }
+    },
+    {
+     "epsilon": 24,
+     "offset": 20,
+     "feasible": true,
+     "front": 2,
+     "hypervolume": 1.019892209529167,
+     "evaluations": 120,
+     "rejected": 6,
+     "min_changes": 20,
+     "compromise": {
+      "objectives": [
+       3.5,
+       0.1825301204819277,
+       0.045000000000000005
+      ],
+      "changes": 20
+     }
+    },
+    {
+     "epsilon": 44,
+     "offset": 40,
+     "feasible": true,
+     "front": 6,
+     "hypervolume": 1.0268090193398478,
+     "evaluations": 120,
+     "rejected": 0,
+     "min_changes": 19,
+     "compromise": {
+      "objectives": [
+       4.5,
+       0.184136546184739,
+       0.04213074886588179
+      ],
+      "changes": 25
+     }
+    }
+   ],
+   "tradeoff_points": 19,
+   "final_hypervolume": 1.0268090193398478,
+   "final_min_changes": 19
+  },
+  "scratch": {
+   "evaluations": 531,
+   "runtime": 3.7378051000414416,
+   "front": 41,
+   "hypervolume": 1.0613844308488887,
+   "min_changes": 147,
+   "compromise": {
+    "objectives": [
+     3.5,
+     0.186144578313253,
+     0.045000000000000005
+    ],
+    "changes": 149
+   }
+  },
+  "instance": "medium_1010"
+ },
+ {
+  "disruption": "teacher_absent",
+  "resource": "F10",
+  "seed": 1,
+  "sessions": 150,
+  "original_objectives": [
+   3.0,
+   0.18755020080321286,
+   0.059371710435189594
+  ],
+  "repair": {
+   "broken": 4,
+   "changes": 4,
+   "proven_minimal": true,
+   "method": "reinsert",
+   "runtime": 0.005250299989711493,
+   "objectives": [
+    7.5,
+    0.19236947791164657,
+    0.059371710435189594
+   ],
+   "hypervolume": 0.9690776630872588
+  },
+  "epsilon": {
+   "evaluations": 506,
+   "runtime": 11.687120800022967,
+   "levels": [
+    {
+     "epsilon": 4,
+     "offset": 0,
+     "feasible": true,
+     "front": 1,
+     "hypervolume": 0.9840361445783137,
+     "evaluations": 4,
+     "rejected": 1797,
+     "min_changes": 4,
+     "compromise": {
+      "objectives": [
+       5.5,
+       0.1891566265060241,
+       0.05500000000000001
+      ],
+      "changes": 4
+     }
+    },
+    {
+     "epsilon": 6,
+     "offset": 2,
+     "feasible": true,
+     "front": 4,
+     "hypervolume": 0.9986069146545149,
+     "evaluations": 42,
+     "rejected": 1601,
+     "min_changes": 6,
+     "compromise": {
+      "objectives": [
+       5.5,
+       0.1857429718875502,
+       0.05500000000000001
+      ],
+      "changes": 6
+     }
+    },
+    {
+     "epsilon": 9,
+     "offset": 5,
+     "feasible": true,
+     "front": 5,
+     "hypervolume": 1.0090835851326354,
+     "evaluations": 100,
+     "rejected": 1292,
+     "min_changes": 7,
+     "compromise": {
+      "objectives": [
+       5.5,
+       0.1857429718875502,
+       0.05024937810560445
+      ],
+      "changes": 9
+     }
+    },
+    {
+     "epsilon": 14,
+     "offset": 10,
+     "feasible": true,
+     "front": 7,
+     "hypervolume": 1.0180206787721116,
+     "evaluations": 120,
+     "rejected": 46,
+     "min_changes": 11,
+     "compromise": {
+      "objectives": [
+       6.0,
+       0.1857429718875502,
+       0.045000000000000005
+      ],
+      "changes": 14
+     }
+    },
+    {
+     "epsilon": 24,
+     "offset": 20,
+     "feasible": true,
+     "front": 10,
+     "hypervolume": 1.0244902763699186,
+     "evaluations": 120,
+     "rejected": 10,
+     "min_changes": 11,
+     "compromise": {
+      "objectives": [
+       4.0,
+       0.184136546184739,
+       0.045000000000000005
+      ],
+      "changes": 20
+     }
+    },
+    {
+     "epsilon": 44,
+     "offset": 40,
+     "feasible": true,
+     "front": 13,
+     "hypervolume": 1.0333111008091542,
+     "evaluations": 120,
+     "rejected": 0,
+     "min_changes": 13,
+     "compromise": {
+      "objectives": [
+       3.5,
+       0.18714859437751005,
+       0.04213074886588179
+      ],
+      "changes": 23
+     }
+    }
+   ],
+   "tradeoff_points": 34,
+   "final_hypervolume": 1.0333111008091542,
+   "final_min_changes": 13
+  },
+  "scratch": {
+   "evaluations": 506,
+   "runtime": 3.5858462000032887,
+   "front": 23,
+   "hypervolume": 1.0658889367632558,
+   "min_changes": 149,
+   "compromise": {
+    "objectives": [
+     0.0,
+     0.18393574297188756,
+     0.045
+    ],
+    "changes": 149
+   }
+  },
+  "instance": "medium_1010"
+ },
+ {
+  "disruption": "teacher_absent",
+  "resource": "F10",
+  "seed": 2,
+  "sessions": 150,
+  "original_objectives": [
+   3.0,
+   0.18755020080321286,
+   0.059371710435189594
+  ],
+  "repair": {
+   "broken": 4,
+   "changes": 4,
+   "proven_minimal": true,
+   "method": "reinsert",
+   "runtime": 0.004788000020198524,
+   "objectives": [
+    7.5,
+    0.19236947791164657,
+    0.059371710435189594
+   ],
+   "hypervolume": 0.9690776630872588
+  },
+  "epsilon": {
+   "evaluations": 531,
+   "runtime": 11.506647600035649,
+   "levels": [
+    {
+     "epsilon": 4,
+     "offset": 0,
+     "feasible": true,
+     "front": 1,
+     "hypervolume": 0.9840361445783137,
+     "evaluations": 5,
+     "rejected": 1833,
+     "min_changes": 4,
+     "compromise": {
+      "objectives": [
+       5.5,
+       0.1891566265060241,
+       0.05500000000000001
+      ],
+      "changes": 4
+     }
+    },
+    {
+     "epsilon": 6,
+     "offset": 2,
+     "feasible": true,
+     "front": 4,
+     "hypervolume": 0.9986069146545149,
+     "evaluations": 53,
+     "rejected": 1579,
+     "min_changes": 6,
+     "compromise": {
+      "objectives": [
+       5.5,
+       0.1857429718875502,
+       0.05500000000000001
+      ],
+      "changes": 6
+     }
+    },
+    {
+     "epsilon": 9,
+     "offset": 5,
+     "feasible": true,
+     "front": 5,
+     "hypervolume": 1.0090752478064065,
+     "evaluations": 113,
+     "rejected": 1251,
+     "min_changes": 7,
+     "compromise": {
+      "objectives": [
+       6.0,
+       0.1857429718875502,
+       0.05024937810560445
+      ],
+      "changes": 9
+     }
+    },
+    {
+     "epsilon": 14,
+     "offset": 10,
+     "feasible": true,
+     "front": 5,
+     "hypervolume": 1.0130829357925666,
+     "evaluations": 120,
+     "rejected": 75,
+     "min_changes": 14,
+     "compromise": {
+      "objectives": [
+       3.5,
+       0.1857429718875502,
+       0.05024937810560445
+      ],
+      "changes": 14
+     }
+    },
+    {
+     "epsilon": 24,
+     "offset": 20,
+     "feasible": true,
+     "front": 5,
+     "hypervolume": 1.0210767460569343,
+     "evaluations": 120,
+     "rejected": 7,
+     "min_changes": 19,
+     "compromise": {
+      "objectives": [
+       3.5,
+       0.1859437751004016,
+       0.0421307488658818
+      ],
+      "changes": 21
+     }
+    },
+    {
+     "epsilon": 44,
+     "offset": 40,
+     "feasible": true,
+     "front": 4,
+     "hypervolume": 1.02723021303142,
+     "evaluations": 120,
+     "rejected": 0,
+     "min_changes": 20,
+     "compromise": {
+      "objectives": [
+       3.0,
+       0.184136546184739,
+       0.04213074886588179
+      ],
+      "changes": 29
+     }
+    }
+   ],
+   "tradeoff_points": 23,
+   "final_hypervolume": 1.02723021303142,
+   "final_min_changes": 20
+  },
+  "scratch": {
+   "evaluations": 531,
+   "runtime": 3.7014993999619037,
+   "front": 11,
+   "hypervolume": 1.064091923800318,
+   "min_changes": 148,
+   "compromise": {
+    "objectives": [
+     2.0,
+     0.1853413654618474,
+     0.032015621187164243
+    ],
+    "changes": 150
+   }
+  },
+  "instance": "medium_1010"
+ },
+ {
+  "disruption": "teacher_leaves",
+  "resource": "F10",
+  "seed": 0,
+  "sessions": 150,
+  "original_objectives": [
+   3.0,
+   0.18755020080321286,
+   0.059371710435189594
+  ],
+  "repair": {
+   "broken": 10,
+   "changes": 10,
+   "proven_minimal": true,
+   "method": "reinsert",
+   "runtime": 0.0035585000296123326,
+   "objectives": [
+    12.0,
+    0.18755020080321286,
+    0.07753115717187495
+   ],
+   "hypervolume": 0.9315367793678746
+  },
+  "epsilon": {
+   "evaluations": 720,
+   "runtime": 6.428545200033113,
+   "levels": [
+    {
+     "epsilon": 10,
+     "offset": 0,
+     "feasible": true,
+     "front": 1,
+     "hypervolume": 0.9357598399467997,
+     "evaluations": 120,
+     "rejected": 1524,
+     "min_changes": 10,
+     "compromise": {
+      "objectives": [
+       9.0,
+       0.18755020080321286,
+       0.07753115717187495
+      ],
+      "changes": 10
+     }
+    },
+    {
+     "epsilon": 12,
+     "offset": 2,
+     "feasible": true,
+     "front": 2,
+     "hypervolume": 0.9536601953463858,
+     "evaluations": 120,
+     "rejected": 291,
+     "min_changes": 12,
+     "compromise": {
+      "objectives": [
+       7.5,
+       0.1859437751004016,
+       0.07753115717187495
+      ],
+      "changes": 12
+     }
+    },
+    {
+     "epsilon": 15,
+     "offset": 5,
+     "feasible": true,
+     "front": 3,
+     "hypervolume": 0.9731662774432808,
+     "evaluations": 120,
+     "rejected": 249,
+     "min_changes": 15,
+     "compromise": {
+      "objectives": [
+       6.0,
+       0.1857429718875502,
+       0.07041625347505082
+      ],
+      "changes": 15
+     }
+    },
+    {
+     "epsilon": 20,
+     "offset": 10,
+     "feasible": true,
+     "front": 9,
+     "hypervolume": 0.9897194726516952,
+     "evaluations": 120,
+     "rejected": 93,
+     "min_changes": 16,
+     "compromise": {
+      "objectives": [
+       6.0,
+       0.1857429718875502,
+       0.06456760077044894
+      ],
+      "changes": 20
+     }
+    },
+    {
+     "epsilon": 30,
+     "offset": 20,
+     "feasible": true,
+     "front": 15,
+     "hypervolume": 1.018532958627872,
+     "evaluations": 120,
+     "rejected": 9,
+     "min_changes": 16,
+     "compromise": {
+      "objectives": [
+       4.0,
+       0.18734939759036146,
+       0.058133479037827694
+      ],
+      "changes": 28
+     }
+    },
+    {
+     "epsilon": 50,
+     "offset": 40,
+     "feasible": true,
+     "front": 16,
+     "hypervolume": 1.0419585303239958,
+     "evaluations": 120,
+     "rejected": 0,
+     "min_changes": 16,
+     "compromise": {
+      "objectives": [
+       2.0,
+       0.18734939759036146,
+       0.058133479037827694
+      ],
+      "changes": 30
+     }
+    }
+   ],
+   "tradeoff_points": 39,
+   "final_hypervolume": 1.0419585303239958,
+   "final_min_changes": 16
+  },
+  "scratch": {
+   "evaluations": 720,
+   "runtime": 4.45684329996584,
+   "front": 21,
+   "hypervolume": 1.0527528878336254,
+   "min_changes": 148,
+   "compromise": {
+    "objectives": [
+     1.5,
+     0.1857429718875502,
+     0.06657426652986062
+    ],
+    "changes": 148
+   }
+  },
+  "instance": "medium_1010"
+ },
+ {
+  "disruption": "teacher_leaves",
+  "resource": "F10",
+  "seed": 1,
+  "sessions": 150,
+  "original_objectives": [
+   3.0,
+   0.18755020080321286,
+   0.059371710435189594
+  ],
+  "repair": {
+   "broken": 10,
+   "changes": 10,
+   "proven_minimal": true,
+   "method": "reinsert",
+   "runtime": 0.0036566999624483287,
+   "objectives": [
+    12.0,
+    0.1891566265060241,
+    0.07405919620773838
+   ],
+   "hypervolume": 0.9367301426844518
+  },
+  "epsilon": {
+   "evaluations": 606,
+   "runtime": 11.031749700021464,
+   "levels": [
+    {
+     "epsilon": 10,
+     "offset": 0,
+     "feasible": true,
+     "front": 1,
+     "hypervolume": 0.9409767470336069,
+     "evaluations": 19,
+     "rejected": 1863,
+     "min_changes": 10,
+     "compromise": {
+      "objectives": [
+       9.0,
+       0.1891566265060241,
+       0.07405919620773838
+      ],
+      "changes": 10
+     }
+    },
+    {
+     "epsilon": 12,
+     "offset": 2,
+     "feasible": true,
+     "front": 3,
+     "hypervolume": 0.9610590160443921,
+     "evaluations": 107,
+     "rejected": 1559,
+     "min_changes": 12,
+     "compromise": {
+      "objectives": [
+       6.5,
+       0.1891566265060241,
+       0.06657426652986063
+      ],
+      "changes": 12
+     }
+    },
+    {
+     "epsilon": 15,
+     "offset": 5,
+     "feasible": true,
+     "front": 6,
+     "hypervolume": 0.9808711050661321,
+     "evaluations": 120,
+     "rejected": 749,
+     "min_changes": 15,
+     "compromise": {
+      "objectives": [
+       5.5,
+       0.18734939759036146,
+       0.06657426652986063
+      ],
+      "changes": 15
+     }
+    },
+    {
+     "epsilon": 20,
+     "offset": 10,
+     "feasible": true,
+     "front": 10,
+     "hypervolume": 1.0051747826597484,
+     "evaluations": 120,
+     "rejected": 93,
+     "min_changes": 18,
+     "compromise": {
+      "objectives": [
+       4.5,
+       0.1891566265060241,
+       0.0581334790378277
+      ],
+      "changes": 20
+     }
+    },
+    {
+     "epsilon": 30,
+     "offset": 20,
+     "feasible": true,
+     "front": 10,
+     "hypervolume": 1.0394577087752406,
+     "evaluations": 120,
+     "rejected": 15,
+     "min_changes": 19,
+     "compromise": {
+      "objectives": [
+       3.5,
+       0.18734939759036146,
+       0.050892314752141364
+      ],
+      "changes": 29
+     }
+    },
+    {
+     "epsilon": 50,
+     "offset": 40,
+     "feasible": true,
+     "front": 14,
+     "hypervolume": 1.050961323817209,
+     "evaluations": 120,
+     "rejected": 0,
+     "min_changes": 22,
+     "compromise": {
+      "objectives": [
+       4.0,
+       0.1855421686746988,
+       0.0454280960569265
+      ],
+      "changes": 34
+     }
+    }
+   ],
+   "tradeoff_points": 38,
+   "final_hypervolume": 1.050961323817209,
+   "final_min_changes": 22
+  },
+  "scratch": {
+   "evaluations": 606,
+   "runtime": 3.8740658999886364,
+   "front": 27,
+   "hypervolume": 1.05582205796008,
+   "min_changes": 145,
+   "compromise": {
+    "objectives": [
+     2.0,
+     0.18775100401606426,
+     0.04542809605692649
+    ],
+    "changes": 150
+   }
+  },
+  "instance": "medium_1010"
+ },
+ {
+  "disruption": "teacher_leaves",
+  "resource": "F10",
+  "seed": 2,
+  "sessions": 150,
+  "original_objectives": [
+   3.0,
+   0.18755020080321286,
+   0.059371710435189594
+  ],
+  "repair": {
+   "broken": 10,
+   "changes": 10,
+   "proven_minimal": true,
+   "method": "reinsert",
+   "runtime": 0.004416299983859062,
+   "objectives": [
+    12.0,
+    0.1891566265060241,
+    0.07405919620773838
+   ],
+   "hypervolume": 0.9367301426844518
+  },
+  "epsilon": {
+   "evaluations": 613,
+   "runtime": 11.04634519998217,
+   "levels": [
+    {
+     "epsilon": 10,
+     "offset": 0,
+     "feasible": true,
+     "front": 1,
+     "hypervolume": 0.9409767470336069,
+     "evaluations": 34,
+     "rejected": 1783,
+     "min_changes": 10,
+     "compromise": {
+      "objectives": [
+       9.0,
+       0.1891566265060241,
+       0.07405919620773838
+      ],
+      "changes": 10
+     }
+    },
+    {
+     "epsilon": 12,
+     "offset": 2,
+     "feasible": true,
+     "front": 3,
+     "hypervolume": 0.9610590553063788,
+     "evaluations": 99,
+     "rejected": 1509,
+     "min_changes": 12,
+     "compromise": {
+      "objectives": [
+       6.5,
+       0.1891566265060241,
+       0.06657426652986063
+      ],
+      "changes": 12
+     }
+    },
+    {
+     "epsilon": 15,
+     "offset": 5,
+     "feasible": true,
+     "front": 3,
+     "hypervolume": 0.9794358196274326,
+     "evaluations": 120,
+     "rejected": 739,
+     "min_changes": 15,
+     "compromise": {
+      "objectives": [
+       5.5,
+       0.18734939759036146,
+       0.06657426652986063
+      ],
+      "changes": 15
+     }
+    },
+    {
+     "epsilon": 20,
+     "offset": 10,
+     "feasible": true,
+     "front": 8,
+     "hypervolume": 0.9970902292150213,
+     "evaluations": 120,
+     "rejected": 69,
+     "min_changes": 17,
+     "compromise": {
+      "objectives": [
+       6.0,
+       0.1857429718875502,
+       0.06035444705884062
+      ],
+      "changes": 19
+     }
+    },
+    {
+     "epsilon": 30,
+     "offset": 20,
+     "feasible": true,
+     "front": 10,
+     "hypervolume": 1.0388452474955105,
+     "evaluations": 120,
+     "rejected": 11,
+     "min_changes": 22,
+     "compromise": {
+      "objectives": [
+       5.0,
+       0.18734939759036146,
+       0.03920964322566142
+      ],
+      "changes": 29
+     }
+    },
+    {
+     "epsilon": 50,
+     "offset": 40,
+     "feasible": true,
+     "front": 14,
+     "hypervolume": 1.0487622099170602,
+     "evaluations": 120,
+     "rejected": 0,
+     "min_changes": 25,
+     "compromise": {
+      "objectives": [
+       6.0,
+       0.1857429718875502,
+       0.03569647359539615
+      ],
+      "changes": 34
+     }
+    }
+   ],
+   "tradeoff_points": 36,
+   "final_hypervolume": 1.0487622099170602,
+   "final_min_changes": 25
+  },
+  "scratch": {
+   "evaluations": 613,
+   "runtime": 3.7200210000155494,
+   "front": 23,
+   "hypervolume": 1.0570690359574562,
+   "min_changes": 149,
+   "compromise": {
+    "objectives": [
+     4.5,
+     0.18734939759036146,
+     0.04243293551736078
+    ],
+    "changes": 149
+   }
+  },
+  "instance": "medium_1010"
+ },
+ {
+  "disruption": "room_closed",
+  "resource": "R07",
+  "seed": 0,
+  "sessions": 150,
+  "original_objectives": [
+   3.0,
+   0.18755020080321286,
+   0.059371710435189594
+  ],
+  "repair": {
+   "broken": 32,
+   "changes": 32,
+   "proven_minimal": true,
+   "method": "reinsert",
+   "runtime": 0.0626726999762468,
+   "objectives": [
+    4.5,
+    0.23353413654618474,
+    0.059371710435189594
+   ],
+   "hypervolume": 0.9291748239507749
+  },
+  "epsilon": {
+   "evaluations": 617,
+   "runtime": 7.314757099957205,
+   "levels": [
+    {
+     "epsilon": 32,
+     "offset": 0,
+     "feasible": true,
+     "front": 1,
+     "hypervolume": 0.9322495780240277,
+     "evaluations": 17,
+     "rejected": 1798,
+     "min_changes": 32,
+     "compromise": {
+      "objectives": [
+       3.5,
+       0.2319277108433735,
+       0.059371710435189594
+      ],
+      "changes": 32
+     }
+    },
+    {
+     "epsilon": 34,
+     "offset": 2,
+     "feasible": true,
+     "front": 3,
+     "hypervolume": 0.9449902010115644,
+     "evaluations": 120,
+     "rejected": 695,
+     "min_changes": 34,
+     "compromise": {
+      "objectives": [
+       4.5,
+       0.23032128514056224,
+       0.05500000000000001
+      ],
+      "changes": 34
+     }
+    },
+    {
+     "epsilon": 37,
+     "offset": 5,
+     "feasible": true,
+     "front": 8,
+     "hypervolume": 0.9571928402094161,
+     "evaluations": 120,
+     "rejected": 203,
+     "min_changes": 36,
+     "compromise": {
+      "objectives": [
+       3.0,
+       0.23012048192771087,
+       0.05024937810560445
+      ],
+      "changes": 37
+     }
+    },
+    {
+     "epsilon": 42,
+     "offset": 10,
+     "feasible": true,
+     "front": 5,
+     "hypervolume": 0.9679274767355768,
+     "evaluations": 120,
+     "rejected": 32,
+     "min_changes": 40,
+     "compromise": {
+      "objectives": [
+       3.5,
+       0.22871485943775102,
+       0.045000000000000005
+      ],
+      "changes": 42
+     }
+    },
+    {
+     "epsilon": 52,
+     "offset": 20,
+     "feasible": true,
+     "front": 9,
+     "hypervolume": 0.9797275712589325,
+     "evaluations": 120,
+     "rejected": 0,
+     "min_changes": 40,
+     "compromise": {
+      "objectives": [
+       1.5,
+       0.23012048192771087,
+       0.045000000000000005
+      ],
+      "changes": 44
+     }
+    },
+    {
+     "epsilon": 72,
+     "offset": 40,
+     "feasible": true,
+     "front": 7,
+     "hypervolume": 0.9800029262217717,
+     "evaluations": 120,
+     "rejected": 0,
+     "min_changes": 44,
+     "compromise": {
+      "objectives": [
+       1.5,
+       0.23012048192771087,
+       0.045000000000000005
+      ],
+      "changes": 44
+     }
+    }
+   ],
+   "tradeoff_points": 28,
+   "final_hypervolume": 0.9800029262217717,
+   "final_min_changes": 44
+  },
+  "scratch": {
+   "evaluations": 617,
+   "runtime": 4.001969099976122,
+   "front": 11,
+   "hypervolume": 1.0119871483772724,
+   "min_changes": 147,
+   "compromise": {
+    "objectives": [
+     1.0,
+     0.22710843373493977,
+     0.0526782687642637
+    ],
+    "changes": 150
+   }
+  },
+  "instance": "medium_1010"
+ },
+ {
+  "disruption": "room_closed",
+  "resource": "R07",
+  "seed": 1,
+  "sessions": 150,
+  "original_objectives": [
+   3.0,
+   0.18755020080321286,
+   0.059371710435189594
+  ],
+  "repair": {
+   "broken": 32,
+   "changes": 32,
+   "proven_minimal": true,
+   "method": "reinsert",
+   "runtime": 0.0716097000404261,
+   "objectives": [
+    3.5,
+    0.23353413654618474,
+    0.059371710435189594
+   ],
+   "hypervolume": 0.9305243879652277
+  },
+  "epsilon": {
+   "evaluations": 601,
+   "runtime": 4.0535446999710985,
+   "levels": [
+    {
+     "epsilon": 32,
+     "offset": 0,
+     "feasible": true,
+     "front": 1,
+     "hypervolume": 0.9305243879652277,
+     "evaluations": 1,
+     "rejected": 178,
+     "min_changes": 32,
+     "compromise": {
+      "objectives": [
+       3.5,
+       0.23353413654618474,
+       0.059371710435189594
+      ],
+      "changes": 32
+     }
+    },
+    {
+     "epsilon": 34,
+     "offset": 2,
+     "feasible": true,
+     "front": 4,
+     "hypervolume": 0.9425738026736705,
+     "evaluations": 120,
+     "rejected": 522,
+     "min_changes": 34,
+     "compromise": {
+      "objectives": [
+       2.5,
+       0.2319277108433735,
+       0.059371710435189594
+      ],
+      "changes": 34
+     }
+    },
+    {
+     "epsilon": 37,
+     "offset": 5,
+     "feasible": true,
+     "front": 4,
+     "hypervolume": 0.952758610493262,
+     "evaluations": 120,
+     "rejected": 241,
+     "min_changes": 37,
+     "compromise": {
+      "objectives": [
+       2.0,
+       0.23152610441767071,
+       0.05500000000000001
+      ],
+      "changes": 37
+     }
+    },
+    {
+     "epsilon": 42,
+     "offset": 10,
+     "feasible": true,
+     "front": 3,
+     "hypervolume": 0.9659545150298398,
+     "evaluations": 120,
+     "rejected": 117,
+     "min_changes": 42,
+     "compromise": {
+      "objectives": [
+       0.5,
+       0.22991967871485947,
+       0.05024937810560445
+      ],
+      "changes": 42
+     }
+    },
+    {
+     "epsilon": 52,
+     "offset": 20,
+     "feasible": true,
+     "front": 7,
+     "hypervolume": 0.9839063829449697,
+     "evaluations": 120,
+     "rejected": 1,
+     "min_changes": 42,
+     "compromise": {
+      "objectives": [
+       2.5,
+       0.22991967871485947,
+       0.03905124837953328
+      ],
+      "changes": 45
+     }
+    },
+    {
+     "epsilon": 72,
+     "offset": 40,
+     "feasible": true,
+     "front": 7,
+     "hypervolume": 0.9861956765645177,
+     "evaluations": 120,
+     "rejected": 0,
+     "min_changes": 43,
+     "compromise": {
+      "objectives": [
+       1.5,
+       0.23152610441767071,
+       0.03905124837953328
+      ],
+      "changes": 48
+     }
+    }
+   ],
+   "tradeoff_points": 22,
+   "final_hypervolume": 0.9861956765645177,
+   "final_min_changes": 43
+  },
+  "scratch": {
+   "evaluations": 601,
+   "runtime": 3.9997606000397354,
+   "front": 6,
+   "hypervolume": 1.011499443763304,
+   "min_changes": 148,
+   "compromise": {
+    "objectives": [
+     1.0,
+     0.227710843373494,
+     0.03905124837953327
+    ],
+    "changes": 148
+   }
+  },
+  "instance": "medium_1010"
+ },
+ {
+  "disruption": "room_closed",
+  "resource": "R07",
+  "seed": 2,
+  "sessions": 150,
+  "original_objectives": [
+   3.0,
+   0.18755020080321286,
+   0.059371710435189594
+  ],
+  "repair": {
+   "broken": 32,
+   "changes": 32,
+   "proven_minimal": true,
+   "method": "reinsert",
+   "runtime": 0.07484389998717234,
+   "objectives": [
+    5.5,
+    0.23353413654618474,
+    0.059371710435189594
+   ],
+   "hypervolume": 0.927825259936322
+  },
+  "epsilon": {
+   "evaluations": 575,
+   "runtime": 9.047749700024724,
+   "levels": [
+    {
+     "epsilon": 32,
+     "offset": 0,
+     "feasible": true,
+     "front": 1,
+     "hypervolume": 0.9291748239507749,
+     "evaluations": 7,
+     "rejected": 1853,
+     "min_changes": 32,
+     "compromise": {
+      "objectives": [
+       4.5,
+       0.23353413654618474,
+       0.059371710435189594
+      ],
+      "changes": 32
+     }
+    },
+    {
+     "epsilon": 34,
+     "offset": 2,
+     "feasible": true,
+     "front": 4,
+     "hypervolume": 0.9496750195794681,
+     "evaluations": 88,
+     "rejected": 1480,
+     "min_changes": 34,
+     "compromise": {
+      "objectives": [
+       5.0,
+       0.2317269076305221,
+       0.05500000000000001
+      ],
+      "changes": 34
+     }
+    },
+    {
+     "epsilon": 37,
+     "offset": 5,
+     "feasible": true,
+     "front": 6,
+     "hypervolume": 0.9619148794838356,
+     "evaluations": 120,
+     "rejected": 149,
+     "min_changes": 36,
+     "compromise": {
+      "objectives": [
+       3.0,
+       0.2317269076305221,
+       0.05500000000000001
+      ],
+      "changes": 37
+     }
+    },
+    {
+     "epsilon": 42,
+     "offset": 10,
+     "feasible": true,
+     "front": 7,
+     "hypervolume": 0.9644914103866166,
+     "evaluations": 120,
+     "rejected": 75,
+     "min_changes": 40,
+     "compromise": {
+      "objectives": [
+       3.0,
+       0.23032128514056224,
+       0.05024937810560445
+      ],
+      "changes": 41
+     }
+    },
+    {
+     "epsilon": 52,
+     "offset": 20,
+     "feasible": true,
+     "front": 11,
+     "hypervolume": 0.9782958954224394,
+     "evaluations": 120,
+     "rejected": 0,
+     "min_changes": 45,
+     "compromise": {
+      "objectives": [
+       2.5,
+       0.23012048192771087,
+       0.045000000000000005
+      ],
+      "changes": 46
+     }
+    },
+    {
+     "epsilon": 72,
+     "offset": 40,
+     "feasible": true,
+     "front": 9,
+     "hypervolume": 0.978359768725411,
+     "evaluations": 120,
+     "rejected": 0,
+     "min_changes": 45,
+     "compromise": {
+      "objectives": [
+       4.5,
+       0.2283132530120482,
+       0.04213074886588179
+      ],
+      "changes": 52
+     }
+    }
+   ],
+   "tradeoff_points": 35,
+   "final_hypervolume": 0.978359768725411,
+   "final_min_changes": 45
+  },
+  "scratch": {
+   "evaluations": 575,
+   "runtime": 3.7063409999827854,
+   "front": 11,
+   "hypervolume": 1.0118490231890476,
+   "min_changes": 148,
+   "compromise": {
+    "objectives": [
+     2.5,
+     0.22730923694779118,
+     0.027838821814150105
+    ],
+    "changes": 149
+   }
+  },
+  "instance": "medium_1010"
+ },
+ {
+  "disruption": "teacher_absent",
+  "resource": "F05",
+  "seed": 0,
+  "sessions": 150,
+  "original_objectives": [
+   3.0,
+   0.19056224899598395,
+   0.04213074886588179
+  ],
+  "repair": {
+   "broken": 3,
+   "changes": 3,
+   "proven_minimal": true,
+   "method": "reinsert",
+   "runtime": 0.005712099955417216,
+   "objectives": [
+    5.0,
+    0.19357429718875502,
+    0.04213074886588179
+   ],
+   "hypervolume": 1.0054535590859657
+  },
+  "epsilon": {
+   "evaluations": 529,
+   "runtime": 11.99425730004441,
+   "levels": [
+    {
+     "epsilon": 3,
+     "offset": 0,
+     "feasible": true,
+     "front": 2,
+     "hypervolume": 1.0202597251375696,
+     "evaluations": 6,
+     "rejected": 1502,
+     "min_changes": 3,
+     "compromise": {
+      "objectives": [
+       4.5,
+       0.19879518072289157,
+       0.03570714214271425
+      ],
+      "changes": 3
+     }
+    },
+    {
+     "epsilon": 5,
+     "offset": 2,
+     "feasible": true,
+     "front": 3,
+     "hypervolume": 1.037356095851545,
+     "evaluations": 43,
+     "rejected": 1350,
+     "min_changes": 5,
+     "compromise": {
+      "objectives": [
+       3.5,
+       0.19236947791164657,
+       0.03570714214271425
+      ],
+      "changes": 5
+     }
+    },
+    {
+     "epsilon": 8,
+     "offset": 5,
+     "feasible": true,
+     "front": 3,
+     "hypervolume": 1.03962423838488,
+     "evaluations": 120,
+     "rejected": 1126,
+     "min_changes": 8,
+     "compromise": {
+      "objectives": [
+       2.0,
+       0.19236947791164657,
+       0.03570714214271425
+      ],
+      "changes": 8
+     }
+    },
+    {
+     "epsilon": 13,
+     "offset": 10,
+     "feasible": true,
+     "front": 1,
+     "hypervolume": 1.0411401922463372,
+     "evaluations": 120,
+     "rejected": 39,
+     "min_changes": 12,
+     "compromise": {
+      "objectives": [
+       1.0,
+       0.19236947791164657,
+       0.027838821814150105
+      ],
+      "changes": 12
+     }
+    },
+    {
+     "epsilon": 23,
+     "offset": 20,
+     "feasible": true,
+     "front": 3,
+     "hypervolume": 1.0444860553931539,
+     "evaluations": 120,
+     "rejected": 7,
+     "min_changes": 15,
+     "compromise": {
+      "objectives": [
+       0.0,
+       0.19236947791164657,
+       0.027838821814150105
+      ],
+      "changes": 15
+     }
+    },
+    {
+     "epsilon": 43,
+     "offset": 40,
+     "feasible": true,
+     "front": 3,
+     "hypervolume": 1.044490009671044,
+     "evaluations": 120,
+     "rejected": 0,
+     "min_changes": 15,
+     "compromise": {
+      "objectives": [
+       0.0,
+       0.19076305220883535,
+       0.04213074886588179
+      ],
+      "changes": 21
+     }
+    }
+   ],
+   "tradeoff_points": 14,
+   "final_hypervolume": 1.044490009671044,
+   "final_min_changes": 15
+  },
+  "scratch": {
+   "evaluations": 529,
+   "runtime": 3.616099800041411,
+   "front": 28,
+   "hypervolume": 1.0510280226949302,
+   "min_changes": 146,
+   "compromise": {
+    "objectives": [
+     2.5,
+     0.18634538152610441,
+     0.04769696007084728
+    ],
+    "changes": 147
+   }
+  },
+  "instance": "medium_1020"
+ },
+ {
+  "disruption": "teacher_absent",
+  "resource": "F05",
+  "seed": 1,
+  "sessions": 150,
+  "original_objectives": [
+   3.0,
+   0.19056224899598395,
+   0.04213074886588179
+  ],
+  "repair": {
+   "broken": 3,
+   "changes": 3,
+   "proven_minimal": true,
+   "method": "reinsert",
+   "runtime": 0.004273500002454966,
+   "objectives": [
+    4.5,
+    0.19236947791164657,
+    0.04213074886588179
+   ],
+   "hypervolume": 1.0075216847800084
+  },
+  "epsilon": {
+   "evaluations": 524,
+   "runtime": 10.711392000026535,
+   "levels": [
+    {
+     "epsilon": 3,
+     "offset": 0,
+     "feasible": true,
+     "front": 3,
+     "hypervolume": 1.0202649051643549,
+     "evaluations": 3,
+     "rejected": 1513,
+     "min_changes": 3,
+     "compromise": {
+      "objectives": [
+       4.5,
+       0.19236947791164657,
+       0.04213074886588179
+      ],
+      "changes": 3
+     }
+    },
+    {
+     "epsilon": 5,
+     "offset": 2,
+     "feasible": true,
+     "front": 4,
+     "hypervolume": 1.0380857079955068,
+     "evaluations": 41,
+     "rejected": 1316,
+     "min_changes": 5,
+     "compromise": {
+      "objectives": [
+       3.5,
+       0.19236947791164657,
+       0.03570714214271425
+      ],
+      "changes": 5
+     }
+    },
+    {
+     "epsilon": 8,
+     "offset": 5,
+     "feasible": true,
+     "front": 3,
+     "hypervolume": 1.0403486705020564,
+     "evaluations": 120,
+     "rejected": 789,
+     "min_changes": 8,
+     "compromise": {
+      "objectives": [
+       3.0,
+       0.19236947791164657,
+       0.027838821814150105
+      ],
+      "changes": 8
+     }
+    },
+    {
+     "epsilon": 13,
+     "offset": 10,
+     "feasible": true,
+     "front": 2,
+     "hypervolume": 1.0418856374930685,
+     "evaluations": 120,
+     "rejected": 114,
+     "min_changes": 13,
+     "compromise": {
+      "objectives": [
+       0.5,
+       0.20060240963855425,
+       0.027838821814150105
+      ],
+      "changes": 13
+     }
+    },
+    {
+     "epsilon": 23,
+     "offset": 20,
+     "feasible": true,
+     "front": 4,
+     "hypervolume": 1.05246684492707,
+     "evaluations": 120,
+     "rejected": 8,
+     "min_changes": 18,
+     "compromise": {
+      "objectives": [
+       0.5,
+       0.19397590361445785,
+       0.022912878474779196
+      ],
+      "changes": 21
+     }
+    },
+    {
+     "epsilon": 43,
+     "offset": 40,
+     "feasible": true,
+     "front": 2,
+     "hypervolume": 1.0524682014976439,
+     "evaluations": 120,
+     "rejected": 0,
+     "min_changes": 23,
+     "compromise": {
+      "objectives": [
+       0.5,
+       0.19236947791164657,
+       0.022912878474779196
+      ],
+      "changes": 23
+     }
+    }
+   ],
+   "tradeoff_points": 18,
+   "final_hypervolume": 1.0524682014976439,
+   "final_min_changes": 23
+  },
+  "scratch": {
+   "evaluations": 524,
+   "runtime": 3.584084999980405,
+   "front": 33,
+   "hypervolume": 1.0645554327888689,
+   "min_changes": 148,
+   "compromise": {
+    "objectives": [
+     2.0,
+     0.18654618473895584,
+     0.04213074886588179
+    ],
+    "changes": 149
+   }
+  },
+  "instance": "medium_1020"
+ },
+ {
+  "disruption": "teacher_absent",
+  "resource": "F05",
+  "seed": 2,
+  "sessions": 150,
+  "original_objectives": [
+   3.0,
+   0.19056224899598395,
+   0.04213074886588179
+  ],
+  "repair": {
+   "broken": 3,
+   "changes": 3,
+   "proven_minimal": true,
+   "method": "reinsert",
+   "runtime": 0.004194499982986599,
+   "objectives": [
+    4.5,
+    0.19236947791164657,
+    0.04213074886588179
+   ],
+   "hypervolume": 1.0075216847800084
+  },
+  "epsilon": {
+   "evaluations": 525,
+   "runtime": 10.519047800044063,
+   "levels": [
+    {
+     "epsilon": 3,
+     "offset": 0,
+     "feasible": true,
+     "front": 3,
+     "hypervolume": 1.0202649051643549,
+     "evaluations": 3,
+     "rejected": 1458,
+     "min_changes": 3,
+     "compromise": {
+      "objectives": [
+       4.5,
+       0.19236947791164657,
+       0.04213074886588179
+      ],
+      "changes": 3
+     }
+    },
+    {
+     "epsilon": 5,
+     "offset": 2,
+     "feasible": true,
+     "front": 3,
+     "hypervolume": 1.0393778167036876,
+     "evaluations": 42,
+     "rejected": 1339,
+     "min_changes": 5,
+     "compromise": {
+      "objectives": [
+       4.0,
+       0.19056224899598395,
+       0.03570714214271425
+      ],
+      "changes": 5
+     }
+    },
+    {
+     "epsilon": 8,
+     "offset": 5,
+     "feasible": true,
+     "front": 5,
+     "hypervolume": 1.0424157231629172,
+     "evaluations": 120,
+     "rejected": 823,
+     "min_changes": 8,
+     "compromise": {
+      "objectives": [
+       3.0,
+       0.19236947791164657,
+       0.027838821814150105
+      ],
+      "changes": 8
+     }
+    },
+    {
+     "epsilon": 13,
+     "offset": 10,
+     "feasible": true,
+     "front": 3,
+     "hypervolume": 1.044668126607308,
+     "evaluations": 120,
+     "rejected": 28,
+     "min_changes": 11,
+     "compromise": {
+      "objectives": [
+       2.5,
+       0.19056224899598395,
+       0.027838821814150105
+      ],
+      "changes": 11
+     }
+    },
+    {
+     "epsilon": 23,
+     "offset": 20,
+     "feasible": true,
+     "front": 3,
+     "hypervolume": 1.0545146870537816,
+     "evaluations": 120,
+     "rejected": 6,
+     "min_changes": 15,
+     "compromise": {
+      "objectives": [
+       0.0,
+       0.19598393574297188,
+       0.022912878474779196
+      ],
+      "changes": 22
+     }
+    },
+    {
+     "epsilon": 43,
+     "offset": 40,
+     "feasible": true,
+     "front": 3,
+     "hypervolume": 1.0545163513655624,
+     "evaluations": 120,
+     "rejected": 0,
+     "min_changes": 18,
+     "compromise": {
+      "objectives": [
+       0.0,
+       0.19598393574297188,
+       0.022912878474779196
+      ],
+      "changes": 22
+     }
+    }
+   ],
+   "tradeoff_points": 19,
+   "final_hypervolume": 1.0545163513655624,
+   "final_min_changes": 18
+  },
+  "scratch": {
+   "evaluations": 525,
+   "runtime": 3.480721200001426,
+   "front": 39,
+   "hypervolume": 1.0524832209790504,
+   "min_changes": 147,
+   "compromise": {
+    "objectives": [
+     1.5,
+     0.1893574297188755,
+     0.05500000000000001
+    ],
+    "changes": 149
+   }
+  },
+  "instance": "medium_1020"
+ },
+ {
+  "disruption": "teacher_leaves",
+  "resource": "F05",
+  "seed": 0,
+  "sessions": 150,
+  "original_objectives": [
+   3.0,
+   0.19056224899598395,
+   0.04213074886588179
+  ],
+  "repair": {
+   "broken": 9,
+   "changes": 9,
+   "proven_minimal": true,
+   "method": "reinsert",
+   "runtime": 0.0043898000149056315,
+   "objectives": [
+    8.5,
+    0.19056224899598395,
+    0.05582421956735902
+   ],
+   "hypervolume": 0.976254886253728
+  },
+  "epsilon": {
+   "evaluations": 620,
+   "runtime": 6.913551600009669,
+   "levels": [
+    {
+     "epsilon": 9,
+     "offset": 0,
+     "feasible": true,
+     "front": 1,
+     "hypervolume": 0.9777223870222418,
+     "evaluations": 20,
+     "rejected": 1777,
+     "min_changes": 9,
+     "compromise": {
+      "objectives": [
+       7.5,
+       0.19056224899598395,
+       0.05582421956735902
+      ],
+      "changes": 9
+     }
+    },
+    {
+     "epsilon": 11,
+     "offset": 2,
+     "feasible": true,
+     "front": 4,
+     "hypervolume": 0.9943905241858562,
+     "evaluations": 120,
+     "rejected": 765,
+     "min_changes": 11,
+     "compromise": {
+      "objectives": [
+       5.5,
+       0.19076305220883535,
+       0.05089231475214136
+      ],
+      "changes": 11
+     }
+    },
+    {
+     "epsilon": 14,
+     "offset": 5,
+     "feasible": true,
+     "front": 6,
+     "hypervolume": 1.0074728289359933,
+     "evaluations": 120,
+     "rejected": 255,
+     "min_changes": 14,
+     "compromise": {
+      "objectives": [
+       4.0,
+       0.1891566265060241,
+       0.05089231475214136
+      ],
+      "changes": 14
+     }
+    },
+    {
+     "epsilon": 19,
+     "offset": 10,
+     "feasible": true,
+     "front": 8,
+     "hypervolume": 1.0213609424484718,
+     "evaluations": 120,
+     "rejected": 63,
+     "min_changes": 16,
+     "compromise": {
+      "objectives": [
+       3.5,
+       0.1891566265060241,
+       0.04542809605692649
+      ],
+      "changes": 17
+     }
+    },
+    {
+     "epsilon": 29,
+     "offset": 20,
+     "feasible": true,
+     "front": 12,
+     "hypervolume": 1.0292089671596507,
+     "evaluations": 120,
+     "rejected": 10,
+     "min_changes": 17,
+     "compromise": {
+      "objectives": [
+       2.5,
+       0.19236947791164657,
+       0.03920964322566141
+      ],
+      "changes": 21
+     }
+    },
+    {
+     "epsilon": 49,
+     "offset": 40,
+     "feasible": true,
+     "front": 17,
+     "hypervolume": 1.0369491839982161,
+     "evaluations": 120,
+     "rejected": 0,
+     "min_changes": 17,
+     "compromise": {
+      "objectives": [
+       4.0,
+       0.1891566265060241,
+       0.03920964322566141
+      ],
+      "changes": 21
+     }
+    }
+   ],
+   "tradeoff_points": 38,
+   "final_hypervolume": 1.0369491839982161,
+   "final_min_changes": 17
+  },
+  "scratch": {
+   "evaluations": 620,
+   "runtime": 3.4872382000321522,
+   "front": 35,
+   "hypervolume": 1.0462420464315203,
+   "min_changes": 146,
+   "compromise": {
+    "objectives": [
+     1.5,
+     0.18815261044176707,
+     0.06249653730019958
+    ],
+    "changes": 149
+   }
+  },
+  "instance": "medium_1020"
+ },
+ {
+  "disruption": "teacher_leaves",
+  "resource": "F05",
+  "seed": 1,
+  "sessions": 150,
+  "original_objectives": [
+   3.0,
+   0.19056224899598395,
+   0.04213074886588179
+  ],
+  "repair": {
+   "broken": 9,
+   "changes": 9,
+   "proven_minimal": true,
+   "method": "reinsert",
+   "runtime": 0.004377399978693575,
+   "objectives": [
+    7.5,
+    0.19698795180722894,
+    0.05582421956735902
+   ],
+   "hypervolume": 0.9708142138306516
+  },
+  "epsilon": {
+   "evaluations": 573,
+   "runtime": 8.77970329998061,
+   "levels": [
+    {
+     "epsilon": 9,
+     "offset": 0,
+     "feasible": true,
+     "front": 1,
+     "hypervolume": 0.972999911873047,
+     "evaluations": 3,
+     "rejected": 1450,
+     "min_changes": 9,
+     "compromise": {
+      "objectives": [
+       6.0,
+       0.19698795180722894,
+       0.05582421956735902
+      ],
+      "changes": 9
+     }
+    },
+    {
+     "epsilon": 11,
+     "offset": 2,
+     "feasible": true,
+     "front": 3,
+     "hypervolume": 0.9835891498649683,
+     "evaluations": 90,
+     "rejected": 1524,
+     "min_changes": 11,
+     "compromise": {
+      "objectives": [
+       4.5,
+       0.19076305220883535,
+       0.05582421956735902
+      ],
+      "changes": 11
+     }
+    },
+    {
+     "epsilon": 14,
+     "offset": 5,
+     "feasible": true,
+     "front": 5,
+     "hypervolume": 1.0018368796545079,
+     "evaluations": 120,
+     "rejected": 463,
+     "min_changes": 14,
+     "compromise": {
+      "objectives": [
+       2.5,
+       0.19236947791164657,
+       0.05582421956735902
+      ],
+      "changes": 14
+     }
+    },
+    {
+     "epsilon": 19,
+     "offset": 10,
+     "feasible": true,
+     "front": 8,
+     "hypervolume": 1.0156478968250182,
+     "evaluations": 120,
+     "rejected": 59,
+     "min_changes": 17,
+     "compromise": {
+      "objectives": [
+       3.5,
+       0.19236947791164657,
+       0.048237638894271996
+      ],
+      "changes": 18
+     }
+    },
+    {
+     "epsilon": 29,
+     "offset": 20,
+     "feasible": true,
+     "front": 9,
+     "hypervolume": 1.0298835098388448,
+     "evaluations": 120,
+     "rejected": 16,
+     "min_changes": 18,
+     "compromise": {
+      "objectives": [
+       2.5,
+       0.19136546184738956,
+       0.04243293551736078
+      ],
+      "changes": 28
+     }
+    },
+    {
+     "epsilon": 49,
+     "offset": 40,
+     "feasible": true,
+     "front": 6,
+     "hypervolume": 1.0299210448013627,
+     "evaluations": 120,
+     "rejected": 0,
+     "min_changes": 25,
+     "compromise": {
+      "objectives": [
+       2.0,
+       0.19056224899598395,
+       0.04243293551736078
+      ],
+      "changes": 30
+     }
+    }
+   ],
+   "tradeoff_points": 28,
+   "final_hypervolume": 1.0299210448013627,
+   "final_min_changes": 25
+  },
+  "scratch": {
+   "evaluations": 573,
+   "runtime": 3.6548918999615125,
+   "front": 28,
+   "hypervolume": 1.0356512796671997,
+   "min_changes": 148,
+   "compromise": {
+    "objectives": [
+     1.5,
+     0.18734939759036146,
+     0.050892314752141364
+    ],
+    "changes": 149
+   }
+  },
+  "instance": "medium_1020"
+ },
+ {
+  "disruption": "teacher_leaves",
+  "resource": "F05",
+  "seed": 2,
+  "sessions": 150,
+  "original_objectives": [
+   3.0,
+   0.19056224899598395,
+   0.04213074886588179
+  ],
+  "repair": {
+   "broken": 9,
+   "changes": 9,
+   "proven_minimal": true,
+   "method": "reinsert",
+   "runtime": 0.004634100012481213,
+   "objectives": [
+    8.0,
+    0.19698795180722894,
+    0.05582421956735902
+   ],
+   "hypervolume": 0.9700856478165197
+  },
+  "epsilon": {
+   "evaluations": 616,
+   "runtime": 8.444605300028343,
+   "levels": [
+    {
+     "epsilon": 9,
+     "offset": 0,
+     "feasible": true,
+     "front": 1,
+     "hypervolume": 0.9715427798447834,
+     "evaluations": 20,
+     "rejected": 1792,
+     "min_changes": 9,
+     "compromise": {
+      "objectives": [
+       7.0,
+       0.19698795180722894,
+       0.05582421956735902
+      ],
+      "changes": 9
+     }
+    },
+    {
+     "epsilon": 11,
+     "offset": 2,
+     "feasible": true,
+     "front": 2,
+     "hypervolume": 0.9917062306812237,
+     "evaluations": 116,
+     "rejected": 1584,
+     "min_changes": 11,
+     "compromise": {
+      "objectives": [
+       4.5,
+       0.19236947791164657,
+       0.05089231475214136
+      ],
+      "changes": 11
+     }
+    },
+    {
+     "epsilon": 14,
+     "offset": 5,
+     "feasible": true,
+     "front": 3,
+     "hypervolume": 1.004045239759764,
+     "evaluations": 120,
+     "rejected": 367,
+     "min_changes": 14,
+     "compromise": {
+      "objectives": [
+       4.5,
+       0.19076305220883535,
+       0.04542809605692649
+      ],
+      "changes": 14
+     }
+    },
+    {
+     "epsilon": 19,
+     "offset": 10,
+     "feasible": true,
+     "front": 4,
+     "hypervolume": 1.021936496724082,
+     "evaluations": 120,
+     "rejected": 24,
+     "min_changes": 19,
+     "compromise": {
+      "objectives": [
+       2.5,
+       0.1891566265060241,
+       0.04542809605692649
+      ],
+      "changes": 19
+     }
+    },
+    {
+     "epsilon": 29,
+     "offset": 20,
+     "feasible": true,
+     "front": 7,
+     "hypervolume": 1.0366255633178645,
+     "evaluations": 120,
+     "rejected": 4,
+     "min_changes": 19,
+     "compromise": {
+      "objectives": [
+       3.0,
+       0.1891566265060241,
+       0.03920964322566141
+      ],
+      "changes": 22
+     }
+    },
+    {
+     "epsilon": 49,
+     "offset": 40,
+     "feasible": true,
+     "front": 9,
+     "hypervolume": 1.0367704836256753,
+     "evaluations": 120,
+     "rejected": 0,
+     "min_changes": 19,
+     "compromise": {
+      "objectives": [
+       1.5,
+       0.19076305220883535,
+       0.03920964322566141
+      ],
+      "changes": 27
+     }
+    }
+   ],
+   "tradeoff_points": 21,
+   "final_hypervolume": 1.0367704836256753,
+   "final_min_changes": 19
+  },
+  "scratch": {
+   "evaluations": 616,
+   "runtime": 3.6642531999968924,
+   "front": 26,
+   "hypervolume": 1.0450857146286567,
+   "min_changes": 147,
+   "compromise": {
+    "objectives": [
+     1.5,
+     0.186144578313253,
+     0.0603544470588406
+    ],
+    "changes": 149
+   }
+  },
+  "instance": "medium_1020"
+ },
+ {
+  "disruption": "room_closed",
+  "resource": "R03",
+  "seed": 0,
+  "sessions": 150,
+  "original_objectives": [
+   3.0,
+   0.19056224899598395,
+   0.04213074886588179
+  ],
+  "repair": {
+   "broken": 31,
+   "changes": 31,
+   "proven_minimal": true,
+   "method": "reinsert",
+   "runtime": 0.07206559996120632,
+   "objectives": [
+    6.5,
+    0.23614457831325303,
+    0.04213074886588179
+   ],
+   "hypervolume": 0.9561432653580468
+  },
+  "epsilon": {
+   "evaluations": 578,
+   "runtime": 9.669327400042675,
+   "levels": [
+    {
+     "epsilon": 31,
+     "offset": 0,
+     "feasible": true,
+     "front": 2,
+     "hypervolume": 0.9710486928135372,
+     "evaluations": 12,
+     "rejected": 1346,
+     "min_changes": 31,
+     "compromise": {
+      "objectives": [
+       4.5,
+       0.23614457831325303,
+       0.04213074886588179
+      ],
+      "changes": 31
+     }
+    },
+    {
+     "epsilon": 33,
+     "offset": 2,
+     "feasible": true,
+     "front": 1,
+     "hypervolume": 0.9717626987517743,
+     "evaluations": 86,
+     "rejected": 1153,
+     "min_changes": 33,
+     "compromise": {
+      "objectives": [
+       4.0,
+       0.23614457831325303,
+       0.03570714214271425
+      ],
+      "changes": 33
+     }
+    },
+    {
+     "epsilon": 36,
+     "offset": 5,
+     "feasible": true,
+     "front": 1,
+     "hypervolume": 0.9873459739969631,
+     "evaluations": 120,
+     "rejected": 296,
+     "min_changes": 36,
+     "compromise": {
+      "objectives": [
+       3.5,
+       0.23614457831325303,
+       0.027838821814150105
+      ],
+      "changes": 36
+     }
+    },
+    {
+     "epsilon": 41,
+     "offset": 10,
+     "feasible": true,
+     "front": 1,
+     "hypervolume": 0.9880619609251697,
+     "evaluations": 120,
+     "rejected": 38,
+     "min_changes": 39,
+     "compromise": {
+      "objectives": [
+       3.0,
+       0.23614457831325303,
+       0.027838821814150105
+      ],
+      "changes": 39
+     }
+    },
+    {
+     "epsilon": 51,
+     "offset": 20,
+     "feasible": true,
+     "front": 1,
+     "hypervolume": 0.9981058419018526,
+     "evaluations": 120,
+     "rejected": 3,
+     "min_changes": 47,
+     "compromise": {
+      "objectives": [
+       2.5,
+       0.23614457831325303,
+       0.022912878474779196
+      ],
+      "changes": 47
+     }
+    },
+    {
+     "epsilon": 71,
+     "offset": 40,
+     "feasible": true,
+     "front": 3,
+     "hypervolume": 1.0002685219921803,
+     "evaluations": 120,
+     "rejected": 0,
+     "min_changes": 47,
+     "compromise": {
+      "objectives": [
+       1.5,
+       0.23795180722891565,
+       0.022912878474779196
+      ],
+      "changes": 51
+     }
+    }
+   ],
+   "tradeoff_points": 8,
+   "final_hypervolume": 1.0002685219921803,
+   "final_min_changes": 47
+  },
+  "scratch": {
+   "evaluations": 578,
+   "runtime": 3.644986500032246,
+   "front": 17,
+   "hypervolume": 1.011388119685152,
+   "min_changes": 148,
+   "compromise": {
+    "objectives": [
+     2.0,
+     0.227710843373494,
+     0.04213074886588179
+    ],
+    "changes": 150
+   }
+  },
+  "instance": "medium_1020"
+ },
+ {
+  "disruption": "room_closed",
+  "resource": "R03",
+  "seed": 1,
+  "sessions": 150,
+  "original_objectives": [
+   3.0,
+   0.19056224899598395,
+   0.04213074886588179
+  ],
+  "repair": {
+   "broken": 31,
+   "changes": 31,
+   "proven_minimal": true,
+   "method": "reinsert",
+   "runtime": 0.06711880001239479,
+   "objectives": [
+    6.5,
+    0.23795180722891565,
+    0.04213074886588179
+   ],
+   "hypervolume": 0.9541429656397246
+  },
+  "epsilon": {
+   "evaluations": 610,
+   "runtime": 9.802858600043692,
+   "levels": [
+    {
+     "epsilon": 31,
+     "offset": 0,
+     "feasible": true,
+     "front": 2,
+     "hypervolume": 0.9697121431610078,
+     "evaluations": 13,
+     "rejected": 1374,
+     "min_changes": 31,
+     "compromise": {
+      "objectives": [
+       4.0,
+       0.23795180722891565,
+       0.04213074886588179
+      ],
+      "changes": 31
+     }
+    },
+    {
+     "epsilon": 33,
+     "offset": 2,
+     "feasible": true,
+     "front": 3,
+     "hypervolume": 0.985943030226689,
+     "evaluations": 117,
+     "rejected": 1151,
+     "min_changes": 33,
+     "compromise": {
+      "objectives": [
+       3.5,
+       0.23795180722891565,
+       0.03570714214271425
+      ],
+      "changes": 33
+     }
+    },
+    {
+     "epsilon": 36,
+     "offset": 5,
+     "feasible": true,
+     "front": 1,
+     "hypervolume": 0.9859948856931087,
+     "evaluations": 120,
+     "rejected": 204,
+     "min_changes": 35,
+     "compromise": {
+      "objectives": [
+       3.0,
+       0.23795180722891565,
+       0.027838821814150105
+      ],
+      "changes": 35
+     }
+    },
+    {
+     "epsilon": 41,
+     "offset": 10,
+     "feasible": true,
+     "front": 2,
+     "hypervolume": 0.9918131532484726,
+     "evaluations": 120,
+     "rejected": 113,
+     "min_changes": 40,
+     "compromise": {
+      "objectives": [
+       1.5,
+       0.23795180722891565,
+       0.027838821814150105
+      ],
+      "changes": 40
+     }
+    },
+    {
+     "epsilon": 51,
+     "offset": 20,
+     "feasible": true,
+     "front": 3,
+     "hypervolume": 1.001077013544732,
+     "evaluations": 120,
+     "rejected": 2,
+     "min_changes": 40,
+     "compromise": {
+      "objectives": [
+       2.5,
+       0.23473895582329318,
+       0.027838821814150105
+      ],
+      "changes": 40
+     }
+    },
+    {
+     "epsilon": 71,
+     "offset": 40,
+     "feasible": true,
+     "front": 4,
+     "hypervolume": 1.0029602645299547,
+     "evaluations": 120,
+     "rejected": 0,
+     "min_changes": 40,
+     "compromise": {
+      "objectives": [
+       2.5,
+       0.23795180722891565,
+       0.022912878474779196
+      ],
+      "changes": 53
+     }
+    }
+   ],
+   "tradeoff_points": 12,
+   "final_hypervolume": 1.0029602645299547,
+   "final_min_changes": 40
+  },
+  "scratch": {
+   "evaluations": 610,
+   "runtime": 3.9052675000275485,
+   "front": 8,
+   "hypervolume": 1.011681586680117,
+   "min_changes": 149,
+   "compromise": {
+    "objectives": [
+     5.0,
+     0.22751004016064255,
+     0.032015621187164243
+    ],
+    "changes": 149
+   }
+  },
+  "instance": "medium_1020"
+ },
+ {
+  "disruption": "room_closed",
+  "resource": "R03",
+  "seed": 2,
+  "sessions": 150,
+  "original_objectives": [
+   3.0,
+   0.19056224899598395,
+   0.04213074886588179
+  ],
+  "repair": {
+   "broken": 31,
+   "changes": 31,
+   "proven_minimal": true,
+   "method": "reinsert",
+   "runtime": 0.06718309997813776,
+   "objectives": [
+    7.0,
+    0.23795180722891565,
+    0.04213074886588179
+   ],
+   "hypervolume": 0.9534480326713052
+  },
+  "epsilon": {
+   "evaluations": 604,
+   "runtime": 9.417159000004176,
+   "levels": [
+    {
+     "epsilon": 31,
+     "offset": 0,
+     "feasible": true,
+     "front": 2,
+     "hypervolume": 0.9654898076498559,
+     "evaluations": 4,
+     "rejected": 1440,
+     "min_changes": 31,
+     "compromise": {
+      "objectives": [
+       7.0,
+       0.23795180722891565,
+       0.04213074886588179
+      ],
+      "changes": 31
+     }
+    },
+    {
+     "epsilon": 33,
+     "offset": 2,
+     "feasible": true,
+     "front": 2,
+     "hypervolume": 0.9862344556674583,
+     "evaluations": 120,
+     "rejected": 1168,
+     "min_changes": 33,
+     "compromise": {
+      "objectives": [
+       4.0,
+       0.23634538152610443,
+       0.03570714214271425
+      ],
+      "changes": 33
+     }
+    },
+    {
+     "epsilon": 36,
+     "offset": 5,
+     "feasible": true,
+     "front": 1,
+     "hypervolume": 0.9885481063964136,
+     "evaluations": 120,
+     "rejected": 277,
+     "min_changes": 36,
+     "compromise": {
+      "objectives": [
+       2.5,
+       0.23634538152610443,
+       0.027838821814150105
+      ],
+      "changes": 36
+     }
+    },
+    {
+     "epsilon": 41,
+     "offset": 10,
+     "feasible": true,
+     "front": 1,
+     "hypervolume": 0.9906955678874992,
+     "evaluations": 120,
+     "rejected": 10,
+     "min_changes": 40,
+     "compromise": {
+      "objectives": [
+       1.0,
+       0.23634538152610443,
+       0.027838821814150105
+      ],
+      "changes": 40
+     }
+    },
+    {
+     "epsilon": 51,
+     "offset": 20,
+     "feasible": true,
+     "front": 3,
+     "hypervolume": 1.002586688678494,
+     "evaluations": 120,
+     "rejected": 6,
+     "min_changes": 40,
+     "compromise": {
+      "objectives": [
+       1.5,
+       0.23634538152610443,
+       0.022912878474779196
+      ],
+      "changes": 49
+     }
+    },
+    {
+     "epsilon": 71,
+     "offset": 40,
+     "feasible": true,
+     "front": 5,
+     "hypervolume": 1.0069699866162387,
+     "evaluations": 120,
+     "rejected": 0,
+     "min_changes": 40,
+     "compromise": {
+      "objectives": [
+       1.5,
+       0.23634538152610443,
+       0.022912878474779196
+      ],
+      "changes": 49
+     }
+    }
+   ],
+   "tradeoff_points": 11,
+   "final_hypervolume": 1.0069699866162387,
+   "final_min_changes": 40
+  },
+  "scratch": {
+   "evaluations": 604,
+   "runtime": 3.8864142000093125,
+   "front": 3,
+   "hypervolume": 1.011492329638678,
+   "min_changes": 147,
+   "compromise": {
+    "objectives": [
+     0.0,
+     0.227710843373494,
+     0.045
+    ],
+    "changes": 148
+   }
+  },
+  "instance": "medium_1020"
+ },
+ {
+  "disruption": "teacher_absent",
+  "resource": "F07",
+  "seed": 0,
+  "sessions": 150,
+  "original_objectives": [
+   1.5,
+   0.18855421686746987,
+   0.03905124837953327
+  ],
+  "repair": {
+   "broken": 3,
+   "changes": 3,
+   "proven_minimal": true,
+   "method": "reinsert",
+   "runtime": 0.004206899960990995,
+   "objectives": [
+    3.0,
+    0.19036144578313255,
+    0.03905124837953327
+   ],
+   "hypervolume": 1.018086640492187
+  },
+  "epsilon": {
+   "evaluations": 575,
+   "runtime": 10.61458940000739,
+   "levels": [
+    {
+     "epsilon": 3,
+     "offset": 0,
+     "feasible": true,
+     "front": 1,
+     "hypervolume": 1.018086640492187,
+     "evaluations": 2,
+     "rejected": 1456,
+     "min_changes": 3,
+     "compromise": {
+      "objectives": [
+       3.0,
+       0.19036144578313255,
+       0.03905124837953327
+      ],
+      "changes": 3
+     }
+    },
+    {
+     "epsilon": 5,
+     "offset": 2,
+     "feasible": true,
+     "front": 3,
+     "hypervolume": 1.0342881563558664,
+     "evaluations": 93,
+     "rejected": 1501,
+     "min_changes": 5,
+     "compromise": {
+      "objectives": [
+       1.5,
+       0.19036144578313255,
+       0.03905124837953327
+      ],
+      "changes": 5
+     }
+    },
+    {
+     "epsilon": 8,
+     "offset": 5,
+     "feasible": true,
+     "front": 4,
+     "hypervolume": 1.0376537317515284,
+     "evaluations": 120,
+     "rejected": 530,
+     "min_changes": 8,
+     "compromise": {
+      "objectives": [
+       3.0,
+       0.19056224899598395,
+       0.032015621187164243
+      ],
+      "changes": 8
+     }
+    },
+    {
+     "epsilon": 13,
+     "offset": 10,
+     "feasible": true,
+     "front": 5,
+     "hypervolume": 1.0376640135145365,
+     "evaluations": 120,
+     "rejected": 36,
+     "min_changes": 8,
+     "compromise": {
+      "objectives": [
+       2.0,
+       0.1889558232931727,
+       0.032015621187164243
+      ],
+      "changes": 11
+     }
+    },
+    {
+     "epsilon": 23,
+     "offset": 20,
+     "feasible": true,
+     "front": 5,
+     "hypervolume": 1.037674174403879,
+     "evaluations": 120,
+     "rejected": 1,
+     "min_changes": 8,
+     "compromise": {
+      "objectives": [
+       2.0,
+       0.1889558232931727,
+       0.032015621187164243
+      ],
+      "changes": 11
+     }
+    },
+    {
+     "epsilon": 43,
+     "offset": 40,
+     "feasible": true,
+     "front": 3,
+     "hypervolume": 1.0376742259814355,
+     "evaluations": 120,
+     "rejected": 0,
+     "min_changes": 8,
+     "compromise": {
+      "objectives": [
+       0.5,
+       0.1887550200803213,
+       0.03905124837953327
+      ],
+      "changes": 8
+     }
+    }
+   ],
+   "tradeoff_points": 12,
+   "final_hypervolume": 1.0376742259814355,
+   "final_min_changes": 8
+  },
+  "scratch": {
+   "evaluations": 575,
+   "runtime": 3.6717705000191927,
+   "front": 30,
+   "hypervolume": 1.0567968316539464,
+   "min_changes": 148,
+   "compromise": {
+    "objectives": [
+     4.5,
+     0.1883534136546185,
+     0.04213074886588179
+    ],
+    "changes": 150
+   }
+  },
+  "instance": "medium_1030"
+ },
+ {
+  "disruption": "teacher_absent",
+  "resource": "F07",
+  "seed": 1,
+  "sessions": 150,
+  "original_objectives": [
+   1.5,
+   0.18855421686746987,
+   0.03905124837953327
+  ],
+  "repair": {
+   "broken": 3,
+   "changes": 3,
+   "proven_minimal": true,
+   "method": "reinsert",
+   "runtime": 0.005004000035114586,
+   "objectives": [
+    3.0,
+    0.19036144578313255,
+    0.03905124837953327
+   ],
+   "hypervolume": 1.018086640492187
+  },
+  "epsilon": {
+   "evaluations": 550,
+   "runtime": 9.689436099957675,
+   "levels": [
+    {
+     "epsilon": 3,
+     "offset": 0,
+     "feasible": true,
+     "front": 1,
+     "hypervolume": 1.018086640492187,
+     "evaluations": 2,
+     "rejected": 1384,
+     "min_changes": 3,
+     "compromise": {
+      "objectives": [
+       3.0,
+       0.19036144578313255,
+       0.03905124837953327
+      ],
+      "changes": 3
+     }
+    },
+    {
+     "epsilon": 5,
+     "offset": 2,
+     "feasible": true,
+     "front": 3,
+     "hypervolume": 1.0342881563558664,
+     "evaluations": 68,
+     "rejected": 1481,
+     "min_changes": 5,
+     "compromise": {
+      "objectives": [
+       1.5,
+       0.19036144578313255,
+       0.03905124837953327
+      ],
+      "changes": 5
+     }
+    },
+    {
+     "epsilon": 8,
+     "offset": 5,
+     "feasible": true,
+     "front": 4,
+     "hypervolume": 1.037634489082045,
+     "evaluations": 120,
+     "rejected": 283,
+     "min_changes": 7,
+     "compromise": {
+      "objectives": [
+       2.5,
+       0.19056224899598395,
+       0.032015621187164243
+      ],
+      "changes": 8
+     }
+    },
+    {
+     "epsilon": 13,
+     "offset": 10,
+     "feasible": true,
+     "front": 4,
+     "hypervolume": 1.0376639508352012,
+     "evaluations": 120,
+     "rejected": 63,
+     "min_changes": 9,
+     "compromise": {
+      "objectives": [
+       1.5,
+       0.19036144578313255,
+       0.032015621187164243
+      ],
+      "changes": 13
+     }
+    },
+    {
+     "epsilon": 23,
+     "offset": 20,
+     "feasible": true,
+     "front": 5,
+     "hypervolume": 1.0394982024170043,
+     "evaluations": 120,
+     "rejected": 0,
+     "min_changes": 9,
+     "compromise": {
+      "objectives": [
+       1.5,
+       0.1887550200803213,
+       0.032015621187164243
+      ],
+      "changes": 14
+     }
+    },
+    {
+     "epsilon": 43,
+     "offset": 40,
+     "feasible": true,
+     "front": 5,
+     "hypervolume": 1.0576207405892857,
+     "evaluations": 120,
+     "rejected": 0,
+     "min_changes": 9,
+     "compromise": {
+      "objectives": [
+       1.0,
+       0.1887550200803213,
+       0.032015621187164243
+      ],
+      "changes": 15
+     }
+    }
+   ],
+   "tradeoff_points": 17,
+   "final_hypervolume": 1.0576207405892857,
+   "final_min_changes": 9
+  },
+  "scratch": {
+   "evaluations": 550,
+   "runtime": 4.032724599994253,
+   "front": 32,
+   "hypervolume": 1.0604695884690605,
+   "min_changes": 147,
+   "compromise": {
+    "objectives": [
+     4.0,
+     0.18654618473895584,
+     0.04213074886588179
+    ],
+    "changes": 149
+   }
+  },
+  "instance": "medium_1030"
+ },
+ {
+  "disruption": "teacher_absent",
+  "resource": "F07",
+  "seed": 2,
+  "sessions": 150,
+  "original_objectives": [
+   1.5,
+   0.18855421686746987,
+   0.03905124837953327
+  ],
+  "repair": {
+   "broken": 3,
+   "changes": 3,
+   "proven_minimal": true,
+   "method": "reinsert",
+   "runtime": 0.004967600048985332,
+   "objectives": [
+    3.0,
+    0.19036144578313255,
+    0.03905124837953327
+   ],
+   "hypervolume": 1.018086640492187
+  },
+  "epsilon": {
+   "evaluations": 545,
+   "runtime": 10.550342899980024,
+   "levels": [
+    {
+     "epsilon": 3,
+     "offset": 0,
+     "feasible": true,
+     "front": 1,
+     "hypervolume": 1.018086640492187,
+     "evaluations": 4,
+     "rejected": 1438,
+     "min_changes": 3,
+     "compromise": {
+      "objectives": [
+       3.0,
+       0.19036144578313255,
+       0.03905124837953327
+      ],
+      "changes": 3
+     }
+    },
+    {
+     "epsilon": 5,
+     "offset": 2,
+     "feasible": true,
+     "front": 3,
+     "hypervolume": 1.0342881563558664,
+     "evaluations": 61,
+     "rejected": 1557,
+     "min_changes": 5,
+     "compromise": {
+      "objectives": [
+       1.5,
+       0.19036144578313255,
+       0.03905124837953327
+      ],
+      "changes": 5
+     }
+    },
+    {
+     "epsilon": 8,
+     "offset": 5,
+     "feasible": true,
+     "front": 4,
+     "hypervolume": 1.0376334774693834,
+     "evaluations": 120,
+     "rejected": 756,
+     "min_changes": 8,
+     "compromise": {
+      "objectives": [
+       3.0,
+       0.19036144578313255,
+       0.032015621187164243
+      ],
+      "changes": 8
+     }
+    },
+    {
+     "epsilon": 13,
+     "offset": 10,
+     "feasible": true,
+     "front": 4,
+     "hypervolume": 1.0376538591312348,
+     "evaluations": 120,
+     "rejected": 63,
+     "min_changes": 8,
+     "compromise": {
+      "objectives": [
+       1.5,
+       0.19036144578313255,
+       0.03570714214271425
+      ],
+      "changes": 13
+     }
+    },
+    {
+     "epsilon": 23,
+     "offset": 20,
+     "feasible": true,
+     "front": 2,
+     "hypervolume": 1.0376688999444836,
+     "evaluations": 120,
+     "rejected": 7,
+     "min_changes": 16,
+     "compromise": {
+      "objectives": [
+       0.5,
+       0.1887550200803213,
+       0.03570714214271425
+      ],
+      "changes": 16
+     }
+    },
+    {
+     "epsilon": 43,
+     "offset": 40,
+     "feasible": true,
+     "front": 6,
+     "hypervolume": 1.0558438420156668,
+     "evaluations": 120,
+     "rejected": 0,
+     "min_changes": 16,
+     "compromise": {
+      "objectives": [
+       1.0,
+       0.1887550200803213,
+       0.032015621187164243
+      ],
+      "changes": 21
+     }
+    }
+   ],
+   "tradeoff_points": 17,
+   "final_hypervolume": 1.0558438420156668,
+   "final_min_changes": 16
+  },
+  "scratch": {
+   "evaluations": 545,
+   "runtime": 3.717952199978754,
+   "front": 12,
+   "hypervolume": 1.0570032086216936,
+   "min_changes": 147,
+   "compromise": {
+    "objectives": [
+     0.5,
+     0.19397590361445785,
+     0.027838821814150108
+    ],
+    "changes": 150
+   }
+  },
+  "instance": "medium_1030"
+ },
+ {
+  "disruption": "teacher_leaves",
+  "resource": "F07",
+  "seed": 0,
+  "sessions": 150,
+  "original_objectives": [
+   1.5,
+   0.18855421686746987,
+   0.03905124837953327
+  ],
+  "repair": {
+   "broken": 10,
+   "changes": 10,
+   "proven_minimal": true,
+   "method": "reinsert",
+   "runtime": 0.003857900039292872,
+   "objectives": [
+    9.5,
+    0.18855421686746987,
+    0.05089231475214136
+   ],
+   "hypervolume": 0.986689627790257
+  },
+  "epsilon": {
+   "evaluations": 606,
+   "runtime": 9.348400000017136,
+   "levels": [
+    {
+     "epsilon": 10,
+     "offset": 0,
+     "feasible": true,
+     "front": 1,
+     "hypervolume": 0.986689627790257,
+     "evaluations": 6,
+     "rejected": 1500,
+     "min_changes": 10,
+     "compromise": {
+      "objectives": [
+       9.5,
+       0.18855421686746987,
+       0.05089231475214136
+      ],
+      "changes": 10
+     }
+    },
+    {
+     "epsilon": 12,
+     "offset": 2,
+     "feasible": true,
+     "front": 1,
+     "hypervolume": 0.9918885945908079,
+     "evaluations": 120,
+     "rejected": 859,
+     "min_changes": 12,
+     "compromise": {
+      "objectives": [
+       6.0,
+       0.18855421686746987,
+       0.05089231475214136
+      ],
+      "changes": 12
+     }
+    },
+    {
+     "epsilon": 15,
+     "offset": 5,
+     "feasible": true,
+     "front": 5,
+     "hypervolume": 1.0145959030455165,
+     "evaluations": 120,
+     "rejected": 508,
+     "min_changes": 15,
+     "compromise": {
+      "objectives": [
+       7.0,
+       0.19036144578313255,
+       0.04243293551736078
+      ],
+      "changes": 15
+     }
+    },
+    {
+     "epsilon": 20,
+     "offset": 10,
+     "feasible": true,
+     "front": 10,
+     "hypervolume": 1.02956143992974,
+     "evaluations": 120,
+     "rejected": 74,
+     "min_changes": 18,
+     "compromise": {
+      "objectives": [
+       3.5,
+       0.19056224899598395,
+       0.04243293551736078
+      ],
+      "changes": 19
+     }
+    },
+    {
+     "epsilon": 30,
+     "offset": 20,
+     "feasible": true,
+     "front": 12,
+     "hypervolume": 1.038152520116478,
+     "evaluations": 120,
+     "rejected": 5,
+     "min_changes": 18,
+     "compromise": {
+      "objectives": [
+       4.5,
+       0.19096385542168676,
+       0.03569647359539614
+      ],
+      "changes": 23
+     }
+    },
+    {
+     "epsilon": 50,
+     "offset": 40,
+     "feasible": true,
+     "front": 12,
+     "hypervolume": 1.0382288342647354,
+     "evaluations": 120,
+     "rejected": 0,
+     "min_changes": 18,
+     "compromise": {
+      "objectives": [
+       2.5,
+       0.19096385542168676,
+       0.03179748940419624
+      ],
+      "changes": 30
+     }
+    }
+   ],
+   "tradeoff_points": 31,
+   "final_hypervolume": 1.0382288342647354,
+   "final_min_changes": 18
+  },
+  "scratch": {
+   "evaluations": 606,
+   "runtime": 3.855443299980834,
+   "front": 17,
+   "hypervolume": 1.0360165085026647,
+   "min_changes": 147,
+   "compromise": {
+    "objectives": [
+     3.0,
+     0.19116465863453816,
+     0.045428096056926486
+    ],
+    "changes": 150
+   }
+  },
+  "instance": "medium_1030"
+ },
+ {
+  "disruption": "teacher_leaves",
+  "resource": "F07",
+  "seed": 1,
+  "sessions": 150,
+  "original_objectives": [
+   1.5,
+   0.18855421686746987,
+   0.03905124837953327
+  ],
+  "repair": {
+   "broken": 10,
+   "changes": 10,
+   "proven_minimal": true,
+   "method": "reinsert",
+   "runtime": 0.004328100010752678,
+   "objectives": [
+    8.5,
+    0.19036144578313255,
+    0.05089231475214136
+   ],
+   "hypervolume": 0.9862156779794807
+  },
+  "epsilon": {
+   "evaluations": 602,
+   "runtime": 7.915798000001814,
+   "levels": [
+    {
+     "epsilon": 10,
+     "offset": 0,
+     "feasible": true,
+     "front": 1,
+     "hypervolume": 0.9862156779794807,
+     "evaluations": 2,
+     "rejected": 1299,
+     "min_changes": 10,
+     "compromise": {
+      "objectives": [
+       8.5,
+       0.19036144578313255,
+       0.05089231475214136
+      ],
+      "changes": 10
+     }
+    },
+    {
+     "epsilon": 12,
+     "offset": 2,
+     "feasible": true,
+     "front": 2,
+     "hypervolume": 1.0006864672919145,
+     "evaluations": 120,
+     "rejected": 750,
+     "min_changes": 12,
+     "compromise": {
+      "objectives": [
+       6.0,
+       0.19036144578313255,
+       0.05089231475214136
+      ],
+      "changes": 12
+     }
+    },
+    {
+     "epsilon": 15,
+     "offset": 5,
+     "feasible": true,
+     "front": 2,
+     "hypervolume": 1.0037163351854335,
+     "evaluations": 120,
+     "rejected": 145,
+     "min_changes": 14,
+     "compromise": {
+      "objectives": [
+       4.0,
+       0.19036144578313255,
+       0.05089231475214136
+      ],
+      "changes": 15
+     }
+    },
+    {
+     "epsilon": 20,
+     "offset": 10,
+     "feasible": true,
+     "front": 5,
+     "hypervolume": 1.019514267520764,
+     "evaluations": 120,
+     "rejected": 25,
+     "min_changes": 16,
+     "compromise": {
+      "objectives": [
+       5.5,
+       0.18855421686746987,
+       0.04542809605692649
+      ],
+      "changes": 16
+     }
+    },
+    {
+     "epsilon": 30,
+     "offset": 20,
+     "feasible": true,
+     "front": 9,
+     "hypervolume": 1.0350579547024683,
+     "evaluations": 120,
+     "rejected": 7,
+     "min_changes": 16,
+     "compromise": {
+      "objectives": [
+       7.5,
+       0.18855421686746987,
+       0.03569647359539614
+      ],
+      "changes": 26
+     }
+    },
+    {
+     "epsilon": 50,
+     "offset": 40,
+     "feasible": true,
+     "front": 8,
+     "hypervolume": 1.0351252957823034,
+     "evaluations": 120,
+     "rejected": 0,
+     "min_changes": 16,
+     "compromise": {
+      "objectives": [
+       3.5,
+       0.19036144578313255,
+       0.04542809605692649
+      ],
+      "changes": 21
+     }
+    }
+   ],
+   "tradeoff_points": 22,
+   "final_hypervolume": 1.0351252957823034,
+   "final_min_changes": 16
+  },
+  "scratch": {
+   "evaluations": 602,
+   "runtime": 3.7621253000106663,
+   "front": 35,
+   "hypervolume": 1.0504717926910094,
+   "min_changes": 149,
+   "compromise": {
+    "objectives": [
+     2.5,
+     0.18755020080321286,
+     0.04542809605692649
+    ],
+    "changes": 150
+   }
+  },
+  "instance": "medium_1030"
+ },
+ {
+  "disruption": "teacher_leaves",
+  "resource": "F07",
+  "seed": 2,
+  "sessions": 150,
+  "original_objectives": [
+   1.5,
+   0.18855421686746987,
+   0.03905124837953327
+  ],
+  "repair": {
+   "broken": 10,
+   "changes": 10,
+   "proven_minimal": true,
+   "method": "reinsert",
+   "runtime": 0.0040188999846577644,
+   "objectives": [
+    8.5,
+    0.18855421686746987,
+    0.05089231475214136
+   ],
+   "hypervolume": 0.9881750468761288
+  },
+  "epsilon": {
+   "evaluations": 602,
+   "runtime": 7.352049200038891,
+   "levels": [
+    {
+     "epsilon": 10,
+     "offset": 0,
+     "feasible": true,
+     "front": 1,
+     "hypervolume": 0.9881750468761288,
+     "evaluations": 2,
+     "rejected": 1448,
+     "min_changes": 10,
+     "compromise": {
+      "objectives": [
+       8.5,
+       0.18855421686746987,
+       0.05089231475214136
+      ],
+      "changes": 10
+     }
+    },
+    {
+     "epsilon": 12,
+     "offset": 2,
+     "feasible": true,
+     "front": 1,
+     "hypervolume": 0.9948594327625512,
+     "evaluations": 120,
+     "rejected": 343,
+     "min_changes": 12,
+     "compromise": {
+      "objectives": [
+       4.0,
+       0.18855421686746987,
+       0.05089231475214136
+      ],
+      "changes": 12
+     }
+    },
+    {
+     "epsilon": 15,
+     "offset": 5,
+     "feasible": true,
+     "front": 3,
+     "hypervolume": 1.0210466404155447,
+     "evaluations": 120,
+     "rejected": 248,
+     "min_changes": 15,
+     "compromise": {
+      "objectives": [
+       2.0,
+       0.18855421686746987,
+       0.05089231475214136
+      ],
+      "changes": 15
+     }
+    },
+    {
+     "epsilon": 20,
+     "offset": 10,
+     "feasible": true,
+     "front": 5,
+     "hypervolume": 1.0218877946730762,
+     "evaluations": 120,
+     "rejected": 41,
+     "min_changes": 18,
+     "compromise": {
+      "objectives": [
+       4.0,
+       0.18855421686746987,
+       0.04542809605692649
+      ],
+      "changes": 20
+     }
+    },
+    {
+     "epsilon": 30,
+     "offset": 20,
+     "feasible": true,
+     "front": 8,
+     "hypervolume": 1.0381587344053487,
+     "evaluations": 120,
+     "rejected": 6,
+     "min_changes": 19,
+     "compromise": {
+      "objectives": [
+       4.0,
+       0.18855421686746987,
+       0.04542809605692649
+      ],
+      "changes": 20
+     }
+    },
+    {
+     "epsilon": 50,
+     "offset": 40,
+     "feasible": true,
+     "front": 10,
+     "hypervolume": 1.0382452701538054,
+     "evaluations": 120,
+     "rejected": 0,
+     "min_changes": 19,
+     "compromise": {
+      "objectives": [
+       2.0,
+       0.19036144578313255,
+       0.03920964322566141
+      ],
+      "changes": 32
+     }
+    }
+   ],
+   "tradeoff_points": 20,
+   "final_hypervolume": 1.0382452701538054,
+   "final_min_changes": 19
+  },
+  "scratch": {
+   "evaluations": 602,
+   "runtime": 3.82868709997274,
+   "front": 26,
+   "hypervolume": 1.0485312800325157,
+   "min_changes": 146,
+   "compromise": {
+    "objectives": [
+     1.0,
+     0.19056224899598395,
+     0.045428096056926506
+    ],
+    "changes": 147
+   }
+  },
+  "instance": "medium_1030"
+ },
+ {
+  "disruption": "room_closed",
+  "resource": "R03",
+  "seed": 0,
+  "sessions": 150,
+  "original_objectives": [
+   1.5,
+   0.18855421686746987,
+   0.03905124837953327
+  ],
+  "repair": {
+   "broken": 29,
+   "changes": 29,
+   "proven_minimal": true,
+   "method": "reinsert",
+   "runtime": 0.05858170002466068,
+   "objectives": [
+    5.5,
+    0.23473895582329318,
+    0.03905124837953327
+   ],
+   "hypervolume": 0.9649096336958355
+  },
+  "epsilon": {
+   "evaluations": 720,
+   "runtime": 3.7685469000134617,
+   "levels": [
+    {
+     "epsilon": 29,
+     "offset": 0,
+     "feasible": true,
+     "front": 2,
+     "hypervolume": 0.978186517467052,
+     "evaluations": 120,
+     "rejected": 134,
+     "min_changes": 29,
+     "compromise": {
+      "objectives": [
+       5.5,
+       0.23473895582329318,
+       0.03905124837953327
+      ],
+      "changes": 29
+     }
+    },
+    {
+     "epsilon": 31,
+     "offset": 2,
+     "feasible": true,
+     "front": 2,
+     "hypervolume": 0.9845122416059683,
+     "evaluations": 120,
+     "rejected": 118,
+     "min_changes": 31,
+     "compromise": {
+      "objectives": [
+       2.5,
+       0.23473895582329318,
+       0.032015621187164243
+      ],
+      "changes": 31
+     }
+    },
+    {
+     "epsilon": 34,
+     "offset": 5,
+     "feasible": true,
+     "front": 1,
+     "hypervolume": 0.987368304514454,
+     "evaluations": 120,
+     "rejected": 214,
+     "min_changes": 34,
+     "compromise": {
+      "objectives": [
+       0.5,
+       0.23293172690763056,
+       0.032015621187164243
+      ],
+      "changes": 34
+     }
+    },
+    {
+     "epsilon": 39,
+     "offset": 10,
+     "feasible": true,
+     "front": 1,
+     "hypervolume": 0.9880812058173525,
+     "evaluations": 120,
+     "rejected": 33,
+     "min_changes": 36,
+     "compromise": {
+      "objectives": [
+       0.0,
+       0.23293172690763056,
+       0.032015621187164243
+      ],
+      "changes": 36
+     }
+    },
+    {
+     "epsilon": 49,
+     "offset": 20,
+     "feasible": true,
+     "front": 1,
+     "hypervolume": 0.9880812058173525,
+     "evaluations": 120,
+     "rejected": 0,
+     "min_changes": 36,
+     "compromise": {
+      "objectives": [
+       0.0,
+       0.23293172690763056,
+       0.032015621187164243
+      ],
+      "changes": 36
+     }
+    },
+    {
+     "epsilon": 69,
+     "offset": 40,
+     "feasible": true,
+     "front": 2,
+     "hypervolume": 0.9960205806632988,
+     "evaluations": 120,
+     "rejected": 0,
+     "min_changes": 36,
+     "compromise": {
+      "objectives": [
+       0.0,
+       0.23293172690763056,
+       0.032015621187164243
+      ],
+      "changes": 36
+     }
+    }
+   ],
+   "tradeoff_points": 7,
+   "final_hypervolume": 0.9960205806632988,
+   "final_min_changes": 36
+  },
+  "scratch": {
+   "evaluations": 720,
+   "runtime": 4.495654699974693,
+   "front": 1,
+   "hypervolume": 1.006609393168226,
+   "min_changes": 149,
+   "compromise": {
+    "objectives": [
+     0.0,
+     0.2319277108433735,
+     0.022912878474779196
+    ],
+    "changes": 149
+   }
+  },
+  "instance": "medium_1030"
+ },
+ {
+  "disruption": "room_closed",
+  "resource": "R03",
+  "seed": 1,
+  "sessions": 150,
+  "original_objectives": [
+   1.5,
+   0.18855421686746987,
+   0.03905124837953327
+  ],
+  "repair": {
+   "broken": 29,
+   "changes": 29,
+   "proven_minimal": true,
+   "method": "reinsert",
+   "runtime": 0.060678199981339276,
+   "objectives": [
+    6.0,
+    0.23473895582329318,
+    0.03905124837953327
+   ],
+   "hypervolume": 0.9642078812349657
+  },
+  "epsilon": {
+   "evaluations": 720,
+   "runtime": 4.025276799977291,
+   "levels": [
+    {
+     "epsilon": 29,
+     "offset": 0,
+     "feasible": true,
+     "front": 1,
+     "hypervolume": 0.9816650940912658,
+     "evaluations": 120,
+     "rejected": 287,
+     "min_changes": 29,
+     "compromise": {
+      "objectives": [
+       4.5,
+       0.23293172690763056,
+       0.032015621187164243
+      ],
+      "changes": 29
+     }
+    },
+    {
+     "epsilon": 31,
+     "offset": 2,
+     "feasible": true,
+     "front": 1,
+     "hypervolume": 0.9838037979999614,
+     "evaluations": 120,
+     "rejected": 108,
+     "min_changes": 31,
+     "compromise": {
+      "objectives": [
+       3.0,
+       0.23293172690763056,
+       0.032015621187164243
+      ],
+      "changes": 31
+     }
+    },
+    {
+     "epsilon": 34,
+     "offset": 5,
+     "feasible": true,
+     "front": 2,
+     "hypervolume": 0.984516534202975,
+     "evaluations": 120,
+     "rejected": 31,
+     "min_changes": 31,
+     "compromise": {
+      "objectives": [
+       2.5,
+       0.23313253012048193,
+       0.032015621187164243
+      ],
+      "changes": 34
+     }
+    },
+    {
+     "epsilon": 39,
+     "offset": 10,
+     "feasible": true,
+     "front": 2,
+     "hypervolume": 0.9859420066090023,
+     "evaluations": 120,
+     "rejected": 28,
+     "min_changes": 31,
+     "compromise": {
+      "objectives": [
+       1.5,
+       0.23313253012048193,
+       0.032015621187164243
+      ],
+      "changes": 38
+     }
+    },
+    {
+     "epsilon": 49,
+     "offset": 20,
+     "feasible": true,
+     "front": 2,
+     "hypervolume": 0.986654742812016,
+     "evaluations": 120,
+     "rejected": 0,
+     "min_changes": 31,
+     "compromise": {
+      "objectives": [
+       1.0,
+       0.23313253012048193,
+       0.032015621187164243
+      ],
+      "changes": 41
+     }
+    },
+    {
+     "epsilon": 69,
+     "offset": 40,
+     "feasible": true,
+     "front": 2,
+     "hypervolume": 0.986654742812016,
+     "evaluations": 120,
+     "rejected": 0,
+     "min_changes": 31,
+     "compromise": {
+      "objectives": [
+       1.0,
+       0.23313253012048193,
+       0.032015621187164243
+      ],
+      "changes": 40
+     }
+    }
+   ],
+   "tradeoff_points": 5,
+   "final_hypervolume": 0.986654742812016,
+   "final_min_changes": 31
+  },
+  "scratch": {
+   "evaluations": 720,
+   "runtime": 4.292167200008407,
+   "front": 4,
+   "hypervolume": 1.0063457470132318,
+   "min_changes": 147,
+   "compromise": {
+    "objectives": [
+     0.5,
+     0.23433734939759035,
+     0.022912878474779196
+    ],
+    "changes": 150
+   }
+  },
+  "instance": "medium_1030"
+ },
+ {
+  "disruption": "room_closed",
+  "resource": "R03",
+  "seed": 2,
+  "sessions": 150,
+  "original_objectives": [
+   1.5,
+   0.18855421686746987,
+   0.03905124837953327
+  ],
+  "repair": {
+   "broken": 29,
+   "changes": 29,
+   "proven_minimal": true,
+   "method": "reinsert",
+   "runtime": 0.058855900017078966,
+   "objectives": [
+    7.0,
+    0.23293172690763056,
+    0.03905124837953327
+   ],
+   "hypervolume": 0.9648153392714113
+  },
+  "epsilon": {
+   "evaluations": 720,
+   "runtime": 3.4748189999954775,
+   "levels": [
+    {
+     "epsilon": 29,
+     "offset": 0,
+     "feasible": true,
+     "front": 2,
+     "hypervolume": 0.9802296083598818,
+     "evaluations": 120,
+     "rejected": 202,
+     "min_changes": 29,
+     "compromise": {
+      "objectives": [
+       5.5,
+       0.23293172690763056,
+       0.03905124837953327
+      ],
+      "changes": 29
+     }
+    },
+    {
+     "epsilon": 31,
+     "offset": 2,
+     "feasible": true,
+     "front": 2,
+     "hypervolume": 0.9816554109656789,
+     "evaluations": 120,
+     "rejected": 68,
+     "min_changes": 30,
+     "compromise": {
+      "objectives": [
+       4.5,
+       0.23293172690763056,
+       0.03905124837953327
+      ],
+      "changes": 30
+     }
+    },
+    {
+     "epsilon": 34,
+     "offset": 5,
+     "feasible": true,
+     "front": 2,
+     "hypervolume": 0.983089410798099,
+     "evaluations": 120,
+     "rejected": 84,
+     "min_changes": 33,
+     "compromise": {
+      "objectives": [
+       3.5,
+       0.23473895582329318,
+       0.032015621187164243
+      ],
+      "changes": 34
+     }
+    },
+    {
+     "epsilon": 39,
+     "offset": 10,
+     "feasible": true,
+     "front": 2,
+     "hypervolume": 0.9845163691030901,
+     "evaluations": 120,
+     "rejected": 6,
+     "min_changes": 34,
+     "compromise": {
+      "objectives": [
+       2.5,
+       0.23313253012048193,
+       0.032015621187164243
+      ],
+      "changes": 37
+     }
+    },
+    {
+     "epsilon": 49,
+     "offset": 20,
+     "feasible": true,
+     "front": 3,
+     "hypervolume": 0.9866532569130521,
+     "evaluations": 120,
+     "rejected": 0,
+     "min_changes": 34,
+     "compromise": {
+      "objectives": [
+       1.5,
+       0.23313253012048193,
+       0.032015621187164243
+      ],
+      "changes": 38
+     }
+    },
+    {
+     "epsilon": 69,
+     "offset": 40,
+     "feasible": true,
+     "front": 3,
+     "hypervolume": 0.9866532569130521,
+     "evaluations": 120,
+     "rejected": 0,
+     "min_changes": 34,
+     "compromise": {
+      "objectives": [
+       1.5,
+       0.23313253012048193,
+       0.032015621187164243
+      ],
+      "changes": 38
+     }
+    }
+   ],
+   "tradeoff_points": 9,
+   "final_hypervolume": 0.9866532569130521,
+   "final_min_changes": 34
+  },
+  "scratch": {
+   "evaluations": 720,
+   "runtime": 4.405294299998786,
+   "front": 2,
+   "hypervolume": 1.0065095920131866,
+   "min_changes": 149,
+   "compromise": {
+    "objectives": [
+     0.0,
+     0.2319277108433735,
+     0.032015621187164243
+    ],
+    "changes": 149
+   }
+  },
+  "instance": "medium_1030"
+ },
+ {
+  "disruption": "teacher_absent",
+  "resource": "F07",
+  "seed": 0,
+  "sessions": 400,
+  "original_objectives": [
+   5.5,
+   0.2046969696969697,
+   0.07483314773547883
+  ],
+  "repair": {
+   "broken": 2,
+   "changes": 2,
+   "proven_minimal": true,
+   "method": "reinsert",
+   "runtime": 0.010915899998508394,
+   "objectives": [
+    7.0,
+    0.20606060606060608,
+    0.07483314773547883
+   ],
+   "hypervolume": 0.9307190728497058
+  },
+  "epsilon": {
+   "evaluations": 548,
+   "runtime": 27.488179500040133,
+   "levels": [
+    {
+     "epsilon": 2,
+     "offset": 0,
+     "feasible": true,
+     "front": 1,
+     "hypervolume": 0.9307190728497058,
+     "evaluations": 4,
+     "rejected": 1412,
+     "min_changes": 2,
+     "compromise": {
+      "objectives": [
+       7.0,
+       0.20606060606060608,
+       0.07483314773547883
+      ],
+      "changes": 2
+     }
+    },
+    {
+     "epsilon": 4,
+     "offset": 2,
+     "feasible": true,
+     "front": 3,
+     "hypervolume": 0.9403238397398208,
+     "evaluations": 64,
+     "rejected": 1276,
+     "min_changes": 4,
+     "compromise": {
+      "objectives": [
+       6.5,
+       0.20537878787878788,
+       0.07071067811865477
+      ],
+      "changes": 4
+     }
+    },
+    {
+     "epsilon": 7,
+     "offset": 5,
+     "feasible": true,
+     "front": 6,
+     "hypervolume": 0.9491738332039248,
+     "evaluations": 120,
+     "rejected": 434,
+     "min_changes": 4,
+     "compromise": {
+      "objectives": [
+       5.5,
+       0.20606060606060608,
+       0.07071067811865477
+      ],
+      "changes": 6
+     }
+    },
+    {
+     "epsilon": 12,
+     "offset": 10,
+     "feasible": true,
+     "front": 12,
+     "hypervolume": 0.9689380411988523,
+     "evaluations": 120,
+     "rejected": 35,
+     "min_changes": 5,
+     "compromise": {
+      "objectives": [
+       7.5,
+       0.2062878787878788,
+       0.06164414002968978
+      ],
+      "changes": 12
+     }
+    },
+    {
+     "epsilon": 22,
+     "offset": 20,
+     "feasible": true,
+     "front": 19,
+     "hypervolume": 0.9840121099515908,
+     "evaluations": 120,
+     "rejected": 9,
+     "min_changes": 5,
+     "compromise": {
+      "objectives": [
+       8.0,
+       0.20606060606060608,
+       0.05477225575051661
+      ],
+      "changes": 17
+     }
+    },
+    {
+     "epsilon": 42,
+     "offset": 40,
+     "feasible": true,
+     "front": 13,
+     "hypervolume": 0.9889614544176939,
+     "evaluations": 120,
+     "rejected": 0,
+     "min_changes": 7,
+     "compromise": {
+      "objectives": [
+       6.5,
+       0.2040151515151515,
+       0.0632455532033676
+      ],
+      "changes": 14
+     }
+    }
+   ],
+   "tradeoff_points": 34,
+   "final_hypervolume": 0.9889614544176939,
+   "final_min_changes": 7
+  },
+  "scratch": {
+   "evaluations": 548,
+   "runtime": 11.605289500032086,
+   "front": 61,
+   "hypervolume": 0.9948109810609145,
+   "min_changes": 397,
+   "compromise": {
+    "objectives": [
+     12.5,
+     0.20583333333333337,
+     0.06855654600401045
+    ],
+    "changes": 397
+   }
+  },
+  "instance": "large_1010"
+ },
+ {
+  "disruption": "teacher_absent",
+  "resource": "F07",
+  "seed": 1,
+  "sessions": 400,
+  "original_objectives": [
+   5.5,
+   0.2046969696969697,
+   0.07483314773547883
+  ],
+  "repair": {
+   "broken": 2,
+   "changes": 2,
+   "proven_minimal": true,
+   "method": "reinsert",
+   "runtime": 0.010192400019150227,
+   "objectives": [
+    7.0,
+    0.20606060606060608,
+    0.07483314773547883
+   ],
+   "hypervolume": 0.9307190728497058
+  },
+  "epsilon": {
+   "evaluations": 555,
+   "runtime": 30.09222960000625,
+   "levels": [
+    {
+     "epsilon": 2,
+     "offset": 0,
+     "feasible": true,
+     "front": 1,
+     "hypervolume": 0.9307190728497058,
+     "evaluations": 4,
+     "rejected": 1357,
+     "min_changes": 2,
+     "compromise": {
+      "objectives": [
+       7.0,
+       0.20606060606060608,
+       0.07483314773547883
+      ],
+      "changes": 2
+     }
+    },
+    {
+     "epsilon": 4,
+     "offset": 2,
+     "feasible": true,
+     "front": 2,
+     "hypervolume": 0.940053938568181,
+     "evaluations": 71,
+     "rejected": 1216,
+     "min_changes": 4,
+     "compromise": {
+      "objectives": [
+       6.0,
+       0.20674242424242426,
+       0.07071067811865477
+      ],
+      "changes": 4
+     }
+    },
+    {
+     "epsilon": 7,
+     "offset": 5,
+     "feasible": true,
+     "front": 4,
+     "hypervolume": 0.9492733647303924,
+     "evaluations": 120,
+     "rejected": 716,
+     "min_changes": 7,
+     "compromise": {
+      "objectives": [
+       6.0,
+       0.2047727272727273,
+       0.07071067811865477
+      ],
+      "changes": 7
+     }
+    },
+    {
+     "epsilon": 12,
+     "offset": 10,
+     "feasible": true,
+     "front": 6,
+     "hypervolume": 0.9649730249152052,
+     "evaluations": 120,
+     "rejected": 79,
+     "min_changes": 7,
+     "compromise": {
+      "objectives": [
+       8.5,
+       0.20545454545454547,
+       0.06164414002968978
+      ],
+      "changes": 12
+     }
+    },
+    {
+     "epsilon": 22,
+     "offset": 20,
+     "feasible": true,
+     "front": 13,
+     "hypervolume": 0.9799254497696205,
+     "evaluations": 120,
+     "rejected": 4,
+     "min_changes": 7,
+     "compromise": {
+      "objectives": [
+       9.5,
+       0.2041666666666667,
+       0.060000000000000005
+      ],
+      "changes": 18
+     }
+    },
+    {
+     "epsilon": 42,
+     "offset": 40,
+     "feasible": true,
+     "front": 27,
+     "hypervolume": 0.9881833490167915,
+     "evaluations": 120,
+     "rejected": 0,
+     "min_changes": 7,
+     "compromise": {
+      "objectives": [
+       9.5,
+       0.2041666666666667,
+       0.060000000000000005
+      ],
+      "changes": 18
+     }
+    }
+   ],
+   "tradeoff_points": 37,
+   "final_hypervolume": 0.9881833490167915,
+   "final_min_changes": 7
+  },
+  "scratch": {
+   "evaluations": 555,
+   "runtime": 12.001028900034726,
+   "front": 60,
+   "hypervolume": 1.013001589696061,
+   "min_changes": 397,
+   "compromise": {
+    "objectives": [
+     12.5,
+     0.20128787878787882,
+     0.07416198487095664
+    ],
+    "changes": 400
+   }
+  },
+  "instance": "large_1010"
+ },
+ {
+  "disruption": "teacher_absent",
+  "resource": "F07",
+  "seed": 2,
+  "sessions": 400,
+  "original_objectives": [
+   5.5,
+   0.2046969696969697,
+   0.07483314773547883
+  ],
+  "repair": {
+   "broken": 2,
+   "changes": 2,
+   "proven_minimal": true,
+   "method": "reinsert",
+   "runtime": 0.011773200007155538,
+   "objectives": [
+    7.0,
+    0.20606060606060608,
+    0.07483314773547883
+   ],
+   "hypervolume": 0.9307190728497058
+  },
+  "epsilon": {
+   "evaluations": 549,
+   "runtime": 36.102930399996694,
+   "levels": [
+    {
+     "epsilon": 2,
+     "offset": 0,
+     "feasible": true,
+     "front": 1,
+     "hypervolume": 0.9307190728497058,
+     "evaluations": 4,
+     "rejected": 1396,
+     "min_changes": 2,
+     "compromise": {
+      "objectives": [
+       7.0,
+       0.20606060606060608,
+       0.07483314773547883
+      ],
+      "changes": 2
+     }
+    },
+    {
+     "epsilon": 4,
+     "offset": 2,
+     "feasible": true,
+     "front": 3,
+     "hypervolume": 0.9403232226400127,
+     "evaluations": 69,
+     "rejected": 1463,
+     "min_changes": 4,
+     "compromise": {
+      "objectives": [
+       6.0,
+       0.20674242424242426,
+       0.07071067811865477
+      ],
+      "changes": 4
+     }
+    },
+    {
+     "epsilon": 7,
+     "offset": 5,
+     "feasible": true,
+     "front": 5,
+     "hypervolume": 0.9498205118080651,
+     "evaluations": 116,
+     "rejected": 1284,
+     "min_changes": 7,
+     "compromise": {
+      "objectives": [
+       5.5,
+       0.2047727272727273,
+       0.07071067811865477
+      ],
+      "changes": 7
+     }
+    },
+    {
+     "epsilon": 12,
+     "offset": 10,
+     "feasible": true,
+     "front": 10,
+     "hypervolume": 0.9655407154689094,
+     "evaluations": 120,
+     "rejected": 59,
+     "min_changes": 7,
+     "compromise": {
+      "objectives": [
+       9.0,
+       0.20537878787878788,
+       0.06164414002968978
+      ],
+      "changes": 10
+     }
+    },
+    {
+     "epsilon": 22,
+     "offset": 20,
+     "feasible": true,
+     "front": 14,
+     "hypervolume": 0.9879133351282782,
+     "evaluations": 120,
+     "rejected": 4,
+     "min_changes": 7,
+     "compromise": {
+      "objectives": [
+       6.5,
+       0.20606060606060608,
+       0.05656854249492381
+      ],
+      "changes": 12
+     }
+    },
+    {
+     "epsilon": 42,
+     "offset": 40,
+     "feasible": true,
+     "front": 24,
+     "hypervolume": 1.0090380076429146,
+     "evaluations": 120,
+     "rejected": 0,
+     "min_changes": 7,
+     "compromise": {
+      "objectives": [
+       8.5,
+       0.20545454545454547,
+       0.05477225575051661
+      ],
+      "changes": 17
+     }
+    }
+   ],
+   "tradeoff_points": 37,
+   "final_hypervolume": 1.0090380076429146,
+   "final_min_changes": 7
+  },
+  "scratch": {
+   "evaluations": 549,
+   "runtime": 12.42492029996356,
+   "front": 60,
+   "hypervolume": 0.9852120031988236,
+   "min_changes": 396,
+   "compromise": {
+    "objectives": [
+     7.0,
+     0.20795454545454545,
+     0.07071067811865477
+    ],
+    "changes": 399
+   }
+  },
+  "instance": "large_1010"
+ },
+ {
+  "disruption": "teacher_leaves",
+  "resource": "F07",
+  "seed": 0,
+  "sessions": 400,
+  "original_objectives": [
+   5.5,
+   0.2046969696969697,
+   0.07483314773547883
+  ],
+  "repair": {
+   "broken": 10,
+   "changes": 10,
+   "proven_minimal": true,
+   "method": "reinsert",
+   "runtime": 0.011790800024755299,
+   "objectives": [
+    14.0,
+    0.20537878787878788,
+    0.07387924228529778
+   ],
+   "hypervolume": 0.9294275173723503
+  },
+  "epsilon": {
+   "evaluations": 652,
+   "runtime": 16.839051000017207,
+   "levels": [
+    {
+     "epsilon": 10,
+     "offset": 0,
+     "feasible": true,
+     "front": 2,
+     "hypervolume": 0.9310682222315874,
+     "evaluations": 52,
+     "rejected": 1703,
+     "min_changes": 10,
+     "compromise": {
+      "objectives": [
+       11.0,
+       0.2059848484848485,
+       0.07387924228529778
+      ],
+      "changes": 10
+     }
+    },
+    {
+     "epsilon": 12,
+     "offset": 2,
+     "feasible": true,
+     "front": 3,
+     "hypervolume": 0.9333386598426012,
+     "evaluations": 120,
+     "rejected": 500,
+     "min_changes": 12,
+     "compromise": {
+      "objectives": [
+       10.0,
+       0.20537878787878788,
+       0.07387924228529778
+      ],
+      "changes": 12
+     }
+    },
+    {
+     "epsilon": 15,
+     "offset": 5,
+     "feasible": true,
+     "front": 6,
+     "hypervolume": 0.9511279887107104,
+     "evaluations": 120,
+     "rejected": 179,
+     "min_changes": 14,
+     "compromise": {
+      "objectives": [
+       8.5,
+       0.20545454545454547,
+       0.06961248122779813
+      ],
+      "changes": 15
+     }
+    },
+    {
+     "epsilon": 20,
+     "offset": 10,
+     "feasible": true,
+     "front": 14,
+     "hypervolume": 0.9675246744153977,
+     "evaluations": 120,
+     "rejected": 36,
+     "min_changes": 14,
+     "compromise": {
+      "objectives": [
+       11.0,
+       0.2047727272727273,
+       0.06506652476297903
+      ],
+      "changes": 17
+     }
+    },
+    {
+     "epsilon": 30,
+     "offset": 20,
+     "feasible": true,
+     "front": 10,
+     "hypervolume": 0.9748428077440198,
+     "evaluations": 120,
+     "rejected": 5,
+     "min_changes": 14,
+     "compromise": {
+      "objectives": [
+       10.0,
+       0.2047727272727273,
+       0.060178133460354014
+      ],
+      "changes": 21
+     }
+    },
+    {
+     "epsilon": 50,
+     "offset": 40,
+     "feasible": true,
+     "front": 19,
+     "hypervolume": 0.9873652758019127,
+     "evaluations": 120,
+     "rejected": 0,
+     "min_changes": 18,
+     "compromise": {
+      "objectives": [
+       12.0,
+       0.20537878787878788,
+       0.05485583696210454
+      ],
+      "changes": 23
+     }
+    }
+   ],
+   "tradeoff_points": 43,
+   "final_hypervolume": 0.9873652758019127,
+   "final_min_changes": 18
+  },
+  "scratch": {
+   "evaluations": 652,
+   "runtime": 13.866584000003058,
+   "front": 48,
+   "hypervolume": 0.9941271257165677,
+   "min_changes": 398,
+   "compromise": {
+    "objectives": [
+     9.5,
+     0.20530303030303032,
+     0.08298622698509169
+    ],
+    "changes": 399
+   }
+  },
+  "instance": "large_1010"
+ },
+ {
+  "disruption": "teacher_leaves",
+  "resource": "F07",
+  "seed": 1,
+  "sessions": 400,
+  "original_objectives": [
+   5.5,
+   0.2046969696969697,
+   0.07483314773547883
+  ],
+  "repair": {
+   "broken": 10,
+   "changes": 10,
+   "proven_minimal": true,
+   "method": "reinsert",
+   "runtime": 0.011942400014959276,
+   "objectives": [
+    15.5,
+    0.20734848484848484,
+    0.07659181226447023
+   ],
+   "hypervolume": 0.9212837073620289
+  },
+  "epsilon": {
+   "evaluations": 564,
+   "runtime": 21.59924209996825,
+   "levels": [
+    {
+     "epsilon": 10,
+     "offset": 0,
+     "feasible": true,
+     "front": 2,
+     "hypervolume": 0.9223682701151951,
+     "evaluations": 2,
+     "rejected": 1799,
+     "min_changes": 10,
+     "compromise": {
+      "objectives": [
+       13.5,
+       0.20795454545454545,
+       0.07659181226447023
+      ],
+      "changes": 10
+     }
+    },
+    {
+     "epsilon": 12,
+     "offset": 2,
+     "feasible": true,
+     "front": 6,
+     "hypervolume": 0.9368261273391894,
+     "evaluations": 82,
+     "rejected": 1589,
+     "min_changes": 12,
+     "compromise": {
+      "objectives": [
+       11.0,
+       0.20674242424242426,
+       0.07659181226447023
+      ],
+      "changes": 12
+     }
+    },
+    {
+     "epsilon": 15,
+     "offset": 5,
+     "feasible": true,
+     "front": 6,
+     "hypervolume": 0.9465083353255124,
+     "evaluations": 120,
+     "rejected": 131,
+     "min_changes": 14,
+     "compromise": {
+      "objectives": [
+       12.0,
+       0.20681818181818182,
+       0.07106320549583735
+      ],
+      "changes": 15
+     }
+    },
+    {
+     "epsilon": 20,
+     "offset": 10,
+     "feasible": true,
+     "front": 25,
+     "hypervolume": 0.9627270287634511,
+     "evaluations": 120,
+     "rejected": 50,
+     "min_changes": 14,
+     "compromise": {
+      "objectives": [
+       10.5,
+       0.20833333333333334,
+       0.06661632140387537
+      ],
+      "changes": 19
+     }
+    },
+    {
+     "epsilon": 30,
+     "offset": 20,
+     "feasible": true,
+     "front": 25,
+     "hypervolume": 0.9733987530537186,
+     "evaluations": 120,
+     "rejected": 0,
+     "min_changes": 15,
+     "compromise": {
+      "objectives": [
+       10.5,
+       0.20772727272727273,
+       0.06661632140387537
+      ],
+      "changes": 20
+     }
+    },
+    {
+     "epsilon": 50,
+     "offset": 40,
+     "feasible": true,
+     "front": 32,
+     "hypervolume": 0.9777629304658423,
+     "evaluations": 120,
+     "rejected": 0,
+     "min_changes": 15,
+     "compromise": {
+      "objectives": [
+       11.0,
+       0.2087878787878788,
+       0.05845790035674492
+      ],
+      "changes": 26
+     }
+    }
+   ],
+   "tradeoff_points": 72,
+   "final_hypervolume": 0.9777629304658423,
+   "final_min_changes": 15
+  },
+  "scratch": {
+   "evaluations": 564,
+   "runtime": 12.831408399972133,
+   "front": 57,
+   "hypervolume": 0.9968854513084345,
+   "min_changes": 397,
+   "compromise": {
+    "objectives": [
+     10.0,
+     0.20492424242424243,
+     0.07985305121026062
+    ],
+    "changes": 400
+   }
+  },
+  "instance": "large_1010"
+ },
+ {
+  "disruption": "teacher_leaves",
+  "resource": "F07",
+  "seed": 2,
+  "sessions": 400,
+  "original_objectives": [
+   5.5,
+   0.2046969696969697,
+   0.07483314773547883
+  ],
+  "repair": {
+   "broken": 10,
+   "changes": 10,
+   "proven_minimal": true,
+   "method": "reinsert",
+   "runtime": 0.011832899996079504,
+   "objectives": [
+    11.0,
+    0.20537878787878788,
+    0.07387924228529778
+   ],
+   "hypervolume": 0.9310684075015938
+  },
+  "epsilon": {
+   "evaluations": 667,
+   "runtime": 19.22284500004025,
+   "levels": [
+    {
+     "epsilon": 10,
+     "offset": 0,
+     "feasible": true,
+     "front": 2,
+     "hypervolume": 0.9313417039197947,
+     "evaluations": 67,
+     "rejected": 1723,
+     "min_changes": 10,
+     "compromise": {
+      "objectives": [
+       10.5,
+       0.2059848484848485,
+       0.07387924228529778
+      ],
+      "changes": 10
+     }
+    },
+    {
+     "epsilon": 12,
+     "offset": 2,
+     "feasible": true,
+     "front": 4,
+     "hypervolume": 0.9414190058775498,
+     "evaluations": 120,
+     "rejected": 435,
+     "min_changes": 12,
+     "compromise": {
+      "objectives": [
+       11.0,
+       0.2047727272727273,
+       0.06961248122779813
+      ],
+      "changes": 12
+     }
+    },
+    {
+     "epsilon": 15,
+     "offset": 5,
+     "feasible": true,
+     "front": 2,
+     "hypervolume": 0.9508685697076256,
+     "evaluations": 120,
+     "rejected": 504,
+     "min_changes": 15,
+     "compromise": {
+      "objectives": [
+       7.5,
+       0.2047727272727273,
+       0.06961248122779813
+      ],
+      "changes": 15
+     }
+    },
+    {
+     "epsilon": 20,
+     "offset": 10,
+     "feasible": true,
+     "front": 5,
+     "hypervolume": 0.9638231132626505,
+     "evaluations": 120,
+     "rejected": 73,
+     "min_changes": 15,
+     "compromise": {
+      "objectives": [
+       8.5,
+       0.2047727272727273,
+       0.06506652476297903
+      ],
+      "changes": 18
+     }
+    },
+    {
+     "epsilon": 30,
+     "offset": 20,
+     "feasible": true,
+     "front": 11,
+     "hypervolume": 0.9784258702661156,
+     "evaluations": 120,
+     "rejected": 2,
+     "min_changes": 15,
+     "compromise": {
+      "objectives": [
+       11.0,
+       0.2047727272727273,
+       0.05485583696210454
+      ],
+      "changes": 22
+     }
+    },
+    {
+     "epsilon": 50,
+     "offset": 40,
+     "feasible": true,
+     "front": 17,
+     "hypervolume": 0.9931242549217744,
+     "evaluations": 120,
+     "rejected": 0,
+     "min_changes": 15,
+     "compromise": {
+      "objectives": [
+       10.0,
+       0.20545454545454547,
+       0.05296301743820809
+      ],
+      "changes": 24
+     }
+    }
+   ],
+   "tradeoff_points": 29,
+   "final_hypervolume": 0.9931242549217744,
+   "final_min_changes": 15
+  },
+  "scratch": {
+   "evaluations": 667,
+   "runtime": 14.053127499995753,
+   "front": 90,
+   "hypervolume": 0.9996612378048115,
+   "min_changes": 398,
+   "compromise": {
+    "objectives": [
+     12.0,
+     0.20765151515151517,
+     0.06887566134973962
+    ],
+    "changes": 399
+   }
+  },
+  "instance": "large_1010"
+ },
+ {
+  "disruption": "room_closed",
+  "resource": "R03",
+  "seed": 0,
+  "sessions": 400,
+  "original_objectives": [
+   5.5,
+   0.2046969696969697,
+   0.07483314773547883
+  ],
+  "repair": {
+   "broken": 34,
+   "changes": 34,
+   "proven_minimal": true,
+   "method": "reinsert",
+   "runtime": 0.09424969996325672,
+   "objectives": [
+    9.5,
+    0.22409090909090912,
+    0.07483314773547883
+   ],
+   "hypervolume": 0.9106256631414493
+  },
+  "epsilon": {
+   "evaluations": 640,
+   "runtime": 26.773565699986648,
+   "levels": [
+    {
+     "epsilon": 34,
+     "offset": 0,
+     "feasible": true,
+     "front": 1,
+     "hypervolume": 0.9106256631414493,
+     "evaluations": 40,
+     "rejected": 1265,
+     "min_changes": 34,
+     "compromise": {
+      "objectives": [
+       9.5,
+       0.22409090909090912,
+       0.07483314773547883
+      ],
+      "changes": 34
+     }
+    },
+    {
+     "epsilon": 36,
+     "offset": 2,
+     "feasible": true,
+     "front": 2,
+     "hypervolume": 0.9196712337812686,
+     "evaluations": 120,
+     "rejected": 336,
+     "min_changes": 35,
+     "compromise": {
+      "objectives": [
+       7.5,
+       0.22409090909090912,
+       0.07071067811865477
+      ],
+      "changes": 35
+     }
+    },
+    {
+     "epsilon": 39,
+     "offset": 5,
+     "feasible": true,
+     "front": 3,
+     "hypervolume": 0.9287055688078314,
+     "evaluations": 120,
+     "rejected": 476,
+     "min_changes": 37,
+     "compromise": {
+      "objectives": [
+       7.5,
+       0.2234848484848485,
+       0.07071067811865477
+      ],
+      "changes": 37
+     }
+    },
+    {
+     "epsilon": 44,
+     "offset": 10,
+     "feasible": true,
+     "front": 7,
+     "hypervolume": 0.9508275453777835,
+     "evaluations": 120,
+     "rejected": 48,
+     "min_changes": 37,
+     "compromise": {
+      "objectives": [
+       9.0,
+       0.22340909090909095,
+       0.06480740698407861
+      ],
+      "changes": 44
+     }
+    },
+    {
+     "epsilon": 54,
+     "offset": 20,
+     "feasible": true,
+     "front": 14,
+     "hypervolume": 0.9618692787571017,
+     "evaluations": 120,
+     "rejected": 0,
+     "min_changes": 37,
+     "compromise": {
+      "objectives": [
+       9.0,
+       0.2234848484848485,
+       0.06164414002968978
+      ],
+      "changes": 43
+     }
+    },
+    {
+     "epsilon": 74,
+     "offset": 40,
+     "feasible": true,
+     "front": 22,
+     "hypervolume": 0.9813544762987814,
+     "evaluations": 120,
+     "rejected": 0,
+     "min_changes": 37,
+     "compromise": {
+      "objectives": [
+       10.0,
+       0.22340909090909095,
+       0.060000000000000005
+      ],
+      "changes": 45
+     }
+    }
+   ],
+   "tradeoff_points": 28,
+   "final_hypervolume": 0.9813544762987814,
+   "final_min_changes": 37
+  },
+  "scratch": {
+   "evaluations": 640,
+   "runtime": 14.801080000004731,
+   "front": 62,
+   "hypervolume": 0.9741678706444095,
+   "min_changes": 396,
+   "compromise": {
+    "objectives": [
+     13.5,
+     0.2246969696969697,
+     0.057445626465380296
+    ],
+    "changes": 399
+   }
+  },
+  "instance": "large_1010"
+ },
+ {
+  "disruption": "room_closed",
+  "resource": "R03",
+  "seed": 1,
+  "sessions": 400,
+  "original_objectives": [
+   5.5,
+   0.2046969696969697,
+   0.07483314773547883
+  ],
+  "repair": {
+   "broken": 34,
+   "changes": 34,
+   "proven_minimal": true,
+   "method": "reinsert",
+   "runtime": 0.10609560000011697,
+   "objectives": [
+    9.5,
+    0.22409090909090912,
+    0.07483314773547883
+   ],
+   "hypervolume": 0.9106256631414493
+  },
+  "epsilon": {
+   "evaluations": 643,
+   "runtime": 26.988199300016277,
+   "levels": [
+    {
+     "epsilon": 34,
+     "offset": 0,
+     "feasible": true,
+     "front": 1,
+     "hypervolume": 0.9106256631414493,
+     "evaluations": 43,
+     "rejected": 1178,
+     "min_changes": 34,
+     "compromise": {
+      "objectives": [
+       9.5,
+       0.22409090909090912,
+       0.07483314773547883
+      ],
+      "changes": 34
+     }
+    },
+    {
+     "epsilon": 36,
+     "offset": 2,
+     "feasible": true,
+     "front": 3,
+     "hypervolume": 0.9202226010320635,
+     "evaluations": 120,
+     "rejected": 943,
+     "min_changes": 35,
+     "compromise": {
+      "objectives": [
+       7.5,
+       0.22409090909090912,
+       0.07071067811865477
+      ],
+      "changes": 35
+     }
+    },
+    {
+     "epsilon": 39,
+     "offset": 5,
+     "feasible": true,
+     "front": 4,
+     "hypervolume": 0.9288929268840775,
+     "evaluations": 120,
+     "rejected": 221,
+     "min_changes": 37,
+     "compromise": {
+      "objectives": [
+       7.5,
+       0.2234848484848485,
+       0.07483314773547883
+      ],
+      "changes": 37
+     }
+    },
+    {
+     "epsilon": 44,
+     "offset": 10,
+     "feasible": true,
+     "front": 5,
+     "hypervolume": 0.947592475178383,
+     "evaluations": 120,
+     "rejected": 90,
+     "min_changes": 41,
+     "compromise": {
+      "objectives": [
+       9.5,
+       0.22409090909090912,
+       0.06164414002968978
+      ],
+      "changes": 42
+     }
+    },
+    {
+     "epsilon": 54,
+     "offset": 20,
+     "feasible": true,
+     "front": 12,
+     "hypervolume": 0.9624416287396048,
+     "evaluations": 120,
+     "rejected": 9,
+     "min_changes": 44,
+     "compromise": {
+      "objectives": [
+       8.0,
+       0.2234848484848485,
+       0.06164414002968978
+      ],
+      "changes": 47
+     }
+    },
+    {
+     "epsilon": 74,
+     "offset": 40,
+     "feasible": true,
+     "front": 18,
+     "hypervolume": 0.9819520101529153,
+     "evaluations": 120,
+     "rejected": 0,
+     "min_changes": 43,
+     "compromise": {
+      "objectives": [
+       11.0,
+       0.22340909090909095,
+       0.060000000000000005
+      ],
+      "changes": 49
+     }
+    }
+   ],
+   "tradeoff_points": 34,
+   "final_hypervolume": 0.9819520101529153,
+   "final_min_changes": 43
+  },
+  "scratch": {
+   "evaluations": 643,
+   "runtime": 13.118650300020818,
+   "front": 54,
+   "hypervolume": 0.981317964065157,
+   "min_changes": 396,
+   "compromise": {
+    "objectives": [
+     14.0,
+     0.22295454545454546,
+     0.06855654600401044
+    ],
+    "changes": 399
+   }
+  },
+  "instance": "large_1010"
+ },
+ {
+  "disruption": "room_closed",
+  "resource": "R03",
+  "seed": 2,
+  "sessions": 400,
+  "original_objectives": [
+   5.5,
+   0.2046969696969697,
+   0.07483314773547883
+  ],
+  "repair": {
+   "broken": 34,
+   "changes": 34,
+   "proven_minimal": true,
+   "method": "reinsert",
+   "runtime": 0.09309789998224005,
+   "objectives": [
+    10.5,
+    0.22409090909090912,
+    0.07483314773547883
+   ],
+   "hypervolume": 0.9100971514391039
+  },
+  "epsilon": {
+   "evaluations": 643,
+   "runtime": 20.081931399996392,
+   "levels": [
+    {
+     "epsilon": 34,
+     "offset": 0,
+     "feasible": true,
+     "front": 1,
+     "hypervolume": 0.9100971514391039,
+     "evaluations": 43,
+     "rejected": 1197,
+     "min_changes": 34,
+     "compromise": {
+      "objectives": [
+       10.5,
+       0.22409090909090912,
+       0.07483314773547883
+      ],
+      "changes": 34
+     }
+    },
+    {
+     "epsilon": 36,
+     "offset": 2,
+     "feasible": true,
+     "front": 2,
+     "hypervolume": 0.9138119738606574,
+     "evaluations": 120,
+     "rejected": 278,
+     "min_changes": 35,
+     "compromise": {
+      "objectives": [
+       13.0,
+       0.22401515151515153,
+       0.07348469228349536
+      ],
+      "changes": 36
+     }
+    },
+    {
+     "epsilon": 39,
+     "offset": 5,
+     "feasible": true,
+     "front": 4,
+     "hypervolume": 0.9291370257852926,
+     "evaluations": 120,
+     "rejected": 138,
+     "min_changes": 37,
+     "compromise": {
+      "objectives": [
+       6.5,
+       0.22409090909090912,
+       0.07071067811865477
+      ],
+      "changes": 38
+     }
+    },
+    {
+     "epsilon": 44,
+     "offset": 10,
+     "feasible": true,
+     "front": 7,
+     "hypervolume": 0.938154788187103,
+     "evaluations": 120,
+     "rejected": 27,
+     "min_changes": 37,
+     "compromise": {
+      "objectives": [
+       7.0,
+       0.22409090909090912,
+       0.06633249580710801
+      ],
+      "changes": 44
+     }
+    },
+    {
+     "epsilon": 54,
+     "offset": 20,
+     "feasible": true,
+     "front": 13,
+     "hypervolume": 0.9548426637622878,
+     "evaluations": 120,
+     "rejected": 7,
+     "min_changes": 37,
+     "compromise": {
+      "objectives": [
+       9.5,
+       0.22409090909090912,
+       0.060000000000000005
+      ],
+      "changes": 48
+     }
+    },
+    {
+     "epsilon": 74,
+     "offset": 40,
+     "feasible": true,
+     "front": 18,
+     "hypervolume": 0.9707209726330454,
+     "evaluations": 120,
+     "rejected": 0,
+     "min_changes": 37,
+     "compromise": {
+      "objectives": [
+       9.5,
+       0.22409090909090912,
+       0.060000000000000005
+      ],
+      "changes": 48
+     }
+    }
+   ],
+   "tradeoff_points": 29,
+   "final_hypervolume": 0.9707209726330454,
+   "final_min_changes": 37
+  },
+  "scratch": {
+   "evaluations": 643,
+   "runtime": 13.83889829996042,
+   "front": 47,
+   "hypervolume": 0.9858397079112833,
+   "min_changes": 398,
+   "compromise": {
+    "objectives": [
+     13.0,
+     0.22409090909090912,
+     0.06164414002968978
+    ],
+    "changes": 400
+   }
+  },
+  "instance": "large_1010"
+ }
+]

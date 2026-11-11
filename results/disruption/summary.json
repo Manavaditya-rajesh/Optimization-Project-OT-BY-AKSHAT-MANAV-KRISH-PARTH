@@ -1,0 +1,143 @@
+{
+  "teacher_absent": {
+    "runs": 12,
+    "mean_sessions": 212.5,
+    "mean_broken": 3,
+    "repair_mean_changes": 3,
+    "repair_proven_minimal": 12,
+    "repair_mean_hv": 0.9811789214944531,
+    "epsilon_levels": {
+      "0": {
+        "runs": 12,
+        "mean_hv": 0.9882762591022415,
+        "mean_hv_vs_scratch": 0.9466025001446436
+      },
+      "2": {
+        "runs": 12,
+        "mean_hv": 1.0028508845691608,
+        "mean_hv_vs_scratch": 0.9605038801705789
+      },
+      "5": {
+        "runs": 12,
+        "mean_hv": 1.0093775002862626,
+        "mean_hv_vs_scratch": 0.9667918953661306
+      },
+      "10": {
+        "runs": 12,
+        "mean_hv": 1.0151777404769335,
+        "mean_hv_vs_scratch": 0.9725133833395152
+      },
+      "20": {
+        "runs": 12,
+        "mean_hv": 1.0236349159120735,
+        "mean_hv_vs_scratch": 0.980755568105298
+      },
+      "40": {
+        "runs": 12,
+        "mean_hv": 1.031345542948205,
+        "mean_hv_vs_scratch": 0.9882084523849621
+      }
+    },
+    "scratch_mean_hv": 1.0438938475479842,
+    "scratch_mean_min_changes": 209.75,
+    "scratch_mean_compromise_changes": 211.5,
+    "epsilon_final_beats_scratch_hv": 2,
+    "mean_evaluations": 539,
+    "epsilon_mean_runtime": 15.974432500016215,
+    "scratch_mean_runtime": 5.763311891671037
+  },
+  "teacher_leaves": {
+    "runs": 12,
+    "mean_sessions": 212.5,
+    "mean_broken": 9.75,
+    "repair_mean_changes": 9.75,
+    "repair_proven_minimal": 12,
+    "repair_mean_hv": 0.9554176497932931,
+    "epsilon_levels": {
+      "0": {
+        "runs": 12,
+        "mean_hv": 0.9571530801388775,
+        "mean_hv_vs_scratch": 0.9250873013953922
+      },
+      "2": {
+        "runs": 12,
+        "mean_hv": 0.9703735382611516,
+        "mean_hv_vs_scratch": 0.9377963062964542
+      },
+      "5": {
+        "runs": 12,
+        "mean_hv": 0.9862243269064545,
+        "mean_hv_vs_scratch": 0.953083407905597
+      },
+      "10": {
+        "runs": 12,
+        "mean_hv": 1.0013306782574263,
+        "mean_hv_vs_scratch": 0.9676818453413959
+      },
+      "20": {
+        "runs": 12,
+        "mean_hv": 1.0192158829585944,
+        "mean_hv_vs_scratch": 0.9848421884442761
+      },
+      "40": {
+        "runs": 12,
+        "mean_hv": 1.0262645531561576,
+        "mean_hv_vs_scratch": 0.9916754925831178
+      }
+    },
+    "scratch_mean_hv": 1.034859701544545,
+    "scratch_mean_min_changes": 209.83333333333334,
+    "scratch_mean_compromise_changes": 211.58333333333334,
+    "epsilon_final_beats_scratch_hv": 1,
+    "mean_evaluations": 620.0833333333334,
+    "epsilon_mean_runtime": 11.243490466678244,
+    "scratch_mean_runtime": 6.254557424991314
+  },
+  "room_closed": {
+    "runs": 12,
+    "mean_sessions": 212.5,
+    "mean_broken": 31.5,
+    "repair_mean_changes": 31.5,
+    "repair_proven_minimal": 12,
+    "repair_mean_hv": 0.9397116722871347,
+    "epsilon_levels": {
+      "0": {
+        "runs": 12,
+        "mean_hv": 0.9474690942670528,
+        "mean_hv_vs_scratch": 0.9449691188272665
+      },
+      "2": {
+        "runs": 12,
+        "mean_hv": 0.9570713722630185,
+        "mean_hv_vs_scratch": 0.9545257776767263
+      },
+      "5": {
+        "runs": 12,
+        "mean_hv": 0.9646220889388107,
+        "mean_hv_vs_scratch": 0.962075345687903
+      },
+      "10": {
+        "runs": 12,
+        "mean_hv": 0.9720048728738241,
+        "mean_hv_vs_scratch": 0.9695116503756018
+      },
+      "20": {
+        "runs": 12,
+        "mean_hv": 0.9820201808794029,
+        "mean_hv_vs_scratch": 0.9795216410180754
+      },
+      "40": {
+        "runs": 12,
+        "mean_hv": 0.9881760986769319,
+        "mean_hv_vs_scratch": 0.9857557363600389
+      }
+    },
+    "scratch_mean_hv": 1.0025573271790889,
+    "scratch_mean_min_changes": 210.16666666666666,
+    "scratch_mean_compromise_changes": 211.66666666666666,
+    "epsilon_final_beats_scratch_hv": 2,
+    "mean_evaluations": 639.25,
+    "epsilon_mean_runtime": 11.201477966669094,
+    "scratch_mean_runtime": 6.508040308336301
+  }
+}
