@@ -59,6 +59,12 @@ holiday, syllabus, requests
 * **Representatives.** *Fewest gaps*, *Least room wastage*, *Most balanced* and *Best compromise* are the same four
   selections as `export_representatives` (the compromise is the report's `normalized_compromise`).
 
+## Disruptions (minimal-change re-optimisation)
+
+`api/disruptions.py` watches the published timetable: clashing teacher availability, long leave and admin reports
+open a *disruption*. The admin is alerted and can re-optimise with `timetable.disruption` (minimal repair +
+ε-constraint NSGA-II), preview each option's changes and publish one. See [disruption.md](disruption.md#on-the-website).
+
 ## Website ↔ optimizer format
 
 `api/bridge.py` converts both ways without loss (checked by `tests/test_web_bridge.py`). A slot index is

@@ -281,16 +281,18 @@ def get_timetable(user=Depends(current_user)):
     return pub
 
 
-@router.post("/timetable/publish")
-def publish(b: PublishBody, user=Depends(ADMIN)):
-    events = {e["id"] for e in b.instance.get("events", [])}
-    assigned = {a.get("eventId") for a in b.solution.get("assignments", [])}
+def publish_timetable(instance: dict, solution: dict, design: dict | None, user: dict,
+                      message: str = "A new timetable has been published."):
+    """Check a timetable with the optimizer's independent evaluator and make it the published one.
+    Shared by the Designer's Publish button and by disruption re-optimisation."""
+    events = {e["id"] for e in instance.get("events", [])}
+    assigned = {a.get("eventId") for a in solution.get("assignments", [])}
     if not events or events != assigned:
         raise HTTPException(400, "The timetable must place every class of the instance exactly once.")
     # Independent hard-constraint check with the optimizer's own evaluator (same checker as the report).
     from api.bridge import check_web_timetable
     try:
-        ev = check_web_timetable(b.instance, b.solution)
+        ev = check_web_timetable(instance, solution)
     except (ValueError, KeyError, TypeError) as e:
         raise HTTPException(400, f"The timetable could not be checked: {e}") from e
     if not ev.feasible:
@@ -301,14 +303,20 @@ def publish(b: PublishBody, user=Depends(ADMIN)):
             "INSERT INTO published (id, instance_json, solution_json, design_json, published_at, published_by) VALUES (1, ?, ?, ?, ?, ?) "
             "ON CONFLICT(id) DO UPDATE SET instance_json = excluded.instance_json, solution_json = excluded.solution_json, "
             "design_json = excluded.design_json, published_at = excluded.published_at, published_by = excluded.published_by",
-            (json.dumps(b.instance), json.dumps({"assignments": b.solution["assignments"], "facultyOf": b.solution["facultyOf"],
-                                                 "id": b.solution.get("id"),
-                                                 "objectives": dict(zip(("f1", "f2", "f3"), map(float, ev.objectives))),
-                                                 "verified": True}),
-             json.dumps(b.design) if b.design else None, now(), user["username"]),
+            (json.dumps(instance), json.dumps({"assignments": solution["assignments"], "facultyOf": solution["facultyOf"],
+                                               "id": solution.get("id"),
+                                               "objectives": dict(zip(("f1", "f2", "f3"), map(float, ev.objectives))),
+                                               "verified": True}),
+             json.dumps(design) if design else None, now(), user["username"]),
         )
         others = [r["id"] for r in con.execute("SELECT id FROM users WHERE id != ?", (user["id"],))]
-        notify(con, others, "A new timetable has been published.", "timetable", "/calendar")
+        notify(con, others, message, "timetable", "/calendar")
+    return ev
+
+
+@router.post("/timetable/publish")
+def publish(b: PublishBody, user=Depends(ADMIN)):
+    publish_timetable(b.instance, b.solution, b.design, user)
     return {"ok": True}
 
 
@@ -623,7 +631,10 @@ def add_leave(b: LeaveBody, user=Depends(STAFF)):
             notify(con, admin_ids(con), f"{who} is on leave {s} to {e}; {len(open_lectures)} lecture(s) need cover.", "cover", "/calendar")
         groups = {g for o in open_lectures for g in o["groupIds"]}
         notify(con, students_of(con, groups), f"{who} is on leave {s} to {e}; some lectures may move or be covered.", "change", "/timetable")
-        return {"ok": True, "lecturesNeedingCover": len(open_lectures)}
+    # Long leave is a disruption of the weekly timetable: the admin is offered a minimal-change re-optimisation.
+    from api.disruptions import on_leave_added
+    disruption = on_leave_added(fid, s, e, user["username"])
+    return {"ok": True, "lecturesNeedingCover": len(open_lectures), "disruption": disruption}
 
 
 @router.delete("/leaves/{lid}")
@@ -853,7 +864,10 @@ def set_constraints(faculty_id: str, b: ConstraintBody, user=Depends(STAFF)):
         )
         if user["role"] != "admin":
             notify(con, admin_ids(con), f"{user['displayName']} updated their availability; re-run the optimiser to use it.", "info", "/manage")
-    return {"ok": True}
+    # Does the new availability break the published timetable? If so the admin is alerted (Disruptions page).
+    from api.disruptions import on_constraints_saved
+    conflicts = on_constraints_saved(faculty_id, b.unavailable, b.maxDaily, user["username"])
+    return {"ok": True, "conflicts": conflicts}
 
 
 def constraint_overrides() -> dict:

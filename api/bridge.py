@@ -59,20 +59,27 @@ def period_labels(count: int, first_hour: int = 9) -> list[str]:
 
 def demo_problem() -> Problem:
     """Clockwork's demo department (frontend/src/mock/instance.ts) as an optimizer instance."""
+    # (code, course, type, sessions per week per division, eligible teachers: own professor first, then a
+    # qualified backup from a related area; Physics has no backup in this department)
     subjects = [
-        ("DSA", "Data Structures", "theory", 3, ("f1", "f2")),
-        ("DBMS", "Database Systems", "theory", 3, ("f2", "f3")),
-        ("OS", "Operating Systems", "theory", 3, ("f3", "f4")),
-        ("MATHS", "Engineering Maths III", "theory", 3, ("f5", "f6")),
-        ("COA", "Computer Organisation", "theory", 2, ("f4", "f1")),
-        ("EVS", "Environmental Studies", "theory", 1, ("f6", "f5")),
-        ("DSA LAB", "Data Structures Lab", "lab", 1, ("f1", "f2")),
-        ("DBMS LAB", "Database Lab", "lab", 1, ("f3", "f2")),
+        ("OT", "Optimization Techniques", "theory", 3, ("f1", "f5")),
+        ("PC", "Parallel Computing", "theory", 3, ("f2", "f3")),
+        ("PC LAB", "Parallel Computing Lab", "lab", 1, ("f3", "f2")),
+        ("ML LAB", "Machine Learning Lab", "lab", 1, ("f4", "f5")),
+        ("ML", "Machine Learning", "theory", 3, ("f5", "f4")),
+        ("SE", "Software Engineering", "theory", 3, ("f6", "f8")),
+        ("CN", "Computer Networking", "theory", 3, ("f7", "f9")),
+        ("HCI", "Human-Computer Interaction", "theory", 2, ("f8", "f6")),
+        ("OS", "Operating Systems", "theory", 3, ("f9", "f7")),
+        ("PHY", "Physics", "theory", 2, ("f10",)),
     ]
     groups = (Group("gA", 58), Group("gB", 52))
     group_names = {"gA": "SY-Comp Div A", "gB": "SY-Comp Div B"}
-    faculty_rows = [("f1", "Prof. Mehta", 12, 4), ("f2", "Dr. Iyer", 12, 4), ("f3", "Prof. Kulkarni", 10, 4),
-                    ("f4", "Dr. Fernandes", 10, 3), ("f5", "Prof. Rao", 8, 3), ("f6", "Dr. Shaikh", 8, 3)]
+    # weekly / daily teaching limits differ between staff (illustrative values), which creates real trade-offs
+    faculty_rows = [("f1", "Prof. Kulal", 12, 3), ("f2", "Prof. Sase", 10, 3), ("f3", "Prof. Pratik", 6, 3),
+                    ("f4", "Prof. Anushka", 6, 3), ("f5", "Prof. Shrawne", 12, 3), ("f6", "Prof. Shirole", 10, 3),
+                    ("f7", "Prof. Chandane", 8, 3), ("f8", "Prof. Khedkar", 8, 3), ("f9", "Prof. Kolte", 10, 3),
+                    ("f10", "Prof. Wavhal", 6, 2)]
     room_rows = [("r1", "CR-101", 60, "classroom"), ("r2", "CR-102", 72, "classroom"), ("r3", "LH-201", 120, "classroom"),
                  ("r4", "Lab A-301", 64, "lab"), ("r5", "Lab B-302", 70, "lab")]
     offerings, offering_labels = [], {}

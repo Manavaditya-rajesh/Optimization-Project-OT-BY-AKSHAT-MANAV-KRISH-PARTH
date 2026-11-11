@@ -365,12 +365,13 @@ def default_epsilons(minimum: int, total_sessions: int) -> list[int]:
 def epsilon_reoptimize(problem: Problem, original: Schedule, disruption: Disruption | None = None,
                        epsilons: Sequence[int] | None = None, budget: int = 120, population: int = 12,
                        seed: int = 0, restore_rate: float = 0.3, repair: RepairResult | None = None,
-                       original_problem: Problem | None = None) -> ReoptimizationResult:
+                       original_problem: Problem | None = None, progress=None) -> ReoptimizationResult:
     """Epsilon-constrained NSGA-II on the disrupted problem ``problem`` (P').
 
     ``budget`` full evaluations per epsilon level; ``population`` individuals per level. ``epsilons`` default to
     ``default_epsilons`` around the repair's change count. ``original_problem`` (P) is only used to report S0's
-    objectives before the disruption.
+    objectives before the disruption. ``progress`` (optional) is called with a dict after each generation; it
+    only observes and never changes the search.
     """
     validate_problem(problem)
     if budget < 1 or population < 2:
@@ -394,7 +395,8 @@ def epsilon_reoptimize(problem: Problem, original: Schedule, disruption: Disrupt
 
     levels: list[EpsilonLevel] = []
     carried: list[Schedule] = [repair.schedule]
-    for eps in eps_list:
+    report = progress or (lambda _info: None)
+    for level_index, eps in enumerate(eps_list):
         started = perf_counter()
         calls = proposals = rejected = 0
         archive: dict[Schedule, tuple[tuple[float, float, float], int]] = {}
@@ -458,6 +460,8 @@ def epsilon_reoptimize(problem: Problem, original: Schedule, disruption: Disrupt
                 children.append(counted(child))
             if children:
                 pop = environmental_selection(pop + children, len(pop), rng)
+            report({"level": level_index, "levels": len(eps_list), "epsilon": eps, "evaluations": calls,
+                    "budget": budget, "front": len(archive)})
         ordered = sorted(archive.items(), key=lambda item: item[1][0])
         objectives = [v[0] for _, v in ordered]
         levels.append(EpsilonLevel(

@@ -74,7 +74,33 @@ Nothing in the existing optimiser was modified. The new module imports `Feasible
 internal `_State` and `_reinsert` helpers), `construct`, `evaluate`, `rank_and_crowding`, `environmental_selection`
 and the hypervolume code.
 
-## Usage
+## On the website
+
+The application backend runs this method on the **published** timetable (`api/disruptions.py`, page *Disruptions*).
+
+1. **Detection.** The backend compares each of these with the published timetable and records a disruption only if
+   published sessions break:
+   * a teacher (or the admin) saves availability (blocked periods or a daily maximum) that clashes with that
+     teacher's published lectures (*My teaching* / *Manage → Availability*);
+   * leave of **5 or more teaching days**. Shorter leave stays with the calendar's cover/substitute flow;
+   * the admin reports a teacher leaving, a room closing, or a teacher unavailable on a weekday (*Disruptions →
+     Report a disruption*).
+2. **Alert.** Admins get a notification, a red badge on *Disruptions* and a banner on the Overview. A teacher whose
+   saved availability clashes is told immediately that the admin has been asked to re-optimise.
+3. **Re-optimise with minimal changes.** Runs `epsilon_reoptimize` in the background on the published timetable,
+   with every saved teacher constraint applied, and shows:
+   * the broken-session lower bound and whether the repair proves it is reached;
+   * the options: fewest changes (repair) and the best compromise for each ε, as a changes-vs-quality chart and a
+     table (changes split into time/room/teacher, gaps, room waste, imbalance);
+   * for the selected option, every session that moves (before → after) and a timetable preview.
+4. **Publish.** The chosen option goes through the same independent check as any publish. Every affected teacher and
+   class is notified of exactly what moved, and the disruption is marked resolved. Disruptions that a later
+   publish has fixed are resolved automatically; *Dismiss* closes one without changing the timetable.
+
+Tests: `tests/test_web_disruptions.py` (detection from availability and long leave, reports, re-optimisation
+respecting ε and blocked slots, a teacher leaving, publish, notifications, dismiss).
+
+## Usage (command line)
 
 ```bash
 python main.py solve data/enhancement_validation/medium_1010.json --method memetic --seed 0 --budget 360 \

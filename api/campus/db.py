@@ -81,6 +81,12 @@ CREATE TABLE IF NOT EXISTS requests (
     to_faculty TEXT NOT NULL, status TEXT NOT NULL DEFAULT 'pending', message TEXT NOT NULL DEFAULT '',
     reply TEXT NOT NULL DEFAULT '', created_at TEXT NOT NULL, decided_at TEXT, decided_by TEXT
 );
+CREATE TABLE IF NOT EXISTS disruptions (
+    id INTEGER PRIMARY KEY AUTOINCREMENT, kind TEXT NOT NULL, resource TEXT NOT NULL, slots TEXT NOT NULL DEFAULT '[]',
+    source TEXT NOT NULL, note TEXT NOT NULL DEFAULT '', broken INTEGER NOT NULL DEFAULT 0,
+    status TEXT NOT NULL DEFAULT 'open', published_at TEXT NOT NULL, result_json TEXT,
+    created_by TEXT NOT NULL, created_at TEXT NOT NULL, resolved_at TEXT, resolved_by TEXT
+);
 CREATE TABLE IF NOT EXISTS optimizer_runs (
     id TEXT PRIMARY KEY, created_at TEXT NOT NULL, created_by TEXT NOT NULL,
     summary_json TEXT NOT NULL, result_json TEXT NOT NULL
