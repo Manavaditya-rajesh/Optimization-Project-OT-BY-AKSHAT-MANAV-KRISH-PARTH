@@ -54,6 +54,16 @@ def parser() -> argparse.ArgumentParser:
     plot = sub.add_parser("plot", help="Regenerate summary tables and figures from saved raw runs")
     plot.add_argument("--results", default="results/benchmark")
     plot.add_argument("--figures")
+    reopt = sub.add_parser("reoptimize", help="Minimal-change re-optimisation of a timetable after a disruption (epsilon-constraint)")
+    reopt.add_argument("instance")
+    reopt.add_argument("schedule", help="the published timetable S0 (schedule JSON, e.g. a representative's schedule.json)")
+    reopt.add_argument("--disruption", required=True,
+                       help="teacher_absent:F03:day=1 | teacher_absent:F03:slots=8,9 | teacher_leaves:F03 | room_closed:R02[:day=0]")
+    reopt.add_argument("--epsilons", help="comma-separated change limits; default: repair changes + 0,2,5,10,20,40")
+    reopt.add_argument("--budget", type=int, default=120, help="full evaluations per epsilon level")
+    reopt.add_argument("--population", type=int, default=12)
+    reopt.add_argument("--seed", type=int, default=0)
+    reopt.add_argument("--output", default="results/reoptimize")
     micro = sub.add_parser("prove-tradeoffs", help="Exhaust tiny synthetic instances to certify genuine global Pareto fronts")
     micro.add_argument("--output", default="results/exact_micro")
     micro.add_argument("--figures", default="figures/exact_micro")
@@ -89,6 +99,30 @@ def main(argv=None) -> int:
             from .experiments import analyze_suite
             result = analyze_suite(args.results, args.figures)
             print(json.dumps(result["summary"], indent=2))
+            return 0
+        if args.command == "reoptimize":
+            from .disruption import apply_disruption, epsilon_reoptimize, parse_disruption, reoptimization_to_dict
+            problem = problem_from_dict(_read(args.instance))
+            data = _read(args.schedule)
+            original = schedule_from_dict(data.get("schedule", data))
+            if not evaluate(problem, original).feasible:
+                raise ValueError("the given timetable is not feasible for the given instance")
+            disruption = parse_disruption(problem, args.disruption)
+            disrupted = apply_disruption(problem, disruption)
+            epsilons = [int(x) for x in args.epsilons.split(",")] if args.epsilons else None
+            result = epsilon_reoptimize(disrupted, original, disruption, epsilons, args.budget, args.population,
+                                        args.seed, original_problem=problem)
+            out = Path(args.output)
+            payload = reoptimization_to_dict(disrupted, original, result)
+            _write(out / "reoptimization.json", payload)
+            _write(out / "disrupted_instance.json", problem_to_dict(disrupted))
+            _write(out / "repaired_schedule.json", schedule_to_dict(result.repair.schedule))
+            for level in result.levels:
+                if level.feasible:
+                    _write(out / f"eps_{level.epsilon}" / "schedule.json", schedule_to_dict(level.archive[level.compromise_index()]))
+            print(json.dumps({"disruption": payload["disruption"], "repair": payload["repair"],
+                              "levels": [{k: lv[k] for k in ("epsilon", "front_size", "hypervolume", "compromise")} for lv in payload["levels"]]},
+                             indent=2))
             return 0
         if args.command == "prove-tradeoffs":
             from .exact import enumerate_pareto
