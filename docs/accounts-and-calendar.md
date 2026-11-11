@@ -26,6 +26,7 @@ reminds you). Data lives in `data/clockwork.db` (SQLite; delete it to start over
 | Leave | any teacher | own | |
 | Weekly availability (blocked periods, max per day) | any teacher | own | |
 | Holidays, online assessments, accounts | ✓ | assessments | |
+| Disruptions: review, re-optimise with minimal changes, publish | ✓ | triggers one by saving clashing availability or long leave | |
 
 ## Rules the calendar applies, per lecture and date
 1. Syllabus marked complete before that date → the lecture is gone (no more classes).
@@ -36,6 +37,12 @@ reminds you). Data lives in `data/clockwork.db` (SQLite; delete it to start over
 
 **No collisions:** every quiz, extra class, request, acceptance and substitution is checked against the
 students, the teacher (lectures, leave and blocked periods) and the room, and refused if anything clashes.
+
+## Disruptions
+Saved availability that clashes with published lectures, leave of 5+ teaching days, or an admin report (teacher
+leaving, room closed, teacher unavailable on a weekday) opens a disruption. The admin re-optimises it with the
+fewest changes (or chooses a few more changes for better quality), previews exactly what moves and publishes; the
+affected teachers and classes are told what changed. See [disruption.md](disruption.md).
 
 ## Notifications
 Shown under the bell; the list opens by itself on login when something is new. Sent for: requests,

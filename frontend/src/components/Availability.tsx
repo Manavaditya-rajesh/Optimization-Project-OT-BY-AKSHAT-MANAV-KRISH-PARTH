@@ -37,8 +37,12 @@ export default function Availability({ facultyId, instance }: { facultyId: strin
   const save = async () => {
     setError(null);
     try {
-      await put(`/constraints/${facultyId}`, { unavailable: [...blocked], maxDaily: maxDaily === '' ? null : maxDaily, note });
-      setMsg('Saved. The next optimiser run will respect it.');
+      const r = await put<{ conflicts?: number }>(`/constraints/${facultyId}`, { unavailable: [...blocked], maxDaily: maxDaily === '' ? null : maxDaily, note });
+      setMsg(
+        r.conflicts
+          ? `Saved. This clashes with ${r.conflicts} lecture(s) of the published timetable; the administrator has been asked to re-optimise with minimal changes.`
+          : 'Saved. The next optimiser run will respect it.',
+      );
     } catch (e) {
       setError((e as Error).message);
     }

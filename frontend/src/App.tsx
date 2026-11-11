@@ -1,4 +1,5 @@
-import { NavLink, Navigate, Route, Routes } from 'react-router-dom';
+import { useEffect, useState } from 'react';
+import { NavLink, Navigate, Route, Routes, useLocation } from 'react-router-dom';
 import Dashboard from './pages/Dashboard';
 import ParetoExplorer from './pages/ParetoExplorer';
 import Designer from './pages/Designer';
@@ -6,11 +7,12 @@ import Login from './pages/Login';
 import CalendarPage from './pages/CalendarPage';
 import Requests from './pages/Requests';
 import Manage from './pages/Manage';
+import Disruptions from './pages/Disruptions';
 import MyAvailability from './pages/MyAvailability';
 import TimetableView from './pages/TimetableView';
 import Inbox from './components/Inbox';
 import AccountBox from './components/AccountBox';
-import { useAuth, type Role } from './auth';
+import { api, useAuth, type Role } from './auth';
 
 const Icon = ({ d }: { d: string }) => (
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -27,6 +29,7 @@ const ICONS = {
   requests: 'M7 7h10l-3-3M17 17H7l3 3',
   mine: 'M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM4 21a8 8 0 0 1 16 0',
   manage: 'M4 6h10M18 6h2M4 12h4M12 12h8M4 18h12M20 18h0M14 4v4M8 10v4M16 16v4',
+  alert: 'M12 3 2 20h20L12 3zM12 10v4M12 17h.01',
 };
 
 // which pages each role sees, in sidebar order
@@ -38,11 +41,34 @@ const PAGES: { path: string; label: string; icon: keyof typeof ICONS; roles: Rol
   { path: '/calendar', label: 'Calendar', icon: 'calendar', roles: ['admin', 'teacher', 'student'], element: <CalendarPage /> },
   { path: '/requests', label: 'Requests', icon: 'requests', roles: ['admin', 'teacher'], element: <Requests /> },
   { path: '/mine', label: 'My teaching', icon: 'mine', roles: ['teacher'], element: <MyAvailability /> },
+  { path: '/disruptions', label: 'Disruptions', icon: 'alert', roles: ['admin'], element: <Disruptions /> },
   { path: '/manage', label: 'Manage', icon: 'manage', roles: ['admin'], element: <Manage /> },
 ];
 
+/** Number of open disruptions, refreshed on navigation and every 30 s (admins only). */
+export function useOpenDisruptions(enabled: boolean) {
+  const [n, setN] = useState(0);
+  const loc = useLocation();
+  useEffect(() => {
+    if (!enabled) return;
+    const load = () =>
+      api<{ items: { status: string }[] }>('/disruptions')
+        .then((r) => setN(r.items.filter((d) => d.status === 'open').length))
+        .catch(() => undefined);
+    load();
+    const t = setInterval(load, 30000);
+    window.addEventListener('clockwork:disruptions', load);
+    return () => {
+      clearInterval(t);
+      window.removeEventListener('clockwork:disruptions', load);
+    };
+  }, [enabled, loc.pathname]);
+  return n;
+}
+
 export default function App() {
   const user = useAuth((s) => s.user);
+  const openDisruptions = useOpenDisruptions(user?.role === 'admin');
   if (!user) return <Login />;
   const pages = PAGES.filter((p) => p.roles.includes(user.role));
   const home = user.role === 'admin' ? '/' : user.role === 'teacher' ? '/calendar' : '/timetable';
@@ -57,6 +83,7 @@ export default function App() {
             <NavLink key={p.path} to={p.path} end={p.path === '/'}>
               <Icon d={ICONS[p.icon]} />
               <span>{p.label}</span>
+              {p.path === '/disruptions' && openDisruptions > 0 && <span className="badge">{openDisruptions}</span>}
             </NavLink>
           ))}
         </nav>

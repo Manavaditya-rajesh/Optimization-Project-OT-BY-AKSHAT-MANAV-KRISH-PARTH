@@ -299,6 +299,34 @@ function RunPanel() {
   );
 }
 
+function DisruptionBanner() {
+  const [open, setOpen] = useState<{ description: string; broken: number }[]>([]);
+  useEffect(() => {
+    api<{ items: { status: string; description: string; broken: number }[] }>('/disruptions')
+      .then((r) => setOpen(r.items.filter((d) => d.status === 'open')))
+      .catch(() => undefined);
+  }, []);
+  if (!open.length) return null;
+  return (
+    <section className="card" style={{ marginBottom: 18, borderLeft: '6px solid var(--accent)' }}>
+      <div className="row" style={{ justifyContent: 'space-between', gap: 12, flexWrap: 'wrap' }}>
+        <div>
+          <h3>
+            ⚠ {open.length} disruption{open.length === 1 ? '' : 's'} affect{open.length === 1 ? 's' : ''} the published timetable
+          </h3>
+          <span className="tiny">
+            {open[0].description} ({open[0].broken} session{open[0].broken === 1 ? '' : 's'})
+            {open.length > 1 ? ` and ${open.length - 1} more` : ''}. Re-optimise with minimal changes instead of starting from scratch.
+          </span>
+        </div>
+        <Link to="/disruptions" className="btn accent">
+          Review disruptions
+        </Link>
+      </div>
+    </section>
+  );
+}
+
 export default function Dashboard() {
   const { solutions, select, selectedId, theme, view, decorations, blockNotes, instance: inst } = useStore();
   const selected = useSelectedSolution();
@@ -323,6 +351,7 @@ export default function Dashboard() {
         </p>
       </div>
 
+      <DisruptionBanner />
       <RunPanel />
 
       <div className="grid grid-4" style={{ marginBottom: 22 }}>

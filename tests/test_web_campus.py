@@ -119,7 +119,7 @@ class TestCampus(unittest.TestCase):
         oa_occ = client.get(f"/api/calendar?start={oa_day}&end={oa_day}&group=gA", headers=self.admin).json()["occurrences"]
         self.assertTrue(all(x["status"] == "cancelled" and "Online assessment" in x["reason"] for x in oa_occ))
 
-        off = "gB-EVS"  # f6 teaches EVS in the demo (first eligible); find its teacher and close the syllabus
+        off = "gB-PHY"  # Physics (Prof. Wavhal) in the demo department; close its syllabus
         done_on = (MONDAY + timedelta(days=20)).isoformat()
         self.assertEqual(client.post("/api/syllabus", json={"offeringId": off, "completedOn": done_on}, headers=self.admin).status_code, 200)
         later = client.get(f"/api/calendar?start={MONDAY + timedelta(days=21)}&end={MONDAY + timedelta(days=60)}", headers=self.admin).json()["occurrences"]
@@ -134,18 +134,25 @@ class TestCampus(unittest.TestCase):
         p_busy = min(busy)
         r = client.post("/api/extra-classes", json={"offeringId": off["id"], "date": d, "period": p_busy, "roomId": "r3"}, headers=self.t1)
         self.assertEqual(r.status_code, 409)
-        # a period where the group and teacher are free, in a free room that fits
-        for p in range(8):
-            if p in busy or p == 4:
-                continue
-            free = client.get(f"/api/free?date={d}&period={p}", headers=self.t1).json()
-            if any(t["id"] == "f1" for t in free["teachers"]) and free["rooms"]:
-                room = max(free["rooms"], key=lambda r: r["capacity"])
-                r = client.post("/api/extra-classes", json={"offeringId": off["id"], "date": d, "period": p, "roomId": room["id"], "title": "Quiz 1"}, headers=self.t1)
-                self.assertEqual(r.status_code, 200, r.text)
+        # a period where the group and teacher are free, in a free room that fits (search the whole week)
+        found = False
+        for k in range(28, 33):
+            day = (MONDAY + timedelta(days=k)).isoformat()
+            day_occ = client.get(f"/api/calendar?start={day}&end={day}&group=gA", headers=self.admin).json()["occurrences"]
+            day_busy = {p for o in day_occ if o["status"] in ("scheduled", "substituted") for p in range(o["period"], o["period"] + o["length"])}
+            for p in range(8):
+                if p in day_busy or p == 4:
+                    continue
+                free = client.get(f"/api/free?date={day}&period={p}", headers=self.t1).json()
+                if any(t["id"] == "f1" for t in free["teachers"]) and free["rooms"]:
+                    room = max(free["rooms"], key=lambda r: r["capacity"])
+                    r = client.post("/api/extra-classes", json={"offeringId": off["id"], "date": day, "period": p, "roomId": room["id"], "title": "Quiz 1"}, headers=self.t1)
+                    self.assertEqual(r.status_code, 200, r.text)
+                    found = True
+                    break
+            if found:
                 break
-        else:
-            self.skipTest("no free period found")
+        self.assertTrue(found, "no free period for the class and its teacher in a whole week")
         # a student of gA is told about it
         self.assertTrue(any("Quiz 1" in n["message"] for n in client.get("/api/notifications", headers=self.student).json()["items"]))
         # f2 does not teach this course
