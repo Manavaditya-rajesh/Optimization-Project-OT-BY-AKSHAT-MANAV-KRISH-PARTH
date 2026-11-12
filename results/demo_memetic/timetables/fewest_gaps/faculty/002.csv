@@ -1,0 +1,6 @@
+faculty: F03,P1,P2,P3,P4,P5,P6,P7,P8
+Monday,,,G01-T2 | R01 / F03,G02-T5 | R02 / F03,LUNCH,G02-L2 | R05 / F03,G02-L2 (cont.) | R05 / F03,
+Tuesday,,G01-T2 | R01 / F03,,,LUNCH,,,
+Wednesday,,G01-T2 | R01 / F03,,,LUNCH,,,
+Thursday,,,G02-T5 | R02 / F03,,LUNCH,,,
+Friday,G02-T5 | R02 / F03,,,,LUNCH,,,

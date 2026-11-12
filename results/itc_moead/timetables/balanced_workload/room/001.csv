@@ -1,0 +1,6 @@
+room: Room_02,P1,P2,P3,P4,P5,P6,P7
+Monday,Course_21 | Room_02 / Prof_12,Course_12 | Room_02 / Prof_12,Course_13 | Room_02 / Prof_02,LUNCH,Course_11 | Room_02 / Prof_11,Course_15 | Room_02 / Prof_05,Course_16 | Room_02 / Prof_07
+Tuesday,Course_21 | Room_02 / Prof_12,Course_12 | Room_02 / Prof_12,Course_13 | Room_02 / Prof_02,LUNCH,Course_11 | Room_02 / Prof_11,Course_15 | Room_02 / Prof_05,Course_16 | Room_02 / Prof_07
+Wednesday,Course_12 | Room_02 / Prof_12,Course_13 | Room_02 / Prof_02,Course_11 | Room_02 / Prof_11,LUNCH,Course_14 | Room_02 / Prof_03,Course_15 | Room_02 / Prof_05,
+Thursday,Course_11 | Room_02 / Prof_11,Course_14 | Room_02 / Prof_03,Course_18 | Room_02 / Prof_09,LUNCH,Course_19 | Room_02 / Prof_09,,
+Friday,Course_14 | Room_02 / Prof_03,Course_18 | Room_02 / Prof_09,Course_19 | Room_02 / Prof_09,LUNCH,Course_21 | Room_02 / Prof_12,Course_24 | Room_02 / Prof_11,

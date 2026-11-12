@@ -1,0 +1,6 @@
+room: Room_03,P1,P2,P3,P4,P5,P6,P7
+Monday,,,,LUNCH,,,
+Tuesday,,Course_23 | Room_03 / Prof_06,,LUNCH,,Course_Shared_01 | Room_03 / Prof_04,Course_18 | Room_03 / Prof_09
+Wednesday,,Course_22 | Room_03 / Prof_06,,LUNCH,Course_21 | Room_03 / Prof_01,Course_Shared_01 | Room_03 / Prof_04,
+Thursday,,,Course_02 | Room_03 / Prof_03,LUNCH,,,
+Friday,,,,LUNCH,Course_17 | Room_03 / Prof_08,,

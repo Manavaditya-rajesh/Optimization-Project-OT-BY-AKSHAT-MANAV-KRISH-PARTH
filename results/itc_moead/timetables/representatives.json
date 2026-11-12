@@ -1,0 +1,34 @@
+{
+  "fewest_gaps": {
+    "archive_index": 0,
+    "objectives": [
+      0.0,
+      0.16967120181405895,
+      0.15728821740147395
+    ]
+  },
+  "best_room_fit": {
+    "archive_index": 0,
+    "objectives": [
+      0.0,
+      0.16967120181405895,
+      0.15728821740147395
+    ]
+  },
+  "balanced_workload": {
+    "archive_index": 1,
+    "objectives": [
+      0.0,
+      0.1703798185941043,
+      0.057054433073454806
+    ]
+  },
+  "normalized_compromise": {
+    "archive_index": 0,
+    "objectives": [
+      0.0,
+      0.16967120181405895,
+      0.15728821740147395
+    ]
+  }
+}

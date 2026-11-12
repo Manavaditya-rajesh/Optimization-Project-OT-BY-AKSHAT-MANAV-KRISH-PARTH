@@ -1,0 +1,6 @@
+faculty: Prof_01,P1,P2,P3,P4,P5,P6,P7
+Monday,Course_01 | Room_01 / Prof_01,Course_21 | Room_01 / Prof_01,,LUNCH,,,
+Tuesday,,,,LUNCH,Course_01 | Room_02 / Prof_01,Course_21 | Room_01 / Prof_01,
+Wednesday,,,,LUNCH,Course_21 | Room_03 / Prof_01,,
+Thursday,,,,LUNCH,Course_21 | Room_02 / Prof_01,Course_01 | Room_01 / Prof_01,
+Friday,Course_01 | Room_01 / Prof_01,,,LUNCH,,,

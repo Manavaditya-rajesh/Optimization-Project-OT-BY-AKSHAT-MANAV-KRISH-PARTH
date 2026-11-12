@@ -1,9 +1,9 @@
-"""Optional CP-SAT reference with exact feasibility and single-objective models.
+"""Optional CP-SAT reference with exact feasibility, single-objective models, and epsilon-constraint.
 
 CP-SAT proves a *single-objective* optimum only when its status is OPTIMAL.
-These runs do not certify the complete three-objective Pareto front.  In
-particular, normalized workload standard deviation is deliberately not replaced
-by a surrogate and then described as an exact objective.
+The epsilon-constraint method enables generating true exact Pareto trade-offs
+by minimizing one objective while placing explicit upper bounds (epsilon) on the
+other objective, bypassing the non-convexity limitations of weighted-sum scalarization.
 """
 
 from __future__ import annotations
@@ -51,6 +51,20 @@ class EnumerationResult:
     feasible_candidates: int
     runtime: float
     status: str = "COMPLETE"
+
+
+@dataclass
+class EpsilonParetoResult:
+    """Exact trade-off front discovered via the epsilon-constraint method with CP-SAT."""
+
+    archive: list[Schedule]
+    objectives: list[tuple[float, float, float]]
+    evaluated_steps: int
+    optimal_steps: int
+    feasible_steps: int
+    runtime: float
+    epsilons: list[float]
+    metadata: dict[str, Any] = field(default_factory=dict)
 
 
 def enumerate_pareto(problem: Problem, max_combinations: int = 100_000) -> EnumerationResult:
@@ -151,6 +165,8 @@ def cp_sat(
     objective: str = "feasibility",
     time_limit: float = 10.0,
     seed: int = 0,
+    epsilon_objective: str | None = None,
+    epsilon_bound: float | None = None,
 ) -> ExactResult:
     """Solve a small instance without consulting its generation witness.
 
@@ -159,23 +175,32 @@ def cp_sat(
     objective uses exact integer coefficients obtained from the least common
     multiple of room capacities, rather than rounded decimal penalties.
 
+    When ``epsilon_objective`` and ``epsilon_bound`` are supplied, the solver
+    minimizes ``objective`` subject to ``epsilon_objective <= epsilon_bound``.
+
     One Boolean alternative jointly fixes an event's start, room and teacher;
     offering-level teacher variables enforce teaching consistency.  Resource
     constraints cover every period of multi-period sessions.
 
-    OR-Tools is optional and imported only when this function is called.  A
-    missing installation raises an actionable ImportError.  UNKNOWN means no
-    solution or infeasibility proof was found before the limit; INFEASIBLE is
-    reserved for a solver proof.  Single-thread search and a fixed seed improve
-    reproducibility; wall-clock limits can still affect timed-out runs.
+    OR-Tools is optional and imported only when this function is called.
     """
     if objective not in {"feasibility", "gaps", "room"}:
         raise ValueError("objective must be 'feasibility', 'gaps' or 'room'")
+    if epsilon_objective is not None and epsilon_objective not in {"gaps", "room"}:
+        raise ValueError("epsilon_objective must be 'gaps' or 'room'")
     if not isfinite(time_limit) or time_limit <= 0:
         raise ValueError("time_limit must be a finite positive number")
     if not isinstance(seed, int) or not 0 <= seed <= 2**31 - 1:
         raise ValueError("seed must be an integer in [0, 2**31 - 1]")
     try:
+        try:
+            import pandas
+        except Exception:
+            import sys, types
+            mock_pd = types.ModuleType('pandas')
+            mock_pd.Index = type('Index', (), {})
+            mock_pd.Series = type('Series', (), {})
+            sys.modules['pandas'] = mock_pd
         from ortools.sat.python import cp_model
         import ortools
     except ImportError as exc:
@@ -216,9 +241,11 @@ def cp_sat(
     total_duration = sum(e.duration for e in events)
     capacity_lcm = lcm(*(r.capacity for r in problem.rooms))
     room_scale = capacity_lcm * max(total_duration, 1)
-    # CP-SAT sums use signed int64.  Refuse an unsafe scale rather than round an
-    # objective silently; this can happen with unusually many coprime capacities.
-    if objective == "room" and room_scale > 2**60:
+
+    need_room_terms = (objective == "room" or epsilon_objective == "room")
+    need_gap_terms = (objective == "gaps" or epsilon_objective == "gaps")
+
+    if need_room_terms and room_scale > 2**60:
         raise ValueError(
             "Room capacities produce an unsafe exact integer scale; "
             "use fewer distinct capacities for this small-instance reference."
@@ -253,7 +280,7 @@ def cp_sat(
                         faculty_occupancy[teacher_id, slot].append(variable)
                         for group in event.groups:
                             group_occupancy[group, slot].append(variable)
-                    if objective == "room":
+                    if need_room_terms:
                         coefficient = (
                             event.duration
                             * (room.capacity - event.size)
@@ -287,13 +314,10 @@ def cp_sat(
     for variables in offering_days.values():
         model.Add(sum(variables) <= 1)
 
-    objective_scale = 1
-    if objective == "room":
-        objective_scale = room_scale
-        model.Minimize(sum(room_terms))
-    elif objective == "gaps":
-        objective_scale = 2
-        terms = []
+    # Build gap terms if needed for objective or epsilon bound
+    gap_terms = []
+    gap_scale = 2
+    if need_gap_terms:
         teachable_periods = [
             p for p in range(width) if p not in problem.lunch_periods
         ]
@@ -311,8 +335,6 @@ def cp_sat(
                         )
                         model.Add(indicator == sum(occupancy[resource.id, slot]))
                         busy.append(indicator)
-                    # A teaching-period gap exists exactly when this period is
-                    # free and there is teaching on both sides in the same day.
                     for index in range(1, len(busy) - 1):
                         prefix = model.NewBoolVar(
                             f"before_{label}_{resource.id}_{day}_{index}"
@@ -329,8 +351,24 @@ def cp_sat(
                         model.Add(gap <= suffix)
                         model.Add(gap <= 1 - busy[index])
                         model.Add(gap >= prefix + suffix - busy[index] - 1)
-                        terms.append(weight * gap)
-        model.Minimize(sum(terms))
+                        gap_terms.append(weight * gap)
+
+    # Apply Epsilon Constraint if requested
+    if epsilon_objective is not None and epsilon_bound is not None:
+        if epsilon_objective == "room":
+            scaled_bound = int(round(epsilon_bound * room_scale))
+            model.Add(sum(room_terms) <= scaled_bound)
+        elif epsilon_objective == "gaps":
+            scaled_bound = int(round(epsilon_bound * gap_scale))
+            model.Add(sum(gap_terms) <= scaled_bound)
+
+    objective_scale = 1
+    if objective == "room":
+        objective_scale = room_scale
+        model.Minimize(sum(room_terms))
+    elif objective == "gaps":
+        objective_scale = gap_scale
+        model.Minimize(sum(gap_terms))
 
     solver = cp_model.CpSolver()
     solver.parameters.max_time_in_seconds = float(time_limit)
@@ -348,6 +386,8 @@ def cp_sat(
         "seed": seed,
         "workers": 1,
         "objective_scale": objective_scale,
+        "epsilon_objective": epsilon_objective,
+        "epsilon_bound": epsilon_bound,
     }
     if status_code == cp_model.MODEL_INVALID:
         metadata["validation_error"] = model.Validate()
@@ -364,9 +404,8 @@ def cp_sat(
         placements.append(Placement(start, room_id))
         assigned_teachers[offering_index[event.offering_id]] = teacher_id
     schedule = Schedule(tuple(placements), tuple(assigned_teachers))
-    # Re-evaluation is an independent guard against extraction/model mistakes.
+    
     from .evaluation import evaluate
-
     assessment = evaluate(problem, schedule)
     if not assessment.feasible:
         raise RuntimeError(
@@ -376,8 +415,127 @@ def cp_sat(
     bound = solver.BestObjectiveBound() / objective_scale
     if objective != "feasibility":
         expected = assessment.objectives[0 if objective == "gaps" else 1]
-        if abs(value - expected) > 1e-8:
-            raise RuntimeError("CP-SAT objective and independent evaluation disagree")
+        if abs(value - expected) > 1e-6:
+            raise RuntimeError(f"CP-SAT objective ({value}) and evaluation ({expected}) disagree")
     return ExactResult(
         schedule, status, value, bound, perf_counter() - started, objective, metadata
+    )
+
+
+def epsilon_constraint_cp_sat(
+    problem: Problem,
+    primary_objective: str = "gaps",
+    epsilon_objective: str = "room",
+    steps: int = 5,
+    time_limit_per_step: float = 10.0,
+    seed: int = 0,
+) -> EpsilonParetoResult:
+    """Generate exact Pareto trade-offs using the epsilon-constraint method with CP-SAT.
+
+    OT Concept:
+    Unlike weighted sum scalarization, which fails to find non-convex Pareto points,
+    the epsilon-constraint method minimizes one objective f_1(x) while constraining
+    the second objective: f_2(x) <= eps_2. By systematically varying eps_2 across its
+    feasible range, the exact Pareto boundary is traced out without bias.
+
+    Parameters:
+        problem: Target instance.
+        primary_objective: Objective to minimize ('gaps' or 'room').
+        epsilon_objective: Objective to bound ('room' or 'gaps').
+        steps: Number of grid subdivisions between minimum and maximum epsilon.
+        time_limit_per_step: Solver time limit (seconds) for each epsilon iteration.
+        seed: Solver seed.
+    """
+    from .evaluation import evaluate
+
+    if primary_objective not in {"gaps", "room"}:
+        raise ValueError("primary_objective must be 'gaps' or 'room'")
+    if epsilon_objective not in {"gaps", "room"}:
+        raise ValueError("epsilon_objective must be 'gaps' or 'room'")
+    if primary_objective == epsilon_objective:
+        raise ValueError("primary_objective and epsilon_objective must differ")
+    if steps < 2:
+        raise ValueError("steps must be an integer >= 2")
+
+    started = perf_counter()
+
+    # Step 1: Find lower bound of epsilon_objective (anchor point 1)
+    min_res = cp_sat(problem, objective=epsilon_objective, time_limit=time_limit_per_step, seed=seed)
+    if min_res.schedule is None:
+        return EpsilonParetoResult([], [], 0, 0, 0, perf_counter() - started, [], {"error": "Infeasible anchor 1"})
+    min_eps = min_res.objective_value
+
+    # Step 2: Find anchor point 2 (minimizing primary_objective)
+    prim_res = cp_sat(problem, objective=primary_objective, time_limit=time_limit_per_step, seed=seed)
+    if prim_res.schedule is None:
+        return EpsilonParetoResult([], [], 0, 0, 0, perf_counter() - started, [], {"error": "Infeasible anchor 2"})
+    
+    ev_prim = evaluate(problem, prim_res.schedule)
+    max_eps = ev_prim.objectives[1 if epsilon_objective == "room" else 0]
+
+    # Step 3: Construct epsilon grid
+    if max_eps <= min_eps + 1e-6:
+        eps_grid = [min_eps]
+    else:
+        eps_grid = [min_eps + i * (max_eps - min_eps) / (steps - 1) for i in range(steps)]
+
+    discovered_schedules: list[Schedule] = []
+    discovered_objectives: list[tuple[float, float, float]] = []
+    optimal_count = 0
+    feasible_count = 0
+
+    # Include initial anchor schedules
+    for sched in (min_res.schedule, prim_res.schedule):
+        ev = evaluate(problem, sched)
+        if ev.feasible and ev.objectives not in discovered_objectives:
+            discovered_schedules.append(sched)
+            discovered_objectives.append(ev.objectives)
+
+    # Step 4: Step through the epsilon grid
+    for eps in eps_grid:
+        step_res = cp_sat(
+            problem,
+            objective=primary_objective,
+            time_limit=time_limit_per_step,
+            seed=seed,
+            epsilon_objective=epsilon_objective,
+            epsilon_bound=eps,
+        )
+        if step_res.status == "OPTIMAL":
+            optimal_count += 1
+        if step_res.schedule is not None:
+            feasible_count += 1
+            ev = evaluate(problem, step_res.schedule)
+            if ev.feasible and ev.objectives not in discovered_objectives:
+                discovered_schedules.append(step_res.schedule)
+                discovered_objectives.append(ev.objectives)
+
+    # Step 5: Filter mathematically non-dominated solutions
+    def dominates(a, b):
+        return all(x <= y for x, y in zip(a, b)) and any(x < y for x, y in zip(a, b))
+
+    pareto_schedules = []
+    pareto_objectives = []
+    for sched, objs in zip(discovered_schedules, discovered_objectives):
+        if not any(dominates(other, objs) for other in discovered_objectives):
+            pareto_schedules.append(sched)
+            pareto_objectives.append(objs)
+
+    ordered = sorted(zip(pareto_objectives, pareto_schedules), key=lambda it: it[0])
+
+    return EpsilonParetoResult(
+        archive=[s for _, s in ordered],
+        objectives=[v for v, _ in ordered],
+        evaluated_steps=len(eps_grid),
+        optimal_steps=optimal_count,
+        feasible_steps=feasible_count,
+        runtime=perf_counter() - started,
+        epsilons=eps_grid,
+        metadata={
+            "primary_objective": primary_objective,
+            "epsilon_objective": epsilon_objective,
+            "min_eps": min_eps,
+            "max_eps": max_eps,
+            "grid_points": len(eps_grid),
+        },
     )

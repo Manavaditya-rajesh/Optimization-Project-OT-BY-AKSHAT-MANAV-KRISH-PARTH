@@ -1,0 +1,13 @@
+{
+  "method": "cpsat_epsilon_constraint",
+  "runtime": 2.673016499989899,
+  "evaluated_steps": 0,
+  "optimal_steps": 0,
+  "feasible_steps": 0,
+  "archive_size": 0,
+  "objectives": [],
+  "epsilons": [],
+  "metadata": {
+    "error": "Infeasible anchor 1"
+  }
+}

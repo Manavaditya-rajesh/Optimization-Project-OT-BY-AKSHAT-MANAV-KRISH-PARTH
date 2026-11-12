@@ -1,0 +1,6 @@
+group: Curriculum_03,P1,P2,P3,P4,P5,P6,P7
+Monday,,Course_14 | Room_05 / Prof_04,Course_15 | Room_05 / Prof_05,LUNCH,Course_12 | Room_05 / Prof_02,Course_13 | Room_02 / Prof_03,Course_11 | Room_02 / Prof_12
+Tuesday,Course_11 | Room_05 / Prof_12,Course_12 | Room_02 / Prof_02,,LUNCH,,,
+Wednesday,,,Course_15 | Room_02 / Prof_05,LUNCH,Course_13 | Room_05 / Prof_03,Course_11 | Room_02 / Prof_12,Course_14 | Room_02 / Prof_04
+Thursday,,,,LUNCH,Course_Shared_02 | Room_04 / Prof_07,Course_11 | Room_02 / Prof_12,Course_15 | Room_02 / Prof_05
+Friday,,,Course_14 | Room_05 / Prof_04,LUNCH,Course_13 | Room_02 / Prof_03,Course_Shared_02 | Room_04 / Prof_07,Course_12 | Room_05 / Prof_02

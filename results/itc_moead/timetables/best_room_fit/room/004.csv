@@ -1,0 +1,6 @@
+room: Room_05,P1,P2,P3,P4,P5,P6,P7
+Monday,,Course_14 | Room_05 / Prof_04,Course_15 | Room_05 / Prof_05,LUNCH,Course_12 | Room_05 / Prof_02,Course_19 | Room_05 / Prof_09,Course_18 | Room_05 / Prof_09
+Tuesday,Course_11 | Room_05 / Prof_12,,Course_05 | Room_05 / Prof_06,LUNCH,Course_16 | Room_05 / Prof_07,,Course_03 | Room_05 / Prof_04
+Wednesday,,,Course_18 | Room_05 / Prof_09,LUNCH,Course_13 | Room_05 / Prof_03,,Course_02 | Room_05 / Prof_03
+Thursday,Course_22 | Room_05 / Prof_06,Course_23 | Room_05 / Prof_06,Course_17 | Room_05 / Prof_08,LUNCH,Course_20 | Room_05 / Prof_10,Course_16 | Room_05 / Prof_07,
+Friday,,,Course_14 | Room_05 / Prof_04,LUNCH,Course_04 | Room_05 / Prof_05,,Course_12 | Room_05 / Prof_02

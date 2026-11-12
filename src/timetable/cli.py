@@ -1,4 +1,4 @@
-"""Small CLI: data generation, search, independent validation and experiments."""
+"""Small CLI: data generation, search, independent validation, MCDM and experiments."""
 from __future__ import annotations
 
 import argparse
@@ -31,9 +31,10 @@ def parser() -> argparse.ArgumentParser:
     gen.add_argument("--config", help="JSON generator parameter overrides")
     gen.add_argument("--output", default="data/demo.json")
     gen.add_argument("--certificate", help="Optional separate certificate file; never used by solve")
+    
     solve = sub.add_parser("solve", help="Optimize and export feasible non-dominated timetables")
     solve.add_argument("instance")
-    solve.add_argument("--method", choices=["greedy", "nsga2", "seeded", "enhanced", "memetic", "cpsat"], default="enhanced")
+    solve.add_argument("--method", choices=["greedy", "nsga2", "seeded", "enhanced", "memetic", "moead", "amosa", "cpsat", "cpsat-eps"], default="enhanced")
     solve.add_argument("--seed", type=int, default=0)
     solve.add_argument("--budget", type=int, default=480)
     solve.add_argument("--population", type=int, default=24)
@@ -41,19 +42,32 @@ def parser() -> argparse.ArgumentParser:
     solve.add_argument("--figures", default="figures/demo")
     solve.add_argument("--objective", choices=["feasibility", "gaps", "room"], default="gaps", help="CP-SAT objective only")
     solve.add_argument("--time-limit", type=float, default=15.0, help="CP-SAT solver time limit, excluding model build")
-    solve.add_argument("--search-seconds", type=float, help="Optional total search deadline for the memetic method")
+    solve.add_argument("--search-seconds", type=float, help="Optional total search deadline for the memetic/moead/amosa method")
+    solve.add_argument("--scalarization", choices=["tchebycheff", "augmented_tchebycheff", "weighted_sum"], default="tchebycheff", help="MOEA/D scalarization function")
+    solve.add_argument("--neighborhood", type=int, default=6, help="MOEA/D subproblem neighborhood size")
+    solve.add_argument("--eps-steps", type=int, default=5, help="Number of epsilon grid points for CP-SAT epsilon-constraint")
+
     val = sub.add_parser("evaluate", aliases=["validate"], help="Independently check a schedule (nonzero exit if infeasible)")
     val.add_argument("instance")
     val.add_argument("schedule")
+
+    mcdm = sub.add_parser("mcdm", help="Run TOPSIS Multi-Criteria Decision-Making analysis on a Pareto front")
+    mcdm.add_argument("instance")
+    mcdm.add_argument("run", help="Path to run.json containing Pareto archive")
+    mcdm.add_argument("--profile", choices=["balanced", "student_first", "admin_room_fit", "faculty_fairness"], default="balanced")
+
     exp = sub.add_parser("experiment", help="Run/resume a saved paired benchmark configuration")
     exp.add_argument("--config", default="experiments/benchmark.json")
     exp.add_argument("--resume", action="store_true")
+
     compare = sub.add_parser("compare", help="Compare the new search with unchanged baselines under evaluation/time budgets")
     compare.add_argument("--config", default="experiments/enhancement_validation.json")
     compare.add_argument("--resume", action="store_true")
+
     plot = sub.add_parser("plot", help="Regenerate summary tables and figures from saved raw runs")
     plot.add_argument("--results", default="results/benchmark")
     plot.add_argument("--figures")
+
     micro = sub.add_parser("prove-tradeoffs", help="Exhaust tiny synthetic instances to certify genuine global Pareto fronts")
     micro.add_argument("--output", default="results/exact_micro")
     micro.add_argument("--figures", default="figures/exact_micro")
@@ -70,6 +84,7 @@ def main(argv=None) -> int:
                 _write(args.certificate, schedule_to_dict(certificate))
             print(f"Generated {len(problem.events)} synthetic events: {args.output}")
             return 0
+
         if args.command in {"evaluate", "validate"}:
             problem = problem_from_dict(_read(args.instance))
             data = _read(args.schedule)
@@ -77,19 +92,41 @@ def main(argv=None) -> int:
             result = evaluate(problem, schedule)
             print(json.dumps(asdict(result) | {"feasible": result.feasible}, indent=2, allow_nan=False))
             return 0 if result.feasible else 2
+
+        if args.command == "mcdm":
+            from .mcdm import analyze_stakeholder_profiles, topsis
+            data = _read(args.run)
+            objectives = [tuple(v) for v in data.get("objectives", [])]
+            if not objectives:
+                print("Error: No objectives found in run file.", file=sys.stderr)
+                return 1
+            analysis = analyze_stakeholder_profiles(objectives)
+            print(f"--- TOPSIS Decision Analysis ({args.profile.upper()} profile) ---")
+            profile_data = analysis[args.profile]
+            print(f"Stakeholder Weights: {profile_data['weights']}")
+            print(f"Top Recommended Solution Index: #{profile_data['top_choice_index']}")
+            print(f"Top Solution Objectives: {profile_data['top_choice_objectives']} (Score: {profile_data['top_choice_score']})")
+            print("\nFull Rankings across alternatives:")
+            for item in profile_data["all_rankings"]:
+                print(f"  Rank {item['rank']}: Sol #{item['index']} | Score: {item['score']} | Obj: {item['objectives']}")
+            return 0
+
         if args.command == "experiment":
             from .experiments import run_suite
             print(run_suite(args.config, resume=args.resume))
             return 0
+
         if args.command == "compare":
             from .comparison import run_comparison
             print(run_comparison(args.config, resume=args.resume))
             return 0
+
         if args.command == "plot":
             from .experiments import analyze_suite
             result = analyze_suite(args.results, args.figures)
             print(json.dumps(result["summary"], indent=2))
             return 0
+
         if args.command == "prove-tradeoffs":
             from .exact import enumerate_pareto
             from .examples import conflict_instance
@@ -109,11 +146,13 @@ def main(argv=None) -> int:
                             Path(args.figures) / f"{case}_exact_front.png", f"Certified complete tiny {case} Pareto front", certified=True)
                 print(f"{case}: {result.status}; {result.evaluated} genotypes; {result.objectives}")
             return 0
+
         if args.command == "solve":
             from .experiments import export_representatives, run_method, serialize_run
             from .visualization import plot_fronts
             problem = problem_from_dict(_read(args.instance))
             out, figures = Path(args.output), Path(args.figures)
+
             if args.method == "cpsat":
                 from .exact import cp_sat
                 from .export import export_schedule
@@ -126,13 +165,56 @@ def main(argv=None) -> int:
                 _write(out / "exact.json", payload)
                 print(json.dumps({key: value for key, value in payload.items() if key not in {"schedule", "metadata"}}, indent=2))
                 return 0 if result.schedule is not None else 2
+
+            if args.method == "cpsat-eps":
+                from .exact import epsilon_constraint_cp_sat
+                eps_res = epsilon_constraint_cp_sat(
+                    problem,
+                    primary_objective="gaps",
+                    epsilon_objective="room",
+                    steps=args.eps_steps,
+                    time_limit_per_step=args.time_limit,
+                    seed=args.seed,
+                )
+                payload = {
+                    "method": "cpsat_epsilon_constraint",
+                    "runtime": eps_res.runtime,
+                    "evaluated_steps": eps_res.evaluated_steps,
+                    "optimal_steps": eps_res.optimal_steps,
+                    "feasible_steps": eps_res.feasible_steps,
+                    "archive_size": len(eps_res.objectives),
+                    "objectives": eps_res.objectives,
+                    "epsilons": eps_res.epsilons,
+                    "metadata": eps_res.metadata,
+                }
+                _write(out / "exact_pareto.json", payload)
+                export_representatives(problem, eps_res.archive, out / "timetables", figures)
+                plot_fronts([{"method": "cpsat_eps", "objectives": v} for v in eps_res.objectives], figures / "exact_pareto.png", "Exact Pareto Front via Epsilon-Constraint CP-SAT", certified=True)
+                print(json.dumps({key: payload[key] for key in ["method", "runtime", "archive_size", "objectives"]}, indent=2))
+                return 0 if eps_res.archive else 2
+
             if args.method == "memetic":
                 from .memetic import memetic_nsga2
                 result = memetic_nsga2(problem, seed=args.seed, population_size=args.population,
                                        max_evaluations=args.budget, time_limit=args.search_seconds)
+            elif args.method == "moead":
+                from .moead import moead
+                result = moead(problem, seed=args.seed, population_size=args.population,
+                               max_evaluations=args.budget, time_limit=args.search_seconds,
+                               neighborhood_size=args.neighborhood, scalarization=args.scalarization)
+            elif args.method == "amosa":
+                from .amosa import amosa
+                result = amosa(problem, seed=args.seed, population_size=args.population,
+                               max_evaluations=args.budget, time_limit=args.search_seconds)
             else:
                 result = run_method(problem, args.method, args.seed, args.budget, args.population)
+
             payload = serialize_run(problem, result, args.method, args.seed)
+            # Add TOPSIS analysis to payload
+            if payload["objectives"]:
+                from .mcdm import analyze_stakeholder_profiles
+                payload["topsis"] = analyze_stakeholder_profiles([tuple(v) for v in payload["objectives"]])
+
             _write(out / "run.json", payload)
             _write(out / "instance.json", problem_to_dict(problem))
             export_representatives(problem, result.archive, out / "timetables", figures)

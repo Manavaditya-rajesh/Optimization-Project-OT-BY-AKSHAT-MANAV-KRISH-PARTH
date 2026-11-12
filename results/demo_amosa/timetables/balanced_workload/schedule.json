@@ -1,0 +1,218 @@
+{
+  "label": "balanced_workload",
+  "objectives": [
+    0.0,
+    0.2545454545454546,
+    0.04714045207910319
+  ],
+  "violation": 0,
+  "metrics": {
+    "student_gaps": 0,
+    "faculty_gaps": 0,
+    "average_student_gap_per_day": 0.0,
+    "longest_idle_stretch": 0,
+    "room_utilization": 0.7454545454545454,
+    "faculty_loads": {
+      "F01": 6,
+      "F02": 8,
+      "F03": 8,
+      "F04": 8,
+      "F05": 8,
+      "F06": 6
+    },
+    "faculty_relative_loads": {
+      "F01": 0.3,
+      "F02": 0.4,
+      "F03": 0.4,
+      "F04": 0.4,
+      "F05": 0.4,
+      "F06": 0.3
+    },
+    "max_faculty_daily_load": 3,
+    "consecutive_periods_over_three": 3,
+    "required_teaching_periods": 44
+  },
+  "schedule": {
+    "schema_version": 1,
+    "placements": [
+      {
+        "start": 34,
+        "room": "R01"
+      },
+      {
+        "start": 21,
+        "room": "R01"
+      },
+      {
+        "start": 31,
+        "room": "R01"
+      },
+      {
+        "start": 11,
+        "room": "R01"
+      },
+      {
+        "start": 37,
+        "room": "R01"
+      },
+      {
+        "start": 18,
+        "room": "R01"
+      },
+      {
+        "start": 27,
+        "room": "R01"
+      },
+      {
+        "start": 3,
+        "room": "R01"
+      },
+      {
+        "start": 17,
+        "room": "R01"
+      },
+      {
+        "start": 38,
+        "room": "R01"
+      },
+      {
+        "start": 1,
+        "room": "R01"
+      },
+      {
+        "start": 13,
+        "room": "R01"
+      },
+      {
+        "start": 19,
+        "room": "R01"
+      },
+      {
+        "start": 7,
+        "room": "R01"
+      },
+      {
+        "start": 35,
+        "room": "R01"
+      },
+      {
+        "start": 2,
+        "room": "R01"
+      },
+      {
+        "start": 10,
+        "room": "R01"
+      },
+      {
+        "start": 16,
+        "room": "R01"
+      },
+      {
+        "start": 5,
+        "room": "R05"
+      },
+      {
+        "start": 29,
+        "room": "R05"
+      },
+      {
+        "start": 8,
+        "room": "R02"
+      },
+      {
+        "start": 3,
+        "room": "R02"
+      },
+      {
+        "start": 35,
+        "room": "R02"
+      },
+      {
+        "start": 34,
+        "room": "R02"
+      },
+      {
+        "start": 24,
+        "room": "R02"
+      },
+      {
+        "start": 22,
+        "room": "R02"
+      },
+      {
+        "start": 26,
+        "room": "R02"
+      },
+      {
+        "start": 18,
+        "room": "R02"
+      },
+      {
+        "start": 37,
+        "room": "R02"
+      },
+      {
+        "start": 19,
+        "room": "R02"
+      },
+      {
+        "start": 1,
+        "room": "R02"
+      },
+      {
+        "start": 27,
+        "room": "R02"
+      },
+      {
+        "start": 0,
+        "room": "R02"
+      },
+      {
+        "start": 21,
+        "room": "R02"
+      },
+      {
+        "start": 25,
+        "room": "R02"
+      },
+      {
+        "start": 17,
+        "room": "R02"
+      },
+      {
+        "start": 2,
+        "room": "R02"
+      },
+      {
+        "start": 29,
+        "room": "R02"
+      },
+      {
+        "start": 38,
+        "room": "R05"
+      },
+      {
+        "start": 9,
+        "room": "R05"
+      }
+    ],
+    "teachers": [
+      "F04",
+      "F06",
+      "F02",
+      "F01",
+      "F05",
+      "F02",
+      "F05",
+      "F04",
+      "F04",
+      "F03",
+      "F05",
+      "F06",
+      "F03",
+      "F01",
+      "F02",
+      "F03"
+    ]
+  }
+}

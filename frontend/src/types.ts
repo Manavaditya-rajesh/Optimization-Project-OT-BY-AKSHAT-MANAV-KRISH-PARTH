@@ -89,15 +89,39 @@ export interface Solution {
 
 export type Scenario = 'demo' | 'small' | 'medium' | 'large' | 'published' | 'custom';
 
-/** Settings of one run of the final optimizer (feasible memetic NSGA-II). */
+/** Settings of one run of the optimizer. */
 export interface RunParams {
   scenario: Scenario;
   instanceSeed: number;
   seed: number;
-  budget: number; // full evaluations, the unit of the validation study
+  budget: number; // full evaluations
   population: number;
   searchSeconds: number | null; // wall-time cap; null = evaluations only
-  compareBaseline: boolean; // also run repeated greedy with the same evaluations and seed
+  compareBaseline: boolean; // also run multi-algorithm comparison benchmark
+}
+
+export interface MultiConvergencePoint {
+  evaluations: number;
+  hypervolume: number;
+}
+
+export interface MultiConvergence {
+  memetic: MultiConvergencePoint[];
+  moead?: MultiConvergencePoint[];
+  amosa?: MultiConvergencePoint[];
+  nsga2?: MultiConvergencePoint[];
+  greedy?: MultiConvergencePoint[];
+}
+
+export interface AlgorithmBenchmark {
+  id: string;
+  name: string;
+  hv: number;
+  runtime: number;
+  frontSize: number;
+  feasible: boolean;
+  color: string;
+  marker: 'circle' | 'triangle' | 'diamond' | 'square' | 'rhombus';
 }
 
 export interface RunStats {
@@ -117,6 +141,12 @@ export interface RunStats {
   baselineEvaluations: number | null;
   baselineFrontSize: number;
   baselineFront: Objectives[];
+  memeticFront?: Objectives[];
+  moeadFront?: Objectives[];
+  amosaFront?: Objectives[];
+  nsga2Front?: Objectives[];
+  algorithmComparison?: AlgorithmBenchmark[];
+  multiConvergence?: MultiConvergence;
   spacing: number;
   baselineFeasible: boolean;
   normalization: number[];
@@ -136,7 +166,7 @@ export interface RunResult {
 }
 
 export interface RunProgress {
-  phase: 'queued' | 'memetic' | 'baseline' | 'export';
+  phase: 'queued' | 'memetic' | 'moead' | 'amosa' | 'nsga2' | 'baseline' | 'export';
   evaluations: number;
   budget: number;
   feasibleEvaluations?: number;

@@ -1,0 +1,539 @@
+{
+  "schema_version": 1,
+  "name": "ITC2007_CBCTT_Comp01",
+  "days": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday"
+  ],
+  "periods_per_day": 7,
+  "lunch_periods": [
+    3
+  ],
+  "groups": [
+    {
+      "id": "Curriculum_01",
+      "size": 25
+    },
+    {
+      "id": "Curriculum_02",
+      "size": 30
+    },
+    {
+      "id": "Curriculum_03",
+      "size": 45
+    },
+    {
+      "id": "Curriculum_04",
+      "size": 50
+    },
+    {
+      "id": "Curriculum_05",
+      "size": 35
+    }
+  ],
+  "rooms": [
+    {
+      "id": "Room_01",
+      "capacity": 35,
+      "kind": "classroom",
+      "unavailable": []
+    },
+    {
+      "id": "Room_02",
+      "capacity": 50,
+      "kind": "classroom",
+      "unavailable": []
+    },
+    {
+      "id": "Room_03",
+      "capacity": 60,
+      "kind": "classroom",
+      "unavailable": []
+    },
+    {
+      "id": "Room_04",
+      "capacity": 75,
+      "kind": "classroom",
+      "unavailable": []
+    },
+    {
+      "id": "Room_05",
+      "capacity": 50,
+      "kind": "classroom",
+      "unavailable": []
+    },
+    {
+      "id": "Room_06",
+      "capacity": 90,
+      "kind": "classroom",
+      "unavailable": []
+    }
+  ],
+  "faculty": [
+    {
+      "id": "Prof_01",
+      "max_weekly": 16,
+      "max_daily": 4,
+      "unavailable": []
+    },
+    {
+      "id": "Prof_02",
+      "max_weekly": 16,
+      "max_daily": 4,
+      "unavailable": []
+    },
+    {
+      "id": "Prof_03",
+      "max_weekly": 16,
+      "max_daily": 4,
+      "unavailable": []
+    },
+    {
+      "id": "Prof_04",
+      "max_weekly": 16,
+      "max_daily": 4,
+      "unavailable": []
+    },
+    {
+      "id": "Prof_05",
+      "max_weekly": 16,
+      "max_daily": 4,
+      "unavailable": []
+    },
+    {
+      "id": "Prof_06",
+      "max_weekly": 16,
+      "max_daily": 4,
+      "unavailable": []
+    },
+    {
+      "id": "Prof_07",
+      "max_weekly": 16,
+      "max_daily": 4,
+      "unavailable": []
+    },
+    {
+      "id": "Prof_08",
+      "max_weekly": 16,
+      "max_daily": 4,
+      "unavailable": []
+    },
+    {
+      "id": "Prof_09",
+      "max_weekly": 16,
+      "max_daily": 4,
+      "unavailable": []
+    },
+    {
+      "id": "Prof_10",
+      "max_weekly": 16,
+      "max_daily": 4,
+      "unavailable": []
+    },
+    {
+      "id": "Prof_11",
+      "max_weekly": 16,
+      "max_daily": 4,
+      "unavailable": []
+    },
+    {
+      "id": "Prof_12",
+      "max_weekly": 16,
+      "max_daily": 4,
+      "unavailable": []
+    }
+  ],
+  "offerings": [
+    {
+      "id": "Course_01",
+      "groups": [
+        "Curriculum_01"
+      ],
+      "eligible_faculty": [
+        "Prof_01",
+        "Prof_02"
+      ],
+      "sessions": 4,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "Course_02",
+      "groups": [
+        "Curriculum_01"
+      ],
+      "eligible_faculty": [
+        "Prof_02",
+        "Prof_03"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "Course_03",
+      "groups": [
+        "Curriculum_01"
+      ],
+      "eligible_faculty": [
+        "Prof_03",
+        "Prof_04"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "Course_04",
+      "groups": [
+        "Curriculum_01"
+      ],
+      "eligible_faculty": [
+        "Prof_04",
+        "Prof_05"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "Course_05",
+      "groups": [
+        "Curriculum_01"
+      ],
+      "eligible_faculty": [
+        "Prof_05",
+        "Prof_06"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "Course_06",
+      "groups": [
+        "Curriculum_02"
+      ],
+      "eligible_faculty": [
+        "Prof_06",
+        "Prof_07"
+      ],
+      "sessions": 4,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "Course_07",
+      "groups": [
+        "Curriculum_02"
+      ],
+      "eligible_faculty": [
+        "Prof_07",
+        "Prof_08"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "Course_08",
+      "groups": [
+        "Curriculum_02"
+      ],
+      "eligible_faculty": [
+        "Prof_08",
+        "Prof_09"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "Course_09",
+      "groups": [
+        "Curriculum_02"
+      ],
+      "eligible_faculty": [
+        "Prof_09",
+        "Prof_10"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "Course_10",
+      "groups": [
+        "Curriculum_02"
+      ],
+      "eligible_faculty": [
+        "Prof_10",
+        "Prof_11"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "Course_11",
+      "groups": [
+        "Curriculum_03"
+      ],
+      "eligible_faculty": [
+        "Prof_11",
+        "Prof_12"
+      ],
+      "sessions": 4,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "Course_12",
+      "groups": [
+        "Curriculum_03"
+      ],
+      "eligible_faculty": [
+        "Prof_12",
+        "Prof_02"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "Course_13",
+      "groups": [
+        "Curriculum_03"
+      ],
+      "eligible_faculty": [
+        "Prof_02",
+        "Prof_03"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "Course_14",
+      "groups": [
+        "Curriculum_03"
+      ],
+      "eligible_faculty": [
+        "Prof_03",
+        "Prof_04"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "Course_15",
+      "groups": [
+        "Curriculum_03"
+      ],
+      "eligible_faculty": [
+        "Prof_04",
+        "Prof_05"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "Course_16",
+      "groups": [
+        "Curriculum_04"
+      ],
+      "eligible_faculty": [
+        "Prof_05",
+        "Prof_07"
+      ],
+      "sessions": 4,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "Course_17",
+      "groups": [
+        "Curriculum_04"
+      ],
+      "eligible_faculty": [
+        "Prof_07",
+        "Prof_08"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "Course_18",
+      "groups": [
+        "Curriculum_04"
+      ],
+      "eligible_faculty": [
+        "Prof_08",
+        "Prof_09"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "Course_19",
+      "groups": [
+        "Curriculum_04"
+      ],
+      "eligible_faculty": [
+        "Prof_09",
+        "Prof_10"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "Course_20",
+      "groups": [
+        "Curriculum_04"
+      ],
+      "eligible_faculty": [
+        "Prof_10",
+        "Prof_12"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "Course_21",
+      "groups": [
+        "Curriculum_05"
+      ],
+      "eligible_faculty": [
+        "Prof_12",
+        "Prof_01"
+      ],
+      "sessions": 4,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "Course_22",
+      "groups": [
+        "Curriculum_05"
+      ],
+      "eligible_faculty": [
+        "Prof_01",
+        "Prof_06"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "Course_23",
+      "groups": [
+        "Curriculum_05"
+      ],
+      "eligible_faculty": [
+        "Prof_06",
+        "Prof_11"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "Course_24",
+      "groups": [
+        "Curriculum_05"
+      ],
+      "eligible_faculty": [
+        "Prof_11",
+        "Prof_02"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "Course_25",
+      "groups": [
+        "Curriculum_05"
+      ],
+      "eligible_faculty": [
+        "Prof_02",
+        "Prof_03"
+      ],
+      "sessions": 3,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "Course_Shared_01",
+      "groups": [
+        "Curriculum_01",
+        "Curriculum_02"
+      ],
+      "eligible_faculty": [
+        "Prof_03",
+        "Prof_04"
+      ],
+      "sessions": 2,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    },
+    {
+      "id": "Course_Shared_02",
+      "groups": [
+        "Curriculum_02",
+        "Curriculum_03"
+      ],
+      "eligible_faculty": [
+        "Prof_04",
+        "Prof_07"
+      ],
+      "sessions": 2,
+      "duration": 1,
+      "room_kind": "classroom",
+      "distinct_days": true
+    }
+  ],
+  "metadata": {
+    "source": "ITC-2007 CB-CTT Benchmark",
+    "type": "Curriculum-Based Course Timetabling",
+    "curricula": 5,
+    "courses": 27,
+    "teaching_periods_per_week": 30,
+    "seed": 2007
+  }
+}
