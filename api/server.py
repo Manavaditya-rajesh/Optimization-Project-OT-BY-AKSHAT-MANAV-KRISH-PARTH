@@ -37,6 +37,7 @@ from api.bridge import (DEFAULT_RUN, SCENARIO_LABELS, apply_constraints, problem
 from api.campus.db import connect, init_db, load_published, now  # noqa: E402
 from api.campus.routes import ADMIN, constraint_overrides  # noqa: E402
 from api.campus.routes import router as campus_router  # noqa: E402
+from api.disruptions import router as disruptions_router  # noqa: E402
 from api.optimizer import METHOD, NoFeasibleTimetable, RunConfig, run_optimizer  # noqa: E402
 
 app = FastAPI(title="Clockwork timetable optimiser", version="1.0.0")
@@ -49,6 +50,7 @@ app.add_middleware(
 
 init_db()  # creates data/clockwork.db and the admin/admin superuser on first start
 app.include_router(campus_router)
+app.include_router(disruptions_router)
 
 _executor = ThreadPoolExecutor(max_workers=2)
 _jobs: dict[str, dict] = {}

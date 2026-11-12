@@ -28,8 +28,14 @@ export default function LeavePanel({ instance, own = false }: { instance: Instan
   const add = async () => {
     setError(null);
     try {
-      const r = await post<{ lecturesNeedingCover: number }>('/leaves', { ...form, facultyId: own ? null : form.facultyId });
-      setMsg(r.lecturesNeedingCover ? `${r.lecturesNeedingCover} lecture(s) now need cover; other teachers were notified.` : 'Leave saved.');
+      const r = await post<{ lecturesNeedingCover: number; disruption?: { id: number; broken: number } | null }>('/leaves', {
+        ...form,
+        facultyId: own ? null : form.facultyId,
+      });
+      setMsg(
+        (r.lecturesNeedingCover ? `${r.lecturesNeedingCover} lecture(s) now need cover; other teachers were notified.` : 'Leave saved.') +
+          (r.disruption ? ' This is long leave, so the administrator was also offered a minimal-change re-optimisation of the timetable.' : ''),
+      );
       load();
     } catch (e) {
       setError((e as Error).message);

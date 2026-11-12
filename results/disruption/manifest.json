@@ -1,0 +1,31 @@
+{
+  "instances": [
+    "medium_1010",
+    "medium_1020",
+    "medium_1030",
+    "large_1010"
+  ],
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "eps_steps": [
+    0,
+    2,
+    5,
+    10,
+    20,
+    40
+  ],
+  "level_budget": 120,
+  "level_population": 12,
+  "scratch_population": 24,
+  "s0_budget": {
+    "medium": 360,
+    "large": 240
+  },
+  "python": "3.13.7",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "runtime_seconds": 701.4558782000095
+}

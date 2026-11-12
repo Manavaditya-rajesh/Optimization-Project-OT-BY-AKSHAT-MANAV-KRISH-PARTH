@@ -1,16 +1,19 @@
 import type { Instance, Offering, TEvent } from '../types';
 
-// Small synthetic instance (proposal "Small" scenario: ~40 events, 2 groups, 5 rooms, 6 faculty).
+// Demo department used when the Python server is not running (offline demo data): 2 divisions, 5 rooms, 10 faculty.
 
+// Same department as the backend's demo (api/bridge.py demo_problem): own professor first, then a qualified backup.
 const subjects: { code: string; subject: string; type: 'theory' | 'lab'; sessions: number; faculty: string[] }[] = [
-  { code: 'DSA', subject: 'Data Structures', type: 'theory', sessions: 3, faculty: ['f1', 'f2'] },
-  { code: 'DBMS', subject: 'Database Systems', type: 'theory', sessions: 3, faculty: ['f2', 'f3'] },
-  { code: 'OS', subject: 'Operating Systems', type: 'theory', sessions: 3, faculty: ['f3', 'f4'] },
-  { code: 'MATHS', subject: 'Engineering Maths III', type: 'theory', sessions: 3, faculty: ['f5', 'f6'] },
-  { code: 'COA', subject: 'Computer Organisation', type: 'theory', sessions: 2, faculty: ['f4', 'f1'] },
-  { code: 'EVS', subject: 'Environmental Studies', type: 'theory', sessions: 1, faculty: ['f6', 'f5'] },
-  { code: 'DSA LAB', subject: 'Data Structures Lab', type: 'lab', sessions: 1, faculty: ['f1', 'f2'] },
-  { code: 'DBMS LAB', subject: 'Database Lab', type: 'lab', sessions: 1, faculty: ['f3', 'f2'] },
+  { code: 'OT', subject: 'Optimization Techniques', type: 'theory', sessions: 3, faculty: ['f1', 'f5'] },
+  { code: 'PC', subject: 'Parallel Computing', type: 'theory', sessions: 3, faculty: ['f2', 'f3'] },
+  { code: 'PC LAB', subject: 'Parallel Computing Lab', type: 'lab', sessions: 1, faculty: ['f3', 'f2'] },
+  { code: 'ML LAB', subject: 'Machine Learning Lab', type: 'lab', sessions: 1, faculty: ['f4', 'f5'] },
+  { code: 'ML', subject: 'Machine Learning', type: 'theory', sessions: 3, faculty: ['f5', 'f4'] },
+  { code: 'SE', subject: 'Software Engineering', type: 'theory', sessions: 3, faculty: ['f6', 'f8'] },
+  { code: 'CN', subject: 'Computer Networking', type: 'theory', sessions: 3, faculty: ['f7', 'f9'] },
+  { code: 'HCI', subject: 'Human-Computer Interaction', type: 'theory', sessions: 2, faculty: ['f8', 'f6'] },
+  { code: 'OS', subject: 'Operating Systems', type: 'theory', sessions: 3, faculty: ['f9', 'f7'] },
+  { code: 'PHY', subject: 'Physics', type: 'theory', sessions: 2, faculty: ['f10'] },
 ];
 
 const groups = [
@@ -48,12 +51,16 @@ export const mockInstance: Instance = {
   },
   groups,
   faculty: [
-    { id: 'f1', name: 'Prof. Mehta', maxWeekly: 12, maxDaily: 4 },
-    { id: 'f2', name: 'Dr. Iyer', maxWeekly: 12, maxDaily: 4 },
-    { id: 'f3', name: 'Prof. Kulkarni', maxWeekly: 10, maxDaily: 4 },
-    { id: 'f4', name: 'Dr. Fernandes', maxWeekly: 10, maxDaily: 3 },
-    { id: 'f5', name: 'Prof. Rao', maxWeekly: 8, maxDaily: 3 },
-    { id: 'f6', name: 'Dr. Shaikh', maxWeekly: 8, maxDaily: 3 },
+    { id: 'f1', name: 'Prof. Kulal', maxWeekly: 12, maxDaily: 3 },
+    { id: 'f2', name: 'Prof. Sase', maxWeekly: 10, maxDaily: 3 },
+    { id: 'f3', name: 'Prof. Pratik', maxWeekly: 6, maxDaily: 3 },
+    { id: 'f4', name: 'Prof. Anushka', maxWeekly: 6, maxDaily: 3 },
+    { id: 'f5', name: 'Prof. Shrawne', maxWeekly: 12, maxDaily: 3 },
+    { id: 'f6', name: 'Prof. Shirole', maxWeekly: 10, maxDaily: 3 },
+    { id: 'f7', name: 'Prof. Chandane', maxWeekly: 8, maxDaily: 3 },
+    { id: 'f8', name: 'Prof. Khedkar', maxWeekly: 8, maxDaily: 3 },
+    { id: 'f9', name: 'Prof. Kolte', maxWeekly: 10, maxDaily: 3 },
+    { id: 'f10', name: 'Prof. Wavhal', maxWeekly: 6, maxDaily: 2 },
   ],
   rooms: [
     { id: 'r1', name: 'CR-101', capacity: 60, type: 'classroom' },
